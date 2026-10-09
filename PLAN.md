@@ -29,8 +29,8 @@ checkout is the source home; audit-parent changes are not part of this push.
 | Rejected edits | Accepted property values restore after rejection | Focused real Qt regression passes |
 | Desktop workflows | Verified | 23 Qt tests; retain drafts, asynchronous save/discard/cancel, private import/recents; real save/export/reimport |
 | Portable package | Verified development preview | Offline GUI/backend one-folder build; minimal Windows plugins, licenses/receipt/inventory/checksum; relocated real CLI/GUI tests |
-| GitHub Actions | Implemented; remote run pending | Immutable mature actions, exact signed Python, hash locks, fail-closed fresh advisory queries; tests/build/upload on push/PR/manual runs |
-| GitHub synchronization | Pending | Fetch/reconcile without reverting local changes; review staged files, commit and push; confirm remote/workflow result |
+| GitHub Actions | Verified remote Windows build | [Successful run](https://github.com/sdalili-bentley/dgn-explorer/actions/runs/37960735096): exact signed Python, fresh evidence/hash-locked offline install, full tests, frozen workflow, wheel and preview upload |
+| GitHub synchronization | Published main; clean local checkout | Application commit `5211602cf3105a57d86ae96a0a64122240f530bc` matches the tested remote source; audit-parent files, customer inputs and build binaries are excluded |
 
 Build artifacts are development previews, not company distribution approval.
 Clean-machine/native application/DPI/signing gates require their own evidence.
@@ -43,7 +43,7 @@ Clean-machine/native application/DPI/signing gates require their own evidence.
 | T02 | Official Qt 6.11.2 Windows artifacts admitted; real binding/native match, XML mitigation and scoped native review | Distribution/license/native-notices approval and feature-change re-review |
 | T03 | Offline checker, age/hash/exception/non-applicability tests, development-release boundary; thirteen actual admissions | Release approvals and complete policy/build integration |
 | T04 | Exact runtime/build/dev locks including Qt, hash-verified wheels, offline resolution/install; pip check passes | Clean release build enforcement |
-| T05 | Package/module entry, shared codecs, legacy aliases; offline wheel and packaged CLI smoke pass | Full sample/portable-packaging regression gates |
+| T05 | Package/module entry, shared codecs, legacy aliases; offline wheel and real frozen CLI/GUI pass | Full sample and clean-machine regression gates |
 | T06 | Contextual records and bounded pages/search | Inventory still decodes all streams; lazy/large-fixture performance pending |
 | T07,T08,T09 | Original-derived capabilities, strict replacements, revisions/staging/diff | Wider record/error-path coverage and coverage review |
 | T10 | OS locks, journaled save/rollback/recovery; boundary fault tests | Real process/power-loss and filesystem-race stress |
