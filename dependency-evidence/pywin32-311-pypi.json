@@ -1,0 +1,560 @@
+{
+  "info": {
+    "author": "Mark Hammond (et al)",
+    "author_email": "mhammond@skippinet.com.au",
+    "bugtrack_url": null,
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Environment :: Win32 (MS Windows)",
+      "Intended Audience :: Developers",
+      "License :: OSI Approved :: Python Software Foundation License",
+      "Operating System :: Microsoft :: Windows",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.11",
+      "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
+      "Programming Language :: Python :: 3.8",
+      "Programming Language :: Python :: 3.9",
+      "Programming Language :: Python :: Implementation :: CPython"
+    ],
+    "description": "# pywin32\r\n\r\n[![CI](https://github.com/mhammond/pywin32/workflows/CI/badge.svg)](https://github.com/mhammond/pywin32/actions?query=workflow%3ACI)\r\n[![PyPI - Version](https://img.shields.io/pypi/v/pywin32.svg)](https://pypi.org/project/pywin32)\r\n[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pywin32.svg)](https://pypi.org/project/pywin32)\r\n[![PyPI - Downloads](https://img.shields.io/pypi/dm/pywin32.svg)](https://pypi.org/project/pywin32)\r\n[![License - PSF-2.0](https://img.shields.io/badge/license-PSF--2.0-9400d3.svg)](https://spdx.org/licenses/PSF-2.0.html)\r\n\r\n-----\r\n\r\nThis is the readme for the Python for Win32 (pywin32) extensions, which provides access to many of the Windows APIs from Python, including COM support.\r\n\r\nSee [CHANGES.txt](https://github.com/mhammond/pywin32/blob/main/CHANGES.txt) for recent notable changes.\r\n\r\nadodbapi's documentation can be found in: [adodbapi/readme.txt](https://github.com/mhammond/pywin32/blob/main/adodbapi/readme.txt)\r\n\r\nisapi's documentation can be found in: [isapi/README.txt](https://github.com/mhammond/pywin32/blob/main/isapi/README.txt)\r\n\r\n## Docs\r\n\r\nThe docs are a long and sad story, but [there's now an online version](https://mhammond.github.io/pywin32/)\r\nof the `PyWin32.chm` helpfile (thanks [@ofek](https://github.com/mhammond/pywin32/pull/1774)!).\r\nLots of that is very old, but some is auto-generated and current. Would love help untangling the docs!\r\n\r\nYou can get type hints, signatures and annotations from [`types-pywin32`](https://pypi.org/project/types-pywin32/).\r\n\r\n## Support\r\n\r\nFeel free to [open issues](https://github.com/mhammond/pywin32/issues) for\r\nall bugs (or suspected bugs) in pywin32. [pull-requests](https://github.com/mhammond/pywin32/pulls)\r\nfor all bugs or features are also welcome.\r\n\r\nHowever, please **do not open GitHub issues for general support requests**, or for problems or questions using the modules in this package.  \r\nFor pywin32 support requests, please start a [discussion](https://github.com/mhammond/pywin32/discussions) under the [Q&A category](https://github.com/mhammond/pywin32/discussions/new?category=q-a). All non bug related issues will be converted into a discussion anyhow.  \r\nThe [python-win32 mailing list](https://mail.python.org/mailman/listinfo/python-win32) is still available for general Python on Windows help requests.\r\n\r\nType stubs currently live in [typeshed](<https://github.com/python/typeshed/tree/main/stubs/pywin32>).\r\nAny issue or request related to static type-checking and IntelliSense should be raised there.\r\n\r\n## Binaries\r\n\r\n[Binary releases are no longer supported.](https://mhammond.github.io/pywin32_installers.html)\r\n\r\nBuild 306 was the last with .exe installers. You really shouldn't use them, but if you really need them,\r\n[find them here](https://github.com/mhammond/pywin32/releases/tag/b306)\r\n\r\n## Installing via PIP\r\n\r\nYou should install pywin32 via pip - eg,\r\n\r\n```shell\r\npython -m pip install --upgrade pywin32\r\n```\r\n\r\nThere is a post-install script (see below) which should *not* be run inside virtual environments;\r\nit should only be run in \"global\" installs.\r\n\r\nFor unreleased changes, you can download builds made by [GitHub actions](https://github.com/mhammond/pywin32/actions/) -\r\nchoose any \"workflow\" from the `main` branch and download its \"artifacts\"\r\n\r\n### Installing globally\r\n\r\nOutside of a virtual environment you might want to install COM objects, services, etc. You can do\r\nthis by executing:\r\n\r\n```shell\r\npython -m pywin32_postinstall -install\r\n```\r\n\r\nor (shorter but you don't have control over which python environment is used)\r\n\r\n```shell\r\npywin32_postinstall -install\r\n```\r\n\r\nIf you do this with normal permissions it will be global for your user (a few files will be\r\ncopied to the root of your Python install and some changes made to HKCU). If you execute this from\r\nan elevated process, it will be global for the machine (files will be copied to System32, HKLM\r\nwill be changed, etc)\r\n\r\n### Installing for MingGW/msys2\r\n\r\nThe folks at <https://github.com/msys2/MINGW-packages/tree/master/mingw-w64-python-pywin32> are graciously keeping an updated set of patches to install pywin32 for MingGW/msys2.\r\n\r\nWe'd suggest installing from <https://packages.msys2.org/base/mingw-w64-python-pywin32> `pacman -S mingw-w64-python-pywin32`.\r\n\r\nWe're open to seeing these patches be upstreamed in pywin32 if they can be tested automatically on the CI.\r\n\r\n### Running as a Windows Service\r\n\r\nTo run as a service, you probably want to install pywin32 globally from an elevated\r\ncommand prompt - see above.\r\n\r\nYou also need to ensure Python is installed in a location where the user running\r\nthe service has access to the installation and is able to load `pywintypesXX.dll` and `pythonXX.dll`.\r\nIn particular, the `LocalSystem` account typically will not have access to your local `%USER%` directory structure.\r\n\r\n## Troubleshooting\r\n\r\nIf you encounter any problems when upgrading like the following:\r\n\r\n```text\r\nThe specified procedure could not be found\r\nEntry-point not found\r\n```\r\n\r\nIt usually means one of 2 things:\r\n\r\n* You've upgraded an install where the post-install script was previously run.\r\nSo you should run it again:\r\n\r\n    ```shell\r\n    python -m pywin32_postinstall -install\r\n    ```\r\n\r\n    or (shorter but you don't have control over which python environment is used)\r\n\r\n    ```shell\r\n    pywin32_postinstall -install\r\n    ```\r\n\r\n    This will make some small attempts to cleanup older conflicting installs.\r\n\r\n* There are other pywin32 DLLs installed in your system,\r\nbut in a different location than the new ones. This sometimes happens in environments that\r\ncome with pywin32 pre-shipped (eg, anaconda?).\r\n\r\n  The possible solutions here are:\r\n\r\n  * Run the \"post_install\" script documented above.\r\n  * Otherwise, find and remove all other copies of `pywintypesXX.dll` and `pythoncomXX.dll`\r\n  (where `XX` is the Python version - eg, \"39\")\r\n\r\n## Building from source\r\n\r\nInstall Visual Studio 2019 (later probably works, but options might be different),\r\nfollow the instructions in [Build environment](/build_env.md#build-environment)\r\nfor the version you install.\r\n\r\nThen follow the [Build](/build_env.md#build) instructions for the build itself (including ARM64 cross-compilation).\r\n\r\n## Release process\r\n\r\nThe following steps are performed when making a new release - this is mainly\r\nto form a checklist so @mhammond doesn't forget what to do :)\r\n\r\nSince build 307 the release process is based on the artifacts created by Github actions.\r\n\r\n* Ensure CHANGES.txt has everything worth noting. Update the header to reflect\r\n  the about-to-be released build and date, commit it.\r\n\r\n* Update setup.py with the new build number. Update CHANGES.txt to have a new heading\r\n  section for the next unreleased version. (ie, a new, empty \"Coming in build XXX, as yet unreleased\"\r\n  section)\r\n\r\n* Push these changes to GitHub, wait for the actions to complete, then\r\n  download the artifacts from that run.\r\n\r\n* Upload `.whl` artifacts to pypi - we do this before pushing the tag because they might be\r\n  rejected for an invalid `README.md`. Done via `py -3.? -m twine upload dist/*XXX*.whl`.\r\n\r\n* Create a new git tag for the release.\r\n\r\n* Update setup.py with the new build number + \".1\" (eg, 123.1), to ensure\r\n  future test builds aren't mistaken for the real release.\r\n\r\n* Make sure everything is pushed to GitHub, including the tag (ie,\r\n  `git push --tags`)\r\n\r\n* Send mail to python-win32\r\n\r\n### Older Manual Release Process\r\n\r\nThis is the old process used when a local dev environment was used to create\r\nthe builds. Build 306 was the last released with this process.\r\n\r\n* Ensure CHANGES.txt has everything worth noting. Update the header to reflect\r\n  the about-to-be released build and date, commit it.\r\n\r\n* Update setup.py with the new build number.\r\n\r\n* Execute `make_all.bat`, wait forever, test the artifacts.\r\n\r\n* Upload .whl artifacts to pypi - we do this before pushing the tag because they might be\r\n  rejected for an invalid `README.md`. Done via `py -3.? -m twine upload dist/*XXX*.whl`.\r\n\r\n* Commit setup.py (so the new build number is in the repo), create a new git tag\r\n\r\n* Upload the .exe installers to GitHub.\r\n\r\n* Update setup.py with the new build number + \".1\" (eg, 123.1), to ensure\r\n  future test builds aren't mistaken for the real release.\r\n\r\n* Make sure everything is pushed to GitHub, including the tag (ie,\r\n  `git push --tags`)\r\n\r\n* Send mail to python-win32\r\n",
+    "description_content_type": "text/markdown",
+    "docs_url": null,
+    "download_url": null,
+    "downloads": {
+      "last_day": -1,
+      "last_month": -1,
+      "last_week": -1
+    },
+    "dynamic": null,
+    "home_page": null,
+    "keywords": null,
+    "license": "PSF",
+    "license_expression": null,
+    "license_files": null,
+    "maintainer": null,
+    "maintainer_email": null,
+    "name": "pywin32",
+    "package_url": "https://pypi.org/project/pywin32/",
+    "platform": null,
+    "project_url": "https://pypi.org/project/pywin32/",
+    "project_urls": {
+      "Bugs": "https://github.com/mhammond/pywin32/issues",
+      "Changes": "https://github.com/mhammond/pywin32/blob/main/CHANGES.txt",
+      "Docs": "https://mhammond.github.io/pywin32/",
+      "Homepage": "https://github.com/mhammond/pywin32",
+      "Mailing List": "https://mail.python.org/mailman/listinfo/python-win32",
+      "Support Requests": "https://github.com/mhammond/pywin32/discussions"
+    },
+    "provides_extra": null,
+    "release_url": "https://pypi.org/project/pywin32/311/",
+    "requires_dist": null,
+    "requires_python": null,
+    "summary": "Python for Window Extensions",
+    "version": "311",
+    "yanked": false,
+    "yanked_reason": null
+  },
+  "last_serial": 37702950,
+  "ownership": {
+    "organization": null,
+    "roles": [
+      {
+        "role": "Owner",
+        "user": "mhammond"
+      },
+      {
+        "role": "Maintainer",
+        "user": "glyph"
+      },
+      {
+        "role": "Maintainer",
+        "user": "pf_moore"
+      }
+    ]
+  },
+  "urls": [
+    {
+      "comment_text": null,
+      "core-metadata": {
+        "sha256": "c2dd5b63b3925e6fd9169bd448da00fe45c47f9433e1b619a0abb5f823e10752"
+      },
+      "digests": {
+        "blake2b_256": "7b4044efbb0dfbd33aca6a6483191dae0716070ed99e2ecb0c53683f400a0b4f",
+        "md5": "c775044a3854732dd721b4c392565a49",
+        "sha256": "d03ff496d2a0cd4a5893504789d4a15399133fe82517455e78bad62efbb7f0a3"
+      },
+      "downloads": -1,
+      "filename": "pywin32-311-cp310-cp310-win32.whl",
+      "has_sig": false,
+      "md5_digest": "c775044a3854732dd721b4c392565a49",
+      "packagetype": "bdist_wheel",
+      "python_version": "cp310",
+      "requires_python": null,
+      "size": 8760432,
+      "upload_time": "2025-07-14T20:13:05",
+      "upload_time_iso_8601": "2025-07-14T20:13:05.900657Z",
+      "url": "https://files.pythonhosted.org/packages/7b/40/44efbb0dfbd33aca6a6483191dae0716070ed99e2ecb0c53683f400a0b4f/pywin32-311-cp310-cp310-win32.whl",
+      "yanked": false,
+      "yanked_reason": null
+    },
+    {
+      "comment_text": null,
+      "core-metadata": {
+        "sha256": "c2dd5b63b3925e6fd9169bd448da00fe45c47f9433e1b619a0abb5f823e10752"
+      },
+      "digests": {
+        "blake2b_256": "5ebf360243b1e953bd254a82f12653974be395ba880e7ec23e3731d9f73921cc",
+        "md5": "473b954b48643d3a6f7a4b02dfae65dc",
+        "sha256": "797c2772017851984b97180b0bebe4b620bb86328e8a884bb626156295a63b3b"
+      },
+      "downloads": -1,
+      "filename": "pywin32-311-cp310-cp310-win_amd64.whl",
+      "has_sig": false,
+      "md5_digest": "473b954b48643d3a6f7a4b02dfae65dc",
+      "packagetype": "bdist_wheel",
+      "python_version": "cp310",
+      "requires_python": null,
+      "size": 9590103,
+      "upload_time": "2025-07-14T20:13:07",
+      "upload_time_iso_8601": "2025-07-14T20:13:07.698830Z",
+      "url": "https://files.pythonhosted.org/packages/5e/bf/360243b1e953bd254a82f12653974be395ba880e7ec23e3731d9f73921cc/pywin32-311-cp310-cp310-win_amd64.whl",
+      "yanked": false,
+      "yanked_reason": null
+    },
+    {
+      "comment_text": null,
+      "core-metadata": {
+        "sha256": "c2dd5b63b3925e6fd9169bd448da00fe45c47f9433e1b619a0abb5f823e10752"
+      },
+      "digests": {
+        "blake2b_256": "5738d290720e6f138086fb3d5ffe0b6caa019a791dd57866940c82e4eeaf2012",
+        "md5": "03013f92a2cff4e942e6929eabe8358a",
+        "sha256": "0502d1facf1fed4839a9a51ccbcc63d952cf318f78ffc00a7e78528ac27d7a2b"
+      },
+      "downloads": -1,
+      "filename": "pywin32-311-cp310-cp310-win_arm64.whl",
+      "has_sig": false,
+      "md5_digest": "03013f92a2cff4e942e6929eabe8358a",
+      "packagetype": "bdist_wheel",
+      "python_version": "cp310",
+      "requires_python": null,
+      "size": 8778557,
+      "upload_time": "2025-07-14T20:13:11",
+      "upload_time_iso_8601": "2025-07-14T20:13:11.110131Z",
+      "url": "https://files.pythonhosted.org/packages/57/38/d290720e6f138086fb3d5ffe0b6caa019a791dd57866940c82e4eeaf2012/pywin32-311-cp310-cp310-win_arm64.whl",
+      "yanked": false,
+      "yanked_reason": null
+    },
+    {
+      "comment_text": null,
+      "core-metadata": {
+        "sha256": "c2dd5b63b3925e6fd9169bd448da00fe45c47f9433e1b619a0abb5f823e10752"
+      },
+      "digests": {
+        "blake2b_256": "7caf449a6a91e5d6db51420875c54f6aff7c97a86a3b13a0b4f1a5c13b988de3",
+        "md5": "18cae57f6836c01cdeddbb47843a7787",
+        "sha256": "184eb5e436dea364dcd3d2316d577d625c0351bf237c4e9a5fabbcfa5a58b151"
+      },
+      "downloads": -1,
+      "filename": "pywin32-311-cp311-cp311-win32.whl",
+      "has_sig": false,
+      "md5_digest": "18cae57f6836c01cdeddbb47843a7787",
+      "packagetype": "bdist_wheel",
+      "python_version": "cp311",
+      "requires_python": null,
+      "size": 8697031,
+      "upload_time": "2025-07-14T20:13:13",
+      "upload_time_iso_8601": "2025-07-14T20:13:13.266339Z",
+      "url": "https://files.pythonhosted.org/packages/7c/af/449a6a91e5d6db51420875c54f6aff7c97a86a3b13a0b4f1a5c13b988de3/pywin32-311-cp311-cp311-win32.whl",
+      "yanked": false,
+      "yanked_reason": null
+    },
+    {
+      "comment_text": null,
+      "core-metadata": {
+        "sha256": "c2dd5b63b3925e6fd9169bd448da00fe45c47f9433e1b619a0abb5f823e10752"
+      },
+      "digests": {
+        "blake2b_256": "518f9bb81dd5bb77d22243d33c8397f09377056d5c687aa6d4042bea7fbf8364",
+        "md5": "d6170a928620b5e5db49f2fcd4d8e942",
+        "sha256": "3ce80b34b22b17ccbd937a6e78e7225d80c52f5ab9940fe0506a1a16f3dab503"
+      },
+      "downloads": -1,
+      "filename": "pywin32-311-cp311-cp311-win_amd64.whl",
+      "has_sig": false,
+      "md5_digest": "d6170a928620b5e5db49f2fcd4d8e942",
+      "packagetype": "bdist_wheel",
+      "python_version": "cp311",
+      "requires_python": null,
+      "size": 9508308,
+      "upload_time": "2025-07-14T20:13:15",
+      "upload_time_iso_8601": "2025-07-14T20:13:15.147649Z",
+      "url": "https://files.pythonhosted.org/packages/51/8f/9bb81dd5bb77d22243d33c8397f09377056d5c687aa6d4042bea7fbf8364/pywin32-311-cp311-cp311-win_amd64.whl",
+      "yanked": false,
+      "yanked_reason": null
+    },
+    {
+      "comment_text": null,
+      "core-metadata": {
+        "sha256": "c2dd5b63b3925e6fd9169bd448da00fe45c47f9433e1b619a0abb5f823e10752"
+      },
+      "digests": {
+        "blake2b_256": "447b9c2ab54f74a138c491aba1b1cd0795ba61f144c711daea84a88b63dc0f6c",
+        "md5": "056b27df7f1f3ab46b6677eca7318983",
+        "sha256": "a733f1388e1a842abb67ffa8e7aad0e70ac519e09b0f6a784e65a136ec7cefd2"
+      },
+      "downloads": -1,
+      "filename": "pywin32-311-cp311-cp311-win_arm64.whl",
+      "has_sig": false,
+      "md5_digest": "056b27df7f1f3ab46b6677eca7318983",
+      "packagetype": "bdist_wheel",
+      "python_version": "cp311",
+      "requires_python": null,
+      "size": 8703930,
+      "upload_time": "2025-07-14T20:13:16",
+      "upload_time_iso_8601": "2025-07-14T20:13:16.945066Z",
+      "url": "https://files.pythonhosted.org/packages/44/7b/9c2ab54f74a138c491aba1b1cd0795ba61f144c711daea84a88b63dc0f6c/pywin32-311-cp311-cp311-win_arm64.whl",
+      "yanked": false,
+      "yanked_reason": null
+    },
+    {
+      "comment_text": null,
+      "core-metadata": {
+        "sha256": "c2dd5b63b3925e6fd9169bd448da00fe45c47f9433e1b619a0abb5f823e10752"
+      },
+      "digests": {
+        "blake2b_256": "e7ab01ea1943d4eba0f850c3c61e78e8dd59757ff815ff3ccd0a84de5f541f42",
+        "md5": "b4dca05d7c714604e9f1ea9327b2d82f",
+        "sha256": "750ec6e621af2b948540032557b10a2d43b0cee2ae9758c54154d711cc852d31"
+      },
+      "downloads": -1,
+      "filename": "pywin32-311-cp312-cp312-win32.whl",
+      "has_sig": false,
+      "md5_digest": "b4dca05d7c714604e9f1ea9327b2d82f",
+      "packagetype": "bdist_wheel",
+      "python_version": "cp312",
+      "requires_python": null,
+      "size": 8706543,
+      "upload_time": "2025-07-14T20:13:20",
+      "upload_time_iso_8601": "2025-07-14T20:13:20.765380Z",
+      "url": "https://files.pythonhosted.org/packages/e7/ab/01ea1943d4eba0f850c3c61e78e8dd59757ff815ff3ccd0a84de5f541f42/pywin32-311-cp312-cp312-win32.whl",
+      "yanked": false,
+      "yanked_reason": null
+    },
+    {
+      "comment_text": null,
+      "core-metadata": {
+        "sha256": "c2dd5b63b3925e6fd9169bd448da00fe45c47f9433e1b619a0abb5f823e10752"
+      },
+      "digests": {
+        "blake2b_256": "d1a8a0e8d07d4d051ec7502cd58b291ec98dcc0c3fff027caad0470b72cfcc2f",
+        "md5": "546327260b1dc4cfe16fd91fe3bd64df",
+        "sha256": "b8c095edad5c211ff31c05223658e71bf7116daa0ecf3ad85f3201ea3190d067"
+      },
+      "downloads": -1,
+      "filename": "pywin32-311-cp312-cp312-win_amd64.whl",
+      "has_sig": false,
+      "md5_digest": "546327260b1dc4cfe16fd91fe3bd64df",
+      "packagetype": "bdist_wheel",
+      "python_version": "cp312",
+      "requires_python": null,
+      "size": 9495040,
+      "upload_time": "2025-07-14T20:13:22",
+      "upload_time_iso_8601": "2025-07-14T20:13:22.543014Z",
+      "url": "https://files.pythonhosted.org/packages/d1/a8/a0e8d07d4d051ec7502cd58b291ec98dcc0c3fff027caad0470b72cfcc2f/pywin32-311-cp312-cp312-win_amd64.whl",
+      "yanked": false,
+      "yanked_reason": null
+    },
+    {
+      "comment_text": null,
+      "core-metadata": {
+        "sha256": "c2dd5b63b3925e6fd9169bd448da00fe45c47f9433e1b619a0abb5f823e10752"
+      },
+      "digests": {
+        "blake2b_256": "ba3a2ae996277b4b50f17d61f0603efd8253cb2d79cc7ae159468007b586396d",
+        "md5": "d88ab5bd41a77104c35c4e3d52fec901",
+        "sha256": "e286f46a9a39c4a18b319c28f59b61de793654af2f395c102b4f819e584b5852"
+      },
+      "downloads": -1,
+      "filename": "pywin32-311-cp312-cp312-win_arm64.whl",
+      "has_sig": false,
+      "md5_digest": "d88ab5bd41a77104c35c4e3d52fec901",
+      "packagetype": "bdist_wheel",
+      "python_version": "cp312",
+      "requires_python": null,
+      "size": 8710102,
+      "upload_time": "2025-07-14T20:13:24",
+      "upload_time_iso_8601": "2025-07-14T20:13:24.682597Z",
+      "url": "https://files.pythonhosted.org/packages/ba/3a/2ae996277b4b50f17d61f0603efd8253cb2d79cc7ae159468007b586396d/pywin32-311-cp312-cp312-win_arm64.whl",
+      "yanked": false,
+      "yanked_reason": null
+    },
+    {
+      "comment_text": null,
+      "core-metadata": {
+        "sha256": "c2dd5b63b3925e6fd9169bd448da00fe45c47f9433e1b619a0abb5f823e10752"
+      },
+      "digests": {
+        "blake2b_256": "a5be3fd5de0979fcb3994bfee0d65ed8ca9506a8a1260651b86174f6a86f52b3",
+        "md5": "fb28c943f81614971abdb229509c54c2",
+        "sha256": "f95ba5a847cba10dd8c4d8fefa9f2a6cf283b8b88ed6178fa8a6c1ab16054d0d"
+      },
+      "downloads": -1,
+      "filename": "pywin32-311-cp313-cp313-win32.whl",
+      "has_sig": false,
+      "md5_digest": "fb28c943f81614971abdb229509c54c2",
+      "packagetype": "bdist_wheel",
+      "python_version": "cp313",
+      "requires_python": null,
+      "size": 8705700,
+      "upload_time": "2025-07-14T20:13:26",
+      "upload_time_iso_8601": "2025-07-14T20:13:26.471330Z",
+      "url": "https://files.pythonhosted.org/packages/a5/be/3fd5de0979fcb3994bfee0d65ed8ca9506a8a1260651b86174f6a86f52b3/pywin32-311-cp313-cp313-win32.whl",
+      "yanked": false,
+      "yanked_reason": null
+    },
+    {
+      "comment_text": null,
+      "core-metadata": {
+        "sha256": "c2dd5b63b3925e6fd9169bd448da00fe45c47f9433e1b619a0abb5f823e10752"
+      },
+      "digests": {
+        "blake2b_256": "e328e0a1909523c6890208295a29e05c2adb2126364e289826c0a8bc7297bd5c",
+        "md5": "105c1e0ada3ce7ecf52b0dc31112e691",
+        "sha256": "718a38f7e5b058e76aee1c56ddd06908116d35147e133427e59a3983f703a20d"
+      },
+      "downloads": -1,
+      "filename": "pywin32-311-cp313-cp313-win_amd64.whl",
+      "has_sig": false,
+      "md5_digest": "105c1e0ada3ce7ecf52b0dc31112e691",
+      "packagetype": "bdist_wheel",
+      "python_version": "cp313",
+      "requires_python": null,
+      "size": 9494700,
+      "upload_time": "2025-07-14T20:13:28",
+      "upload_time_iso_8601": "2025-07-14T20:13:28.243741Z",
+      "url": "https://files.pythonhosted.org/packages/e3/28/e0a1909523c6890208295a29e05c2adb2126364e289826c0a8bc7297bd5c/pywin32-311-cp313-cp313-win_amd64.whl",
+      "yanked": false,
+      "yanked_reason": null
+    },
+    {
+      "comment_text": null,
+      "core-metadata": {
+        "sha256": "c2dd5b63b3925e6fd9169bd448da00fe45c47f9433e1b619a0abb5f823e10752"
+      },
+      "digests": {
+        "blake2b_256": "04bf90339ac0f55726dce7d794e6d79a18a91265bdf3aa70b6b9ca52f35e022a",
+        "md5": "370a495fb5ed6a44064944b2f9d3a1dc",
+        "sha256": "7b4075d959648406202d92a2310cb990fea19b535c7f4a78d3f5e10b926eeb8a"
+      },
+      "downloads": -1,
+      "filename": "pywin32-311-cp313-cp313-win_arm64.whl",
+      "has_sig": false,
+      "md5_digest": "370a495fb5ed6a44064944b2f9d3a1dc",
+      "packagetype": "bdist_wheel",
+      "python_version": "cp313",
+      "requires_python": null,
+      "size": 8709318,
+      "upload_time": "2025-07-14T20:13:30",
+      "upload_time_iso_8601": "2025-07-14T20:13:30.348835Z",
+      "url": "https://files.pythonhosted.org/packages/04/bf/90339ac0f55726dce7d794e6d79a18a91265bdf3aa70b6b9ca52f35e022a/pywin32-311-cp313-cp313-win_arm64.whl",
+      "yanked": false,
+      "yanked_reason": null
+    },
+    {
+      "comment_text": null,
+      "core-metadata": {
+        "sha256": "c2dd5b63b3925e6fd9169bd448da00fe45c47f9433e1b619a0abb5f823e10752"
+      },
+      "digests": {
+        "blake2b_256": "c931097f2e132c4f16d99a22bfb777e0fd88bd8e1c634304e102f313af69ace5",
+        "md5": "a1bb24160d3519bec3c1f96e1490f417",
+        "sha256": "b7a2c10b93f8986666d0c803ee19b5990885872a7de910fc460f9b0c2fbf92ee"
+      },
+      "downloads": -1,
+      "filename": "pywin32-311-cp314-cp314-win32.whl",
+      "has_sig": false,
+      "md5_digest": "a1bb24160d3519bec3c1f96e1490f417",
+      "packagetype": "bdist_wheel",
+      "python_version": "cp314",
+      "requires_python": null,
+      "size": 8840714,
+      "upload_time": "2025-07-14T20:13:32",
+      "upload_time_iso_8601": "2025-07-14T20:13:32.449843Z",
+      "url": "https://files.pythonhosted.org/packages/c9/31/097f2e132c4f16d99a22bfb777e0fd88bd8e1c634304e102f313af69ace5/pywin32-311-cp314-cp314-win32.whl",
+      "yanked": false,
+      "yanked_reason": null
+    },
+    {
+      "comment_text": null,
+      "core-metadata": {
+        "sha256": "c2dd5b63b3925e6fd9169bd448da00fe45c47f9433e1b619a0abb5f823e10752"
+      },
+      "digests": {
+        "blake2b_256": "904b07c77d8ba0e01349358082713400435347df8426208171ce297da32c313d",
+        "md5": "91216bda95a4333aa4573fa1b4bfb8c8",
+        "sha256": "3aca44c046bd2ed8c90de9cb8427f581c479e594e99b5c0bb19b29c10fd6cb87"
+      },
+      "downloads": -1,
+      "filename": "pywin32-311-cp314-cp314-win_amd64.whl",
+      "has_sig": false,
+      "md5_digest": "91216bda95a4333aa4573fa1b4bfb8c8",
+      "packagetype": "bdist_wheel",
+      "python_version": "cp314",
+      "requires_python": null,
+      "size": 9656800,
+      "upload_time": "2025-07-14T20:13:34",
+      "upload_time_iso_8601": "2025-07-14T20:13:34.312494Z",
+      "url": "https://files.pythonhosted.org/packages/90/4b/07c77d8ba0e01349358082713400435347df8426208171ce297da32c313d/pywin32-311-cp314-cp314-win_amd64.whl",
+      "yanked": false,
+      "yanked_reason": null
+    },
+    {
+      "comment_text": null,
+      "core-metadata": {
+        "sha256": "c2dd5b63b3925e6fd9169bd448da00fe45c47f9433e1b619a0abb5f823e10752"
+      },
+      "digests": {
+        "blake2b_256": "c0d221af5c535501a7233e734b8af901574572da66fcc254cb35d0609c9080dd",
+        "md5": "07f6514f3acfa64b156c069cf657ef0d",
+        "sha256": "a508e2d9025764a8270f93111a970e1d0fbfc33f4153b388bb649b7eec4f9b42"
+      },
+      "downloads": -1,
+      "filename": "pywin32-311-cp314-cp314-win_arm64.whl",
+      "has_sig": false,
+      "md5_digest": "07f6514f3acfa64b156c069cf657ef0d",
+      "packagetype": "bdist_wheel",
+      "python_version": "cp314",
+      "requires_python": null,
+      "size": 8932540,
+      "upload_time": "2025-07-14T20:13:36",
+      "upload_time_iso_8601": "2025-07-14T20:13:36.379651Z",
+      "url": "https://files.pythonhosted.org/packages/c0/d2/21af5c535501a7233e734b8af901574572da66fcc254cb35d0609c9080dd/pywin32-311-cp314-cp314-win_arm64.whl",
+      "yanked": false,
+      "yanked_reason": null
+    },
+    {
+      "comment_text": null,
+      "core-metadata": {
+        "sha256": "25ffaaf043fd68fc1388044828ed20417fb5a3e70b67b5bde803901f642eee2c"
+      },
+      "digests": {
+        "blake2b_256": "75206cd04d636a4c83458ecbb7c8220c13786a1a80d3f5fb568df39310e73e98",
+        "md5": "acafaaebb5f6a0848b876c934a49663f",
+        "sha256": "6c6f2969607b5023b0d9ce2541f8d2cbb01c4f46bc87456017cf63b73f1e2d8c"
+      },
+      "downloads": -1,
+      "filename": "pywin32-311-cp38-cp38-win32.whl",
+      "has_sig": false,
+      "md5_digest": "acafaaebb5f6a0848b876c934a49663f",
+      "packagetype": "bdist_wheel",
+      "python_version": "cp38",
+      "requires_python": null,
+      "size": 8766775,
+      "upload_time": "2025-07-14T20:12:55",
+      "upload_time_iso_8601": "2025-07-14T20:12:55.029848Z",
+      "url": "https://files.pythonhosted.org/packages/75/20/6cd04d636a4c83458ecbb7c8220c13786a1a80d3f5fb568df39310e73e98/pywin32-311-cp38-cp38-win32.whl",
+      "yanked": false,
+      "yanked_reason": null
+    },
+    {
+      "comment_text": null,
+      "core-metadata": {
+        "sha256": "25ffaaf043fd68fc1388044828ed20417fb5a3e70b67b5bde803901f642eee2c"
+      },
+      "digests": {
+        "blake2b_256": "ff6c94c10268bae5d0d0c6509bdfb5aa08882d11a9ccdf89ff1cde59a6161afb",
+        "md5": "822b84d1b5a3e1e0a7530ee323ae0bb4",
+        "sha256": "c8015b09fb9a5e188f83b7b04de91ddca4658cee2ae6f3bc483f0b21a77ef6cd"
+      },
+      "downloads": -1,
+      "filename": "pywin32-311-cp38-cp38-win_amd64.whl",
+      "has_sig": false,
+      "md5_digest": "822b84d1b5a3e1e0a7530ee323ae0bb4",
+      "packagetype": "bdist_wheel",
+      "python_version": "cp38",
+      "requires_python": null,
+      "size": 9594743,
+      "upload_time": "2025-07-14T20:12:57",
+      "upload_time_iso_8601": "2025-07-14T20:12:57.590476Z",
+      "url": "https://files.pythonhosted.org/packages/ff/6c/94c10268bae5d0d0c6509bdfb5aa08882d11a9ccdf89ff1cde59a6161afb/pywin32-311-cp38-cp38-win_amd64.whl",
+      "yanked": false,
+      "yanked_reason": null
+    },
+    {
+      "comment_text": null,
+      "core-metadata": {
+        "sha256": "c2dd5b63b3925e6fd9169bd448da00fe45c47f9433e1b619a0abb5f823e10752"
+      },
+      "digests": {
+        "blake2b_256": "5942b86689aac0cdaee7ae1c58d464b0ff04ca909c19bb6502d4973cdd9f9544",
+        "md5": "3588a12adf872d46dbda4f4e097a549d",
+        "sha256": "aba8f82d551a942cb20d4a83413ccbac30790b50efb89a75e4f586ac0bb8056b"
+      },
+      "downloads": -1,
+      "filename": "pywin32-311-cp39-cp39-win32.whl",
+      "has_sig": false,
+      "md5_digest": "3588a12adf872d46dbda4f4e097a549d",
+      "packagetype": "bdist_wheel",
+      "python_version": "cp39",
+      "requires_python": null,
+      "size": 8760837,
+      "upload_time": "2025-07-14T20:12:59",
+      "upload_time_iso_8601": "2025-07-14T20:12:59.590703Z",
+      "url": "https://files.pythonhosted.org/packages/59/42/b86689aac0cdaee7ae1c58d464b0ff04ca909c19bb6502d4973cdd9f9544/pywin32-311-cp39-cp39-win32.whl",
+      "yanked": false,
+      "yanked_reason": null
+    },
+    {
+      "comment_text": null,
+      "core-metadata": {
+        "sha256": "c2dd5b63b3925e6fd9169bd448da00fe45c47f9433e1b619a0abb5f823e10752"
+      },
+      "digests": {
+        "blake2b_256": "9f8a1403d0353f8c5a2f0829d2b1c4becbf9da2f0a4d040886404fc4a5431e4d",
+        "md5": "72ae170b08510bc8ebe884f78e2ef2eb",
+        "sha256": "e0c4cfb0621281fe40387df582097fd796e80430597cb9944f0ae70447bacd91"
+      },
+      "downloads": -1,
+      "filename": "pywin32-311-cp39-cp39-win_amd64.whl",
+      "has_sig": false,
+      "md5_digest": "72ae170b08510bc8ebe884f78e2ef2eb",
+      "packagetype": "bdist_wheel",
+      "python_version": "cp39",
+      "requires_python": null,
+      "size": 9590187,
+      "upload_time": "2025-07-14T20:13:01",
+      "upload_time_iso_8601": "2025-07-14T20:13:01.419945Z",
+      "url": "https://files.pythonhosted.org/packages/9f/8a/1403d0353f8c5a2f0829d2b1c4becbf9da2f0a4d040886404fc4a5431e4d/pywin32-311-cp39-cp39-win_amd64.whl",
+      "yanked": false,
+      "yanked_reason": null
+    },
+    {
+      "comment_text": null,
+      "core-metadata": {
+        "sha256": "c2dd5b63b3925e6fd9169bd448da00fe45c47f9433e1b619a0abb5f823e10752"
+      },
+      "digests": {
+        "blake2b_256": "6022e0e8d802f124772cec9c75430b01a212f86f9de7546bda715e54140d5aeb",
+        "md5": "0f68f6b43d6fbe38b717aa2730ec3b0f",
+        "sha256": "62ea666235135fee79bb154e695f3ff67370afefd71bd7fea7512fc70ef31e3d"
+      },
+      "downloads": -1,
+      "filename": "pywin32-311-cp39-cp39-win_arm64.whl",
+      "has_sig": false,
+      "md5_digest": "0f68f6b43d6fbe38b717aa2730ec3b0f",
+      "packagetype": "bdist_wheel",
+      "python_version": "cp39",
+      "requires_python": null,
+      "size": 8778162,
+      "upload_time": "2025-07-14T20:13:03",
+      "upload_time_iso_8601": "2025-07-14T20:13:03.544309Z",
+      "url": "https://files.pythonhosted.org/packages/60/22/e0e8d802f124772cec9c75430b01a212f86f9de7546bda715e54140d5aeb/pywin32-311-cp39-cp39-win_arm64.whl",
+      "yanked": false,
+      "yanked_reason": null
+    }
+  ],
+  "vulnerabilities": []
+}

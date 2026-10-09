@@ -1,0 +1,2866 @@
+[
+  {
+    "FullName": "_pyinstaller_hooks_contrib/__init__.py",
+    "Length": 2142
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/compat.py",
+    "Length": 1535
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/rthooks.dat",
+    "Length": 599
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/pre_find_module_path/__init__.py",
+    "Length": 420
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/pre_safe_import_module/__init__.py",
+    "Length": 420
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/pre_safe_import_module/hook-tensorflow.py",
+    "Length": 1415
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/pre_safe_import_module/hook-win32com.py",
+    "Length": 1603
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/rthooks/__init__.py",
+    "Length": 380
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/rthooks/pyi_rth_cryptography_openssl.py",
+    "Length": 755
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/rthooks/pyi_rth_enchant.py",
+    "Length": 903
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/rthooks/pyi_rth_ffpyplayer.py",
+    "Length": 879
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/rthooks/pyi_rth_findlibs.py",
+    "Length": 2570
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/rthooks/pyi_rth_nltk.py",
+    "Length": 534
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/rthooks/pyi_rth_osgeo.py",
+    "Length": 1428
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/rthooks/pyi_rth_pygraphviz.py",
+    "Length": 1600
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/rthooks/pyi_rth_pyproj.py",
+    "Length": 754
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/rthooks/pyi_rth_pyqtgraph_multiprocess.py",
+    "Length": 2469
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/rthooks/pyi_rth_pythoncom.py",
+    "Length": 1259
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/rthooks/pyi_rth_pywintypes.py",
+    "Length": 1259
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/rthooks/pyi_rth_tensorflow.py",
+    "Length": 2665
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/rthooks/pyi_rth_traitlets.py",
+    "Length": 806
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/rthooks/pyi_rth_usb.py",
+    "Length": 3216
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/__init__.py",
+    "Length": 420
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-BTrees.py",
+    "Length": 581
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-CTkMessagebox.py",
+    "Length": 663
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-Crypto.py",
+    "Length": 2320
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-Cryptodome.py",
+    "Length": 1441
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-HtmlTestRunner.py",
+    "Length": 598
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-IPython.py",
+    "Length": 1358
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-OpenGL.py",
+    "Length": 1558
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-OpenGL_accelerate.py",
+    "Length": 761
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-PyTaskbar.py",
+    "Length": 516
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-Xlib.py",
+    "Length": 520
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-_mssql.py",
+    "Length": 446
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-_mysql.py",
+    "Length": 544
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-accessible_output2.py",
+    "Length": 606
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-adbc_driver_manager.py",
+    "Length": 556
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-adbutils.py",
+    "Length": 1068
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-adios.py",
+    "Length": 514
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-afmformats.py",
+    "Length": 582
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-aliyunsdkcore.py",
+    "Length": 520
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-altair.py",
+    "Length": 514
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-amazonproduct.py",
+    "Length": 1063
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-anyio.py",
+    "Length": 652
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-apkutils.py",
+    "Length": 516
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-appdirs.py",
+    "Length": 736
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-appy.pod.py",
+    "Length": 584
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-apscheduler.py",
+    "Length": 958
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-argon2.py",
+    "Length": 455
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-astor.py",
+    "Length": 513
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-astroid.py",
+    "Length": 2096
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-astropy.py",
+    "Length": 1744
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-astropy_iers_data.py",
+    "Length": 581
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-av.py",
+    "Length": 2082
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-avro.py",
+    "Length": 981
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-azurerm.py",
+    "Length": 838
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-backports.py",
+    "Length": 905
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-backports.zoneinfo.py",
+    "Length": 595
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-bacon.py",
+    "Length": 1675
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-bcrypt.py",
+    "Length": 505
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-bitsandbytes.py",
+    "Length": 1116
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-black.py",
+    "Length": 1036
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-bleak.py",
+    "Length": 702
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-blib2to3.py",
+    "Length": 1035
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-blspy.py",
+    "Length": 1407
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-bokeh.py",
+    "Length": 922
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-boto.py",
+    "Length": 786
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-boto3.py",
+    "Length": 999
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-botocore.py",
+    "Length": 1067
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-branca.py",
+    "Length": 514
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-cairocffi.py",
+    "Length": 1596
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-cairosvg.py",
+    "Length": 1303
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-capstone.py",
+    "Length": 562
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-cassandra.py",
+    "Length": 832
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-celpy.py",
+    "Length": 979
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-certifi.py",
+    "Length": 735
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-cf_units.py",
+    "Length": 591
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-cftime.py",
+    "Length": 605
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-chardet.py",
+    "Length": 1397
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-charset_normalizer.py",
+    "Length": 793
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-cloudpickle.py",
+    "Length": 776
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-cloudscraper.py",
+    "Length": 520
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-clr.py",
+    "Length": 2492
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-clr_loader.py",
+    "Length": 954
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-cmocean.py",
+    "Length": 529
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-compliance_checker.py",
+    "Length": 988
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-comtypes.client.py",
+    "Length": 683
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-countrycode.py",
+    "Length": 519
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-countryinfo.py",
+    "Length": 565
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-cryptography.py",
+    "Length": 5831
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-cumm.py",
+    "Length": 553
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-customtkinter.py",
+    "Length": 520
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-cv2.py",
+    "Length": 8117
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-cx_Oracle.py",
+    "Length": 449
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-cytoolz.itertoolz.py",
+    "Length": 614
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-dash.py",
+    "Length": 757
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-dash_bootstrap_components.py",
+    "Length": 533
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-dash_core_components.py",
+    "Length": 528
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-dash_html_components.py",
+    "Length": 528
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-dash_renderer.py",
+    "Length": 521
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-dash_table.py",
+    "Length": 518
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-dash_uploader.py",
+    "Length": 521
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-dask.py",
+    "Length": 752
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-datasets.py",
+    "Length": 557
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-dateparser.py",
+    "Length": 706
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-dateparser.utils.strptime.py",
+    "Length": 608
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-dateutil.py",
+    "Length": 516
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-dbus_fast.py",
+    "Length": 601
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-dclab.py",
+    "Length": 567
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-ddgs.py",
+    "Length": 878
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-detectron2.py",
+    "Length": 557
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-discid.py",
+    "Length": 1424
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-distorm3.py",
+    "Length": 736
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-distributed.py",
+    "Length": 1502
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-dns.rdata.py",
+    "Length": 577
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-docutils.py",
+    "Length": 798
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-docx.py",
+    "Length": 512
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-docx2pdf.py",
+    "Length": 624
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-duckdb.py",
+    "Length": 958
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-dynaconf.py",
+    "Length": 569
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-easyocr.py",
+    "Length": 793
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-eccodeslib.py",
+    "Length": 794
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-eckitlib.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-eel.py",
+    "Length": 548
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-emoji.py",
+    "Length": 513
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-enchant.py",
+    "Length": 2945
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-eng_to_ipa.py",
+    "Length": 518
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-ens.py",
+    "Length": 511
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-enzyme.parsers.ebml.core.py",
+    "Length": 722
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-eth_abi.py",
+    "Length": 505
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-eth_account.py",
+    "Length": 509
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-eth_hash.py",
+    "Length": 814
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-eth_keyfile.py",
+    "Length": 509
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-eth_keys.py",
+    "Length": 667
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-eth_rlp.py",
+    "Length": 643
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-eth_typing.py",
+    "Length": 586
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-eth_utils.network.py",
+    "Length": 517
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-eth_utils.py",
+    "Length": 507
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-exchangelib.py",
+    "Length": 447
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-fabric.py",
+    "Length": 733
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-fairscale.py",
+    "Length": 557
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-fake_useragent.py",
+    "Length": 522
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-faker.py",
+    "Length": 685
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-falcon.py",
+    "Length": 1194
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-fastai.py",
+    "Length": 557
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-fastparquet.py",
+    "Length": 1469
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-fckitlib.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-ffpyplayer.py",
+    "Length": 925
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-fiona.py",
+    "Length": 860
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-flask_compress.py",
+    "Length": 512
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-flask_restx.py",
+    "Length": 546
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-flex.py",
+    "Length": 551
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-flirpy.py",
+    "Length": 650
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-fmpy.py",
+    "Length": 799
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-folium.py",
+    "Length": 547
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-freetype.py",
+    "Length": 584
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-frictionless.py",
+    "Length": 714
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-fsspec.py",
+    "Length": 522
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-fvcore.nn.py",
+    "Length": 557
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-gadfly.py",
+    "Length": 449
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-gbulb.py",
+    "Length": 574
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-gcloud.py",
+    "Length": 792
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-geopandas.py",
+    "Length": 536
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-gitlab.py",
+    "Length": 735
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-globus_sdk.py",
+    "Length": 639
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-gmplot.py",
+    "Length": 519
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-gmsh.py",
+    "Length": 999
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-gooey.py",
+    "Length": 589
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-google.api_core.py",
+    "Length": 513
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-google.cloud.bigquery.py",
+    "Length": 616
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-google.cloud.core.py",
+    "Length": 515
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-google.cloud.kms_v1.py",
+    "Length": 709
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-google.cloud.pubsub_v1.py",
+    "Length": 517
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-google.cloud.speech.py",
+    "Length": 517
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-google.cloud.storage.py",
+    "Length": 518
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-google.cloud.translate.py",
+    "Length": 520
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-googleapiclient.model.py",
+    "Length": 852
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-grapheme.py",
+    "Length": 516
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-graphql_query.py",
+    "Length": 623
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-great_expectations.py",
+    "Length": 526
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-gribapi.py",
+    "Length": 3977
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-grpc.py",
+    "Length": 512
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-gtk.py",
+    "Length": 667
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-h3.py",
+    "Length": 633
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-h5py.py",
+    "Length": 599
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-hdf5plugin.py",
+    "Length": 583
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-hexbytes.py",
+    "Length": 646
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-httplib2.py",
+    "Length": 588
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-humanize.py",
+    "Length": 785
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-hydra.py",
+    "Length": 1627
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-ijson.py",
+    "Length": 530
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-imageio.py",
+    "Length": 793
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-imageio_ffmpeg.py",
+    "Length": 905
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-imagingcontrol4.py",
+    "Length": 530
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-iminuit.py",
+    "Length": 843
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-intake.py",
+    "Length": 539
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-iso639.py",
+    "Length": 546
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-itk.py",
+    "Length": 784
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-jaraco.text.py",
+    "Length": 586
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-jedi.py",
+    "Length": 584
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-jieba.py",
+    "Length": 513
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-jinja2.py",
+    "Length": 452
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-jinxed.py",
+    "Length": 498
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-jira.py",
+    "Length": 617
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-jsonpath_rw_ext.py",
+    "Length": 513
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-jsonrpcserver.py",
+    "Length": 608
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-jsonschema.py",
+    "Length": 828
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-jsonschema_specifications.py",
+    "Length": 532
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-jupyterlab.py",
+    "Length": 518
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-kaleido.py",
+    "Length": 515
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-khmernltk.py",
+    "Length": 554
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-kinterbasdb.py",
+    "Length": 843
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-langchain.py",
+    "Length": 2112
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-langchain_classic.py",
+    "Length": 525
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-langcodes.py",
+    "Length": 517
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-langdetect.py",
+    "Length": 518
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-laonlp.py",
+    "Length": 514
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-lark.py",
+    "Length": 512
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-ldfparser.py",
+    "Length": 527
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-lensfunpy.py",
+    "Length": 665
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-libaudioverse.py",
+    "Length": 598
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-librosa.py",
+    "Length": 1178
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-lightgbm.py",
+    "Length": 937
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-lightning.py",
+    "Length": 834
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-limits.py",
+    "Length": 514
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-linear_operator.py",
+    "Length": 542
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-lingua.py",
+    "Length": 514
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-litestar.py",
+    "Length": 531
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-llvmlite.py",
+    "Length": 705
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-logilab.py",
+    "Length": 939
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-lxml.etree.py",
+    "Length": 481
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-lxml.isoschematron.py",
+    "Length": 608
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-lxml.objectify.py",
+    "Length": 452
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-lxml.py",
+    "Length": 673
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-lz4.py",
+    "Length": 553
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-magic.py",
+    "Length": 630
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-mako.codegen.py",
+    "Length": 608
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-mariadb.py",
+    "Length": 1102
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-markdown.py",
+    "Length": 957
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-mecab.py",
+    "Length": 557
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-metpy.py",
+    "Length": 763
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-migrate.py",
+    "Length": 743
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-mimesis.py",
+    "Length": 616
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-minecraft_launcher_lib.py",
+    "Length": 529
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-mistune.py",
+    "Length": 766
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-mnemonic.py",
+    "Length": 516
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-monai.py",
+    "Length": 557
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-moviepy.audio.fx.all.py",
+    "Length": 682
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-moviepy.video.fx.all.py",
+    "Length": 682
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-mpl_toolkits.basemap.py",
+    "Length": 1283
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-msoffcrypto.py",
+    "Length": 573
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-nacl.py",
+    "Length": 1029
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-names.py",
+    "Length": 610
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-nanite.py",
+    "Length": 570
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-narwhals.py",
+    "Length": 1032
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-nbconvert.py",
+    "Length": 663
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-nbdime.py",
+    "Length": 514
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-nbformat.py",
+    "Length": 516
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-nbt.py",
+    "Length": 488
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-ncclient.py",
+    "Length": 862
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-netCDF4.py",
+    "Length": 1658
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-nicegui.py",
+    "Length": 514
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-niquests.py",
+    "Length": 524
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-nltk.py",
+    "Length": 808
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-nnpy.py",
+    "Length": 503
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-notebook.py",
+    "Length": 1046
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-numba.py",
+    "Length": 2538
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-numbers_parser.py",
+    "Length": 586
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-numcodecs.py",
+    "Length": 778
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-nvidia.cublas.py",
+    "Length": 686
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-nvidia.cuda_cupti.py",
+    "Length": 686
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-nvidia.cuda_nvcc.py",
+    "Length": 1287
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-nvidia.cuda_nvrtc.py",
+    "Length": 686
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-nvidia.cuda_runtime.py",
+    "Length": 686
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-nvidia.cudnn.py",
+    "Length": 686
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-nvidia.cufft.py",
+    "Length": 686
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-nvidia.curand.py",
+    "Length": 686
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-nvidia.cusolver.py",
+    "Length": 686
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-nvidia.cusparse.py",
+    "Length": 686
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-nvidia.nccl.py",
+    "Length": 686
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-nvidia.nvjitlink.py",
+    "Length": 686
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-nvidia.nvtx.py",
+    "Length": 686
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-office365.py",
+    "Length": 679
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-onnxruntime.py",
+    "Length": 576
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-opencc.py",
+    "Length": 514
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-openpyxl.py",
+    "Length": 637
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-opentelemetry.py",
+    "Length": 1290
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-orjson.py",
+    "Length": 621
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-osgeo.py",
+    "Length": 2910
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pandas_flavor.py",
+    "Length": 795
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-panel.py",
+    "Length": 654
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-parsedatetime.py",
+    "Length": 844
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-parso.py",
+    "Length": 635
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-passlib.py",
+    "Length": 744
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-paste.exceptions.reporter.py",
+    "Length": 594
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-patoolib.py",
+    "Length": 665
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-patsy.py",
+    "Length": 456
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pdfminer.py",
+    "Length": 516
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pendulum.py",
+    "Length": 795
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-phonenumbers.py",
+    "Length": 682
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pingouin.py",
+    "Length": 516
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pint.py",
+    "Length": 558
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pinyin.py",
+    "Length": 738
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-platformdirs.py",
+    "Length": 839
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-plotly.py",
+    "Length": 702
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-plum.py",
+    "Length": 699
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pointcept.py",
+    "Length": 503
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pptx.py",
+    "Length": 522
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-prettytable.py",
+    "Length": 662
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-procrastinate.py",
+    "Length": 864
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-psutil.py",
+    "Length": 1675
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-psychopy.py",
+    "Length": 584
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-psycopg2.py",
+    "Length": 453
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-psycopg_binary.py",
+    "Length": 606
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-psycopg_c.py",
+    "Length": 591
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-publicsuffix2.py",
+    "Length": 521
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pubsub.core.py",
+    "Length": 580
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-puremagic.py",
+    "Length": 517
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-py.py",
+    "Length": 524
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pyarrow.py",
+    "Length": 727
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pycountry.py",
+    "Length": 691
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pycparser.py",
+    "Length": 875
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pycrfsuite.py",
+    "Length": 501
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pydantic.py",
+    "Length": 2053
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pydicom.py",
+    "Length": 3170
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pydivert.py",
+    "Length": 530
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pyecharts.py",
+    "Length": 516
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pyexcel-io.py",
+    "Length": 540
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pyexcel-ods.py",
+    "Length": 542
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pyexcel-ods3.py",
+    "Length": 545
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pyexcel-odsr.py",
+    "Length": 541
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pyexcel-xls.py",
+    "Length": 542
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pyexcel-xlsx.py",
+    "Length": 545
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pyexcel-xlsxw.py",
+    "Length": 548
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pyexcel.py",
+    "Length": 1270
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pyexcel_io.py",
+    "Length": 1026
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pyexcel_ods.py",
+    "Length": 604
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pyexcel_ods3.py",
+    "Length": 587
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pyexcel_odsr.py",
+    "Length": 562
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pyexcel_xls.py",
+    "Length": 582
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pyexcel_xlsx.py",
+    "Length": 589
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pyexcel_xlsxw.py",
+    "Length": 571
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pyexcelerate.Writer.py",
+    "Length": 520
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pygraphviz.py",
+    "Length": 10123
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pygwalker.py",
+    "Length": 517
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pylibmagic.py",
+    "Length": 638
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pylint.py",
+    "Length": 2797
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pylsl.py",
+    "Length": 1356
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pymediainfo.py",
+    "Length": 1720
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pymeshlab.py",
+    "Length": 2391
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pymorphy3.py",
+    "Length": 882
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pymssql.py",
+    "Length": 702
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pynng.py",
+    "Length": 504
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pynput.py",
+    "Length": 522
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pyodbc.py",
+    "Length": 800
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pyopencl.py",
+    "Length": 636
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pypdfium2.py",
+    "Length": 543
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pypdfium2_raw.py",
+    "Length": 664
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pypemicro.py",
+    "Length": 1537
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pyphen.py",
+    "Length": 514
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pyppeteer.py",
+    "Length": 569
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pyproj.py",
+    "Length": 3015
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pypsexec.py",
+    "Length": 663
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pypylon.py",
+    "Length": 2502
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pyqtgraph.py",
+    "Length": 2724
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pyshark.py",
+    "Length": 894
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pysnmp.py",
+    "Length": 620
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pystray.py",
+    "Length": 645
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pytest.py",
+    "Length": 530
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pythainlp.py",
+    "Length": 517
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pythoncom.py",
+    "Length": 1310
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pytokens.py",
+    "Length": 704
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pyttsx.py",
+    "Length": 680
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pyttsx3.py",
+    "Length": 953
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pyviz_comms.py",
+    "Length": 519
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pyvjoy.py",
+    "Length": 520
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pywintypes.py",
+    "Length": 1312
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-pywt.py",
+    "Length": 875
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-qtmodern.py",
+    "Length": 539
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-radicale.py",
+    "Length": 566
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-raven.py",
+    "Length": 474
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-rawpy.py",
+    "Length": 549
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-rdflib.py",
+    "Length": 530
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-redmine.py",
+    "Length": 459
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-regex.py",
+    "Length": 450
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-reportlab.lib.utils.py",
+    "Length": 495
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-reportlab.pdfbase._fontdata.py",
+    "Length": 754
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-resampy.py",
+    "Length": 596
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-rich.py",
+    "Length": 680
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-rlp.py",
+    "Length": 631
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-rpy2.py",
+    "Length": 526
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-rtree.py",
+    "Length": 1982
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-ruamel.yaml.py",
+    "Length": 1698
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-rubicon.py",
+    "Length": 574
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-sacremoses.py",
+    "Length": 518
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-sam2.py",
+    "Length": 1368
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-saml2.py",
+    "Length": 1138
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-schwifty.py",
+    "Length": 566
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-seedir.py",
+    "Length": 514
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-selectolax.py",
+    "Length": 518
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-selenium.py",
+    "Length": 516
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-sentry_sdk.py",
+    "Length": 1429
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-setuptools_scm.py",
+    "Length": 638
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-shapely.py",
+    "Length": 4815
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-shotgun_api3.py",
+    "Length": 837
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-simplemma.py",
+    "Length": 517
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-skimage.color.py",
+    "Length": 885
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-skimage.data.py",
+    "Length": 882
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-skimage.draw.py",
+    "Length": 882
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-skimage.exposure.py",
+    "Length": 894
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-skimage.feature.py",
+    "Length": 1348
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-skimage.filters.py",
+    "Length": 1224
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-skimage.future.py",
+    "Length": 888
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-skimage.graph.py",
+    "Length": 1012
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-skimage.io.py",
+    "Length": 692
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-skimage.measure.py",
+    "Length": 891
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-skimage.metrics.py",
+    "Length": 891
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-skimage.morphology.py",
+    "Length": 708
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-skimage.py",
+    "Length": 699
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-skimage.registration.py",
+    "Length": 906
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-skimage.restoration.py",
+    "Length": 903
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-skimage.segmentation.py",
+    "Length": 906
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-skimage.transform.py",
+    "Length": 1160
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-sklearn.cluster.py",
+    "Length": 646
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-sklearn.externals.array_api_compat.cupy.py",
+    "Length": 737
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-sklearn.externals.array_api_compat.dask.array.py",
+    "Length": 749
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-sklearn.externals.array_api_compat.numpy.py",
+    "Length": 739
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-sklearn.externals.array_api_compat.torch.py",
+    "Length": 739
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-sklearn.linear_model.py",
+    "Length": 681
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-sklearn.metrics.cluster.py",
+    "Length": 1059
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-sklearn.metrics.pairwise.py",
+    "Length": 695
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-sklearn.metrics.py",
+    "Length": 836
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-sklearn.neighbors.py",
+    "Length": 1256
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-sklearn.py",
+    "Length": 563
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-sklearn.tree.py",
+    "Length": 619
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-sklearn.utils.py",
+    "Length": 749
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-skyfield.py",
+    "Length": 515
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-slixmpp.py",
+    "Length": 532
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-sound_lib.py",
+    "Length": 579
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-sounddevice.py",
+    "Length": 2274
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-soundfile.py",
+    "Length": 2205
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-spacy.py",
+    "Length": 660
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-speech_recognition.py",
+    "Length": 661
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-spiceypy.py",
+    "Length": 625
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-spnego.py",
+    "Length": 522
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-srsly.msgpack._packer.py",
+    "Length": 596
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-sspilib.raw.py",
+    "Length": 861
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-statsmodels.tsa.statespace.py",
+    "Length": 619
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-stdnum.py",
+    "Length": 589
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-storm.database.py",
+    "Length": 559
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-sudachipy.py",
+    "Length": 1088
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-sunpy.py",
+    "Length": 810
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-sv_ttk.py",
+    "Length": 564
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-swagger_spec_validator.py",
+    "Length": 530
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-tableauhyperapi.py",
+    "Length": 530
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-tables.py",
+    "Length": 1471
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-tcod.py",
+    "Length": 675
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-tensorflow.py",
+    "Length": 8080
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-tensorrt_libs.py",
+    "Length": 716
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-text_unidecode.py",
+    "Length": 823
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-textdistance.py",
+    "Length": 602
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-thinc.backends.numpy_ops.py",
+    "Length": 620
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-thinc.py",
+    "Length": 682
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-timezonefinder.py",
+    "Length": 522
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-timezonefinder_data.py",
+    "Length": 527
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-timm.py",
+    "Length": 557
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-tinycss2.py",
+    "Length": 718
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-tkinterdnd2.py",
+    "Length": 3718
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-tkinterweb.py",
+    "Length": 551
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-tkinterweb_tkhtml.py",
+    "Length": 664
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-tkinterweb_tkhtml_extras.py",
+    "Length": 678
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-toga.py",
+    "Length": 1533
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-toga_cocoa.py",
+    "Length": 1190
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-toga_gtk.py",
+    "Length": 1191
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-toga_winforms.py",
+    "Length": 2174
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-torch.py",
+    "Length": 9318
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-torchao.py",
+    "Length": 503
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-torchaudio.py",
+    "Length": 867
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-torchtext.py",
+    "Length": 864
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-torchvision.io.image.py",
+    "Length": 544
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-torchvision.py",
+    "Length": 750
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-trame.py",
+    "Length": 449
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-trame_client.py",
+    "Length": 763
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-trame_code.py",
+    "Length": 538
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-trame_components.py",
+    "Length": 541
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-trame_datagrid.py",
+    "Length": 539
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-trame_deckgl.py",
+    "Length": 537
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-trame_formkit.py",
+    "Length": 541
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-trame_grid.py",
+    "Length": 538
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-trame_iframe.py",
+    "Length": 537
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-trame_keycloak.py",
+    "Length": 539
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-trame_leaflet.py",
+    "Length": 541
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-trame_markdown.py",
+    "Length": 542
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-trame_matplotlib.py",
+    "Length": 544
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-trame_mesh_streamer.py",
+    "Length": 568
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-trame_plotly.py",
+    "Length": 537
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-trame_pvui.py",
+    "Length": 535
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-trame_quasar.py",
+    "Length": 540
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-trame_rca.py",
+    "Length": 534
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-trame_router.py",
+    "Length": 537
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-trame_simput.py",
+    "Length": 537
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-trame_tauri.py",
+    "Length": 536
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-trame_tweakpane.py",
+    "Length": 543
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-trame_vega.py",
+    "Length": 535
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-trame_vtk.py",
+    "Length": 599
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-trame_vtk3d.py",
+    "Length": 536
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-trame_vtklocal.py",
+    "Length": 563
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-trame_vuetify.py",
+    "Length": 538
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-trame_xterm.py",
+    "Length": 536
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-transformers.py",
+    "Length": 1440
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-travertino.py",
+    "Length": 732
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-trimesh.py",
+    "Length": 630
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-triton.py",
+    "Length": 2146
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-ttkthemes.py",
+    "Length": 1822
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-ttkwidgets.py",
+    "Length": 1288
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-tzdata.py",
+    "Length": 826
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-tzwhere.py",
+    "Length": 515
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-u1db.py",
+    "Length": 876
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-ultralytics.py",
+    "Length": 717
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-umap.py",
+    "Length": 508
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-unidecode.py",
+    "Length": 812
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-uniseg.py",
+    "Length": 581
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-urllib3.py",
+    "Length": 793
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-urllib3_future.py",
+    "Length": 610
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-usb.py",
+    "Length": 3457
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-uuid6.py",
+    "Length": 659
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-uvicorn.py",
+    "Length": 523
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-uvloop.py",
+    "Length": 663
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vaderSentiment.py",
+    "Length": 522
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkAcceleratorsVTKmCore.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkAcceleratorsVTKmDataModel.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkAcceleratorsVTKmFilters.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkChartsCore.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkCommonColor.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkCommonComputationalGeometry.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkCommonDataModel.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkCommonExecutionModel.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkCommonMath.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkCommonMisc.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkCommonPython.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkCommonSystem.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkCommonTransforms.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkDomainsChemistry.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkDomainsChemistryOpenGL2.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkFiltersAMR.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkFiltersCellGrid.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkFiltersCore.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkFiltersExtraction.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkFiltersFlowPaths.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkFiltersGeneral.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkFiltersGeneric.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkFiltersGeometry.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkFiltersGeometryPreview.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkFiltersHybrid.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkFiltersHyperTree.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkFiltersImaging.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkFiltersModeling.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkFiltersParallel.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkFiltersParallelDIY2.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkFiltersParallelImaging.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkFiltersParallelStatistics.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkFiltersPoints.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkFiltersProgrammable.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkFiltersPython.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkFiltersReduction.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkFiltersSMP.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkFiltersSelection.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkFiltersSources.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkFiltersStatistics.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkFiltersTemporal.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkFiltersTensor.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkFiltersTexture.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkFiltersTopology.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkFiltersVerdict.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkGeovisCore.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOAMR.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOAsynchronous.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOAvmesh.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOCGNSReader.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOCONVERGECFD.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOCellGrid.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOCesium3DTiles.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOChemistry.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOCityGML.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOCore.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOERF.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOEnSight.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOEngys.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOExodus.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOExport.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOExportGL2PS.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOExportPDF.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOFDS.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOFLUENTCFF.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOGeoJSON.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOGeometry.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOH5Rage.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOH5part.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOHDF.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOIOSS.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOImage.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOImport.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOInfovis.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOLANLX3D.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOLSDyna.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOLegacy.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOMINC.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOMotionFX.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOMovie.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIONetCDF.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOOMF.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOOggTheora.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOPIO.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOPLY.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOParallel.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOParallelExodus.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOParallelLSDyna.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOParallelXML.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOSQL.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOSegY.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOTRUCHAS.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOTecplotTable.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOVPIC.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOVeraOut.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOVideo.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOXML.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOXMLParser.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkIOXdmf2.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkImagingColor.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkImagingCore.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkImagingFourier.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkImagingGeneral.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkImagingHybrid.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkImagingMath.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkImagingMorphological.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkImagingOpenGL2.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkImagingSources.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkImagingStatistics.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkImagingStencil.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkInfovisCore.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkInfovisLayout.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkInteractionImage.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkInteractionStyle.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkInteractionWidgets.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkParallelCore.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkPythonContext2D.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkRenderingAnnotation.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkRenderingCellGrid.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkRenderingContext2D.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkRenderingContextOpenGL2.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkRenderingCore.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkRenderingExternal.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkRenderingFreeType.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkRenderingGL2PSOpenGL2.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkRenderingGridAxes.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkRenderingHyperTreeGrid.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkRenderingImage.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkRenderingLICOpenGL2.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkRenderingLOD.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkRenderingLabel.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkRenderingMatplotlib.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkRenderingOpenGL2.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkRenderingParallel.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkRenderingSceneGraph.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkRenderingUI.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkRenderingVR.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkRenderingVRModels.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkRenderingVolume.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkRenderingVolumeAMR.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkRenderingVolumeOpenGL2.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkRenderingVtkJS.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkSerializationManager.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkTestingRendering.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkTestingSerialization.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkViewsContext2D.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkViewsCore.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkViewsInfovis.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkWebCore.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkmodules.vtkWebGLExporter.py",
+    "Length": 560
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-vtkpython.py",
+    "Length": 949
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-wavefile.py",
+    "Length": 591
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-weasyprint.py",
+    "Length": 4358
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-web3.py",
+    "Length": 502
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-webassets.py",
+    "Length": 539
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-webrtcvad.py",
+    "Length": 507
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-websockets.py",
+    "Length": 568
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-webview.py",
+    "Length": 698
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-win32com.py",
+    "Length": 644
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-wordcloud.py",
+    "Length": 517
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-workflow.py",
+    "Length": 506
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-wx.lib.activex.py",
+    "Length": 970
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-wx.lib.pubsub.py",
+    "Length": 582
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-wx.xrc.py",
+    "Length": 455
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-xarray.py",
+    "Length": 1137
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-xml.dom.html.HTMLDocument.py",
+    "Length": 3146
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-xml.sax.saxexts.py",
+    "Length": 990
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-xmldiff.py",
+    "Length": 550
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-xmlschema.py",
+    "Length": 644
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-xsge_gui.py",
+    "Length": 587
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-xyzservices.py",
+    "Length": 519
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-yapf_third_party.py",
+    "Length": 524
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-z3c.rml.py",
+    "Length": 959
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-zarr.py",
+    "Length": 502
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-zeep.py",
+    "Length": 612
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-zmq.py",
+    "Length": 2725
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/stdhooks/hook-zoneinfo.py",
+    "Length": 595
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/utils/__init__.py",
+    "Length": 2
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/utils/mypy.py",
+    "Length": 1162
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/utils/nvidia_cuda.py",
+    "Length": 3009
+  },
+  {
+    "FullName": "_pyinstaller_hooks_contrib/utils/vtkmodules.py",
+    "Length": 20222
+  },
+  {
+    "FullName": "pyinstaller_hooks_contrib-2026.7.dist-info/licenses/LICENSE",
+    "Length": 27666
+  },
+  {
+    "FullName": "pyinstaller_hooks_contrib-2026.7.dist-info/METADATA",
+    "Length": 16042
+  },
+  {
+    "FullName": "pyinstaller_hooks_contrib-2026.7.dist-info/WHEEL",
+    "Length": 91
+  },
+  {
+    "FullName": "pyinstaller_hooks_contrib-2026.7.dist-info/entry_points.txt",
+    "Length": 69
+  },
+  {
+    "FullName": "pyinstaller_hooks_contrib-2026.7.dist-info/top_level.txt",
+    "Length": 27
+  },
+  {
+    "FullName": "pyinstaller_hooks_contrib-2026.7.dist-info/RECORD",
+    "Length": 81352
+  }
+]

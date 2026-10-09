@@ -1,0 +1,807 @@
+{
+  "schema": "dgn-explorer.approvals-v1",
+  "admission_scope": "development-only",
+  "evaluation_utc": "2026-10-09T15:50:39.3187115+00:00",
+  "components": [
+    {
+      "name": "olefile",
+      "version": "0.47",
+      "scope": "runtime",
+      "upstream": "https://github.com/decalage2/olefile",
+      "established": true,
+      "identity_evidence": "https://pypi.org/pypi/olefile/0.47/json",
+      "security_contact": "https://github.com/decalage2/olefile/security",
+      "purpose": "Compound-file inspection",
+      "platform": "Windows x64",
+      "abi": "py3-none",
+      "withdrawn": false,
+      "yanked": false,
+      "dependencies": [],
+      "artifacts": [
+        {
+          "version_evidence": "dependency-evidence/olefile-0.47-pypi.json",
+          "url": "https://files.pythonhosted.org/packages/17/d3/b64c356a907242d719fc668b71befd73324e47ab46c8ebbbede252c154b2/olefile-0.47-py2.py3-none-any.whl",
+          "artifact_evidence": "dependency-evidence/olefile-0.47-pypi.json",
+          "version_published": "2023-12-01T16:22:51.518738Z",
+          "sha256": "543c7da2a7adadf21214938bb79c83ea12b473a4b6ee4ad4bf854e7715e13d1f",
+          "filename": "olefile-0.47-py2.py3-none-any.whl",
+          "artifact_published": "2023-12-01T16:22:51.518738Z"
+        }
+      ],
+      "approval": {
+        "decision": "approved",
+        "basis": "User authorizes compliant local development installs; no human/security/legal or release-owner sign-off is represented.",
+        "at": "2026-10-09T15:06:21.2917784+00:00",
+        "by": "GitHub Copilot (automated technical development review)"
+      },
+      "security": {
+        "evidence": "dependency-evidence/olefile-0.47-osv.json",
+        "limitations": "No reported matching advisory in the retained queries is not proof of vulnerability absence.",
+        "verdict": "clear",
+        "sources": [
+          "https://pypi.org/pypi/olefile/0.47/json",
+          "https://api.osv.dev/v1/query"
+        ],
+        "checked_at": "2026-10-09T15:06:21.2917784+00:00",
+        "by": "GitHub Copilot (automated technical development review)"
+      },
+      "license": {
+        "by": "GitHub Copilot (automated technical development review)",
+        "approved": true,
+        "evidence": "Official wheel metadata and retained license files in dependency-evidence/olefile-0.47-py2.py3-none-any-inventory.json; local development only, distribution notices and owner review pending."
+      },
+      "provenance": {
+        "by": "GitHub Copilot (automated technical development review)",
+        "approved": true,
+        "evidence": "Canonical upstream metadata, official PyPI/files.pythonhosted.org origin, exact registry SHA-256 verified. No independent signature/attestation validation is claimed; accepted gap for local development only."
+      },
+      "native_inventory": {
+        "by": "GitHub Copilot (automated technical development review)",
+        "approved": true,
+        "evidence": "dependency-evidence/olefile-0.47-py2.py3-none-any-inventory.json and dependency-evidence/olefile-0.47-py2.py3-none-any-bundled-hashes.json. Setuptools embedded metadata and twelve exact vendored PyPI/OSV records are retained. Development review does not authorize a portable release."
+      }
+    },
+    {
+      "name": "pywin32",
+      "version": "311",
+      "scope": "runtime",
+      "upstream": "https://github.com/mhammond/pywin32",
+      "established": true,
+      "identity_evidence": "https://pypi.org/pypi/pywin32/311/json",
+      "security_contact": "https://github.com/mhammond/pywin32/security",
+      "purpose": "Windows COM structured-storage rebuild",
+      "platform": "Windows x64",
+      "abi": "CPython 3.14",
+      "withdrawn": false,
+      "yanked": false,
+      "dependencies": [],
+      "artifacts": [
+        {
+          "version_evidence": "dependency-evidence/pywin32-311-pypi.json",
+          "url": "https://files.pythonhosted.org/packages/90/4b/07c77d8ba0e01349358082713400435347df8426208171ce297da32c313d/pywin32-311-cp314-cp314-win_amd64.whl",
+          "artifact_evidence": "dependency-evidence/pywin32-311-pypi.json",
+          "version_published": "2025-07-14T20:12:55.029848Z",
+          "sha256": "3aca44c046bd2ed8c90de9cb8427f581c479e594e99b5c0bb19b29c10fd6cb87",
+          "filename": "pywin32-311-cp314-cp314-win_amd64.whl",
+          "artifact_published": "2025-07-14T20:13:34.312494Z"
+        }
+      ],
+      "approval": {
+        "decision": "approved",
+        "basis": "User authorizes compliant local development installs; no human/security/legal or release-owner sign-off is represented.",
+        "at": "2026-10-09T15:06:21.2917784+00:00",
+        "by": "GitHub Copilot (automated technical development review)"
+      },
+      "security": {
+        "evidence": "dependency-evidence/pywin32-311-osv.json",
+        "limitations": "No reported matching advisory in the retained queries is not proof of vulnerability absence.",
+        "verdict": "clear",
+        "sources": [
+          "https://pypi.org/pypi/pywin32/311/json",
+          "https://api.osv.dev/v1/query"
+        ],
+        "checked_at": "2026-10-09T15:06:21.2917784+00:00",
+        "by": "GitHub Copilot (automated technical development review)"
+      },
+      "license": {
+        "by": "GitHub Copilot (automated technical development review)",
+        "approved": true,
+        "evidence": "Official wheel metadata and retained license files in dependency-evidence/pywin32-311-cp314-cp314-win_amd64-inventory.json; local development only, distribution notices and owner review pending."
+      },
+      "provenance": {
+        "by": "GitHub Copilot (automated technical development review)",
+        "approved": true,
+        "evidence": "Canonical upstream metadata, official PyPI/files.pythonhosted.org origin, exact registry SHA-256 verified. No independent signature/attestation validation is claimed; accepted gap for local development only."
+      },
+      "native_inventory": {
+        "by": "GitHub Copilot (automated technical development review)",
+        "approved": true,
+        "evidence": "dependency-evidence/pywin32-311-cp314-cp314-win_amd64-inventory.json and dependency-evidence/pywin32-311-cp314-cp314-win_amd64-bundled-hashes.json. Setuptools embedded metadata and twelve exact vendored PyPI/OSV records are retained. Development review does not authorize a portable release."
+      }
+    },
+    {
+      "name": "setuptools",
+      "version": "83.0.0",
+      "scope": "build",
+      "upstream": "https://github.com/pypa/setuptools",
+      "established": true,
+      "identity_evidence": "https://pypi.org/pypi/setuptools/83.0.0/json",
+      "security_contact": "https://github.com/pypa/setuptools/security",
+      "purpose": "Pinned PEP 517 build backend",
+      "platform": "Windows x64",
+      "abi": "py3-none",
+      "withdrawn": false,
+      "yanked": false,
+      "dependencies": [],
+      "artifacts": [
+        {
+          "version_evidence": "dependency-evidence/setuptools-83.0.0-pypi.json",
+          "url": "https://files.pythonhosted.org/packages/5d/40/e1e72872c6354b306daef1703549e8e83b4d43cfea356311bf722a043752/setuptools-83.0.0-py3-none-any.whl",
+          "artifact_evidence": "dependency-evidence/setuptools-83.0.0-pypi.json",
+          "version_published": "2026-07-04T15:31:20.885481Z",
+          "sha256": "29b23c360f22f414dc7336bb39178cc7bcbf6021ed2733cde173f09dba19abb3",
+          "filename": "setuptools-83.0.0-py3-none-any.whl",
+          "artifact_published": "2026-07-04T15:31:20.885481Z"
+        }
+      ],
+      "approval": {
+        "decision": "approved",
+        "basis": "User authorizes compliant local development installs; no human/security/legal or release-owner sign-off is represented.",
+        "at": "2026-10-09T15:06:21.2917784+00:00",
+        "by": "GitHub Copilot (automated technical development review)"
+      },
+      "security": {
+        "evidence": "dependency-evidence/setuptools-83.0.0-osv.json",
+        "limitations": "No reported matching advisory in the retained queries is not proof of vulnerability absence.",
+        "verdict": "clear",
+        "sources": [
+          "https://pypi.org/pypi/setuptools/83.0.0/json",
+          "https://api.osv.dev/v1/query"
+        ],
+        "checked_at": "2026-10-09T15:06:21.2917784+00:00",
+        "by": "GitHub Copilot (automated technical development review)"
+      },
+      "license": {
+        "by": "GitHub Copilot (automated technical development review)",
+        "approved": true,
+        "evidence": "Official wheel metadata and retained license files in dependency-evidence/setuptools-83.0.0-py3-none-any-inventory.json; local development only, distribution notices and owner review pending."
+      },
+      "provenance": {
+        "by": "GitHub Copilot (automated technical development review)",
+        "approved": true,
+        "evidence": "Canonical upstream metadata, official PyPI/files.pythonhosted.org origin, exact registry SHA-256 verified. No independent signature/attestation validation is claimed; accepted gap for local development only."
+      },
+      "native_inventory": {
+        "by": "GitHub Copilot (automated technical development review)",
+        "approved": true,
+        "evidence": "dependency-evidence/setuptools-83.0.0-py3-none-any-inventory.json and dependency-evidence/setuptools-83.0.0-py3-none-any-bundled-hashes.json. Setuptools embedded metadata and twelve exact vendored PyPI/OSV records are retained. Development review does not authorize a portable release."
+      }
+    },
+    {
+      "name": "wheel",
+      "version": "0.46.2",
+      "scope": "build",
+      "upstream": "https://github.com/pypa/wheel",
+      "established": true,
+      "identity_evidence": "https://pypi.org/pypi/wheel/0.46.2/json",
+      "security_contact": "https://github.com/pypa/wheel/security",
+      "purpose": "Offline wheel build tooling",
+      "platform": "Windows x64",
+      "abi": "py3-none",
+      "withdrawn": false,
+      "yanked": false,
+      "dependencies": [
+        "packaging"
+      ],
+      "artifacts": [
+        {
+          "version_evidence": "dependency-evidence/wheel-0.46.2-pypi.json",
+          "url": "https://files.pythonhosted.org/packages/13/2c/5e079cefe955ae58e5a052fe037c850ce493eb7269dedeb960237e78fb0f/wheel-0.46.2-py3-none-any.whl",
+          "artifact_evidence": "dependency-evidence/wheel-0.46.2-pypi.json",
+          "version_published": "2026-01-21T23:55:24.447101Z",
+          "sha256": "33ae60725d69eaa249bc1982e739943c23b34b58d51f1cb6253453773aca6e65",
+          "filename": "wheel-0.46.2-py3-none-any.whl",
+          "artifact_published": "2026-01-21T23:55:24.447101Z"
+        }
+      ],
+      "approval": {
+        "decision": "approved",
+        "basis": "User authorizes compliant local development installs; no human/security/legal or release-owner sign-off is represented.",
+        "at": "2026-10-09T15:06:21.2917784+00:00",
+        "by": "GitHub Copilot (automated technical development review)"
+      },
+      "security": {
+        "evidence": "dependency-evidence/wheel-0.46.2-osv.json",
+        "limitations": "No reported matching advisory in the retained queries is not proof of vulnerability absence.",
+        "verdict": "clear",
+        "sources": [
+          "https://pypi.org/pypi/wheel/0.46.2/json",
+          "https://api.osv.dev/v1/query"
+        ],
+        "checked_at": "2026-10-09T15:06:21.2917784+00:00",
+        "by": "GitHub Copilot (automated technical development review)"
+      },
+      "license": {
+        "by": "GitHub Copilot (automated technical development review)",
+        "approved": true,
+        "evidence": "Official wheel metadata and retained license files in dependency-evidence/wheel-0.46.2-py3-none-any-inventory.json; local development only, distribution notices and owner review pending."
+      },
+      "provenance": {
+        "by": "GitHub Copilot (automated technical development review)",
+        "approved": true,
+        "evidence": "Canonical upstream metadata, official PyPI/files.pythonhosted.org origin, exact registry SHA-256 verified. No independent signature/attestation validation is claimed; accepted gap for local development only."
+      },
+      "native_inventory": {
+        "by": "GitHub Copilot (automated technical development review)",
+        "approved": true,
+        "evidence": "dependency-evidence/wheel-0.46.2-py3-none-any-inventory.json and dependency-evidence/wheel-0.46.2-py3-none-any-bundled-hashes.json. Setuptools embedded metadata and twelve exact vendored PyPI/OSV records are retained. Development review does not authorize a portable release."
+      }
+    },
+    {
+      "name": "PyInstaller",
+      "version": "6.22.2",
+      "scope": "build",
+      "upstream": "https://github.com/pyinstaller/pyinstaller",
+      "established": true,
+      "identity_evidence": "https://pypi.org/pypi/PyInstaller/6.22.2/json",
+      "security_contact": "https://github.com/pyinstaller/pyinstaller/security",
+      "purpose": "Portable Windows packaging tooling",
+      "platform": "Windows x64",
+      "abi": "py3-none",
+      "withdrawn": false,
+      "yanked": false,
+      "dependencies": [
+        "altgraph",
+        "packaging",
+        "pefile",
+        "pyinstaller-hooks-contrib",
+        "pywin32-ctypes",
+        "setuptools"
+      ],
+      "artifacts": [
+        {
+          "version_evidence": "dependency-evidence/PyInstaller-6.22.2-pypi.json",
+          "url": "https://files.pythonhosted.org/packages/3f/53/8ba1d0f6159b490f700eac6161a4be5f0d4672608a6dae9fd73679f183ee/pyinstaller-6.22.2-py3-none-win_amd64.whl",
+          "artifact_evidence": "dependency-evidence/PyInstaller-6.22.2-pypi.json",
+          "version_published": "2026-08-17T20:52:17.635669Z",
+          "sha256": "9b990fa6bbe143572f06644a984ad0d7aa2e2ccc6929d4916031343a5888e9a7",
+          "filename": "pyinstaller-6.22.2-py3-none-win_amd64.whl",
+          "artifact_published": "2026-08-17T20:52:59.667097Z"
+        }
+      ],
+      "approval": {
+        "decision": "approved",
+        "basis": "User authorizes compliant local development installs; no human/security/legal or release-owner sign-off is represented.",
+        "at": "2026-10-09T15:06:21.2917784+00:00",
+        "by": "GitHub Copilot (automated technical development review)"
+      },
+      "security": {
+        "evidence": "dependency-evidence/PyInstaller-6.22.2-osv.json",
+        "limitations": "No reported matching advisory in the retained queries is not proof of vulnerability absence.",
+        "verdict": "clear",
+        "sources": [
+          "https://pypi.org/pypi/PyInstaller/6.22.2/json",
+          "https://api.osv.dev/v1/query"
+        ],
+        "checked_at": "2026-10-09T15:06:21.2917784+00:00",
+        "by": "GitHub Copilot (automated technical development review)"
+      },
+      "license": {
+        "by": "GitHub Copilot (automated technical development review)",
+        "approved": true,
+        "evidence": "Official wheel metadata and retained license files in dependency-evidence/pyinstaller-6.22.2-py3-none-win_amd64-inventory.json; local development only, distribution notices and owner review pending."
+      },
+      "provenance": {
+        "by": "GitHub Copilot (automated technical development review)",
+        "approved": true,
+        "evidence": "Canonical upstream metadata, official PyPI/files.pythonhosted.org origin, exact registry SHA-256 verified. No independent signature/attestation validation is claimed; accepted gap for local development only."
+      },
+      "native_inventory": {
+        "by": "GitHub Copilot (automated technical development review)",
+        "approved": true,
+        "evidence": "dependency-evidence/pyinstaller-6.22.2-py3-none-win_amd64-inventory.json and dependency-evidence/pyinstaller-6.22.2-py3-none-win_amd64-bundled-hashes.json. Setuptools embedded metadata and twelve exact vendored PyPI/OSV records are retained. Development review does not authorize a portable release."
+      }
+    },
+    {
+      "name": "altgraph",
+      "version": "0.17.4",
+      "scope": "build",
+      "upstream": "https://github.com/ronaldoussoren/altgraph",
+      "established": true,
+      "identity_evidence": "https://pypi.org/pypi/altgraph/0.17.4/json",
+      "security_contact": "https://github.com/ronaldoussoren/altgraph/security",
+      "purpose": "PyInstaller dependency graph",
+      "platform": "Windows x64",
+      "abi": "py3-none",
+      "withdrawn": false,
+      "yanked": false,
+      "dependencies": [],
+      "artifacts": [
+        {
+          "version_evidence": "dependency-evidence/altgraph-0.17.4-pypi.json",
+          "url": "https://files.pythonhosted.org/packages/4d/3f/3bc3f1d83f6e4a7fcb834d3720544ca597590425be5ba9db032b2bf322a2/altgraph-0.17.4-py2.py3-none-any.whl",
+          "artifact_evidence": "dependency-evidence/altgraph-0.17.4-pypi.json",
+          "version_published": "2023-09-25T09:04:50.691298Z",
+          "sha256": "642743b4750de17e655e6711601b077bc6598dbfa3ba5fa2b2a35ce12b508dff",
+          "filename": "altgraph-0.17.4-py2.py3-none-any.whl",
+          "artifact_published": "2023-09-25T09:04:50.691298Z"
+        }
+      ],
+      "approval": {
+        "decision": "approved",
+        "basis": "User authorizes compliant local development installs; no human/security/legal or release-owner sign-off is represented.",
+        "at": "2026-10-09T15:06:21.2917784+00:00",
+        "by": "GitHub Copilot (automated technical development review)"
+      },
+      "security": {
+        "evidence": "dependency-evidence/altgraph-0.17.4-osv.json",
+        "limitations": "No reported matching advisory in the retained queries is not proof of vulnerability absence.",
+        "verdict": "clear",
+        "sources": [
+          "https://pypi.org/pypi/altgraph/0.17.4/json",
+          "https://api.osv.dev/v1/query"
+        ],
+        "checked_at": "2026-10-09T15:06:21.2917784+00:00",
+        "by": "GitHub Copilot (automated technical development review)"
+      },
+      "license": {
+        "by": "GitHub Copilot (automated technical development review)",
+        "approved": true,
+        "evidence": "Official wheel metadata and retained license files in dependency-evidence/altgraph-0.17.4-py2.py3-none-any-inventory.json; local development only, distribution notices and owner review pending."
+      },
+      "provenance": {
+        "by": "GitHub Copilot (automated technical development review)",
+        "approved": true,
+        "evidence": "Canonical upstream metadata, official PyPI/files.pythonhosted.org origin, exact registry SHA-256 verified. No independent signature/attestation validation is claimed; accepted gap for local development only."
+      },
+      "native_inventory": {
+        "by": "GitHub Copilot (automated technical development review)",
+        "approved": true,
+        "evidence": "dependency-evidence/altgraph-0.17.4-py2.py3-none-any-inventory.json and dependency-evidence/altgraph-0.17.4-py2.py3-none-any-bundled-hashes.json. Setuptools embedded metadata and twelve exact vendored PyPI/OSV records are retained. Development review does not authorize a portable release."
+      }
+    },
+    {
+      "name": "packaging",
+      "version": "25.0",
+      "scope": "build",
+      "upstream": "https://github.com/pypa/packaging",
+      "established": true,
+      "identity_evidence": "https://pypi.org/pypi/packaging/25.0/json",
+      "security_contact": "https://github.com/pypa/packaging/security",
+      "purpose": "PyInstaller and wheel metadata requirements",
+      "platform": "Windows x64",
+      "abi": "py3-none",
+      "withdrawn": false,
+      "yanked": false,
+      "dependencies": [],
+      "artifacts": [
+        {
+          "version_evidence": "dependency-evidence/packaging-25.0-pypi.json",
+          "url": "https://files.pythonhosted.org/packages/20/12/38679034af332785aac8774540895e234f4d07f7545804097de4b666afd8/packaging-25.0-py3-none-any.whl",
+          "artifact_evidence": "dependency-evidence/packaging-25.0-pypi.json",
+          "version_published": "2025-04-19T11:48:57.875608Z",
+          "sha256": "29572ef2b1f17581046b3a2227d5c611fb25ec70ca1ba8554b24b0e69331a484",
+          "filename": "packaging-25.0-py3-none-any.whl",
+          "artifact_published": "2025-04-19T11:48:57.875608Z"
+        }
+      ],
+      "approval": {
+        "decision": "approved",
+        "basis": "User authorizes compliant local development installs; no human/security/legal or release-owner sign-off is represented.",
+        "at": "2026-10-09T15:06:21.2917784+00:00",
+        "by": "GitHub Copilot (automated technical development review)"
+      },
+      "security": {
+        "evidence": "dependency-evidence/packaging-25.0-osv.json",
+        "limitations": "No reported matching advisory in the retained queries is not proof of vulnerability absence.",
+        "verdict": "clear",
+        "sources": [
+          "https://pypi.org/pypi/packaging/25.0/json",
+          "https://api.osv.dev/v1/query"
+        ],
+        "checked_at": "2026-10-09T15:06:21.2917784+00:00",
+        "by": "GitHub Copilot (automated technical development review)"
+      },
+      "license": {
+        "by": "GitHub Copilot (automated technical development review)",
+        "approved": true,
+        "evidence": "Official wheel metadata and retained license files in dependency-evidence/packaging-25.0-py3-none-any-inventory.json; local development only, distribution notices and owner review pending."
+      },
+      "provenance": {
+        "by": "GitHub Copilot (automated technical development review)",
+        "approved": true,
+        "evidence": "Canonical upstream metadata, official PyPI/files.pythonhosted.org origin, exact registry SHA-256 verified. No independent signature/attestation validation is claimed; accepted gap for local development only."
+      },
+      "native_inventory": {
+        "by": "GitHub Copilot (automated technical development review)",
+        "approved": true,
+        "evidence": "dependency-evidence/packaging-25.0-py3-none-any-inventory.json and dependency-evidence/packaging-25.0-py3-none-any-bundled-hashes.json. Setuptools embedded metadata and twelve exact vendored PyPI/OSV records are retained. Development review does not authorize a portable release."
+      }
+    },
+    {
+      "name": "pefile",
+      "version": "2024.8.26",
+      "scope": "build",
+      "upstream": "https://github.com/erocarrera/pefile",
+      "established": true,
+      "identity_evidence": "https://pypi.org/pypi/pefile/2024.8.26/json",
+      "security_contact": "https://github.com/erocarrera/pefile/security",
+      "purpose": "PyInstaller PE inspection",
+      "platform": "Windows x64",
+      "abi": "py3-none",
+      "withdrawn": false,
+      "yanked": false,
+      "dependencies": [],
+      "artifacts": [
+        {
+          "version_evidence": "dependency-evidence/pefile-2024.8.26-pypi.json",
+          "url": "https://files.pythonhosted.org/packages/54/16/12b82f791c7f50ddec566873d5bdd245baa1491bac11d15ffb98aecc8f8b/pefile-2024.8.26-py3-none-any.whl",
+          "artifact_evidence": "dependency-evidence/pefile-2024.8.26-pypi.json",
+          "version_published": "2024-08-26T20:58:38.155962Z",
+          "sha256": "76f8b485dcd3b1bb8166f1128d395fa3d87af26360c2358fb75b80019b957c6f",
+          "filename": "pefile-2024.8.26-py3-none-any.whl",
+          "artifact_published": "2024-08-26T21:01:02.632515Z"
+        }
+      ],
+      "approval": {
+        "decision": "approved",
+        "basis": "User authorizes compliant local development installs; no human/security/legal or release-owner sign-off is represented.",
+        "at": "2026-10-09T15:06:21.2917784+00:00",
+        "by": "GitHub Copilot (automated technical development review)"
+      },
+      "security": {
+        "evidence": "dependency-evidence/pefile-2024.8.26-osv.json",
+        "limitations": "No reported matching advisory in the retained queries is not proof of vulnerability absence.",
+        "verdict": "clear",
+        "sources": [
+          "https://pypi.org/pypi/pefile/2024.8.26/json",
+          "https://api.osv.dev/v1/query"
+        ],
+        "checked_at": "2026-10-09T15:06:21.2917784+00:00",
+        "by": "GitHub Copilot (automated technical development review)"
+      },
+      "license": {
+        "by": "GitHub Copilot (automated technical development review)",
+        "approved": true,
+        "evidence": "Official wheel metadata and retained license files in dependency-evidence/pefile-2024.8.26-py3-none-any-inventory.json; local development only, distribution notices and owner review pending."
+      },
+      "provenance": {
+        "by": "GitHub Copilot (automated technical development review)",
+        "approved": true,
+        "evidence": "Canonical upstream metadata, official PyPI/files.pythonhosted.org origin, exact registry SHA-256 verified. No independent signature/attestation validation is claimed; accepted gap for local development only."
+      },
+      "native_inventory": {
+        "by": "GitHub Copilot (automated technical development review)",
+        "approved": true,
+        "evidence": "dependency-evidence/pefile-2024.8.26-py3-none-any-inventory.json and dependency-evidence/pefile-2024.8.26-py3-none-any-bundled-hashes.json. Setuptools embedded metadata and twelve exact vendored PyPI/OSV records are retained. Development review does not authorize a portable release."
+      }
+    },
+    {
+      "name": "pyinstaller-hooks-contrib",
+      "version": "2026.7",
+      "scope": "build",
+      "upstream": "https://github.com/pyinstaller/pyinstaller-hooks-contrib",
+      "established": true,
+      "identity_evidence": "https://pypi.org/pypi/pyinstaller-hooks-contrib/2026.7/json",
+      "security_contact": "https://github.com/pyinstaller/pyinstaller-hooks-contrib/security",
+      "purpose": "PyInstaller package discovery hooks",
+      "platform": "Windows x64",
+      "abi": "py3-none",
+      "withdrawn": false,
+      "yanked": false,
+      "dependencies": [],
+      "artifacts": [
+        {
+          "version_evidence": "dependency-evidence/pyinstaller-hooks-contrib-2026.7-pypi.json",
+          "url": "https://files.pythonhosted.org/packages/0a/67/350377af7b50416344ab8792756d414eef7629c618a73e9a0b13bb1552d9/pyinstaller_hooks_contrib-2026.7-py3-none-any.whl",
+          "artifact_evidence": "dependency-evidence/pyinstaller-hooks-contrib-2026.7-pypi.json",
+          "version_published": "2026-08-24T21:26:57.274543Z",
+          "sha256": "24257a04c7a5a7a034cf28e39dcee20fbeeb9f043076729480f2e1b69904408a",
+          "filename": "pyinstaller_hooks_contrib-2026.7-py3-none-any.whl",
+          "artifact_published": "2026-08-24T21:26:57.274543Z"
+        }
+      ],
+      "approval": {
+        "decision": "approved",
+        "basis": "User authorizes compliant local development installs; no human/security/legal or release-owner sign-off is represented.",
+        "at": "2026-10-09T15:06:21.2917784+00:00",
+        "by": "GitHub Copilot (automated technical development review)"
+      },
+      "security": {
+        "evidence": "dependency-evidence/pyinstaller-hooks-contrib-2026.7-osv.json",
+        "limitations": "No reported matching advisory in the retained queries is not proof of vulnerability absence.",
+        "verdict": "clear",
+        "sources": [
+          "https://pypi.org/pypi/pyinstaller-hooks-contrib/2026.7/json",
+          "https://api.osv.dev/v1/query"
+        ],
+        "checked_at": "2026-10-09T15:06:21.2917784+00:00",
+        "by": "GitHub Copilot (automated technical development review)"
+      },
+      "license": {
+        "by": "GitHub Copilot (automated technical development review)",
+        "approved": true,
+        "evidence": "Official wheel metadata and retained license files in dependency-evidence/pyinstaller_hooks_contrib-2026.7-py3-none-any-inventory.json; local development only, distribution notices and owner review pending."
+      },
+      "provenance": {
+        "by": "GitHub Copilot (automated technical development review)",
+        "approved": true,
+        "evidence": "Canonical upstream metadata, official PyPI/files.pythonhosted.org origin, exact registry SHA-256 verified. No independent signature/attestation validation is claimed; accepted gap for local development only."
+      },
+      "native_inventory": {
+        "by": "GitHub Copilot (automated technical development review)",
+        "approved": true,
+        "evidence": "dependency-evidence/pyinstaller_hooks_contrib-2026.7-py3-none-any-inventory.json and dependency-evidence/pyinstaller_hooks_contrib-2026.7-py3-none-any-bundled-hashes.json. Setuptools embedded metadata and twelve exact vendored PyPI/OSV records are retained. Development review does not authorize a portable release."
+      }
+    },
+    {
+      "name": "pywin32-ctypes",
+      "version": "0.2.3",
+      "scope": "build",
+      "upstream": "https://github.com/enthought/pywin32-ctypes",
+      "established": true,
+      "identity_evidence": "https://pypi.org/pypi/pywin32-ctypes/0.2.3/json",
+      "security_contact": "https://github.com/enthought/pywin32-ctypes/security",
+      "purpose": "PyInstaller Windows API operations",
+      "platform": "Windows x64",
+      "abi": "py3-none",
+      "withdrawn": false,
+      "yanked": false,
+      "dependencies": [],
+      "artifacts": [
+        {
+          "version_evidence": "dependency-evidence/pywin32-ctypes-0.2.3-pypi.json",
+          "url": "https://files.pythonhosted.org/packages/de/3d/8161f7711c017e01ac9f008dfddd9410dff3674334c233bde66e7ba65bbf/pywin32_ctypes-0.2.3-py3-none-any.whl",
+          "artifact_evidence": "dependency-evidence/pywin32-ctypes-0.2.3-pypi.json",
+          "version_published": "2024-08-14T10:15:33.187242Z",
+          "sha256": "8a1513379d709975552d202d942d9837758905c8d01eb82b8bcc30918929e7b8",
+          "filename": "pywin32_ctypes-0.2.3-py3-none-any.whl",
+          "artifact_published": "2024-08-14T10:15:33.187242Z"
+        }
+      ],
+      "approval": {
+        "decision": "approved",
+        "basis": "User authorizes compliant local development installs; no human/security/legal or release-owner sign-off is represented.",
+        "at": "2026-10-09T15:06:21.2917784+00:00",
+        "by": "GitHub Copilot (automated technical development review)"
+      },
+      "security": {
+        "evidence": "dependency-evidence/pywin32-ctypes-0.2.3-osv.json",
+        "limitations": "No reported matching advisory in the retained queries is not proof of vulnerability absence.",
+        "verdict": "clear",
+        "sources": [
+          "https://pypi.org/pypi/pywin32-ctypes/0.2.3/json",
+          "https://api.osv.dev/v1/query"
+        ],
+        "checked_at": "2026-10-09T15:06:21.2917784+00:00",
+        "by": "GitHub Copilot (automated technical development review)"
+      },
+      "license": {
+        "by": "GitHub Copilot (automated technical development review)",
+        "approved": true,
+        "evidence": "Official wheel metadata and retained license files in dependency-evidence/pywin32_ctypes-0.2.3-py3-none-any-inventory.json; local development only, distribution notices and owner review pending."
+      },
+      "provenance": {
+        "by": "GitHub Copilot (automated technical development review)",
+        "approved": true,
+        "evidence": "Canonical upstream metadata, official PyPI/files.pythonhosted.org origin, exact registry SHA-256 verified. No independent signature/attestation validation is claimed; accepted gap for local development only."
+      },
+      "native_inventory": {
+        "by": "GitHub Copilot (automated technical development review)",
+        "approved": true,
+        "evidence": "dependency-evidence/pywin32_ctypes-0.2.3-py3-none-any-inventory.json and dependency-evidence/pywin32_ctypes-0.2.3-py3-none-any-bundled-hashes.json. Setuptools embedded metadata and twelve exact vendored PyPI/OSV records are retained. Development review does not authorize a portable release."
+      }
+    },
+    {
+      "name": "coverage",
+      "version": "7.10.6",
+      "scope": "dev",
+      "upstream": "https://github.com/nedbat/coveragepy",
+      "established": true,
+      "identity_evidence": "https://pypi.org/pypi/coverage/7.10.6/json",
+      "security_contact": "https://github.com/nedbat/coveragepy/security",
+      "purpose": "Backend and desktop test coverage",
+      "platform": "Windows x64",
+      "abi": "CPython 3.14",
+      "withdrawn": false,
+      "yanked": false,
+      "dependencies": [],
+      "artifacts": [
+        {
+          "version_evidence": "dependency-evidence/coverage-7.10.6-pypi.json",
+          "url": "https://files.pythonhosted.org/packages/15/d1/a0912b7611bc35412e919a2cd59ae98e7ea3b475e562668040a43fb27897/coverage-7.10.6-cp314-cp314-win_amd64.whl",
+          "artifact_evidence": "dependency-evidence/coverage-7.10.6-pypi.json",
+          "version_published": "2025-08-29T15:32:57.169404Z",
+          "sha256": "adec1d980fa07e60b6ef865f9e5410ba760e4e1d26f60f7e5772c73b9a5b0713",
+          "filename": "coverage-7.10.6-cp314-cp314-win_amd64.whl",
+          "artifact_published": "2025-08-29T15:34:35.651532Z"
+        }
+      ],
+      "approval": {
+        "decision": "approved",
+        "basis": "User authorizes compliant local development installs; no human/security/legal or release-owner sign-off is represented.",
+        "at": "2026-10-09T15:06:21.2917784+00:00",
+        "by": "GitHub Copilot (automated technical development review)"
+      },
+      "security": {
+        "evidence": "dependency-evidence/coverage-7.10.6-osv.json",
+        "limitations": "No reported matching advisory in the retained queries is not proof of vulnerability absence.",
+        "verdict": "clear",
+        "sources": [
+          "https://pypi.org/pypi/coverage/7.10.6/json",
+          "https://api.osv.dev/v1/query"
+        ],
+        "checked_at": "2026-10-09T15:06:21.2917784+00:00",
+        "by": "GitHub Copilot (automated technical development review)"
+      },
+      "license": {
+        "by": "GitHub Copilot (automated technical development review)",
+        "approved": true,
+        "evidence": "Official wheel metadata and retained license files in dependency-evidence/coverage-7.10.6-cp314-cp314-win_amd64-inventory.json; local development only, distribution notices and owner review pending."
+      },
+      "provenance": {
+        "by": "GitHub Copilot (automated technical development review)",
+        "approved": true,
+        "evidence": "Canonical upstream metadata, official PyPI/files.pythonhosted.org origin, exact registry SHA-256 verified. No independent signature/attestation validation is claimed; accepted gap for local development only."
+      },
+      "native_inventory": {
+        "by": "GitHub Copilot (automated technical development review)",
+        "approved": true,
+        "evidence": "dependency-evidence/coverage-7.10.6-cp314-cp314-win_amd64-inventory.json and dependency-evidence/coverage-7.10.6-cp314-cp314-win_amd64-bundled-hashes.json. Setuptools embedded metadata and twelve exact vendored PyPI/OSV records are retained. Development review does not authorize a portable release."
+      }
+    },
+    {
+      "name": "PySide6-Essentials",
+      "version": "6.11.2",
+      "scope": "runtime",
+      "upstream": "https://code.qt.io/cgit/pyside/pyside-setup.git/",
+      "established": true,
+      "identity_evidence": "https://pypi.org/pypi/PySide6-Essentials/6.11.2/json",
+      "security_contact": "https://www.qt.io/terms-conditions/responsible-vulnerability-disclosure-process",
+      "purpose": "Native Qt Widgets desktop for the reviewed plain-text DGN workflow",
+      "platform": "Windows x64",
+      "abi": "cp310-abi3, CPython >=3.10,<3.15",
+      "withdrawn": false,
+      "yanked": false,
+      "dependencies": [
+        "shiboken6"
+      ],
+      "artifacts": [
+        {
+          "version_evidence": "dependency-evidence/PySide6-Essentials-6.11.2-pypi.json; latest upload conservatively bounds version publication",
+          "url": "https://files.pythonhosted.org/packages/dc/09/d2662684aee4d3f027ff9b1e965f22301bc28ffc5b7f167658508e4475dc/pyside6_essentials-6.11.2-cp310-abi3-win_amd64.whl",
+          "artifact_evidence": "dependency-evidence/PySide6-Essentials-6.11.2-pypi.json",
+          "version_published": "2026-08-18T06:36:59.073573Z",
+          "sha256": "c8a29def77032773a30879f7f24415b5395ad08592d147c170824ef4c735dfc1",
+          "filename": "pyside6_essentials-6.11.2-cp310-abi3-win_amd64.whl",
+          "artifact_published": "2026-08-18T06:36:54.038925Z"
+        }
+      ],
+      "approval": {
+        "decision": "approved",
+        "basis": "User requests correction of the Qt 6.11.2 block. Scoped local development review, not human/legal or release-owner sign-off.",
+        "at": "2026-10-09T15:50:39.3187115+00:00",
+        "by": "GitHub Copilot (automated technical development review)"
+      },
+      "security": {
+        "justification": "Current desktop renders DGN content through QPlainTextEdit and exposes no font-file loading, subsetting, printing/PDF, or image preview/encoding. HarfBuzz report requires font subsetting; this flow does not provide its input/sink. The libjpeg report uses the TurboJPEG tj3Compress8 wrapper, absent from tagged Qt JPEG build sources; this app also supplies no DGN images to Qt codecs. Exact wheel inventory has no VNC module. QtXml ReturnNullNode vendor policy is set before UI use; the app does not serialize QDom input. Application-specific decision retains upstream affected versions; it does not assert native binaries are patched or vulnerability-free.",
+        "verdict": "not-applicable",
+        "checked_at": "2026-10-09T15:50:39.3187115+00:00",
+        "constraints": [
+          "Development only; no release approval",
+          "XML mitigation regression must pass before desktop validation",
+          "Re-review before font loading, printing/PDF, image preview, new Qt modules/plugins, or wheel updates"
+        ],
+        "advisories": [
+          "CVE-2026-15037",
+          "CVE-2026-79680",
+          "OSV-2026-962",
+          "OSV-2026-1068"
+        ],
+        "evidence": "DEPENDENCY_CANDIDATES.md; test_application.PackageTests.test_desktop_dependency_exposure_boundary; test_ui.UITests.test_xml_invalid_nodes_are_rejected; retained tagged native sources and OSV reports",
+        "sources": [
+          "https://wiki.qt.io/List_of_known_vulnerabilities_in_Qt_products",
+          "https://www.qt.io/blog/security-advisory-cve-2026-15037-xml-injection",
+          "https://api.osv.dev/v1/query",
+          "https://raw.githubusercontent.com/qt/qtbase/v6.11.2/src/3rdparty/harfbuzz-ng/CMakeLists.txt",
+          "https://raw.githubusercontent.com/qt/qtbase/v6.11.2/src/3rdparty/libjpeg/CMakeLists.txt"
+        ],
+        "by": "GitHub Copilot (automated technical development review)",
+        "mitigation_test": "pass: real Qt 6.11.2, Windows and offscreen; comment/CDATA/processing-instruction null-node rejection verified"
+      },
+      "license": {
+        "by": "GitHub Copilot (automated technical development review)",
+        "approved": true,
+        "evidence": "Official wheel metadata and retained licenses: dependency-evidence/pyside6_essentials-6.11.2-cp310-abi3-win_amd64-inventory.json. LGPL/GPL alternatives are recorded; local development use only. Distribution notices and owner/legal review remain pending."
+      },
+      "provenance": {
+        "by": "GitHub Copilot (automated technical development review)",
+        "approved": true,
+        "evidence": "Official Qt/PyPI identity and files.pythonhosted.org artifact; exact SHA-256 verified. No independently verified attestation/signature is claimed. Gap accepted for local development only."
+      },
+      "native_inventory": {
+        "by": "GitHub Copilot (automated technical development review)",
+        "approved": true,
+        "evidence": "dependency-evidence/pyside6_essentials-6.11.2-cp310-abi3-win_amd64-inventory.json and dependency-evidence/pyside6_essentials-6.11.2-cp310-abi3-win_amd64-bundled-hashes.json; tagged Qt 6.11.2 attributions/native build lists and explicit scoped advisory decision in DEPENDENCY_CANDIDATES.md. Complete release SBOM/notices remain pending."
+      }
+    },
+    {
+      "name": "shiboken6",
+      "version": "6.11.2",
+      "scope": "runtime",
+      "upstream": "https://code.qt.io/cgit/pyside/pyside-setup.git/",
+      "established": true,
+      "identity_evidence": "https://pypi.org/pypi/shiboken6/6.11.2/json",
+      "security_contact": "https://www.qt.io/terms-conditions/responsible-vulnerability-disclosure-process",
+      "purpose": "Exactly matched Qt Python binding runtime",
+      "platform": "Windows x64",
+      "abi": "cp310-abi3, CPython >=3.10,<3.15",
+      "withdrawn": false,
+      "yanked": false,
+      "dependencies": [],
+      "artifacts": [
+        {
+          "version_evidence": "dependency-evidence/shiboken6-6.11.2-pypi.json; latest upload conservatively bounds version publication",
+          "url": "https://files.pythonhosted.org/packages/ce/6b/fee1b4814317e4664e318644c9c007676c65a71e5b2b9d3ac4121a94dc0a/shiboken6-6.11.2-cp310-abi3-win_amd64.whl",
+          "artifact_evidence": "dependency-evidence/shiboken6-6.11.2-pypi.json",
+          "version_published": "2026-08-18T06:37:21.046171Z",
+          "sha256": "6ab0eba1c904455df621f9a6df3ca2bb896bab8670572d2bc4e37804ae91f19a",
+          "filename": "shiboken6-6.11.2-cp310-abi3-win_amd64.whl",
+          "artifact_published": "2026-08-18T06:37:18.002960Z"
+        }
+      ],
+      "approval": {
+        "decision": "approved",
+        "basis": "User requests correction of the Qt 6.11.2 block. Scoped local development review, not human/legal or release-owner sign-off.",
+        "at": "2026-10-09T15:50:39.3187115+00:00",
+        "by": "GitHub Copilot (automated technical development review)"
+      },
+      "security": {
+        "justification": "Current desktop renders DGN content through QPlainTextEdit and exposes no font-file loading, subsetting, printing/PDF, or image preview/encoding. HarfBuzz report requires font subsetting; this flow does not provide its input/sink. The libjpeg report uses the TurboJPEG tj3Compress8 wrapper, absent from tagged Qt JPEG build sources; this app also supplies no DGN images to Qt codecs. Exact wheel inventory has no VNC module. QtXml ReturnNullNode vendor policy is set before UI use; the app does not serialize QDom input. Application-specific decision retains upstream affected versions; it does not assert native binaries are patched or vulnerability-free.",
+        "verdict": "not-applicable",
+        "checked_at": "2026-10-09T15:50:39.3187115+00:00",
+        "constraints": [
+          "Development only; no release approval",
+          "XML mitigation regression must pass before desktop validation",
+          "Re-review before font loading, printing/PDF, image preview, new Qt modules/plugins, or wheel updates"
+        ],
+        "advisories": [
+          "CVE-2026-15037",
+          "CVE-2026-79680",
+          "OSV-2026-962",
+          "OSV-2026-1068"
+        ],
+        "evidence": "DEPENDENCY_CANDIDATES.md; test_application.PackageTests.test_desktop_dependency_exposure_boundary; test_ui.UITests.test_xml_invalid_nodes_are_rejected; retained tagged native sources and OSV reports",
+        "sources": [
+          "https://wiki.qt.io/List_of_known_vulnerabilities_in_Qt_products",
+          "https://www.qt.io/blog/security-advisory-cve-2026-15037-xml-injection",
+          "https://api.osv.dev/v1/query",
+          "https://raw.githubusercontent.com/qt/qtbase/v6.11.2/src/3rdparty/harfbuzz-ng/CMakeLists.txt",
+          "https://raw.githubusercontent.com/qt/qtbase/v6.11.2/src/3rdparty/libjpeg/CMakeLists.txt"
+        ],
+        "by": "GitHub Copilot (automated technical development review)",
+        "mitigation_test": "pass: real Qt 6.11.2, Windows and offscreen; comment/CDATA/processing-instruction null-node rejection verified"
+      },
+      "license": {
+        "by": "GitHub Copilot (automated technical development review)",
+        "approved": true,
+        "evidence": "Official wheel metadata and retained licenses: dependency-evidence/shiboken6-6.11.2-cp310-abi3-win_amd64-inventory.json. LGPL/GPL alternatives are recorded; local development use only. Distribution notices and owner/legal review remain pending."
+      },
+      "provenance": {
+        "by": "GitHub Copilot (automated technical development review)",
+        "approved": true,
+        "evidence": "Official Qt/PyPI identity and files.pythonhosted.org artifact; exact SHA-256 verified. No independently verified attestation/signature is claimed. Gap accepted for local development only."
+      },
+      "native_inventory": {
+        "by": "GitHub Copilot (automated technical development review)",
+        "approved": true,
+        "evidence": "dependency-evidence/shiboken6-6.11.2-cp310-abi3-win_amd64-inventory.json and dependency-evidence/shiboken6-6.11.2-cp310-abi3-win_amd64-bundled-hashes.json; tagged Qt 6.11.2 attributions/native build lists and explicit scoped advisory decision in DEPENDENCY_CANDIDATES.md. Complete release SBOM/notices remain pending."
+      }
+    }
+  ],
+  "release_approval": {
+    "approved": false,
+    "by": null
+  },
+  "excluded": []
+}

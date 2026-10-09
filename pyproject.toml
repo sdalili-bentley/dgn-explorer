@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=77"]
+requires = ["setuptools==83.0.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -10,12 +10,19 @@ readme = "README.md"
 requires-python = ">=3.11"
 dynamic = ["dependencies"]
 
+[project.optional-dependencies]
+desktop = ["PySide6-Essentials==6.11.2", "shiboken6==6.11.2"]
+
 [project.scripts]
 dgn-explorer = "dgn_folder:main"
 dgn-workspace = "dgn_folder:main"
 
+[project.gui-scripts]
+dgn-explorer-gui = "dgn_explorer.ui:main"
+
 [tool.setuptools]
 py-modules = ["dgn_folder"]
+packages = ["dgn_explorer"]
 
 [tool.setuptools.dynamic]
 dependencies = {file = ["requirements.txt"]}

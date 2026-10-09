@@ -1,0 +1,110 @@
+{
+  "info": {
+    "author": "Nathan West",
+    "author_email": "",
+    "bugtrack_url": null,
+    "classifiers": [
+      "Development Status :: 6 - Mature",
+      "Intended Audience :: Developers",
+      "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
+      "Programming Language :: Python",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3 :: Only",
+      "Topic :: Software Development",
+      "Topic :: Software Development :: Libraries",
+      "Topic :: Software Development :: Libraries :: Python Modules"
+    ],
+    "description": "[![PyPI version](https://badge.fury.io/py/autocommand.svg)](https://badge.fury.io/py/autocommand)\n\n# autocommand\n\nA library to automatically generate and run simple argparse parsers from function signatures.\n\n## Installation\n\nAutocommand is installed via pip:\n\n```\n$ pip install autocommand\n```\n\n## Usage\n\nAutocommand turns a function into a command-line program. It converts the function's parameter signature into command-line arguments, and automatically runs the function if the module was called as `__main__`. In effect, it lets your create a smart main function.\n\n```python\nfrom autocommand import autocommand\n\n# This program takes exactly one argument and echos it.\n@autocommand(__name__)\ndef echo(thing):\n    print(thing)\n```\n\n```\n$ python echo.py hello\nhello\n$ python echo.py -h\nusage: echo [-h] thing\n\npositional arguments:\n  thing\n\noptional arguments:\n  -h, --help  show this help message and exit\n$ python echo.py hello world  # too many arguments\nusage: echo.py [-h] thing\necho.py: error: unrecognized arguments: world\n```\n\nAs you can see, autocommand converts the signature of the function into an argument spec. When you run the file as a program, autocommand collects the command-line arguments and turns them into function arguments. The function is executed with these arguments, and then the program exits with the return value of the function, via `sys.exit`. Autocommand also automatically creates a usage message, which can be invoked with `-h` or `--help`, and automatically prints an error message when provided with invalid arguments.\n\n### Types\n\nYou can use a type annotation to give an argument a type. Any type (or in fact any callable) that returns an object when given a string argument can be used, though there are a few special cases that are described later.\n\n```python\n@autocommand(__name__)\ndef net_client(host, port: int):\n    ...\n```\n\nAutocommand will catch `TypeErrors` raised by the type during argument parsing, so you can supply a callable and do some basic argument validation as well.\n\n### Trailing Arguments\n\nYou can add a `*args` parameter to your function to give it trailing arguments. The command will collect 0 or more trailing arguments and supply them to `args` as a tuple. If a type annotation is supplied, the type is applied to each argument.\n\n```python\n# Write the contents of each file, one by one\n@autocommand(__name__)\ndef cat(*files):\n    for filename in files:\n        with open(filename) as file:\n            for line in file:\n                print(line.rstrip())\n```\n\n```\n$ python cat.py -h\nusage: ipython [-h] [file [file ...]]\n\npositional arguments:\n  file\n\noptional arguments:\n  -h, --help  show this help message and exit\n```\n\n### Options\n\nTo create `--option` switches, just assign a default. Autocommand will automatically create `--long` and `-s`hort switches.\n\n```python\n@autocommand(__name__)\ndef do_with_config(argument, config='~/foo.conf'):\n    pass\n```\n\n```\n$ python example.py -h\nusage: example.py [-h] [-c CONFIG] argument\n\npositional arguments:\n  argument\n\noptional arguments:\n  -h, --help            show this help message and exit\n  -c CONFIG, --config CONFIG\n```\n\nThe option's type is automatically deduced from the default, unless one is explicitly given in an annotation:\n\n```python\n@autocommand(__name__)\ndef http_connect(host, port=80):\n    print('{}:{}'.format(host, port))\n```\n\n```\n$ python http.py -h\nusage: http.py [-h] [-p PORT] host\n\npositional arguments:\n  host\n\noptional arguments:\n  -h, --help            show this help message and exit\n  -p PORT, --port PORT\n$ python http.py localhost\nlocalhost:80\n$ python http.py localhost -p 8080\nlocalhost:8080\n$ python http.py localhost -p blah\nusage: http.py [-h] [-p PORT] host\nhttp.py: error: argument -p/--port: invalid int value: 'blah'\n```\n\n#### None\n\nIf an option is given a default value of `None`, it reads in a value as normal, but supplies `None` if the option isn't provided.\n\n#### Switches\n\nIf an argument is given a default value of `True` or `False`, or\ngiven an explicit `bool` type, it becomes an option switch.\n\n```python\n    @autocommand(__name__)\n    def example(verbose=False, quiet=False):\n        pass\n```\n\n```\n$ python example.py -h\nusage: example.py [-h] [-v] [-q]\n\noptional arguments:\n  -h, --help     show this help message and exit\n  -v, --verbose\n  -q, --quiet\n```\n\nAutocommand attempts to do the \"correct thing\" in these cases- if the default is `True`, then supplying the switch makes the argument `False`; if the type is `bool` and the default is some other `True` value, then supplying the switch makes the argument `False`, while not supplying the switch makes the argument the default value.\n\nAutocommand also supports the creation of switch inverters. Pass `add_nos=True` to `autocommand` to enable this.\n\n```\n    @autocommand(__name__, add_nos=True)\n    def example(verbose=False):\n        pass\n```\n\n```\n$ python example.py -h\nusage: ipython [-h] [-v] [--no-verbose]\n\noptional arguments:\n  -h, --help     show this help message and exit\n  -v, --verbose\n  --no-verbose\n```\n\nUsing the `--no-` version of a switch will pass the opposite value in as a function argument. If multiple switches are present, the last one takes precedence.\n\n#### Files\n\nIf the default value is a file object, such as `sys.stdout`, then autocommand just looks for a string, for a file path. It doesn't do any special checking on the string, though (such as checking if the file exists); it's better to let the client decide how to handle errors in this case. Instead, it provides a special context manager called `smart_open`, which behaves exactly like `open` if a filename or other openable type is provided, but also lets you use already open files:\n\n```python\nfrom autocommand import autocommand, smart_open\nimport sys\n\n# Write the contents of stdin, or a file, to stdout\n@autocommand(__name__)\ndef write_out(infile=sys.stdin):\n    with smart_open(infile) as f:\n        for line in f:\n            print(line.rstrip())\n    # If a file was opened, it is closed here. If it was just stdin, it is untouched.\n```\n\n```\n$ echo \"Hello World!\" | python write_out.py | tee hello.txt\nHello World!\n$ python write_out.py --infile hello.txt\nHello World!\n```\n\n### Descriptions and docstrings\n\nThe `autocommand` decorator accepts `description` and `epilog` kwargs, corresponding to the `description <https://docs.python.org/3/library/argparse.html#description>`_ and `epilog <https://docs.python.org/3/library/argparse.html#epilog>`_ of the `ArgumentParser`. If no description is given, but the decorated function has a docstring, then it is taken as the `description` for the `ArgumentParser`. You can also provide both the description and epilog in the docstring by splitting it into two sections with 4 or more - characters.\n\n```python\n@autocommand(__name__)\ndef copy(infile=sys.stdin, outfile=sys.stdout):\n    '''\n    Copy an the contents of a file (or stdin) to another file (or stdout)\n    ----------\n    Some extra documentation in the epilog\n    '''\n    with smart_open(infile) as istr:\n        with smart_open(outfile, 'w') as ostr:\n            for line in istr:\n                ostr.write(line)\n```\n\n```\n$ python copy.py -h\nusage: copy.py [-h] [-i INFILE] [-o OUTFILE]\n\nCopy an the contents of a file (or stdin) to another file (or stdout)\n\noptional arguments:\n  -h, --help            show this help message and exit\n  -i INFILE, --infile INFILE\n  -o OUTFILE, --outfile OUTFILE\n\nSome extra documentation in the epilog\n$ echo \"Hello World\" | python copy.py --outfile hello.txt\n$ python copy.py --infile hello.txt --outfile hello2.txt\n$ python copy.py --infile hello2.txt\nHello World\n```\n\n### Parameter descriptions\n\nYou can also attach description text to individual parameters in the annotation. To attach both a type and a description, supply them both in any order in a tuple\n\n```python\n@autocommand(__name__)\ndef copy_net(\n    infile: 'The name of the file to send',\n    host: 'The host to send the file to',\n    port: (int, 'The port to connect to')):\n\n    '''\n    Copy a file over raw TCP to a remote destination.\n    '''\n    # Left as an exercise to the reader\n```\n\n### Decorators and wrappers\n\nAutocommand automatically follows wrapper chains created by `@functools.wraps`. This means that you can apply other wrapping decorators to your main function, and autocommand will still correctly detect the signature.\n\n```python\nfrom functools import wraps\nfrom autocommand import autocommand\n\ndef print_yielded(func):\n    '''\n    Convert a generator into a function that prints all yielded elements\n    '''\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        for thing in func(*args, **kwargs):\n            print(thing)\n    return wrapper\n\n@autocommand(__name__,\n    description= 'Print all the values from START to STOP, inclusive, in steps of STEP',\n    epilog=      'STOP and STEP default to 1')\n@print_yielded\ndef seq(stop, start=1, step=1):\n    for i in range(start, stop + 1, step):\n        yield i\n```\n\n```\n$ seq.py -h\nusage: seq.py [-h] [-s START] [-S STEP] stop\n\nPrint all the values from START to STOP, inclusive, in steps of STEP\n\npositional arguments:\n  stop\n\noptional arguments:\n  -h, --help            show this help message and exit\n  -s START, --start START\n  -S STEP, --step STEP\n\nSTOP and STEP default to 1\n```\n\nEven though autocommand is being applied to the `wrapper` returned by `print_yielded`, it still retreives the signature of the underlying `seq` function to create the argument parsing.\n\n### Custom Parser\n\nWhile autocommand's automatic parser generator is a powerful convenience, it doesn't cover all of the different features that argparse provides. If you need these features, you can provide your own parser as a kwarg to `autocommand`:\n\n```python\nfrom argparse import ArgumentParser\nfrom autocommand import autocommand\n\nparser = ArgumentParser()\n# autocommand can't do optional positonal parameters\nparser.add_argument('arg', nargs='?')\n# or mutually exclusive options\ngroup = parser.add_mutually_exclusive_group()\ngroup.add_argument('-v', '--verbose', action='store_true')\ngroup.add_argument('-q', '--quiet', action='store_true')\n\n@autocommand(__name__, parser=parser)\ndef main(arg, verbose, quiet):\n    print(arg, verbose, quiet)\n```\n\n```\n$ python parser.py -h\nusage: write_file.py [-h] [-v | -q] [arg]\n\npositional arguments:\n  arg\n\noptional arguments:\n  -h, --help     show this help message and exit\n  -v, --verbose\n  -q, --quiet\n$ python parser.py\nNone False False\n$ python parser.py hello\nhello False False\n$ python parser.py -v\nNone True False\n$ python parser.py -q\nNone False True\n$ python parser.py -vq\nusage: parser.py [-h] [-v | -q] [arg]\nparser.py: error: argument -q/--quiet: not allowed with argument -v/--verbose\n```\n\nAny parser should work fine, so long as each of the parser's arguments has a corresponding parameter in the decorated main function. The order of parameters doesn't matter, as long as they are all present. Note that when using a custom parser, autocommand doesn't modify the parser or the retrieved arguments. This means that no description/epilog will be added, and the function's type annotations and defaults (if present) will be ignored.\n\n## Testing and Library use\n\nThe decorated function is only called and exited from if the first argument to `autocommand` is `'__main__'` or `True`. If it is neither of these values, or no argument is given, then a new main function is created by the decorator. This function has the signature `main(argv=None)`, and is intended to be called with arguments as if via `main(sys.argv[1:])`. The function has the attributes `parser` and `main`, which are the generated `ArgumentParser` and the original main function that was decorated. This is to facilitate testing and library use of your main. Calling the function triggers a `parse_args()` with the supplied arguments, and returns the result of the main function. Note that, while it returns instead of calling `sys.exit`, the `parse_args()` function will raise a `SystemExit` in the event of a parsing error or `-h/--help` argument.\n\n```python\n    @autocommand()\n    def test_prog(arg1, arg2: int, quiet=False, verbose=False):\n        if not quiet:\n            print(arg1, arg2)\n            if verbose:\n                print(\"LOUD NOISES\")\n\n        return 0\n\n    print(test_prog(['-v', 'hello', '80']))\n```\n\n```\n$ python test_prog.py\nhello 80\nLOUD NOISES\n0\n```\n\nIf the function is called with no arguments, `sys.argv[1:]` is used. This is to allow the autocommand function to be used as a setuptools entry point.\n\n## Exceptions and limitations\n\n- There are a few possible exceptions that `autocommand` can raise. All of them derive from `autocommand.AutocommandError`.\n\n  - If an invalid annotation is given (that is, it isn't a `type`, `str`, `(type, str)`, or `(str, type)`, an `AnnotationError` is raised. The `type` may be any callable, as described in the `Types`_ section.\n  - If the function has a `**kwargs` parameter, a `KWargError` is raised.\n  - If, somehow, the function has a positional-only parameter, a `PositionalArgError` is raised. This means that the argument doesn't have a name, which is currently not possible with a plain `def` or `lambda`, though many built-in functions have this kind of parameter.\n\n- There are a few argparse features that are not supported by autocommand.\n\n  - It isn't possible to have an optional positional argument (as opposed to a `--option`). POSIX thinks this is bad form anyway.\n  - It isn't possible to have mutually exclusive arguments or options\n  - It isn't possible to have subcommands or subparsers, though I'm working on a few solutions involving classes or nested function definitions to allow this.\n\n## Development\n\nAutocommand cannot be important from the project root; this is to enforce separation of concerns and prevent accidental importing of `setup.py` or tests. To develop, install the project in editable mode:\n\n```\n$ python setup.py develop\n```\n\nThis will create a link to the source files in the deployment directory, so that any source changes are reflected when it is imported.\n",
+    "description_content_type": "text/markdown",
+    "docs_url": null,
+    "download_url": "",
+    "downloads": {
+      "last_day": -1,
+      "last_month": -1,
+      "last_week": -1
+    },
+    "dynamic": null,
+    "home_page": "https://github.com/Lucretiel/autocommand",
+    "keywords": "",
+    "license": "LGPLv3",
+    "license_expression": null,
+    "license_files": null,
+    "maintainer": "",
+    "maintainer_email": "",
+    "name": "autocommand",
+    "package_url": "https://pypi.org/project/autocommand/",
+    "platform": "any",
+    "project_url": "https://pypi.org/project/autocommand/",
+    "project_urls": {
+      "Bug Tracker": "https://github.com/Lucretiel/autocommand/issues",
+      "Homepage": "https://github.com/Lucretiel/autocommand"
+    },
+    "provides_extra": null,
+    "release_url": "https://pypi.org/project/autocommand/2.2.2/",
+    "requires_dist": null,
+    "requires_python": ">=3.7",
+    "summary": "A library to create a command-line program from a function",
+    "version": "2.2.2",
+    "yanked": false,
+    "yanked_reason": null
+  },
+  "last_serial": 15818608,
+  "ownership": {
+    "organization": null,
+    "roles": [
+      {
+        "role": "Owner",
+        "user": "Lucretiel"
+      }
+    ]
+  },
+  "urls": [
+    {
+      "comment_text": "",
+      "core-metadata": {
+        "sha256": "3800d9b91dceea2065a6ed6279383362e97ac38b8e56b9343f404ee531860099"
+      },
+      "digests": {
+        "blake2b_256": "b56205203c39d21aa3171454a6c5391ea3b582a97bfb1bc1adad25628331a1cd",
+        "md5": "f766ddad3952905d025f953453a77ee8",
+        "sha256": "710afe251075e038e19e815e25f8155cabe02196cfb545b2185e0d9c8b2b0459"
+      },
+      "downloads": -1,
+      "filename": "autocommand-2.2.2-py3-none-any.whl",
+      "has_sig": false,
+      "md5_digest": "f766ddad3952905d025f953453a77ee8",
+      "packagetype": "bdist_wheel",
+      "python_version": "py3",
+      "requires_python": ">=3.7",
+      "size": 19377,
+      "upload_time": "2022-11-18T19:15:48",
+      "upload_time_iso_8601": "2022-11-18T19:15:48.052164Z",
+      "url": "https://files.pythonhosted.org/packages/b5/62/05203c39d21aa3171454a6c5391ea3b582a97bfb1bc1adad25628331a1cd/autocommand-2.2.2-py3-none-any.whl",
+      "yanked": false,
+      "yanked_reason": null
+    },
+    {
+      "comment_text": "",
+      "core-metadata": false,
+      "digests": {
+        "blake2b_256": "5b18774bddb96bc0dc0a2b8ac2d2a0e686639744378883da0fc3b96a54192d7a",
+        "md5": "0cab5141bad0dfb363b086e93fd4125e",
+        "sha256": "878de9423c5596491167225c2a455043c3130fb5b7286ac83443d45e74955f34"
+      },
+      "downloads": -1,
+      "filename": "autocommand-2.2.2.tar.gz",
+      "has_sig": false,
+      "md5_digest": "0cab5141bad0dfb363b086e93fd4125e",
+      "packagetype": "sdist",
+      "python_version": "source",
+      "requires_python": ">=3.7",
+      "size": 22894,
+      "upload_time": "2022-11-18T19:15:49",
+      "upload_time_iso_8601": "2022-11-18T19:15:49.755809Z",
+      "url": "https://files.pythonhosted.org/packages/5b/18/774bddb96bc0dc0a2b8ac2d2a0e686639744378883da0fc3b96a54192d7a/autocommand-2.2.2.tar.gz",
+      "yanked": false,
+      "yanked_reason": null
+    }
+  ],
+  "vulnerabilities": []
+}

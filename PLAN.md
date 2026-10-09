@@ -1,14 +1,75 @@
 # DGN Explorer Implementation Plan
 
-**State:** CLI baseline only; desktop, edit service, policy automation, AI skill
-and packaged release are pending. This tracked repository is the source home.
+**State:** backend/service/CLI/worker and offline policy-checker implementation
+exists. Desktop source/tests and the CLI skill exist. Thirteen dependencies,
+including matched Qt 6.11.2, have scoped development admission, hash locks and
+offline installation. All 23 Windows Qt tests pass. The corrected decision
+and lesson are in [dependency evidence](DEPENDENCY_CANDIDATES.md). Desktop workflow
+workflows and a relocated frozen portable development preview pass synthetic
+verification. Company-release gates remain incomplete. This tracked checkout is
+the source home; GitHub preview builds are automatic on main pushes and PRs.
 [README.md](README.md) documents current commands; [DEPENDENCY_POLICY.md](DEPENDENCY_POLICY.md)
 is mandatory. Mark tasks complete only with evidence; keep gaps/status current.
 
-Baseline evidence: all 31 codec/sample tests pass using the approved local reference
+Published-baseline evidence: all 31 codec/sample tests pass using the approved local reference
 fixture; without it, 17 pass and 14 skip. A separate test covers renamed package
-entry points. Wheel validation is blocked by missing local setuptools; no new
-build dependency is downloaded. This is source publication, not an approved release.
+entry points. Setuptools 83.0.0 and PyInstaller 6.22.2 are available for local
+development; an offline development wheel builds and its packaged CLI help
+smoke test passes. Relocated portable packaging validation passes. This is source
+and development-preview publication, not company release approval.
+
+## Completion and GitHub Automation
+
+User authorizes completion, local portable builds, automatic GitHub Actions
+builds and publication to `sdalili-bentley/dgn-explorer`. The existing standalone
+checkout is the source home; audit-parent changes are not part of this push.
+
+| Work | State | Verification |
+|------|-------|--------------|
+| Rejected edits | Accepted property values restore after rejection | Focused real Qt regression passes |
+| Desktop workflows | Verified | 23 Qt tests; retain drafts, asynchronous save/discard/cancel, private import/recents; real save/export/reimport |
+| Portable package | Verified development preview | Offline GUI/backend one-folder build; minimal Windows plugins, licenses/receipt/inventory/checksum; relocated real CLI/GUI tests |
+| GitHub Actions | Implemented; remote run pending | Immutable mature actions, exact signed Python, hash locks, fail-closed fresh advisory queries; tests/build/upload on push/PR/manual runs |
+| GitHub synchronization | Pending | Fetch/reconcile without reverting local changes; review staged files, commit and push; confirm remote/workflow result |
+
+Build artifacts are development previews, not company distribution approval.
+Clean-machine/native application/DPI/signing gates require their own evidence.
+
+## Implementation Checkpoint
+
+| Task | Implementation State | Acceptance Gap |
+|------|----------------------|----------------|
+| T01 | Synthetic COM fixtures, regressions, scenario matrix; 70.50% in-process lines, 61.98% branches | Sample availability, subprocess coverage and uncovered-path review |
+| T02 | Official Qt 6.11.2 Windows artifacts admitted; real binding/native match, XML mitigation and scoped native review | Distribution/license/native-notices approval and feature-change re-review |
+| T03 | Offline checker, age/hash/exception/non-applicability tests, development-release boundary; thirteen actual admissions | Release approvals and complete policy/build integration |
+| T04 | Exact runtime/build/dev locks including Qt, hash-verified wheels, offline resolution/install; pip check passes | Clean release build enforcement |
+| T05 | Package/module entry, shared codecs, legacy aliases; offline wheel and packaged CLI smoke pass | Full sample/portable-packaging regression gates |
+| T06 | Contextual records and bounded pages/search | Inventory still decodes all streams; lazy/large-fixture performance pending |
+| T07,T08,T09 | Original-derived capabilities, strict replacements, revisions/staging/diff | Wider record/error-path coverage and coverage review |
+| T10 | OS locks, journaled save/rollback/recovery; boundary fault tests | Real process/power-loss and filesystem-race stress |
+| T11,T12 | JSON list/show/search/apply/diff/validate/pack | Broader protocol/exit/limit fixtures and coverage review |
+| T13 | [CLI skill](skills/dgn-explorer/SKILL.md), real synthetic command tests | Client loading/pilot evidence |
+| T14 | Optional desktop without CLI Qt imports; admitted Qt, Windows runtime and packaged entry pass | Clean Windows VM pilot |
+| T15 | Bounded worker, cancellation, open-input shutdown regression; real Qt controller open/show passes | Controller fragmentation/crash and measured cancellation tests |
+| T16,T17,T18,T19,T20 | Desktop browser/edit/undo/recovery/Save As; drafts and asynchronous close/switch; 23 Qt tests and frozen workflow pass | Native dialogs and larger fixtures |
+| T21 | Aggregate/stream/reference checks and cancellation boundaries | Full-disk/races/worker-death stress and measured limits |
+| T22 | Qt layout/keyboard test source | Real Windows DPI/accessibility/screenshots and complete workflows |
+| T23,T25,T26 | Portable preview build and GitHub automation implemented | Clean VM/isolated native-product pilot, owners/signing/distribution approval |
+| T24 | Short usage/AI/testing documentation | License notices, signing and colleague pilot |
+
+Current verification uses the existing development environment and tiny synthetic
+compound files, not customer data. Qt checks run on admitted Qt 6.11.2;
+optional original sample checks skip without their local fixture. Reviewed Qt and
+build/test tools are installed; portable previews are generated under `dist/`.
+No customer fixture is distributed or installed into a Bentley product here.
+The code is an implementation checkpoint, not completion of all release gates.
+
+Available-suite result: `python -m unittest discover -s . -p 'test_*.py' -v`
+runs 95 tests: 81 pass, 14 original-sample checks skip, no Qt checks skip.
+The worker open-input shutdown regression also passes after its stdin type
+assertion. Missing sample checks are not passing evidence. Line/branch
+coverage are 70.50% in-process lines and 61.98% branches, respectively;
+subprocess aggregation and approved build/application-pilot results remain pending.
 
 ## Commitments
 
@@ -36,12 +97,14 @@ build dependency is downloaded. This is source publication, not an approved rele
 | Qt UI | Native tree/properties/content/bytes/changes; never serializes DGN directly |
 
 Wrap existing [dgn_folder.py](dgn_folder.py), split only at useful boundaries.
-Proposed package: `src/dgn_explorer/{codecs,workspace,cli,worker}.py` plus `ui/`;
+Current package: `dgn_explorer/`, with a facade over the single existing codec
+module. Desktop lives in `desktop.py` behind the optional `ui.py` entry;
 reuse current tests, adding shared helpers only when necessary. AI skill:
 `skills/dgn-explorer/SKILL.md`. CLI keeps `dgn-workspace`, extract/rebuild aliases.
 
 Import DGN into private restricted per-user storage; expose location/retention.
-Only owned temporary workspaces are removed on clean save/discard. Crashes retain
+Temporary operation folders are removed; imported workspaces are retained after
+save/discard. Crashes retain
 recoverable state; user workspaces/backups are never cleaned. Hide framing and
 snapshots by default. Open -> browse/search -> stage/preview -> save/Save As;
 close prompts save/discard/cancel. Links stay data; plain XML/JSON/text, no HTML.
@@ -74,8 +137,8 @@ and explicit validators, not a new schema framework without demonstrated need.
 Immutable capability descriptors preserve source identity. Advanced raw-byte
 edits require opt-in/warning/preview/new output, never weaker path/identity/limit checks.
 
-Planned CLI additions: list/show/search, apply (`--dry-run` or `--approve`), diff
-and validate; not current features. Versioned `--json` envelopes carry operation,
+Implemented CLI additions: list/show/search, apply (`--dry-run` or `--approve`), diff
+and validate. Versioned `--json` envelopes carry operation,
 success, result/warnings/errors; progress/diagnostics use stderr. Suggested exits:
 0 success, 2 usage, 3 invalid/unsupported, 4 conflict, 5 I/O, 6 cancel, 7 verification.
 Document old behavior changes; no content/patch values/sensitive paths logged by default.
@@ -83,7 +146,7 @@ The bundled skill documents bounded discovery/inspection, proposals, validation
 and human approval before writes/packing; a flag is not consent. Document loading
 in supported AI tools; no hosted-model testing or automatic skill-discovery assumption.
 
-Patch example, proposed and not runnable through current CLI:
+Patch example; substitute a returned record locator/revision and actual prior value:
 
 ```json
 {"schema":"dgn-explorer.patch-v1","workspace_revision":"sha256:<revision>",
@@ -117,7 +180,9 @@ no fixed import-time promise. Never parse/pack on the UI thread.
 
 ## Backlog
 
-All tasks are pending. Every task includes the mandatory test contract below.
+The checkpoint table records implemented slices and remaining acceptance gates;
+no milestone is complete while its required evidence is missing. Every task
+includes the mandatory test contract below.
 M0=T01-T04, M1=T05-T10, M2=T11-T13, M3=T14-T17, M4=T18-T19,
 M5=T20-T22, M6=T23-T25, M7=T26; dependencies, not grouping, determine order.
 

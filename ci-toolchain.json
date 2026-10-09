@@ -1,0 +1,24 @@
+{
+  "schema": "dgn-explorer.ci-toolchain-v1",
+  "admission_scope": "development-only",
+  "python": {
+    "version": "3.14.3",
+    "url": "https://www.python.org/ftp/python/3.14.3/python-3.14.3-amd64.exe",
+    "sha256": "b68ad91421afbbd1a628105199c8c5f6179b21ba799067a8d8c0bbac3b7defb0",
+    "artifact_published": "2026-02-03T18:02:32Z",
+    "publication_evidence": "Official artifact HTTP Last-Modified: Tue, 03 Feb 2026 18:02:32 GMT",
+    "signature_status": "Valid",
+    "signer": "CN=Python Software Foundation, O=Python Software Foundation, L=Beaverton, S=Oregon, C=US",
+    "review": "Automated technical development review; official signed installer. No shared-release approval."
+  },
+  "qt_upstream_advisories": [
+    "CVE-2023-32762", "CVE-2023-32763", "CVE-2023-33285", "CVE-2023-34410", "CVE-2023-37369", "CVE-2023-38197", "CVE-2023-43114", "CVE-2023-45872", "CVE-2023-51714",
+    "CVE-2024-25580", "CVE-2024-30161", "CVE-2024-33861", "CVE-2024-36048", "CVE-2024-39936",
+    "CVE-2025-10728", "CVE-2025-10729", "CVE-2025-12385", "CVE-2025-14575", "CVE-2025-14576", "CVE-2025-23050", "CVE-2025-30348", "CVE-2025-3512", "CVE-2025-4211", "CVE-2025-5455", "CVE-2025-5683", "CVE-2025-5991", "CVE-2025-5992", "CVE-2025-6338",
+    "CVE-2026-11573", "CVE-2026-12379", "CVE-2026-12593", "CVE-2026-13326", "CVE-2026-15037", "CVE-2026-19248", "CVE-2026-19395", "CVE-2026-6210", "CVE-2026-76151", "CVE-2026-78253", "CVE-2026-79616", "CVE-2026-79680", "CVE-2026-86350", "CVE-2026-9499", "CVE-2026-95509"
+  ],
+  "actions": [
+    {"name": "actions/checkout", "sha": "11bd71901bbe5b1630ceea73d27597364c9af683", "published": "2024-10-23T14:24:28Z"},
+    {"name": "actions/upload-artifact", "sha": "ea165f8d65b6e75b540449e92b4886f43607fa02", "published": "2025-03-19T17:34:59Z"}
+  ]
+}

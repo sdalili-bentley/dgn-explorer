@@ -1286,7 +1286,12 @@ def label_workspace_files(folder: Path, manifest: dict) -> None:
     (folder / "WRITABLE.ro.md").write_text("\n".join(guide) + "\n", encoding="utf-8")
 
 
-def extract(source: Path, folder: Path, limit: int, bytes_mode: str = "escaped") -> dict:
+def checkpoint(cancel=None) -> None:
+    if cancel is not None and cancel():
+        raise InterruptedError("Operation cancelled")
+
+
+def extract(source: Path, folder: Path, limit: int, bytes_mode: str = "escaped", cancel=None) -> dict:
     if bytes_mode not in ("escaped", "hex"):
         raise ValueError("bytes_mode must be escaped or hex")
     olefile = ole_reader()
@@ -1317,8 +1322,10 @@ def extract(source: Path, folder: Path, limit: int, bytes_mode: str = "escaped")
         }
         objects = []
         for names in manifest["storages"]:
+            checkpoint(cancel)
             inside(folder, "data/" + "/".join(map(disk_name, names))).mkdir(parents=True, exist_ok=True)
         for names in ole.listdir():
+            checkpoint(cancel)
             if ole.get_size(names) > limit:
                 raise ValueError(f"Stream exceeds --max-mib: {names!r}")
             raw = ole.openstream(names).read()
@@ -1475,7 +1482,7 @@ def update_compound(path: Path, storages: set[tuple[str, ...]], streams: set[tup
         root = None
 
 
-def rebuild(folder: Path, output: Path, limit: int) -> int:
+def rebuild(folder: Path, output: Path, limit: int, cancel=None) -> int:
     olefile = ole_reader()
     manifest = load_manifest(folder)
     original = folder / "original.dgn"
@@ -1491,6 +1498,7 @@ def rebuild(folder: Path, output: Path, limit: int) -> int:
         old_streams = {tuple(names) for names in ole.listdir()}
         old_storages = {tuple(names) for names in ole.listdir(streams=False, storages=True)}
         for entry in manifest["streams"]:
+            checkpoint(cancel)
             names = tuple(entry["ole_path"])
             raw = ole.openstream(list(names)).read() if names in old_streams else None
             encoded = encode_stream(folder, entry, raw, limit)
@@ -1513,17 +1521,19 @@ def rebuild(folder: Path, output: Path, limit: int) -> int:
             if {tuple(names) for names in ole.listdir(streams=False, storages=True)} != storages:
                 raise ValueError("Rebuilt storage hierarchy verification failed")
             for names, expected in desired.items():
+                checkpoint(cancel)
                 if digest(ole.openstream(list(names)).read()) != expected:
                     raise ValueError(f"Rebuilt stream verification failed: {names!r}")
         if output.exists():
             raise ValueError(f"Output appeared during rebuild: {output}")
+        checkpoint(cancel)
         os.rename(temporary_path, output)
     finally:
         temporary_path.unlink(missing_ok=True)
     return len(changed) + len(deleted) + len(storages.symmetric_difference(old_storages))
 
 
-def main() -> int:
+def legacy_main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--max-mib", type=int, default=DEFAULT_LIMIT // (1024 * 1024), help="Maximum bytes per stored/decompressed stream, in MiB (default: 512)")
     commands = parser.add_subparsers(dest="command", required=True)
@@ -1537,7 +1547,7 @@ def main() -> int:
     inspect_parser = commands.add_parser("inspect", help="Inventory object types and metadata without resolving external targets")
     inspect_parser.add_argument("source", type=Path)
     inspect_parser.add_argument("--output", type=Path)
-    arguments = parser.parse_args()
+    arguments = parser.parse_args(argv)
     if arguments.max_mib <= 0:
         parser.error("--max-mib must be positive")
     limit = arguments.max_mib * 1024 * 1024
@@ -1571,6 +1581,12 @@ def main() -> int:
         print(f"Error: {error}", file=sys.stderr)
         return 1
     return 0
+
+
+def main() -> int:
+    from dgn_explorer.cli import main as application_main
+
+    return application_main()
 
 
 if __name__ == "__main__":

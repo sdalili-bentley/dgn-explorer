@@ -1,0 +1,282 @@
+[
+  {
+    "FullName": "shiboken6/Shiboken.pyd",
+    "Length": 33592
+  },
+  {
+    "FullName": "shiboken6/Shiboken.pyi",
+    "Length": 1083
+  },
+  {
+    "FullName": "shiboken6/__init__.py",
+    "Length": 697
+  },
+  {
+    "FullName": "shiboken6/_config.py",
+    "Length": 193
+  },
+  {
+    "FullName": "shiboken6/_git_shiboken_module_version.py",
+    "Length": 713
+  },
+  {
+    "FullName": "shiboken6/concrt140.dll",
+    "Length": 315704
+  },
+  {
+    "FullName": "shiboken6/msvcp140.dll",
+    "Length": 549176
+  },
+  {
+    "FullName": "shiboken6/msvcp140_1.dll",
+    "Length": 27448
+  },
+  {
+    "FullName": "shiboken6/msvcp140_2.dll",
+    "Length": 271672
+  },
+  {
+    "FullName": "shiboken6/msvcp140_codecvt_ids.dll",
+    "Length": 23352
+  },
+  {
+    "FullName": "shiboken6/py.typed",
+    "Length": 34
+  },
+  {
+    "FullName": "shiboken6/shiboken6.abi3.dll",
+    "Length": 394040
+  },
+  {
+    "FullName": "shiboken6/shiboken6.abi3.lib",
+    "Length": 182138
+  },
+  {
+    "FullName": "shiboken6/vcamp140.dll",
+    "Length": 449848
+  },
+  {
+    "FullName": "shiboken6/vccorlib140.dll",
+    "Length": 343864
+  },
+  {
+    "FullName": "shiboken6/vcomp140.dll",
+    "Length": 155448
+  },
+  {
+    "FullName": "shiboken6/vcruntime140.dll",
+    "Length": 116024
+  },
+  {
+    "FullName": "shiboken6/vcruntime140_1.dll",
+    "Length": 41272
+  },
+  {
+    "FullName": "shiboken6/include/autodecref.h",
+    "Length": 2427
+  },
+  {
+    "FullName": "shiboken6/include/basewrapper.h",
+    "Length": 24130
+  },
+  {
+    "FullName": "shiboken6/include/basewrapper_p.h",
+    "Length": 5034
+  },
+  {
+    "FullName": "shiboken6/include/bindingmanager.h",
+    "Length": 3390
+  },
+  {
+    "FullName": "shiboken6/include/bufferprocs_py37.h",
+    "Length": 5794
+  },
+  {
+    "FullName": "shiboken6/include/gilstate.h",
+    "Length": 794
+  },
+  {
+    "FullName": "shiboken6/include/helper.h",
+    "Length": 3920
+  },
+  {
+    "FullName": "shiboken6/include/pep384ext.h",
+    "Length": 2937
+  },
+  {
+    "FullName": "shiboken6/include/pep384impl.h",
+    "Length": 17608
+  },
+  {
+    "FullName": "shiboken6/include/pyobjectholder.h",
+    "Length": 2552
+  },
+  {
+    "FullName": "shiboken6/include/sbkarrayconverter.h",
+    "Length": 3852
+  },
+  {
+    "FullName": "shiboken6/include/sbkbindingutils.h",
+    "Length": 1702
+  },
+  {
+    "FullName": "shiboken6/include/sbkcontainer.h",
+    "Length": 9255
+  },
+  {
+    "FullName": "shiboken6/include/sbkconverter.h",
+    "Length": 22474
+  },
+  {
+    "FullName": "shiboken6/include/sbkcppstring.h",
+    "Length": 809
+  },
+  {
+    "FullName": "shiboken6/include/sbkcpptonumpy.h",
+    "Length": 1298
+  },
+  {
+    "FullName": "shiboken6/include/sbkdestructorentry.h",
+    "Length": 544
+  },
+  {
+    "FullName": "shiboken6/include/sbkenum.h",
+    "Length": 4797
+  },
+  {
+    "FullName": "shiboken6/include/sbkenum_p.h",
+    "Length": 437
+  },
+  {
+    "FullName": "shiboken6/include/sbkerrors.h",
+    "Length": 4017
+  },
+  {
+    "FullName": "shiboken6/include/sbkfeature_base.h",
+    "Length": 782
+  },
+  {
+    "FullName": "shiboken6/include/sbkmodule.h",
+    "Length": 3855
+  },
+  {
+    "FullName": "shiboken6/include/sbkmodule_p.h",
+    "Length": 485
+  },
+  {
+    "FullName": "shiboken6/include/sbknumpycheck.h",
+    "Length": 950
+  },
+  {
+    "FullName": "shiboken6/include/sbknumpyview.h",
+    "Length": 1418
+  },
+  {
+    "FullName": "shiboken6/include/sbkpep.h",
+    "Length": 331
+  },
+  {
+    "FullName": "shiboken6/include/sbkpepbuffer.h",
+    "Length": 1092
+  },
+  {
+    "FullName": "shiboken6/include/sbkpython.h",
+    "Length": 1250
+  },
+  {
+    "FullName": "shiboken6/include/sbksmartpointer.h",
+    "Length": 572
+  },
+  {
+    "FullName": "shiboken6/include/sbkstaticstrings.h",
+    "Length": 1880
+  },
+  {
+    "FullName": "shiboken6/include/sbkstring.h",
+    "Length": 1728
+  },
+  {
+    "FullName": "shiboken6/include/sbktypefactory.h",
+    "Length": 784
+  },
+  {
+    "FullName": "shiboken6/include/sbkversion.h",
+    "Length": 506
+  },
+  {
+    "FullName": "shiboken6/include/sbkwindows.h",
+    "Length": 442
+  },
+  {
+    "FullName": "shiboken6/include/shiboken.h",
+    "Length": 796
+  },
+  {
+    "FullName": "shiboken6/include/shibokenbuffer.h",
+    "Length": 1711
+  },
+  {
+    "FullName": "shiboken6/include/shibokenmacros.h",
+    "Length": 784
+  },
+  {
+    "FullName": "shiboken6/include/signature.h",
+    "Length": 863
+  },
+  {
+    "FullName": "shiboken6/include/signature_p.h",
+    "Length": 2933
+  },
+  {
+    "FullName": "shiboken6/include/threadstatesaver.h",
+    "Length": 841
+  },
+  {
+    "FullName": "shiboken6/include/voidptr.h",
+    "Length": 858
+  },
+  {
+    "FullName": "shiboken6/lib/cmake/Shiboken6/Shiboken6Config.abi3.cmake",
+    "Length": 2660
+  },
+  {
+    "FullName": "shiboken6/lib/cmake/Shiboken6/Shiboken6Config.cmake",
+    "Length": 228
+  },
+  {
+    "FullName": "shiboken6/lib/cmake/Shiboken6/Shiboken6ConfigVersion.cmake",
+    "Length": 489
+  },
+  {
+    "FullName": "shiboken6/lib/cmake/Shiboken6/Shiboken6Targets-release.cmake",
+    "Length": 1002
+  },
+  {
+    "FullName": "shiboken6/lib/cmake/Shiboken6/Shiboken6Targets.cmake",
+    "Length": 4400
+  },
+  {
+    "FullName": "shiboken6/lib/cmake/Shiboken6/ShibokenHelpers.cmake",
+    "Length": 37046
+  },
+  {
+    "FullName": "shiboken6-6.11.2.dist-info/licenses/LicenseRef-Qt-Commercial.txt",
+    "Length": 470
+  },
+  {
+    "FullName": "shiboken6-6.11.2.dist-info/METADATA",
+    "Length": 2542
+  },
+  {
+    "FullName": "shiboken6-6.11.2.dist-info/WHEEL",
+    "Length": 100
+  },
+  {
+    "FullName": "shiboken6-6.11.2.dist-info/top_level.txt",
+    "Length": 19
+  },
+  {
+    "FullName": "shiboken6-6.11.2.dist-info/RECORD",
+    "Length": 6211
+  }
+]

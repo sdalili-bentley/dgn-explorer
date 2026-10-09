@@ -1,0 +1,114 @@
+[
+  {
+    "FullName": "OleFileIO_PL.py",
+    "Length": 1350
+  },
+  {
+    "FullName": "olefile/CONTRIBUTORS.txt",
+    "Length": 792
+  },
+  {
+    "FullName": "olefile/LICENSE.txt",
+    "Length": 2915
+  },
+  {
+    "FullName": "olefile/README.html",
+    "Length": 11237
+  },
+  {
+    "FullName": "olefile/README.rst",
+    "Length": 10221
+  },
+  {
+    "FullName": "olefile/__init__.py",
+    "Length": 967
+  },
+  {
+    "FullName": "olefile/olefile.html",
+    "Length": 33526
+  },
+  {
+    "FullName": "olefile/olefile.py",
+    "Length": 125455
+  },
+  {
+    "FullName": "olefile/olefile2.html",
+    "Length": 18492
+  },
+  {
+    "FullName": "olefile/olefile2.py",
+    "Length": 89797
+  },
+  {
+    "FullName": "olefile/doc/API.html",
+    "Length": 15580
+  },
+  {
+    "FullName": "olefile/doc/API.md",
+    "Length": 13312
+  },
+  {
+    "FullName": "olefile/doc/Contribute.html",
+    "Length": 1870
+  },
+  {
+    "FullName": "olefile/doc/Contribute.md",
+    "Length": 1199
+  },
+  {
+    "FullName": "olefile/doc/Home.html",
+    "Length": 5348
+  },
+  {
+    "FullName": "olefile/doc/Home.md",
+    "Length": 4306
+  },
+  {
+    "FullName": "olefile/doc/Install.html",
+    "Length": 1914
+  },
+  {
+    "FullName": "olefile/doc/Install.md",
+    "Length": 1241
+  },
+  {
+    "FullName": "olefile/doc/License.html",
+    "Length": 3833
+  },
+  {
+    "FullName": "olefile/doc/License.md",
+    "Length": 3191
+  },
+  {
+    "FullName": "olefile/doc/OLE_Overview.html",
+    "Length": 2482
+  },
+  {
+    "FullName": "olefile/doc/OLE_Overview.md",
+    "Length": 1740
+  },
+  {
+    "FullName": "olefile/doc/OLE_VBA_sample.png",
+    "Length": 3568
+  },
+  {
+    "FullName": "olefile-0.47.dist-info/LICENSE.txt",
+    "Length": 2846
+  },
+  {
+    "FullName": "olefile-0.47.dist-info/METADATA",
+    "Length": 9718
+  },
+  {
+    "FullName": "olefile-0.47.dist-info/WHEEL",
+    "Length": 116
+  },
+  {
+    "FullName": "olefile-0.47.dist-info/top_level.txt",
+    "Length": 8
+  },
+  {
+    "FullName": "olefile-0.47.dist-info/RECORD",
+    "Length": 2203
+  }
+]

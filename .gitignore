@@ -10,3 +10,6 @@ corpus/
 wheelhouse/
 .coverage*
 htmlcov/
+dependency-evidence/*install-report.json
+dependency-evidence/coverage-summary.json
+dependency-evidence/development-admission.generated.json

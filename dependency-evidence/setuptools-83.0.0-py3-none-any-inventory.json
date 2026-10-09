@@ -1,0 +1,1766 @@
+[
+  {
+    "FullName": "distutils-precedence.pth",
+    "Length": 151
+  },
+  {
+    "FullName": "_distutils_hack/__init__.py",
+    "Length": 6755
+  },
+  {
+    "FullName": "_distutils_hack/override.py",
+    "Length": 44
+  },
+  {
+    "FullName": "setuptools/__init__.py",
+    "Length": 9521
+  },
+  {
+    "FullName": "setuptools/_core_metadata.py",
+    "Length": 11978
+  },
+  {
+    "FullName": "setuptools/_discovery.py",
+    "Length": 836
+  },
+  {
+    "FullName": "setuptools/_entry_points.py",
+    "Length": 2468
+  },
+  {
+    "FullName": "setuptools/_imp.py",
+    "Length": 2435
+  },
+  {
+    "FullName": "setuptools/_importlib.py",
+    "Length": 106
+  },
+  {
+    "FullName": "setuptools/_itertools.py",
+    "Length": 657
+  },
+  {
+    "FullName": "setuptools/_normalization.py",
+    "Length": 5798
+  },
+  {
+    "FullName": "setuptools/_path.py",
+    "Length": 2946
+  },
+  {
+    "FullName": "setuptools/_reqs.py",
+    "Length": 1356
+  },
+  {
+    "FullName": "setuptools/_scripts.py",
+    "Length": 11247
+  },
+  {
+    "FullName": "setuptools/_shutil.py",
+    "Length": 1605
+  },
+  {
+    "FullName": "setuptools/_static.py",
+    "Length": 4855
+  },
+  {
+    "FullName": "setuptools/archive_util.py",
+    "Length": 7356
+  },
+  {
+    "FullName": "setuptools/build_meta.py",
+    "Length": 20205
+  },
+  {
+    "FullName": "setuptools/cli-32.exe",
+    "Length": 11776
+  },
+  {
+    "FullName": "setuptools/cli-64.exe",
+    "Length": 14336
+  },
+  {
+    "FullName": "setuptools/cli-arm64.exe",
+    "Length": 13824
+  },
+  {
+    "FullName": "setuptools/cli.exe",
+    "Length": 11776
+  },
+  {
+    "FullName": "setuptools/depends.py",
+    "Length": 5965
+  },
+  {
+    "FullName": "setuptools/discovery.py",
+    "Length": 21286
+  },
+  {
+    "FullName": "setuptools/dist.py",
+    "Length": 45155
+  },
+  {
+    "FullName": "setuptools/errors.py",
+    "Length": 3024
+  },
+  {
+    "FullName": "setuptools/extension.py",
+    "Length": 6818
+  },
+  {
+    "FullName": "setuptools/glob.py",
+    "Length": 6062
+  },
+  {
+    "FullName": "setuptools/gui-32.exe",
+    "Length": 11776
+  },
+  {
+    "FullName": "setuptools/gui-64.exe",
+    "Length": 14336
+  },
+  {
+    "FullName": "setuptools/gui-arm64.exe",
+    "Length": 13824
+  },
+  {
+    "FullName": "setuptools/gui.exe",
+    "Length": 11776
+  },
+  {
+    "FullName": "setuptools/installer.py",
+    "Length": 5184
+  },
+  {
+    "FullName": "setuptools/launch.py",
+    "Length": 820
+  },
+  {
+    "FullName": "setuptools/launcher manifest.xml",
+    "Length": 628
+  },
+  {
+    "FullName": "setuptools/logging.py",
+    "Length": 1261
+  },
+  {
+    "FullName": "setuptools/modified.py",
+    "Length": 568
+  },
+  {
+    "FullName": "setuptools/monkey.py",
+    "Length": 3733
+  },
+  {
+    "FullName": "setuptools/msvc.py",
+    "Length": 42909
+  },
+  {
+    "FullName": "setuptools/namespaces.py",
+    "Length": 3045
+  },
+  {
+    "FullName": "setuptools/script (dev).tmpl",
+    "Length": 218
+  },
+  {
+    "FullName": "setuptools/script.tmpl",
+    "Length": 138
+  },
+  {
+    "FullName": "setuptools/unicode_utils.py",
+    "Length": 3831
+  },
+  {
+    "FullName": "setuptools/version.py",
+    "Length": 161
+  },
+  {
+    "FullName": "setuptools/warnings.py",
+    "Length": 3785
+  },
+  {
+    "FullName": "setuptools/wheel.py",
+    "Length": 9532
+  },
+  {
+    "FullName": "setuptools/windows_support.py",
+    "Length": 726
+  },
+  {
+    "FullName": "setuptools/_distutils/__init__.py",
+    "Length": 359
+  },
+  {
+    "FullName": "setuptools/_distutils/_log.py",
+    "Length": 42
+  },
+  {
+    "FullName": "setuptools/_distutils/_macos_compat.py",
+    "Length": 239
+  },
+  {
+    "FullName": "setuptools/_distutils/_modified.py",
+    "Length": 3225
+  },
+  {
+    "FullName": "setuptools/_distutils/_msvccompiler.py",
+    "Length": 335
+  },
+  {
+    "FullName": "setuptools/_distutils/archive_util.py",
+    "Length": 8484
+  },
+  {
+    "FullName": "setuptools/_distutils/ccompiler.py",
+    "Length": 524
+  },
+  {
+    "FullName": "setuptools/_distutils/cmd.py",
+    "Length": 21344
+  },
+  {
+    "FullName": "setuptools/_distutils/core.py",
+    "Length": 9364
+  },
+  {
+    "FullName": "setuptools/_distutils/cygwinccompiler.py",
+    "Length": 594
+  },
+  {
+    "FullName": "setuptools/_distutils/debug.py",
+    "Length": 139
+  },
+  {
+    "FullName": "setuptools/_distutils/dep_util.py",
+    "Length": 349
+  },
+  {
+    "FullName": "setuptools/_distutils/dir_util.py",
+    "Length": 6864
+  },
+  {
+    "FullName": "setuptools/_distutils/dist.py",
+    "Length": 55688
+  },
+  {
+    "FullName": "setuptools/_distutils/errors.py",
+    "Length": 3092
+  },
+  {
+    "FullName": "setuptools/_distutils/extension.py",
+    "Length": 11155
+  },
+  {
+    "FullName": "setuptools/_distutils/fancy_getopt.py",
+    "Length": 17908
+  },
+  {
+    "FullName": "setuptools/_distutils/file_util.py",
+    "Length": 7811
+  },
+  {
+    "FullName": "setuptools/_distutils/filelist.py",
+    "Length": 15337
+  },
+  {
+    "FullName": "setuptools/_distutils/log.py",
+    "Length": 1200
+  },
+  {
+    "FullName": "setuptools/_distutils/py.typed",
+    "Length": 1
+  },
+  {
+    "FullName": "setuptools/_distutils/spawn.py",
+    "Length": 3963
+  },
+  {
+    "FullName": "setuptools/_distutils/sysconfig.py",
+    "Length": 19728
+  },
+  {
+    "FullName": "setuptools/_distutils/text_file.py",
+    "Length": 12101
+  },
+  {
+    "FullName": "setuptools/_distutils/unixccompiler.py",
+    "Length": 212
+  },
+  {
+    "FullName": "setuptools/_distutils/util.py",
+    "Length": 17542
+  },
+  {
+    "FullName": "setuptools/_distutils/version.py",
+    "Length": 12619
+  },
+  {
+    "FullName": "setuptools/_distutils/versionpredicate.py",
+    "Length": 5205
+  },
+  {
+    "FullName": "setuptools/_distutils/zosccompiler.py",
+    "Length": 58
+  },
+  {
+    "FullName": "setuptools/_distutils/command/__init__.py",
+    "Length": 386
+  },
+  {
+    "FullName": "setuptools/_distutils/command/_framework_compat.py",
+    "Length": 1609
+  },
+  {
+    "FullName": "setuptools/_distutils/command/bdist.py",
+    "Length": 5854
+  },
+  {
+    "FullName": "setuptools/_distutils/command/bdist_dumb.py",
+    "Length": 4609
+  },
+  {
+    "FullName": "setuptools/_distutils/command/bdist_rpm.py",
+    "Length": 21672
+  },
+  {
+    "FullName": "setuptools/_distutils/command/build.py",
+    "Length": 5955
+  },
+  {
+    "FullName": "setuptools/_distutils/command/build_clib.py",
+    "Length": 7733
+  },
+  {
+    "FullName": "setuptools/_distutils/command/build_ext.py",
+    "Length": 32690
+  },
+  {
+    "FullName": "setuptools/_distutils/command/build_py.py",
+    "Length": 16606
+  },
+  {
+    "FullName": "setuptools/_distutils/command/build_scripts.py",
+    "Length": 4833
+  },
+  {
+    "FullName": "setuptools/_distutils/command/check.py",
+    "Length": 4946
+  },
+  {
+    "FullName": "setuptools/_distutils/command/clean.py",
+    "Length": 2551
+  },
+  {
+    "FullName": "setuptools/_distutils/command/config.py",
+    "Length": 12206
+  },
+  {
+    "FullName": "setuptools/_distutils/command/install.py",
+    "Length": 30164
+  },
+  {
+    "FullName": "setuptools/_distutils/command/install_data.py",
+    "Length": 2875
+  },
+  {
+    "FullName": "setuptools/_distutils/command/install_egg_info.py",
+    "Length": 2809
+  },
+  {
+    "FullName": "setuptools/_distutils/command/install_headers.py",
+    "Length": 1272
+  },
+  {
+    "FullName": "setuptools/_distutils/command/install_lib.py",
+    "Length": 8512
+  },
+  {
+    "FullName": "setuptools/_distutils/command/install_scripts.py",
+    "Length": 1877
+  },
+  {
+    "FullName": "setuptools/_distutils/command/sdist.py",
+    "Length": 19107
+  },
+  {
+    "FullName": "setuptools/_distutils/compat/__init__.py",
+    "Length": 522
+  },
+  {
+    "FullName": "setuptools/_distutils/compat/numpy.py",
+    "Length": 167
+  },
+  {
+    "FullName": "setuptools/_distutils/compat/py39.py",
+    "Length": 1978
+  },
+  {
+    "FullName": "setuptools/_distutils/compilers/C/base.py",
+    "Length": 54534
+  },
+  {
+    "FullName": "setuptools/_distutils/compilers/C/cygwin.py",
+    "Length": 11874
+  },
+  {
+    "FullName": "setuptools/_distutils/compilers/C/errors.py",
+    "Length": 573
+  },
+  {
+    "FullName": "setuptools/_distutils/compilers/C/msvc.py",
+    "Length": 21403
+  },
+  {
+    "FullName": "setuptools/_distutils/compilers/C/py.typed",
+    "Length": 97
+  },
+  {
+    "FullName": "setuptools/_distutils/compilers/C/unix.py",
+    "Length": 16475
+  },
+  {
+    "FullName": "setuptools/_distutils/compilers/C/zos.py",
+    "Length": 6568
+  },
+  {
+    "FullName": "setuptools/_distutils/compilers/C/tests/test_base.py",
+    "Length": 2715
+  },
+  {
+    "FullName": "setuptools/_distutils/compilers/C/tests/test_cygwin.py",
+    "Length": 2701
+  },
+  {
+    "FullName": "setuptools/_distutils/compilers/C/tests/test_mingw.py",
+    "Length": 1900
+  },
+  {
+    "FullName": "setuptools/_distutils/compilers/C/tests/test_msvc.py",
+    "Length": 4151
+  },
+  {
+    "FullName": "setuptools/_distutils/compilers/C/tests/test_unix.py",
+    "Length": 14642
+  },
+  {
+    "FullName": "setuptools/_distutils/tests/__init__.py",
+    "Length": 1485
+  },
+  {
+    "FullName": "setuptools/_distutils/tests/support.py",
+    "Length": 4099
+  },
+  {
+    "FullName": "setuptools/_distutils/tests/test_archive_util.py",
+    "Length": 11441
+  },
+  {
+    "FullName": "setuptools/_distutils/tests/test_bdist.py",
+    "Length": 1396
+  },
+  {
+    "FullName": "setuptools/_distutils/tests/test_bdist_dumb.py",
+    "Length": 2247
+  },
+  {
+    "FullName": "setuptools/_distutils/tests/test_bdist_rpm.py",
+    "Length": 3932
+  },
+  {
+    "FullName": "setuptools/_distutils/tests/test_build.py",
+    "Length": 1742
+  },
+  {
+    "FullName": "setuptools/_distutils/tests/test_build_clib.py",
+    "Length": 4331
+  },
+  {
+    "FullName": "setuptools/_distutils/tests/test_build_ext.py",
+    "Length": 22545
+  },
+  {
+    "FullName": "setuptools/_distutils/tests/test_build_py.py",
+    "Length": 6882
+  },
+  {
+    "FullName": "setuptools/_distutils/tests/test_build_scripts.py",
+    "Length": 2880
+  },
+  {
+    "FullName": "setuptools/_distutils/tests/test_check.py",
+    "Length": 6628
+  },
+  {
+    "FullName": "setuptools/_distutils/tests/test_clean.py",
+    "Length": 1240
+  },
+  {
+    "FullName": "setuptools/_distutils/tests/test_cmd.py",
+    "Length": 3254
+  },
+  {
+    "FullName": "setuptools/_distutils/tests/test_config_cmd.py",
+    "Length": 2664
+  },
+  {
+    "FullName": "setuptools/_distutils/tests/test_core.py",
+    "Length": 3829
+  },
+  {
+    "FullName": "setuptools/_distutils/tests/test_dir_util.py",
+    "Length": 4500
+  },
+  {
+    "FullName": "setuptools/_distutils/tests/test_dist.py",
+    "Length": 18793
+  },
+  {
+    "FullName": "setuptools/_distutils/tests/test_extension.py",
+    "Length": 3670
+  },
+  {
+    "FullName": "setuptools/_distutils/tests/test_file_util.py",
+    "Length": 3522
+  },
+  {
+    "FullName": "setuptools/_distutils/tests/test_filelist.py",
+    "Length": 10924
+  },
+  {
+    "FullName": "setuptools/_distutils/tests/test_install.py",
+    "Length": 8618
+  },
+  {
+    "FullName": "setuptools/_distutils/tests/test_install_data.py",
+    "Length": 2464
+  },
+  {
+    "FullName": "setuptools/_distutils/tests/test_install_headers.py",
+    "Length": 936
+  },
+  {
+    "FullName": "setuptools/_distutils/tests/test_install_lib.py",
+    "Length": 3612
+  },
+  {
+    "FullName": "setuptools/_distutils/tests/test_install_scripts.py",
+    "Length": 1600
+  },
+  {
+    "FullName": "setuptools/_distutils/tests/test_log.py",
+    "Length": 323
+  },
+  {
+    "FullName": "setuptools/_distutils/tests/test_modified.py",
+    "Length": 4221
+  },
+  {
+    "FullName": "setuptools/_distutils/tests/test_sdist.py",
+    "Length": 15062
+  },
+  {
+    "FullName": "setuptools/_distutils/tests/test_spawn.py",
+    "Length": 4803
+  },
+  {
+    "FullName": "setuptools/_distutils/tests/test_sysconfig.py",
+    "Length": 11986
+  },
+  {
+    "FullName": "setuptools/_distutils/tests/test_text_file.py",
+    "Length": 3460
+  },
+  {
+    "FullName": "setuptools/_distutils/tests/test_util.py",
+    "Length": 7629
+  },
+  {
+    "FullName": "setuptools/_distutils/tests/test_version.py",
+    "Length": 2750
+  },
+  {
+    "FullName": "setuptools/_distutils/tests/test_versionpredicate.py",
+    "Length": 0
+  },
+  {
+    "FullName": "setuptools/_distutils/tests/unix_compat.py",
+    "Length": 386
+  },
+  {
+    "FullName": "setuptools/_distutils/tests/compat/__init__.py",
+    "Length": 0
+  },
+  {
+    "FullName": "setuptools/_distutils/tests/compat/py39.py",
+    "Length": 450
+  },
+  {
+    "FullName": "setuptools/_vendor/.lock",
+    "Length": 0
+  },
+  {
+    "FullName": "setuptools/_vendor/autocommand/__init__.py",
+    "Length": 1037
+  },
+  {
+    "FullName": "setuptools/_vendor/autocommand/autoasync.py",
+    "Length": 5680
+  },
+  {
+    "FullName": "setuptools/_vendor/autocommand/autocommand.py",
+    "Length": 2505
+  },
+  {
+    "FullName": "setuptools/_vendor/autocommand/automain.py",
+    "Length": 2076
+  },
+  {
+    "FullName": "setuptools/_vendor/autocommand/autoparse.py",
+    "Length": 11642
+  },
+  {
+    "FullName": "setuptools/_vendor/autocommand/errors.py",
+    "Length": 886
+  },
+  {
+    "FullName": "setuptools/_vendor/backports/__init__.py",
+    "Length": 81
+  },
+  {
+    "FullName": "setuptools/_vendor/backports/tarfile/__init__.py",
+    "Length": 108491
+  },
+  {
+    "FullName": "setuptools/_vendor/backports/tarfile/__main__.py",
+    "Length": 59
+  },
+  {
+    "FullName": "setuptools/_vendor/backports/tarfile/compat/__init__.py",
+    "Length": 0
+  },
+  {
+    "FullName": "setuptools/_vendor/backports/tarfile/compat/py38.py",
+    "Length": 568
+  },
+  {
+    "FullName": "setuptools/_vendor/importlib_metadata/__init__.py",
+    "Length": 37734
+  },
+  {
+    "FullName": "setuptools/_vendor/importlib_metadata/_adapters.py",
+    "Length": 3797
+  },
+  {
+    "FullName": "setuptools/_vendor/importlib_metadata/_collections.py",
+    "Length": 760
+  },
+  {
+    "FullName": "setuptools/_vendor/importlib_metadata/_compat.py",
+    "Length": 1313
+  },
+  {
+    "FullName": "setuptools/_vendor/importlib_metadata/_functools.py",
+    "Length": 3510
+  },
+  {
+    "FullName": "setuptools/_vendor/importlib_metadata/_itertools.py",
+    "Length": 5351
+  },
+  {
+    "FullName": "setuptools/_vendor/importlib_metadata/_meta.py",
+    "Length": 1765
+  },
+  {
+    "FullName": "setuptools/_vendor/importlib_metadata/_text.py",
+    "Length": 2166
+  },
+  {
+    "FullName": "setuptools/_vendor/importlib_metadata/_typing.py",
+    "Length": 367
+  },
+  {
+    "FullName": "setuptools/_vendor/importlib_metadata/diagnose.py",
+    "Length": 379
+  },
+  {
+    "FullName": "setuptools/_vendor/importlib_metadata/py.typed",
+    "Length": 0
+  },
+  {
+    "FullName": "setuptools/_vendor/importlib_metadata/compat/__init__.py",
+    "Length": 0
+  },
+  {
+    "FullName": "setuptools/_vendor/importlib_metadata/compat/py311.py",
+    "Length": 608
+  },
+  {
+    "FullName": "setuptools/_vendor/importlib_metadata/compat/py39.py",
+    "Length": 1187
+  },
+  {
+    "FullName": "setuptools/_vendor/importlib_metadata-8.7.1.dist-info/licenses/LICENSE",
+    "Length": 10278
+  },
+  {
+    "FullName": "setuptools/_vendor/jaraco/context/__init__.py",
+    "Length": 9809
+  },
+  {
+    "FullName": "setuptools/_vendor/jaraco/context/py.typed",
+    "Length": 0
+  },
+  {
+    "FullName": "setuptools/_vendor/jaraco/functools/__init__.py",
+    "Length": 18599
+  },
+  {
+    "FullName": "setuptools/_vendor/jaraco/functools/__init__.pyi",
+    "Length": 3907
+  },
+  {
+    "FullName": "setuptools/_vendor/jaraco/functools/py.typed",
+    "Length": 0
+  },
+  {
+    "FullName": "setuptools/_vendor/jaraco/text/Lorem ipsum.txt",
+    "Length": 1335
+  },
+  {
+    "FullName": "setuptools/_vendor/jaraco/text/__init__.py",
+    "Length": 16762
+  },
+  {
+    "FullName": "setuptools/_vendor/jaraco/text/layouts.py",
+    "Length": 643
+  },
+  {
+    "FullName": "setuptools/_vendor/jaraco/text/show-newlines.py",
+    "Length": 903
+  },
+  {
+    "FullName": "setuptools/_vendor/jaraco/text/strip-prefix.py",
+    "Length": 412
+  },
+  {
+    "FullName": "setuptools/_vendor/jaraco/text/to-dvorak.py",
+    "Length": 118
+  },
+  {
+    "FullName": "setuptools/_vendor/jaraco/text/to-qwerty.py",
+    "Length": 118
+  },
+  {
+    "FullName": "setuptools/_vendor/jaraco_context-6.1.0.dist-info/licenses/LICENSE",
+    "Length": 1076
+  },
+  {
+    "FullName": "setuptools/_vendor/jaraco_functools-4.4.0.dist-info/licenses/LICENSE",
+    "Length": 1076
+  },
+  {
+    "FullName": "setuptools/_vendor/more_itertools/__init__.py",
+    "Length": 149
+  },
+  {
+    "FullName": "setuptools/_vendor/more_itertools/__init__.pyi",
+    "Length": 43
+  },
+  {
+    "FullName": "setuptools/_vendor/more_itertools/more.py",
+    "Length": 163690
+  },
+  {
+    "FullName": "setuptools/_vendor/more_itertools/more.pyi",
+    "Length": 27119
+  },
+  {
+    "FullName": "setuptools/_vendor/more_itertools/py.typed",
+    "Length": 0
+  },
+  {
+    "FullName": "setuptools/_vendor/more_itertools/recipes.py",
+    "Length": 41811
+  },
+  {
+    "FullName": "setuptools/_vendor/more_itertools/recipes.pyi",
+    "Length": 6226
+  },
+  {
+    "FullName": "setuptools/_vendor/more_itertools-10.8.0.dist-info/licenses/LICENSE",
+    "Length": 1053
+  },
+  {
+    "FullName": "setuptools/_vendor/packaging/__init__.py",
+    "Length": 494
+  },
+  {
+    "FullName": "setuptools/_vendor/packaging/_elffile.py",
+    "Length": 3211
+  },
+  {
+    "FullName": "setuptools/_vendor/packaging/_manylinux.py",
+    "Length": 9559
+  },
+  {
+    "FullName": "setuptools/_vendor/packaging/_musllinux.py",
+    "Length": 2707
+  },
+  {
+    "FullName": "setuptools/_vendor/packaging/_parser.py",
+    "Length": 10518
+  },
+  {
+    "FullName": "setuptools/_vendor/packaging/_structures.py",
+    "Length": 1514
+  },
+  {
+    "FullName": "setuptools/_vendor/packaging/_tokenizer.py",
+    "Length": 5421
+  },
+  {
+    "FullName": "setuptools/_vendor/packaging/markers.py",
+    "Length": 12771
+  },
+  {
+    "FullName": "setuptools/_vendor/packaging/metadata.py",
+    "Length": 39360
+  },
+  {
+    "FullName": "setuptools/_vendor/packaging/py.typed",
+    "Length": 0
+  },
+  {
+    "FullName": "setuptools/_vendor/packaging/pylock.py",
+    "Length": 22537
+  },
+  {
+    "FullName": "setuptools/_vendor/packaging/requirements.py",
+    "Length": 2870
+  },
+  {
+    "FullName": "setuptools/_vendor/packaging/specifiers.py",
+    "Length": 40797
+  },
+  {
+    "FullName": "setuptools/_vendor/packaging/tags.py",
+    "Length": 22856
+  },
+  {
+    "FullName": "setuptools/_vendor/packaging/utils.py",
+    "Length": 5040
+  },
+  {
+    "FullName": "setuptools/_vendor/packaging/version.py",
+    "Length": 23272
+  },
+  {
+    "FullName": "setuptools/_vendor/packaging/licenses/__init__.py",
+    "Length": 5819
+  },
+  {
+    "FullName": "setuptools/_vendor/packaging/licenses/_spdx.py",
+    "Length": 51122
+  },
+  {
+    "FullName": "setuptools/_vendor/packaging-26.0.dist-info/licenses/LICENSE",
+    "Length": 197
+  },
+  {
+    "FullName": "setuptools/_vendor/packaging-26.0.dist-info/licenses/LICENSE.APACHE",
+    "Length": 10174
+  },
+  {
+    "FullName": "setuptools/_vendor/packaging-26.0.dist-info/licenses/LICENSE.BSD",
+    "Length": 1344
+  },
+  {
+    "FullName": "setuptools/_vendor/platformdirs/__init__.py",
+    "Length": 22284
+  },
+  {
+    "FullName": "setuptools/_vendor/platformdirs/__main__.py",
+    "Length": 1493
+  },
+  {
+    "FullName": "setuptools/_vendor/platformdirs/android.py",
+    "Length": 9013
+  },
+  {
+    "FullName": "setuptools/_vendor/platformdirs/api.py",
+    "Length": 9281
+  },
+  {
+    "FullName": "setuptools/_vendor/platformdirs/macos.py",
+    "Length": 6322
+  },
+  {
+    "FullName": "setuptools/_vendor/platformdirs/py.typed",
+    "Length": 0
+  },
+  {
+    "FullName": "setuptools/_vendor/platformdirs/unix.py",
+    "Length": 10458
+  },
+  {
+    "FullName": "setuptools/_vendor/platformdirs/version.py",
+    "Length": 704
+  },
+  {
+    "FullName": "setuptools/_vendor/platformdirs/windows.py",
+    "Length": 10125
+  },
+  {
+    "FullName": "setuptools/_vendor/platformdirs-4.4.0.dist-info/licenses/LICENSE",
+    "Length": 1089
+  },
+  {
+    "FullName": "setuptools/_vendor/tomli/__init__.py",
+    "Length": 314
+  },
+  {
+    "FullName": "setuptools/_vendor/tomli/_parser.py",
+    "Length": 25958
+  },
+  {
+    "FullName": "setuptools/_vendor/tomli/_re.py",
+    "Length": 3396
+  },
+  {
+    "FullName": "setuptools/_vendor/tomli/_types.py",
+    "Length": 254
+  },
+  {
+    "FullName": "setuptools/_vendor/tomli/py.typed",
+    "Length": 26
+  },
+  {
+    "FullName": "setuptools/_vendor/tomli-2.4.0.dist-info/licenses/LICENSE",
+    "Length": 1072
+  },
+  {
+    "FullName": "setuptools/_vendor/wheel/__init__.py",
+    "Length": 59
+  },
+  {
+    "FullName": "setuptools/_vendor/wheel/__main__.py",
+    "Length": 512
+  },
+  {
+    "FullName": "setuptools/_vendor/wheel/_bdist_wheel.py",
+    "Length": 21729
+  },
+  {
+    "FullName": "setuptools/_vendor/wheel/_metadata.py",
+    "Length": 6188
+  },
+  {
+    "FullName": "setuptools/_vendor/wheel/_setuptools_logging.py",
+    "Length": 781
+  },
+  {
+    "FullName": "setuptools/_vendor/wheel/bdist_wheel.py",
+    "Length": 1102
+  },
+  {
+    "FullName": "setuptools/_vendor/wheel/macosx_libfile.py",
+    "Length": 16712
+  },
+  {
+    "FullName": "setuptools/_vendor/wheel/metadata.py",
+    "Length": 757
+  },
+  {
+    "FullName": "setuptools/_vendor/wheel/wheelfile.py",
+    "Length": 8720
+  },
+  {
+    "FullName": "setuptools/_vendor/wheel/_commands/__init__.py",
+    "Length": 4432
+  },
+  {
+    "FullName": "setuptools/_vendor/wheel/_commands/convert.py",
+    "Length": 12743
+  },
+  {
+    "FullName": "setuptools/_vendor/wheel/_commands/pack.py",
+    "Length": 3078
+  },
+  {
+    "FullName": "setuptools/_vendor/wheel/_commands/tags.py",
+    "Length": 4775
+  },
+  {
+    "FullName": "setuptools/_vendor/wheel/_commands/unpack.py",
+    "Length": 1016
+  },
+  {
+    "FullName": "setuptools/_vendor/wheel-0.46.3.dist-info/licenses/LICENSE.txt",
+    "Length": 1107
+  },
+  {
+    "FullName": "setuptools/_vendor/zipp/__init__.py",
+    "Length": 11976
+  },
+  {
+    "FullName": "setuptools/_vendor/zipp/_functools.py",
+    "Length": 575
+  },
+  {
+    "FullName": "setuptools/_vendor/zipp/glob.py",
+    "Length": 3382
+  },
+  {
+    "FullName": "setuptools/_vendor/zipp/compat/__init__.py",
+    "Length": 0
+  },
+  {
+    "FullName": "setuptools/_vendor/zipp/compat/overlay.py",
+    "Length": 783
+  },
+  {
+    "FullName": "setuptools/_vendor/zipp/compat/py310.py",
+    "Length": 256
+  },
+  {
+    "FullName": "setuptools/_vendor/zipp/compat/py313.py",
+    "Length": 654
+  },
+  {
+    "FullName": "setuptools/_vendor/zipp-3.23.0.dist-info/licenses/LICENSE",
+    "Length": 1076
+  },
+  {
+    "FullName": "setuptools/command/__init__.py",
+    "Length": 803
+  },
+  {
+    "FullName": "setuptools/command/_requirestxt.py",
+    "Length": 4228
+  },
+  {
+    "FullName": "setuptools/command/alias.py",
+    "Length": 2366
+  },
+  {
+    "FullName": "setuptools/command/bdist_egg.py",
+    "Length": 16822
+  },
+  {
+    "FullName": "setuptools/command/bdist_rpm.py",
+    "Length": 1435
+  },
+  {
+    "FullName": "setuptools/command/bdist_wheel.py",
+    "Length": 22210
+  },
+  {
+    "FullName": "setuptools/command/build.py",
+    "Length": 6052
+  },
+  {
+    "FullName": "setuptools/command/build_clib.py",
+    "Length": 4528
+  },
+  {
+    "FullName": "setuptools/command/build_ext.py",
+    "Length": 18270
+  },
+  {
+    "FullName": "setuptools/command/build_py.py",
+    "Length": 15826
+  },
+  {
+    "FullName": "setuptools/command/develop.py",
+    "Length": 1751
+  },
+  {
+    "FullName": "setuptools/command/dist_info.py",
+    "Length": 3450
+  },
+  {
+    "FullName": "setuptools/command/easy_install.py",
+    "Length": 780
+  },
+  {
+    "FullName": "setuptools/command/editable_wheel.py",
+    "Length": 34862
+  },
+  {
+    "FullName": "setuptools/command/egg_info.py",
+    "Length": 26744
+  },
+  {
+    "FullName": "setuptools/command/install.py",
+    "Length": 5066
+  },
+  {
+    "FullName": "setuptools/command/install_egg_info.py",
+    "Length": 2020
+  },
+  {
+    "FullName": "setuptools/command/install_lib.py",
+    "Length": 4319
+  },
+  {
+    "FullName": "setuptools/command/install_scripts.py",
+    "Length": 2445
+  },
+  {
+    "FullName": "setuptools/command/rotate.py",
+    "Length": 2134
+  },
+  {
+    "FullName": "setuptools/command/saveopts.py",
+    "Length": 678
+  },
+  {
+    "FullName": "setuptools/command/sdist.py",
+    "Length": 7426
+  },
+  {
+    "FullName": "setuptools/command/setopt.py",
+    "Length": 5047
+  },
+  {
+    "FullName": "setuptools/command/test.py",
+    "Length": 1400
+  },
+  {
+    "FullName": "setuptools/compat/__init__.py",
+    "Length": 0
+  },
+  {
+    "FullName": "setuptools/compat/py310.py",
+    "Length": 344
+  },
+  {
+    "FullName": "setuptools/compat/py311.py",
+    "Length": 807
+  },
+  {
+    "FullName": "setuptools/compat/py312.py",
+    "Length": 366
+  },
+  {
+    "FullName": "setuptools/compat/py39.py",
+    "Length": 493
+  },
+  {
+    "FullName": "setuptools/config/NOTICE",
+    "Length": 493
+  },
+  {
+    "FullName": "setuptools/config/__init__.py",
+    "Length": 1526
+  },
+  {
+    "FullName": "setuptools/config/_apply_pyprojecttoml.py",
+    "Length": 19412
+  },
+  {
+    "FullName": "setuptools/config/distutils.schema.json",
+    "Length": 972
+  },
+  {
+    "FullName": "setuptools/config/expand.py",
+    "Length": 16064
+  },
+  {
+    "FullName": "setuptools/config/pyprojecttoml.py",
+    "Length": 18786
+  },
+  {
+    "FullName": "setuptools/config/setupcfg.py",
+    "Length": 26684
+  },
+  {
+    "FullName": "setuptools/config/setuptools.schema.json",
+    "Length": 16047
+  },
+  {
+    "FullName": "setuptools/config/_validate_pyproject/NOTICE",
+    "Length": 18737
+  },
+  {
+    "FullName": "setuptools/config/_validate_pyproject/__init__.py",
+    "Length": 1042
+  },
+  {
+    "FullName": "setuptools/config/_validate_pyproject/error_reporting.py",
+    "Length": 11803
+  },
+  {
+    "FullName": "setuptools/config/_validate_pyproject/extra_validations.py",
+    "Length": 5066
+  },
+  {
+    "FullName": "setuptools/config/_validate_pyproject/fastjsonschema_exceptions.py",
+    "Length": 1612
+  },
+  {
+    "FullName": "setuptools/config/_validate_pyproject/fastjsonschema_validations.py",
+    "Length": 365819
+  },
+  {
+    "FullName": "setuptools/config/_validate_pyproject/formats.py",
+    "Length": 15373
+  },
+  {
+    "FullName": "setuptools/tests/__init__.py",
+    "Length": 335
+  },
+  {
+    "FullName": "setuptools/tests/contexts.py",
+    "Length": 3166
+  },
+  {
+    "FullName": "setuptools/tests/environment.py",
+    "Length": 3102
+  },
+  {
+    "FullName": "setuptools/tests/fixtures.py",
+    "Length": 12224
+  },
+  {
+    "FullName": "setuptools/tests/mod_with_constant.py",
+    "Length": 22
+  },
+  {
+    "FullName": "setuptools/tests/namespaces.py",
+    "Length": 2774
+  },
+  {
+    "FullName": "setuptools/tests/script-with-bom.py",
+    "Length": 18
+  },
+  {
+    "FullName": "setuptools/tests/test_archive_util.py",
+    "Length": 845
+  },
+  {
+    "FullName": "setuptools/tests/test_bdist_deprecations.py",
+    "Length": 775
+  },
+  {
+    "FullName": "setuptools/tests/test_bdist_egg.py",
+    "Length": 1957
+  },
+  {
+    "FullName": "setuptools/tests/test_bdist_wheel.py",
+    "Length": 23091
+  },
+  {
+    "FullName": "setuptools/tests/test_build.py",
+    "Length": 798
+  },
+  {
+    "FullName": "setuptools/tests/test_build_clib.py",
+    "Length": 3123
+  },
+  {
+    "FullName": "setuptools/tests/test_build_ext.py",
+    "Length": 10099
+  },
+  {
+    "FullName": "setuptools/tests/test_build_meta.py",
+    "Length": 33347
+  },
+  {
+    "FullName": "setuptools/tests/test_build_py.py",
+    "Length": 14201
+  },
+  {
+    "FullName": "setuptools/tests/test_config_discovery.py",
+    "Length": 22527
+  },
+  {
+    "FullName": "setuptools/tests/test_core_metadata.py",
+    "Length": 18038
+  },
+  {
+    "FullName": "setuptools/tests/test_depends.py",
+    "Length": 424
+  },
+  {
+    "FullName": "setuptools/tests/test_develop.py",
+    "Length": 3136
+  },
+  {
+    "FullName": "setuptools/tests/test_dist.py",
+    "Length": 8951
+  },
+  {
+    "FullName": "setuptools/tests/test_dist_info.py",
+    "Length": 5005
+  },
+  {
+    "FullName": "setuptools/tests/test_distutils_adoption.py",
+    "Length": 5987
+  },
+  {
+    "FullName": "setuptools/tests/test_editable_install.py",
+    "Length": 42498
+  },
+  {
+    "FullName": "setuptools/tests/test_egg_info.py",
+    "Length": 44941
+  },
+  {
+    "FullName": "setuptools/tests/test_extern.py",
+    "Length": 296
+  },
+  {
+    "FullName": "setuptools/tests/test_find_packages.py",
+    "Length": 7819
+  },
+  {
+    "FullName": "setuptools/tests/test_find_py_modules.py",
+    "Length": 2404
+  },
+  {
+    "FullName": "setuptools/tests/test_glob.py",
+    "Length": 887
+  },
+  {
+    "FullName": "setuptools/tests/test_install_scripts.py",
+    "Length": 3433
+  },
+  {
+    "FullName": "setuptools/tests/test_logging.py",
+    "Length": 2096
+  },
+  {
+    "FullName": "setuptools/tests/test_manifest.py",
+    "Length": 20407
+  },
+  {
+    "FullName": "setuptools/tests/test_namespaces.py",
+    "Length": 2508
+  },
+  {
+    "FullName": "setuptools/tests/test_scripts.py",
+    "Length": 379
+  },
+  {
+    "FullName": "setuptools/tests/test_sdist.py",
+    "Length": 32808
+  },
+  {
+    "FullName": "setuptools/tests/test_setopt.py",
+    "Length": 1365
+  },
+  {
+    "FullName": "setuptools/tests/test_setuptools.py",
+    "Length": 9323
+  },
+  {
+    "FullName": "setuptools/tests/test_shutil_wrapper.py",
+    "Length": 641
+  },
+  {
+    "FullName": "setuptools/tests/test_unicode_utils.py",
+    "Length": 316
+  },
+  {
+    "FullName": "setuptools/tests/test_virtualenv.py",
+    "Length": 3730
+  },
+  {
+    "FullName": "setuptools/tests/test_warnings.py",
+    "Length": 3347
+  },
+  {
+    "FullName": "setuptools/tests/test_wheel.py",
+    "Length": 18722
+  },
+  {
+    "FullName": "setuptools/tests/test_windows_wrappers.py",
+    "Length": 7868
+  },
+  {
+    "FullName": "setuptools/tests/text.py",
+    "Length": 123
+  },
+  {
+    "FullName": "setuptools/tests/textwrap.py",
+    "Length": 98
+  },
+  {
+    "FullName": "setuptools/tests/compat/__init__.py",
+    "Length": 0
+  },
+  {
+    "FullName": "setuptools/tests/compat/py39.py",
+    "Length": 135
+  },
+  {
+    "FullName": "setuptools/tests/config/__init__.py",
+    "Length": 0
+  },
+  {
+    "FullName": "setuptools/tests/config/setupcfg_examples.txt",
+    "Length": 1912
+  },
+  {
+    "FullName": "setuptools/tests/config/test_apply_pyprojecttoml.py",
+    "Length": 29609
+  },
+  {
+    "FullName": "setuptools/tests/config/test_expand.py",
+    "Length": 8933
+  },
+  {
+    "FullName": "setuptools/tests/config/test_pyprojecttoml.py",
+    "Length": 13182
+  },
+  {
+    "FullName": "setuptools/tests/config/test_pyprojecttoml_dynamic_deps.py",
+    "Length": 3265
+  },
+  {
+    "FullName": "setuptools/tests/config/test_setupcfg.py",
+    "Length": 33712
+  },
+  {
+    "FullName": "setuptools/tests/config/downloads/__init__.py",
+    "Length": 1827
+  },
+  {
+    "FullName": "setuptools/tests/config/downloads/preload.py",
+    "Length": 450
+  },
+  {
+    "FullName": "setuptools/tests/indexes/test_links_priority/external.html",
+    "Length": 92
+  },
+  {
+    "FullName": "setuptools/tests/indexes/test_links_priority/simple/foobar/index.html",
+    "Length": 174
+  },
+  {
+    "FullName": "setuptools/tests/integration/__init__.py",
+    "Length": 0
+  },
+  {
+    "FullName": "setuptools/tests/integration/helpers.py",
+    "Length": 2688
+  },
+  {
+    "FullName": "setuptools/tests/integration/test_pbr.py",
+    "Length": 432
+  },
+  {
+    "FullName": "setuptools/tests/integration/test_pip_install_sdist.py",
+    "Length": 8256
+  },
+  {
+    "FullName": "setuptools-83.0.0.dist-info/licenses/LICENSE",
+    "Length": 1023
+  },
+  {
+    "FullName": "setuptools-83.0.0.dist-info/METADATA",
+    "Length": 6581
+  },
+  {
+    "FullName": "setuptools-83.0.0.dist-info/WHEEL",
+    "Length": 91
+  },
+  {
+    "FullName": "setuptools-83.0.0.dist-info/entry_points.txt",
+    "Length": 2449
+  },
+  {
+    "FullName": "setuptools-83.0.0.dist-info/top_level.txt",
+    "Length": 27
+  },
+  {
+    "FullName": "setuptools/_vendor/autocommand-2.2.2.dist-info/INSTALLER",
+    "Length": 2
+  },
+  {
+    "FullName": "setuptools/_vendor/autocommand-2.2.2.dist-info/LICENSE",
+    "Length": 7634
+  },
+  {
+    "FullName": "setuptools/_vendor/autocommand-2.2.2.dist-info/METADATA",
+    "Length": 15006
+  },
+  {
+    "FullName": "setuptools/_vendor/autocommand-2.2.2.dist-info/RECORD",
+    "Length": 1072
+  },
+  {
+    "FullName": "setuptools/_vendor/autocommand-2.2.2.dist-info/REQUESTED",
+    "Length": 0
+  },
+  {
+    "FullName": "setuptools/_vendor/autocommand-2.2.2.dist-info/WHEEL",
+    "Length": 92
+  },
+  {
+    "FullName": "setuptools/_vendor/autocommand-2.2.2.dist-info/top_level.txt",
+    "Length": 12
+  },
+  {
+    "FullName": "setuptools/_vendor/backports.tarfile-1.2.0.dist-info/INSTALLER",
+    "Length": 2
+  },
+  {
+    "FullName": "setuptools/_vendor/backports.tarfile-1.2.0.dist-info/LICENSE",
+    "Length": 1023
+  },
+  {
+    "FullName": "setuptools/_vendor/backports.tarfile-1.2.0.dist-info/METADATA",
+    "Length": 2020
+  },
+  {
+    "FullName": "setuptools/_vendor/backports.tarfile-1.2.0.dist-info/RECORD",
+    "Length": 1056
+  },
+  {
+    "FullName": "setuptools/_vendor/backports.tarfile-1.2.0.dist-info/REQUESTED",
+    "Length": 0
+  },
+  {
+    "FullName": "setuptools/_vendor/backports.tarfile-1.2.0.dist-info/WHEEL",
+    "Length": 92
+  },
+  {
+    "FullName": "setuptools/_vendor/backports.tarfile-1.2.0.dist-info/top_level.txt",
+    "Length": 10
+  },
+  {
+    "FullName": "setuptools/_vendor/importlib_metadata-8.7.1.dist-info/INSTALLER",
+    "Length": 2
+  },
+  {
+    "FullName": "setuptools/_vendor/importlib_metadata-8.7.1.dist-info/METADATA",
+    "Length": 4670
+  },
+  {
+    "FullName": "setuptools/_vendor/importlib_metadata-8.7.1.dist-info/RECORD",
+    "Length": 1868
+  },
+  {
+    "FullName": "setuptools/_vendor/importlib_metadata-8.7.1.dist-info/REQUESTED",
+    "Length": 0
+  },
+  {
+    "FullName": "setuptools/_vendor/importlib_metadata-8.7.1.dist-info/WHEEL",
+    "Length": 91
+  },
+  {
+    "FullName": "setuptools/_vendor/importlib_metadata-8.7.1.dist-info/top_level.txt",
+    "Length": 19
+  },
+  {
+    "FullName": "setuptools/_vendor/jaraco.text-4.0.0.dist-info/INSTALLER",
+    "Length": 2
+  },
+  {
+    "FullName": "setuptools/_vendor/jaraco.text-4.0.0.dist-info/LICENSE",
+    "Length": 1023
+  },
+  {
+    "FullName": "setuptools/_vendor/jaraco.text-4.0.0.dist-info/METADATA",
+    "Length": 3731
+  },
+  {
+    "FullName": "setuptools/_vendor/jaraco.text-4.0.0.dist-info/RECORD",
+    "Length": 1157
+  },
+  {
+    "FullName": "setuptools/_vendor/jaraco.text-4.0.0.dist-info/REQUESTED",
+    "Length": 0
+  },
+  {
+    "FullName": "setuptools/_vendor/jaraco.text-4.0.0.dist-info/WHEEL",
+    "Length": 91
+  },
+  {
+    "FullName": "setuptools/_vendor/jaraco.text-4.0.0.dist-info/top_level.txt",
+    "Length": 7
+  },
+  {
+    "FullName": "setuptools/_vendor/jaraco_context-6.1.0.dist-info/INSTALLER",
+    "Length": 2
+  },
+  {
+    "FullName": "setuptools/_vendor/jaraco_context-6.1.0.dist-info/METADATA",
+    "Length": 4270
+  },
+  {
+    "FullName": "setuptools/_vendor/jaraco_context-6.1.0.dist-info/RECORD",
+    "Length": 777
+  },
+  {
+    "FullName": "setuptools/_vendor/jaraco_context-6.1.0.dist-info/REQUESTED",
+    "Length": 0
+  },
+  {
+    "FullName": "setuptools/_vendor/jaraco_context-6.1.0.dist-info/WHEEL",
+    "Length": 91
+  },
+  {
+    "FullName": "setuptools/_vendor/jaraco_context-6.1.0.dist-info/top_level.txt",
+    "Length": 7
+  },
+  {
+    "FullName": "setuptools/_vendor/jaraco_functools-4.4.0.dist-info/INSTALLER",
+    "Length": 2
+  },
+  {
+    "FullName": "setuptools/_vendor/jaraco_functools-4.4.0.dist-info/METADATA",
+    "Length": 2960
+  },
+  {
+    "FullName": "setuptools/_vendor/jaraco_functools-4.4.0.dist-info/RECORD",
+    "Length": 882
+  },
+  {
+    "FullName": "setuptools/_vendor/jaraco_functools-4.4.0.dist-info/REQUESTED",
+    "Length": 0
+  },
+  {
+    "FullName": "setuptools/_vendor/jaraco_functools-4.4.0.dist-info/WHEEL",
+    "Length": 91
+  },
+  {
+    "FullName": "setuptools/_vendor/jaraco_functools-4.4.0.dist-info/top_level.txt",
+    "Length": 7
+  },
+  {
+    "FullName": "setuptools/_vendor/more_itertools-10.8.0.dist-info/INSTALLER",
+    "Length": 2
+  },
+  {
+    "FullName": "setuptools/_vendor/more_itertools-10.8.0.dist-info/METADATA",
+    "Length": 39413
+  },
+  {
+    "FullName": "setuptools/_vendor/more_itertools-10.8.0.dist-info/RECORD",
+    "Length": 1095
+  },
+  {
+    "FullName": "setuptools/_vendor/more_itertools-10.8.0.dist-info/REQUESTED",
+    "Length": 0
+  },
+  {
+    "FullName": "setuptools/_vendor/more_itertools-10.8.0.dist-info/WHEEL",
+    "Length": 82
+  },
+  {
+    "FullName": "setuptools/_vendor/packaging-26.0.dist-info/INSTALLER",
+    "Length": 2
+  },
+  {
+    "FullName": "setuptools/_vendor/packaging-26.0.dist-info/METADATA",
+    "Length": 3309
+  },
+  {
+    "FullName": "setuptools/_vendor/packaging-26.0.dist-info/RECORD",
+    "Length": 2113
+  },
+  {
+    "FullName": "setuptools/_vendor/packaging-26.0.dist-info/REQUESTED",
+    "Length": 0
+  },
+  {
+    "FullName": "setuptools/_vendor/packaging-26.0.dist-info/WHEEL",
+    "Length": 82
+  },
+  {
+    "FullName": "setuptools/_vendor/platformdirs-4.4.0.dist-info/INSTALLER",
+    "Length": 2
+  },
+  {
+    "FullName": "setuptools/_vendor/platformdirs-4.4.0.dist-info/METADATA",
+    "Length": 12831
+  },
+  {
+    "FullName": "setuptools/_vendor/platformdirs-4.4.0.dist-info/RECORD",
+    "Length": 1218
+  },
+  {
+    "FullName": "setuptools/_vendor/platformdirs-4.4.0.dist-info/REQUESTED",
+    "Length": 0
+  },
+  {
+    "FullName": "setuptools/_vendor/platformdirs-4.4.0.dist-info/WHEEL",
+    "Length": 87
+  },
+  {
+    "FullName": "setuptools/_vendor/tomli-2.4.0.dist-info/INSTALLER",
+    "Length": 2
+  },
+  {
+    "FullName": "setuptools/_vendor/tomli-2.4.0.dist-info/METADATA",
+    "Length": 10567
+  },
+  {
+    "FullName": "setuptools/_vendor/tomli-2.4.0.dist-info/RECORD",
+    "Length": 822
+  },
+  {
+    "FullName": "setuptools/_vendor/tomli-2.4.0.dist-info/REQUESTED",
+    "Length": 0
+  },
+  {
+    "FullName": "setuptools/_vendor/tomli-2.4.0.dist-info/WHEEL",
+    "Length": 82
+  },
+  {
+    "FullName": "setuptools/_vendor/wheel-0.46.3.dist-info/INSTALLER",
+    "Length": 2
+  },
+  {
+    "FullName": "setuptools/_vendor/wheel-0.46.3.dist-info/METADATA",
+    "Length": 2410
+  },
+  {
+    "FullName": "setuptools/_vendor/wheel-0.46.3.dist-info/RECORD",
+    "Length": 1734
+  },
+  {
+    "FullName": "setuptools/_vendor/wheel-0.46.3.dist-info/REQUESTED",
+    "Length": 0
+  },
+  {
+    "FullName": "setuptools/_vendor/wheel-0.46.3.dist-info/WHEEL",
+    "Length": 82
+  },
+  {
+    "FullName": "setuptools/_vendor/wheel-0.46.3.dist-info/entry_points.txt",
+    "Length": 110
+  },
+  {
+    "FullName": "setuptools/_vendor/zipp-3.23.0.dist-info/INSTALLER",
+    "Length": 2
+  },
+  {
+    "FullName": "setuptools/_vendor/zipp-3.23.0.dist-info/METADATA",
+    "Length": 3563
+  },
+  {
+    "FullName": "setuptools/_vendor/zipp-3.23.0.dist-info/RECORD",
+    "Length": 1078
+  },
+  {
+    "FullName": "setuptools/_vendor/zipp-3.23.0.dist-info/REQUESTED",
+    "Length": 0
+  },
+  {
+    "FullName": "setuptools/_vendor/zipp-3.23.0.dist-info/WHEEL",
+    "Length": 91
+  },
+  {
+    "FullName": "setuptools/_vendor/zipp-3.23.0.dist-info/top_level.txt",
+    "Length": 5
+  },
+  {
+    "FullName": "setuptools-83.0.0.dist-info/RECORD",
+    "Length": 43004
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "FullName": "pefile.py",
+    "Length": 301767
+  },
+  {
+    "FullName": "peutils.py",
+    "Length": 18367
+  },
+  {
+    "FullName": "ordlookup/__init__.py",
+    "Length": 786
+  },
+  {
+    "FullName": "ordlookup/oleaut32.py",
+    "Length": 11759
+  },
+  {
+    "FullName": "ordlookup/ws2_32.py",
+    "Length": 6003
+  },
+  {
+    "FullName": "ordlookup/wsock32.py",
+    "Length": 2034
+  },
+  {
+    "FullName": "pefile-2024.8.26.dist-info/LICENSE",
+    "Length": 1083
+  },
+  {
+    "FullName": "pefile-2024.8.26.dist-info/METADATA",
+    "Length": 1355
+  },
+  {
+    "FullName": "pefile-2024.8.26.dist-info/WHEEL",
+    "Length": 91
+  },
+  {
+    "FullName": "pefile-2024.8.26.dist-info/top_level.txt",
+    "Length": 25
+  },
+  {
+    "FullName": "pefile-2024.8.26.dist-info/RECORD",
+    "Length": 846
+  }
+]

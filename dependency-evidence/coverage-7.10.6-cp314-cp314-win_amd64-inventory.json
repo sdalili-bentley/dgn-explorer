@@ -1,0 +1,238 @@
+[
+  {
+    "FullName": "coverage/__init__.py",
+    "Length": 1103
+  },
+  {
+    "FullName": "coverage/__main__.py",
+    "Length": 307
+  },
+  {
+    "FullName": "coverage/annotate.py",
+    "Length": 3863
+  },
+  {
+    "FullName": "coverage/bytecode.py",
+    "Length": 6504
+  },
+  {
+    "FullName": "coverage/cmdline.py",
+    "Length": 37654
+  },
+  {
+    "FullName": "coverage/collector.py",
+    "Length": 19902
+  },
+  {
+    "FullName": "coverage/config.py",
+    "Length": 26039
+  },
+  {
+    "FullName": "coverage/context.py",
+    "Length": 2506
+  },
+  {
+    "FullName": "coverage/control.py",
+    "Length": 56030
+  },
+  {
+    "FullName": "coverage/core.py",
+    "Length": 4477
+  },
+  {
+    "FullName": "coverage/data.py",
+    "Length": 8352
+  },
+  {
+    "FullName": "coverage/debug.py",
+    "Length": 22207
+  },
+  {
+    "FullName": "coverage/disposition.py",
+    "Length": 1954
+  },
+  {
+    "FullName": "coverage/env.py",
+    "Length": 7610
+  },
+  {
+    "FullName": "coverage/exceptions.py",
+    "Length": 1486
+  },
+  {
+    "FullName": "coverage/execfile.py",
+    "Length": 12320
+  },
+  {
+    "FullName": "coverage/files.py",
+    "Length": 19908
+  },
+  {
+    "FullName": "coverage/html.py",
+    "Length": 31909
+  },
+  {
+    "FullName": "coverage/inorout.py",
+    "Length": 24957
+  },
+  {
+    "FullName": "coverage/jsonreport.py",
+    "Length": 6919
+  },
+  {
+    "FullName": "coverage/lcovreport.py",
+    "Length": 7968
+  },
+  {
+    "FullName": "coverage/misc.py",
+    "Length": 11608
+  },
+  {
+    "FullName": "coverage/multiproc.py",
+    "Length": 4293
+  },
+  {
+    "FullName": "coverage/numbits.py",
+    "Length": 4817
+  },
+  {
+    "FullName": "coverage/parser.py",
+    "Length": 53500
+  },
+  {
+    "FullName": "coverage/patch.py",
+    "Length": 5701
+  },
+  {
+    "FullName": "coverage/phystokens.py",
+    "Length": 7795
+  },
+  {
+    "FullName": "coverage/plugin.py",
+    "Length": 22124
+  },
+  {
+    "FullName": "coverage/plugin_support.py",
+    "Length": 10741
+  },
+  {
+    "FullName": "coverage/py.typed",
+    "Length": 73
+  },
+  {
+    "FullName": "coverage/python.py",
+    "Length": 8835
+  },
+  {
+    "FullName": "coverage/pytracer.py",
+    "Length": 15685
+  },
+  {
+    "FullName": "coverage/regions.py",
+    "Length": 4625
+  },
+  {
+    "FullName": "coverage/report.py",
+    "Length": 11114
+  },
+  {
+    "FullName": "coverage/report_core.py",
+    "Length": 4169
+  },
+  {
+    "FullName": "coverage/results.py",
+    "Length": 14150
+  },
+  {
+    "FullName": "coverage/sqldata.py",
+    "Length": 46573
+  },
+  {
+    "FullName": "coverage/sqlitedb.py",
+    "Length": 10249
+  },
+  {
+    "FullName": "coverage/sysmon.py",
+    "Length": 17965
+  },
+  {
+    "FullName": "coverage/templite.py",
+    "Length": 11116
+  },
+  {
+    "FullName": "coverage/tomlconfig.py",
+    "Length": 7766
+  },
+  {
+    "FullName": "coverage/tracer.cp314-win_amd64.pyd",
+    "Length": 22528
+  },
+  {
+    "FullName": "coverage/tracer.pyi",
+    "Length": 1248
+  },
+  {
+    "FullName": "coverage/types.py",
+    "Length": 5971
+  },
+  {
+    "FullName": "coverage/version.py",
+    "Length": 1463
+  },
+  {
+    "FullName": "coverage/xmlreport.py",
+    "Length": 10133
+  },
+  {
+    "FullName": "coverage/htmlfiles/coverage_html.js",
+    "Length": 26207
+  },
+  {
+    "FullName": "coverage/htmlfiles/favicon_32.png",
+    "Length": 1732
+  },
+  {
+    "FullName": "coverage/htmlfiles/index.html",
+    "Length": 7005
+  },
+  {
+    "FullName": "coverage/htmlfiles/keybd_closed.png",
+    "Length": 9004
+  },
+  {
+    "FullName": "coverage/htmlfiles/pyfile.html",
+    "Length": 6643
+  },
+  {
+    "FullName": "coverage/htmlfiles/style.css",
+    "Length": 16020
+  },
+  {
+    "FullName": "coverage/htmlfiles/style.scss",
+    "Length": 21737
+  },
+  {
+    "FullName": "coverage-7.10.6.dist-info/licenses/LICENSE.txt",
+    "Length": 10351
+  },
+  {
+    "FullName": "coverage-7.10.6.dist-info/METADATA",
+    "Length": 9155
+  },
+  {
+    "FullName": "coverage-7.10.6.dist-info/WHEEL",
+    "Length": 101
+  },
+  {
+    "FullName": "coverage-7.10.6.dist-info/entry_points.txt",
+    "Length": 123
+  },
+  {
+    "FullName": "coverage-7.10.6.dist-info/top_level.txt",
+    "Length": 9
+  },
+  {
+    "FullName": "coverage-7.10.6.dist-info/RECORD",
+    "Length": 4672
+  }
+]

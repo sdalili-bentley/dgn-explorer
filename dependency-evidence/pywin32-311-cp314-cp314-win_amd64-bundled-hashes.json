@@ -1,0 +1,307 @@
+[
+  {
+    "path": "adodbapi/license.txt",
+    "size": 26925,
+    "sha256": "5ea2f23c7f00c3006bacf267183e816d8d4b6dc95ea57a4ddb0ff81de6d8719e"
+  },
+  {
+    "path": "isapi/PyISAPI_loader.dll",
+    "size": 69632,
+    "sha256": "2c8bd6ce62f7c2281665dadf1ac0c5e21ab75d0fa62d53d94fb1a5593bcde397"
+  },
+  {
+    "path": "pythonwin/Pythonwin.exe",
+    "size": 57856,
+    "sha256": "0c981044083abfc9d031081ffdceb2691db7cfa04a2fb9e467e6b73ee0a072ad"
+  },
+  {
+    "path": "pythonwin/dde.pyd",
+    "size": 98816,
+    "sha256": "cf232946825ad1f501ce0261d067466ea65026d8afe8c8aeddfc21356d7ddd31"
+  },
+  {
+    "path": "pythonwin/license.txt",
+    "size": 1540,
+    "sha256": "11d8462e134e8efe8f4bd52372292a72ff0b670753d2f49f71675eed0dbfd085"
+  },
+  {
+    "path": "pythonwin/mfc140u.dll",
+    "size": 5664848,
+    "sha256": "643ce7fe6a203c53a96a00f272a1a5b42d5b0c320c84364a6fe866307a19bb65"
+  },
+  {
+    "path": "pythonwin/scintilla.dll",
+    "size": 1500160,
+    "sha256": "762023d868c469c9275c4a6c2152ed093f14963740ced1a981ff2fdfe44b2e6b"
+  },
+  {
+    "path": "pythonwin/win32ui.pyd",
+    "size": 1052160,
+    "sha256": "079493d3597e577e645c0a3a7afde8aa616639548d10abeac2a24c51c4c66a25"
+  },
+  {
+    "path": "pythonwin/win32uiole.pyd",
+    "size": 74752,
+    "sha256": "e643563579de9a7e6b64499dfe4a2247e26e3de030f5ac0bbec67636ef703c52"
+  },
+  {
+    "path": "pywin32_system32/pythoncom314.dll",
+    "size": 694272,
+    "sha256": "4f56f39e866d4e9c67c1bae3cbbe92a1fe70391799c1cfcb13b0d94e56c14941"
+  },
+  {
+    "path": "pywin32_system32/pywintypes314.dll",
+    "size": 136704,
+    "sha256": "74f036548f3321d312205085662b2b92c0654354a718a41c44e02fd4e01fedb9"
+  },
+  {
+    "path": "win32/_win32sysloader.pyd",
+    "size": 14848,
+    "sha256": "2ce1de2dea3fee1ec8f548860e7f070597d25a31a942212c118c79b16fe74b38"
+  },
+  {
+    "path": "win32/_winxptheme.pyd",
+    "size": 26112,
+    "sha256": "054d78173c8f9b502da70b40553aa3f83d0f1ff0e0465fe41da9e36a74182439"
+  },
+  {
+    "path": "win32/license.txt",
+    "size": 1540,
+    "sha256": "11d8462e134e8efe8f4bd52372292a72ff0b670753d2f49f71675eed0dbfd085"
+  },
+  {
+    "path": "win32/mmapfile.pyd",
+    "size": 22016,
+    "sha256": "0078a52962558e47eea0624f7ca1db7b25843276c9901e48c0e10e9323a1eb98"
+  },
+  {
+    "path": "win32/odbc.pyd",
+    "size": 41984,
+    "sha256": "ebaa9aba3cc753b6fccf5f8487c2d7ec2ee2ee0df2f48d68a3f5f43ddf0e69cc"
+  },
+  {
+    "path": "win32/perfmon.pyd",
+    "size": 28672,
+    "sha256": "c4719994410f495767cc4909c3709f4c3a6bcc2af7f8f26210e27792cb412c12"
+  },
+  {
+    "path": "win32/perfmondata.dll",
+    "size": 19456,
+    "sha256": "d43d9b2c46bfecca6d5878841e6399c3be0330f56c21b5c310fc7d922fcb7557"
+  },
+  {
+    "path": "win32/pythonservice.exe",
+    "size": 20992,
+    "sha256": "24b0792f9fb9a75619ade84c269b03190bc4856ec6c38d7ad3c356a219829048"
+  },
+  {
+    "path": "win32/servicemanager.pyd",
+    "size": 41472,
+    "sha256": "618549cc83c0d2c6ddeedbf3c15efb6fc1ae1e52c6f460eb612c7cf8a2263806"
+  },
+  {
+    "path": "win32/timer.pyd",
+    "size": 16896,
+    "sha256": "c29134f0b6f9e16064d0660bc4003d473162d64a43fe32a88a63b2f13df1e4db"
+  },
+  {
+    "path": "win32/win32api.pyd",
+    "size": 135680,
+    "sha256": "903feb110c86dffa957259f3d2a33a1c0b3c8a635d9a44a642b9ab5852d59a61"
+  },
+  {
+    "path": "win32/win32clipboard.pyd",
+    "size": 28672,
+    "sha256": "accd98cd108a91bdd5d10e6153cf6e241f6cb5fa91034d0f65db9d7826d7308b"
+  },
+  {
+    "path": "win32/win32console.pyd",
+    "size": 60416,
+    "sha256": "6bcdfea0d20ff07170fdaeac28b2d95397cdd36d00041b1e57c175abf58d0a69"
+  },
+  {
+    "path": "win32/win32cred.pyd",
+    "size": 38912,
+    "sha256": "efcb2be80261c7246960e2240fb5ef0e78a303c9ff2921f10f12fc706be5d738"
+  },
+  {
+    "path": "win32/win32crypt.pyd",
+    "size": 124928,
+    "sha256": "61cc3cdd8a543b7cbbcab2ba0f5d1202008711786f713a9f5c49789d738f3dc7"
+  },
+  {
+    "path": "win32/win32event.pyd",
+    "size": 29184,
+    "sha256": "c9620ca49afe8797c46b38f161381e601dae08c391946c66b408d48cce5bb398"
+  },
+  {
+    "path": "win32/win32evtlog.pyd",
+    "size": 74752,
+    "sha256": "f9d72e2e9dcd78c85edee9432fcb78134e86958829c6cd1b127f90648f7f7504"
+  },
+  {
+    "path": "win32/win32file.pyd",
+    "size": 145920,
+    "sha256": "82e4a7d6911f82fe8445fc8f76f85483a3f80ea4387ea44bc28ed1da9ff37da1"
+  },
+  {
+    "path": "win32/win32gui.pyd",
+    "size": 222208,
+    "sha256": "7aa66fcce2e873d5c48f3956d0398d27fb6420c8a68a2a8bc74f0622edf93571"
+  },
+  {
+    "path": "win32/win32help.pyd",
+    "size": 54784,
+    "sha256": "980877c6be6ca9136a4a67b3338f11e7677245c4070734c230fa5520526399e7"
+  },
+  {
+    "path": "win32/win32inet.pyd",
+    "size": 53248,
+    "sha256": "1ab0465a89cba6d90382fb427a53543957fe541f9d055fe82bcc8af9c5e1bfca"
+  },
+  {
+    "path": "win32/win32job.pyd",
+    "size": 28672,
+    "sha256": "424ae073540641f49a838b2120ca36334a0bc7f7dfee78de93222706573a4ae8"
+  },
+  {
+    "path": "win32/win32lz.pyd",
+    "size": 16896,
+    "sha256": "c1b514067125acd2ffe3c86cd25b20c685842325d1693cea6de3bc83a500eff7"
+  },
+  {
+    "path": "win32/win32net.pyd",
+    "size": 93696,
+    "sha256": "a6a3eb9bf043301e1bf9762306b7e65961846e3be0954bbc7f5f8bb979cbcacc"
+  },
+  {
+    "path": "win32/win32pdh.pyd",
+    "size": 34816,
+    "sha256": "ece1394836d29b4f8981fabf0fc2aa5f526884ec53e0b0ced78d50cb03d92150"
+  },
+  {
+    "path": "win32/win32pipe.pyd",
+    "size": 28672,
+    "sha256": "a29bc88bad6e0f915a61cec01e0a3228522bf011c5a4791de1a3df50c0ef5dfa"
+  },
+  {
+    "path": "win32/win32print.pyd",
+    "size": 76288,
+    "sha256": "a112ec81c2e3d564f1a2d6ba6e90565e4787b420d1f1a381fc99f8de5aa0e97f"
+  },
+  {
+    "path": "win32/win32process.pyd",
+    "size": 53760,
+    "sha256": "7d5d31073267dc0f4a770f732f2146945519fdf026a70dd86c3d3e988bacd933"
+  },
+  {
+    "path": "win32/win32profile.pyd",
+    "size": 27136,
+    "sha256": "25e944a39d614914bfbc1efaca764032e64b97264837711f8d0b888439c92d0b"
+  },
+  {
+    "path": "win32/win32ras.pyd",
+    "size": 34304,
+    "sha256": "42663b05bf97de985ae4a395d1149b13daa7b43160747e9b1335a6cafe4f62ef"
+  },
+  {
+    "path": "win32/win32security.pyd",
+    "size": 137216,
+    "sha256": "9e815a8fdfdd2ef07c9380008c50050f347f84c51bd1663dcacd373d2fd66475"
+  },
+  {
+    "path": "win32/win32service.pyd",
+    "size": 60928,
+    "sha256": "67546d6fa8a8f97342edf924549e6d575bb3c1a3c98aa1ca8a0e709b439066c9"
+  },
+  {
+    "path": "win32/win32trace.pyd",
+    "size": 24064,
+    "sha256": "0aff4c522a09e46cd2a188522276c9f215d3620ce115e60624241c4867161406"
+  },
+  {
+    "path": "win32/win32transaction.pyd",
+    "size": 19456,
+    "sha256": "4532662398c7b7ac13ca26e16a9f1dc2a983b88ae4d33dc2f4c28f6f8e889468"
+  },
+  {
+    "path": "win32/win32ts.pyd",
+    "size": 33280,
+    "sha256": "adcbbd2114eaf16dde998bb743e7626402e35aaac960123552a12e3f59b90262"
+  },
+  {
+    "path": "win32/win32wnet.pyd",
+    "size": 38400,
+    "sha256": "25ccf6cd79488b1eca2619f8ba016554ebb8e228e67849b60ea509142204ba26"
+  },
+  {
+    "path": "win32com/License.txt",
+    "size": 1569,
+    "sha256": "c3bdfa1152a9b9d404ddc90b817e1b6945803879ac53a14d2dde30d677f883bd"
+  },
+  {
+    "path": "win32comext/adsi/adsi.pyd",
+    "size": 101376,
+    "sha256": "8c49f7bebef45a14eb9268a8c3cb150ff1ee63ecda0ccde3d9cd9840470674ca"
+  },
+  {
+    "path": "win32comext/authorization/authorization.pyd",
+    "size": 29184,
+    "sha256": "54a60d8527f056ccb2b2487872b2c85da5595fb31b8d4b088d22884aa7b5cfce"
+  },
+  {
+    "path": "win32comext/axcontrol/axcontrol.pyd",
+    "size": 147456,
+    "sha256": "6dc946f478d056066f0bde92194ed7e292a139c70f3d7560f9f35eb62eedb3f6"
+  },
+  {
+    "path": "win32comext/axscript/axscript.pyd",
+    "size": 94720,
+    "sha256": "bcb583bf4ac506aaa50dc83208fdf3a05ae5970712789cfc4de377aeab9caab0"
+  },
+  {
+    "path": "win32comext/bits/bits.pyd",
+    "size": 65024,
+    "sha256": "288ae3e6ecdd246c9f1c9685fd2b6d151af896a8bda199644af62aa3d695ba41"
+  },
+  {
+    "path": "win32comext/directsound/directsound.pyd",
+    "size": 78336,
+    "sha256": "25d9176c174750761bddf14f1fb1f45250551da7c6bc46cd039442df1e5d795a"
+  },
+  {
+    "path": "win32comext/ifilter/ifilter.pyd",
+    "size": 30720,
+    "sha256": "bcf87f497c00f5bd5cdc6ff1cb2909a7982285c5cbebf95575e33e580eb545aa"
+  },
+  {
+    "path": "win32comext/internet/internet.pyd",
+    "size": 95232,
+    "sha256": "5af2d3538c99b9809b07972ea7edd0a9c8d269d3cab6567f3572db7a97980cfe"
+  },
+  {
+    "path": "win32comext/mapi/exchange.pyd",
+    "size": 138752,
+    "sha256": "c5f1574883262978a6d4e2c30c5bab421fe5e5d9b2721e8be26f09de60c8c4dd"
+  },
+  {
+    "path": "win32comext/mapi/mapi.pyd",
+    "size": 249344,
+    "sha256": "fd6ce046c9843a09f8bf050cc3fffa58d8c9831e31f85f574a18c541dfd05570"
+  },
+  {
+    "path": "win32comext/propsys/propsys.pyd",
+    "size": 142336,
+    "sha256": "4030af1cd80ebb5b64bb46e1c23aff67586c271f98d8feb0a20cd45f6d8cda92"
+  },
+  {
+    "path": "win32comext/shell/shell.pyd",
+    "size": 545792,
+    "sha256": "f70f5c46aa5b229b2e8b4f2eec5f94855de98be0d4d8cbf346df80696de92194"
+  },
+  {
+    "path": "win32comext/taskscheduler/taskscheduler.pyd",
+    "size": 53760,
+    "sha256": "7d33e0bdb325ba8c943778fc6664d100fdb972d49849740642adc5f6a7bfb007"
+  }
+]

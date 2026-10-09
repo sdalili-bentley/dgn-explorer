@@ -1,0 +1,132 @@
+{
+  "info": {
+    "author": null,
+    "author_email": "\"Jason R. Coombs\" <jaraco@jaraco.com>",
+    "bugtrack_url": null,
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Intended Audience :: Developers",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3 :: Only"
+    ],
+    "description": ".. image:: https://img.shields.io/pypi/v/jaraco.context.svg\n   :target: https://pypi.org/project/jaraco.context\n\n.. image:: https://img.shields.io/pypi/pyversions/jaraco.context.svg\n\n.. image:: https://github.com/jaraco/jaraco.context/actions/workflows/main.yml/badge.svg\n   :target: https://github.com/jaraco/jaraco.context/actions?query=workflow%3A%22tests%22\n   :alt: tests\n\n.. image:: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json\n    :target: https://github.com/astral-sh/ruff\n    :alt: Ruff\n\n.. image:: https://readthedocs.org/projects/jaracocontext/badge/?version=latest\n   :target: https://jaracocontext.readthedocs.io/en/latest/?badge=latest\n\n.. image:: https://img.shields.io/badge/skeleton-2025-informational\n   :target: https://blog.jaraco.com/skeleton\n\n.. image:: https://tidelift.com/badges/package/pypi/jaraco.context\n   :target: https://tidelift.com/subscription/pkg/pypi-jaraco.context?utm_source=pypi-jaraco.context&utm_medium=readme\n\n\nHighlights\n==========\n\nSee the docs linked from the badge above for the full details, but here are some features that may be of interest.\n\n- ``ExceptionTrap`` provides a general-purpose wrapper for trapping exceptions and then acting on the outcome. Includes ``passes`` and ``raises`` decorators to replace the result of a wrapped function by a boolean indicating the outcome of the exception trap. See `this keyring commit <https://github.com/jaraco/keyring/commit/a85a7cbc6c909f8121660ed1f7b487f99a1c2bf7>`_ for an example of it in production.\n- ``suppress`` simply enables ``contextlib.suppress`` as a decorator.\n- ``on_interrupt`` is a decorator used by CLI entry points to affect the handling of a ``KeyboardInterrupt``. Inspired by `Lucretiel/autocommand#18 <https://github.com/Lucretiel/autocommand/issues/18>`_.\n- ``pushd`` is similar to pytest's ``monkeypatch.chdir`` or path's `default context <https://path.readthedocs.io/en/latest/api.html>`_, changes the current working directory for the duration of the context.\n- ``tarball`` will download a tarball, extract it, change directory, yield, then clean up after. Convenient when working with web assets.\n- ``null`` is there for those times when one code branch needs a context and the other doesn't; this null context provides symmetry across those branches.\n\n\nFor Enterprise\n==============\n\nAvailable as part of the Tidelift Subscription.\n\nThis project and the maintainers of thousands of other packages are working with Tidelift to deliver one enterprise subscription that covers all of the open source you use.\n\n`Learn more <https://tidelift.com/subscription/pkg/pypi-jaraco.context?utm_source=pypi-jaraco.context&utm_medium=referral&utm_campaign=github>`_.\n",
+    "description_content_type": "text/x-rst",
+    "docs_url": null,
+    "download_url": null,
+    "downloads": {
+      "last_day": -1,
+      "last_month": -1,
+      "last_week": -1
+    },
+    "dynamic": [
+      "License-File"
+    ],
+    "home_page": null,
+    "keywords": null,
+    "license": null,
+    "license_expression": "MIT",
+    "license_files": [
+      "LICENSE"
+    ],
+    "maintainer": null,
+    "maintainer_email": null,
+    "name": "jaraco.context",
+    "package_url": "https://pypi.org/project/jaraco.context/",
+    "platform": null,
+    "project_url": "https://pypi.org/project/jaraco.context/",
+    "project_urls": {
+      "Source": "https://github.com/jaraco/jaraco.context"
+    },
+    "provides_extra": [
+      "test",
+      "doc",
+      "check",
+      "cover",
+      "enabler",
+      "type"
+    ],
+    "release_url": "https://pypi.org/project/jaraco.context/6.1.0/",
+    "requires_dist": [
+      "backports.tarfile; python_version < \"3.12\"",
+      "pytest!=8.1.*,>=6; extra == \"test\"",
+      "jaraco.test>=5.6.0; extra == \"test\"",
+      "portend; extra == \"test\"",
+      "sphinx>=3.5; extra == \"doc\"",
+      "jaraco.packaging>=9.3; extra == \"doc\"",
+      "rst.linker>=1.9; extra == \"doc\"",
+      "furo; extra == \"doc\"",
+      "sphinx-lint; extra == \"doc\"",
+      "jaraco.tidelift>=1.4; extra == \"doc\"",
+      "pytest-checkdocs>=2.4; extra == \"check\"",
+      "pytest-ruff>=0.2.1; sys_platform != \"cygwin\" and extra == \"check\"",
+      "pytest-cov; extra == \"cover\"",
+      "pytest-enabler>=3.4; extra == \"enabler\"",
+      "pytest-mypy>=1.0.1; extra == \"type\"",
+      "mypy<1.19; platform_python_implementation == \"PyPy\" and extra == \"type\""
+    ],
+    "requires_python": ">=3.9",
+    "summary": "Useful decorators and context managers",
+    "version": "6.1.0",
+    "yanked": false,
+    "yanked_reason": null
+  },
+  "last_serial": 35332104,
+  "ownership": {
+    "organization": null,
+    "roles": [
+      {
+        "role": "Owner",
+        "user": "jaraco"
+      }
+    ]
+  },
+  "urls": [
+    {
+      "comment_text": null,
+      "core-metadata": {
+        "sha256": "0435ebfc52055c5a9974ed20c171b6454383eaf9dbb1508814ba7ad97c59d712"
+      },
+      "digests": {
+        "blake2b_256": "8d48aa685dbf1024c7bd82bede569e3a85f82c32fd3d79ba5fea578f0159571a",
+        "md5": "7a3c7b53e917696c8691b71e0ee91113",
+        "sha256": "a43b5ed85815223d0d3cfdb6d7ca0d2bc8946f28f30b6f3216bda070f68badda"
+      },
+      "downloads": -1,
+      "filename": "jaraco_context-6.1.0-py3-none-any.whl",
+      "has_sig": false,
+      "md5_digest": "7a3c7b53e917696c8691b71e0ee91113",
+      "packagetype": "bdist_wheel",
+      "python_version": "py3",
+      "requires_python": ">=3.9",
+      "size": 7065,
+      "upload_time": "2026-01-13T02:53:53",
+      "upload_time_iso_8601": "2026-01-13T02:53:53.031616Z",
+      "url": "https://files.pythonhosted.org/packages/8d/48/aa685dbf1024c7bd82bede569e3a85f82c32fd3d79ba5fea578f0159571a/jaraco_context-6.1.0-py3-none-any.whl",
+      "yanked": false,
+      "yanked_reason": null
+    },
+    {
+      "comment_text": null,
+      "core-metadata": false,
+      "digests": {
+        "blake2b_256": "cb9ca788f5bb29c61e456b8ee52ce76dbdd32fd72cd73dd67bc95f42c7a8d13c",
+        "md5": "a31986312781405369c904eec861fd35",
+        "sha256": "129a341b0a85a7db7879e22acd66902fda67882db771754574338898b2d5d86f"
+      },
+      "downloads": -1,
+      "filename": "jaraco_context-6.1.0.tar.gz",
+      "has_sig": false,
+      "md5_digest": "a31986312781405369c904eec861fd35",
+      "packagetype": "sdist",
+      "python_version": "source",
+      "requires_python": ">=3.9",
+      "size": 15850,
+      "upload_time": "2026-01-13T02:53:53",
+      "upload_time_iso_8601": "2026-01-13T02:53:53.847276Z",
+      "url": "https://files.pythonhosted.org/packages/cb/9c/a788f5bb29c61e456b8ee52ce76dbdd32fd72cd73dd67bc95f42c7a8d13c/jaraco_context-6.1.0.tar.gz",
+      "yanked": false,
+      "yanked_reason": null
+    }
+  ],
+  "vulnerabilities": []
+}

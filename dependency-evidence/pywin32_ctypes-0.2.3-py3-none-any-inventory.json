@@ -1,0 +1,158 @@
+[
+  {
+    "FullName": "win32ctypes/__init__.py",
+    "Length": 214
+  },
+  {
+    "FullName": "win32ctypes/pywintypes.py",
+    "Length": 350
+  },
+  {
+    "FullName": "win32ctypes/version.py",
+    "Length": 23
+  },
+  {
+    "FullName": "win32ctypes/win32api.py",
+    "Length": 346
+  },
+  {
+    "FullName": "win32ctypes/win32cred.py",
+    "Length": 348
+  },
+  {
+    "FullName": "win32ctypes/core/__init__.py",
+    "Length": 1647
+  },
+  {
+    "FullName": "win32ctypes/core/_winerrors.py",
+    "Length": 199
+  },
+  {
+    "FullName": "win32ctypes/core/compat.py",
+    "Length": 158
+  },
+  {
+    "FullName": "win32ctypes/core/cffi/__init__.py",
+    "Length": 270
+  },
+  {
+    "FullName": "win32ctypes/core/cffi/_authentication.py",
+    "Length": 5333
+  },
+  {
+    "FullName": "win32ctypes/core/cffi/_common.py",
+    "Length": 576
+  },
+  {
+    "FullName": "win32ctypes/core/cffi/_dll.py",
+    "Length": 771
+  },
+  {
+    "FullName": "win32ctypes/core/cffi/_nl_support.py",
+    "Length": 313
+  },
+  {
+    "FullName": "win32ctypes/core/cffi/_resource.py",
+    "Length": 4555
+  },
+  {
+    "FullName": "win32ctypes/core/cffi/_system_information.py",
+    "Length": 872
+  },
+  {
+    "FullName": "win32ctypes/core/cffi/_time.py",
+    "Length": 332
+  },
+  {
+    "FullName": "win32ctypes/core/cffi/_util.py",
+    "Length": 2662
+  },
+  {
+    "FullName": "win32ctypes/core/ctypes/__init__.py",
+    "Length": 272
+  },
+  {
+    "FullName": "win32ctypes/core/ctypes/_authentication.py",
+    "Length": 3822
+  },
+  {
+    "FullName": "win32ctypes/core/ctypes/_common.py",
+    "Length": 1223
+  },
+  {
+    "FullName": "win32ctypes/core/ctypes/_dll.py",
+    "Length": 552
+  },
+  {
+    "FullName": "win32ctypes/core/ctypes/_nl_support.py",
+    "Length": 315
+  },
+  {
+    "FullName": "win32ctypes/core/ctypes/_resource.py",
+    "Length": 4264
+  },
+  {
+    "FullName": "win32ctypes/core/ctypes/_system_information.py",
+    "Length": 941
+  },
+  {
+    "FullName": "win32ctypes/core/ctypes/_time.py",
+    "Length": 342
+  },
+  {
+    "FullName": "win32ctypes/core/ctypes/_util.py",
+    "Length": 2030
+  },
+  {
+    "FullName": "win32ctypes/pywin32/__init__.py",
+    "Length": 354
+  },
+  {
+    "FullName": "win32ctypes/pywin32/pywintypes.py",
+    "Length": 1867
+  },
+  {
+    "FullName": "win32ctypes/pywin32/win32api.py",
+    "Length": 7724
+  },
+  {
+    "FullName": "win32ctypes/pywin32/win32cred.py",
+    "Length": 4801
+  },
+  {
+    "FullName": "win32ctypes/tests/__init__.py",
+    "Length": 693
+  },
+  {
+    "FullName": "win32ctypes/tests/test_backends.py",
+    "Length": 1245
+  },
+  {
+    "FullName": "win32ctypes/tests/test_win32api.py",
+    "Length": 11687
+  },
+  {
+    "FullName": "win32ctypes/tests/test_win32cred.py",
+    "Length": 7948
+  },
+  {
+    "FullName": "pywin32_ctypes-0.2.3.dist-info/LICENSE.txt",
+    "Length": 1644
+  },
+  {
+    "FullName": "pywin32_ctypes-0.2.3.dist-info/METADATA",
+    "Length": 3909
+  },
+  {
+    "FullName": "pywin32_ctypes-0.2.3.dist-info/WHEEL",
+    "Length": 92
+  },
+  {
+    "FullName": "pywin32_ctypes-0.2.3.dist-info/top_level.txt",
+    "Length": 12
+  },
+  {
+    "FullName": "pywin32_ctypes-0.2.3.dist-info/RECORD",
+    "Length": 3437
+  }
+]

@@ -1,0 +1,2286 @@
+[
+  {
+    "FullName": "PyInstaller/__init__.py",
+    "Length": 2012
+  },
+  {
+    "FullName": "PyInstaller/__main__.py",
+    "Length": 12636
+  },
+  {
+    "FullName": "PyInstaller/_recursion_too_deep_message.py",
+    "Length": 1820
+  },
+  {
+    "FullName": "PyInstaller/_shared_with_waf.py",
+    "Length": 4396
+  },
+  {
+    "FullName": "PyInstaller/compat.py",
+    "Length": 31108
+  },
+  {
+    "FullName": "PyInstaller/config.py",
+    "Length": 1852
+  },
+  {
+    "FullName": "PyInstaller/configure.py",
+    "Length": 4160
+  },
+  {
+    "FullName": "PyInstaller/exceptions.py",
+    "Length": 2460
+  },
+  {
+    "FullName": "PyInstaller/log.py",
+    "Length": 2065
+  },
+  {
+    "FullName": "PyInstaller/archive/__init__.py",
+    "Length": 22
+  },
+  {
+    "FullName": "PyInstaller/archive/pyz_crypto.py",
+    "Length": 747
+  },
+  {
+    "FullName": "PyInstaller/archive/readers.py",
+    "Length": 8413
+  },
+  {
+    "FullName": "PyInstaller/archive/writers.py",
+    "Length": 21311
+  },
+  {
+    "FullName": "PyInstaller/bootloader/Windows-64bit-intel/run.exe",
+    "Length": 287232
+  },
+  {
+    "FullName": "PyInstaller/bootloader/Windows-64bit-intel/run_d.exe",
+    "Length": 309248
+  },
+  {
+    "FullName": "PyInstaller/bootloader/Windows-64bit-intel/runw.exe",
+    "Length": 282624
+  },
+  {
+    "FullName": "PyInstaller/bootloader/Windows-64bit-intel/runw_d.exe",
+    "Length": 303616
+  },
+  {
+    "FullName": "PyInstaller/bootloader/images/icon-console.ico",
+    "Length": 59521
+  },
+  {
+    "FullName": "PyInstaller/bootloader/images/icon-windowed.ico",
+    "Length": 60690
+  },
+  {
+    "FullName": "PyInstaller/building/__init__.py",
+    "Length": 2
+  },
+  {
+    "FullName": "PyInstaller/building/api.py",
+    "Length": 69106
+  },
+  {
+    "FullName": "PyInstaller/building/build_main.py",
+    "Length": 61421
+  },
+  {
+    "FullName": "PyInstaller/building/datastruct.py",
+    "Length": 17435
+  },
+  {
+    "FullName": "PyInstaller/building/icon.py",
+    "Length": 4015
+  },
+  {
+    "FullName": "PyInstaller/building/makespec.py",
+    "Length": 34307
+  },
+  {
+    "FullName": "PyInstaller/building/osx.py",
+    "Length": 44446
+  },
+  {
+    "FullName": "PyInstaller/building/splash.py",
+    "Length": 26577
+  },
+  {
+    "FullName": "PyInstaller/building/splash_templates.py",
+    "Length": 8046
+  },
+  {
+    "FullName": "PyInstaller/building/templates.py",
+    "Length": 3168
+  },
+  {
+    "FullName": "PyInstaller/building/utils.py",
+    "Length": 39781
+  },
+  {
+    "FullName": "PyInstaller/depend/__init__.py",
+    "Length": 2
+  },
+  {
+    "FullName": "PyInstaller/depend/analysis.py",
+    "Length": 51122
+  },
+  {
+    "FullName": "PyInstaller/depend/bindepend.py",
+    "Length": 57498
+  },
+  {
+    "FullName": "PyInstaller/depend/bytecode.py",
+    "Length": 16507
+  },
+  {
+    "FullName": "PyInstaller/depend/dylib.py",
+    "Length": 13640
+  },
+  {
+    "FullName": "PyInstaller/depend/imphook.py",
+    "Length": 27568
+  },
+  {
+    "FullName": "PyInstaller/depend/imphookapi.py",
+    "Length": 21231
+  },
+  {
+    "FullName": "PyInstaller/depend/utils.py",
+    "Length": 13848
+  },
+  {
+    "FullName": "PyInstaller/fake-modules/pyi_splash.py",
+    "Length": 7690
+  },
+  {
+    "FullName": "PyInstaller/fake-modules/_pyi_rth_utils/__init__.py",
+    "Length": 1710
+  },
+  {
+    "FullName": "PyInstaller/fake-modules/_pyi_rth_utils/_win32.py",
+    "Length": 11564
+  },
+  {
+    "FullName": "PyInstaller/fake-modules/_pyi_rth_utils/qt.py",
+    "Length": 4204
+  },
+  {
+    "FullName": "PyInstaller/fake-modules/_pyi_rth_utils/tempfile.py",
+    "Length": 2262
+  },
+  {
+    "FullName": "PyInstaller/hooks/__init__.py",
+    "Length": 2
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PIL.Image.py",
+    "Length": 845
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PIL.ImageFilter.py",
+    "Length": 589
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PIL.SpiderImagePlugin.py",
+    "Length": 773
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PIL.py",
+    "Length": 1100
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.QAxContainer.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.Qsci.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.Qt.py",
+    "Length": 1275
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.Qt3DAnimation.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.Qt3DCore.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.Qt3DExtras.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.Qt3DInput.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.Qt3DLogic.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.Qt3DRender.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.QtBluetooth.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.QtChart.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.QtCore.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.QtDBus.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.QtDataVisualization.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.QtDesigner.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.QtGui.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.QtHelp.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.QtLocation.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.QtMacExtras.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.QtMultimedia.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.QtMultimediaWidgets.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.QtNetwork.py",
+    "Length": 710
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.QtNetworkAuth.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.QtNfc.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.QtOpenGL.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.QtPositioning.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.QtPrintSupport.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.QtPurchasing.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.QtQml.py",
+    "Length": 764
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.QtQuick.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.QtQuick3D.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.QtQuickWidgets.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.QtRemoteObjects.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.QtScript.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.QtSensors.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.QtSerialPort.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.QtSql.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.QtSvg.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.QtTest.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.QtTextToSpeech.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.QtWebChannel.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.QtWebEngine.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.QtWebEngineCore.py",
+    "Length": 995
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.QtWebEngineWidgets.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.QtWebKit.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.QtWebKitWidgets.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.QtWebSockets.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.QtWidgets.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.QtWinExtras.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.QtX11Extras.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.QtXml.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.QtXmlPatterns.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.py",
+    "Length": 1182
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt5.uic.py",
+    "Length": 979
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.QAxContainer.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.Qsci.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.Qt3DAnimation.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.Qt3DCore.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.Qt3DExtras.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.Qt3DInput.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.Qt3DLogic.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.Qt3DRender.py",
+    "Length": 670
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.QtBluetooth.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.QtCharts.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.QtCore.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.QtDBus.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.QtDataVisualization.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.QtDesigner.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.QtGraphs.py",
+    "Length": 752
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.QtGraphsWidgets.py",
+    "Length": 760
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.QtGui.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.QtHelp.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.QtMultimedia.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.QtMultimediaWidgets.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.QtNetwork.py",
+    "Length": 710
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.QtNetworkAuth.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.QtNfc.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.QtOpenGL.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.QtOpenGLWidgets.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.QtPdf.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.QtPdfWidgets.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.QtPositioning.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.QtPrintSupport.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.QtQml.py",
+    "Length": 764
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.QtQuick.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.QtQuick3D.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.QtQuickWidgets.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.QtRemoteObjects.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.QtSensors.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.QtSerialPort.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.QtSpatialAudio.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.QtSql.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.QtStateMachine.py",
+    "Length": 752
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.QtSvg.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.QtSvgWidgets.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.QtTest.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.QtTextToSpeech.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.QtWebChannel.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.QtWebEngineCore.py",
+    "Length": 1351
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.QtWebEngineQuick.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.QtWebEngineWidgets.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.QtWebSockets.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.QtWidgets.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.QtXml.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.py",
+    "Length": 1025
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PyQt6.uic.py",
+    "Length": 979
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide2.Qt3DAnimation.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide2.Qt3DCore.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide2.Qt3DExtras.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide2.Qt3DInput.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide2.Qt3DLogic.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide2.Qt3DRender.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide2.QtAxContainer.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide2.QtCharts.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide2.QtConcurrent.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide2.QtCore.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide2.QtDataVisualization.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide2.QtGui.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide2.QtHelp.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide2.QtLocation.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide2.QtMacExtras.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide2.QtMultimedia.py",
+    "Length": 979
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide2.QtMultimediaWidgets.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide2.QtNetwork.py",
+    "Length": 714
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide2.QtOpenGL.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide2.QtOpenGLFunctions.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide2.QtPositioning.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide2.QtPrintSupport.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide2.QtQml.py",
+    "Length": 804
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide2.QtQuick.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide2.QtQuickControls2.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide2.QtQuickWidgets.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide2.QtRemoteObjects.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide2.QtScript.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide2.QtScriptTools.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide2.QtScxml.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide2.QtSensors.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide2.QtSerialPort.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide2.QtSql.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide2.QtSvg.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide2.QtTest.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide2.QtTextToSpeech.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide2.QtUiTools.py",
+    "Length": 710
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide2.QtWebChannel.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide2.QtWebEngine.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide2.QtWebEngineCore.py",
+    "Length": 1003
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide2.QtWebEngineWidgets.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide2.QtWebKit.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide2.QtWebKitWidgets.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide2.QtWebSockets.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide2.QtWidgets.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide2.QtWinExtras.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide2.QtX11Extras.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide2.QtXml.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide2.QtXmlPatterns.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide2.Qwt5.py",
+    "Length": 972
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide2.py",
+    "Length": 1141
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.Qt3DAnimation.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.Qt3DCore.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.Qt3DExtras.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.Qt3DInput.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.Qt3DLogic.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.Qt3DRender.py",
+    "Length": 1122
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.QtAxContainer.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.QtBluetooth.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.QtCharts.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.QtConcurrent.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.QtCore.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.QtDBus.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.QtDataVisualization.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.QtDesigner.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.QtGraphs.py",
+    "Length": 628
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.QtGraphsWidgets.py",
+    "Length": 764
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.QtGui.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.QtHelp.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.QtHttpServer.py",
+    "Length": 837
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.QtLocation.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.QtMultimedia.py",
+    "Length": 981
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.QtMultimediaWidgets.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.QtNetwork.py",
+    "Length": 714
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.QtNetworkAuth.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.QtNfc.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.QtOpenGL.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.QtOpenGLWidgets.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.QtPdf.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.QtPdfWidgets.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.QtPositioning.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.QtPrintSupport.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.QtQml.py",
+    "Length": 768
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.QtQuick.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.QtQuick3D.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.QtQuickControls2.py",
+    "Length": 671
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.QtQuickWidgets.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.QtRemoteObjects.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.QtScxml.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.QtSensors.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.QtSerialBus.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.QtSerialPort.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.QtSpatialAudio.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.QtSql.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.QtStateMachine.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.QtSvg.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.QtSvgWidgets.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.QtTest.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.QtTextToSpeech.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.QtUiTools.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.QtWebChannel.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.QtWebEngineCore.py",
+    "Length": 1410
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.QtWebEngineQuick.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.QtWebEngineWidgets.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.QtWebSockets.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.QtWidgets.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.QtXml.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-PySide6.py",
+    "Length": 1279
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-_ctypes.py",
+    "Length": 941
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-_osx_support.py",
+    "Length": 1047
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-_pyi_rth_utils.py",
+    "Length": 680
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-_tkinter.py",
+    "Length": 2023
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-babel.py",
+    "Length": 924
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-difflib.py",
+    "Length": 577
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-distutils.command.check.py",
+    "Length": 606
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-distutils.py",
+    "Length": 1893
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-distutils.util.py",
+    "Length": 661
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-django.contrib.sessions.py",
+    "Length": 635
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-django.core.cache.py",
+    "Length": 629
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-django.core.mail.py",
+    "Length": 1069
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-django.core.management.py",
+    "Length": 942
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-django.db.backends.mysql.base.py",
+    "Length": 611
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-django.db.backends.oracle.base.py",
+    "Length": 563
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-django.db.backends.py",
+    "Length": 983
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-django.py",
+    "Length": 3922
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-django.template.loaders.py",
+    "Length": 626
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-encodings.py",
+    "Length": 612
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gevent.py",
+    "Length": 1011
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.py",
+    "Length": 1075
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.Adw.py",
+    "Length": 1148
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.AppIndicator3.py",
+    "Length": 710
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.Atk.py",
+    "Length": 1084
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.AyatanaAppIndicator3.py",
+    "Length": 717
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.Champlain.py",
+    "Length": 707
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.Clutter.py",
+    "Length": 704
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.DBus.py",
+    "Length": 701
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.GIRepository.py",
+    "Length": 709
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.GLib.py",
+    "Length": 1680
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.GLibUnix.py",
+    "Length": 700
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.GLibWin32.py",
+    "Length": 701
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.GModule.py",
+    "Length": 704
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.GObject.py",
+    "Length": 905
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.Gdk.py",
+    "Length": 1393
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.GdkPixbuf.py",
+    "Length": 6320
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.Gio.py",
+    "Length": 2932
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.GioUnix.py",
+    "Length": 699
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.GioWin32.py",
+    "Length": 700
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.Graphene.py",
+    "Length": 705
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.Gsk.py",
+    "Length": 700
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.Gst.py",
+    "Length": 3461
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.GstAllocators.py",
+    "Length": 710
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.GstApp.py",
+    "Length": 703
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.GstAudio.py",
+    "Length": 705
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.GstBadAudio.py",
+    "Length": 708
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.GstBase.py",
+    "Length": 704
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.GstCheck.py",
+    "Length": 705
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.GstCodecs.py",
+    "Length": 706
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.GstController.py",
+    "Length": 710
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.GstGL.py",
+    "Length": 702
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.GstGLEGL.py",
+    "Length": 705
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.GstGLWayland.py",
+    "Length": 709
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.GstGLX11.py",
+    "Length": 705
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.GstInsertBin.py",
+    "Length": 709
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.GstMpegts.py",
+    "Length": 706
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.GstNet.py",
+    "Length": 703
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.GstPbutils.py",
+    "Length": 707
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.GstPlay.py",
+    "Length": 704
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.GstPlayer.py",
+    "Length": 706
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.GstRtp.py",
+    "Length": 703
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.GstRtsp.py",
+    "Length": 704
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.GstRtspServer.py",
+    "Length": 710
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.GstSdp.py",
+    "Length": 703
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.GstTag.py",
+    "Length": 703
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.GstTranscoder.py",
+    "Length": 710
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.GstVideo.py",
+    "Length": 705
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.GstVulkan.py",
+    "Length": 706
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.GstVulkanWayland.py",
+    "Length": 713
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.GstVulkanXCB.py",
+    "Length": 709
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.GstWebRTC.py",
+    "Length": 706
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.Gtk.py",
+    "Length": 2150
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.GtkChamplain.py",
+    "Length": 710
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.GtkClutter.py",
+    "Length": 707
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.GtkSource.py",
+    "Length": 1297
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.GtkosxApplication.py",
+    "Length": 781
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.HarfBuzz.py",
+    "Length": 705
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.OsmGpsMap.py",
+    "Length": 701
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.Pango.py",
+    "Length": 702
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.PangoCairo.py",
+    "Length": 707
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.Rsvg.py",
+    "Length": 696
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.Soup.py",
+    "Length": 701
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.Spelling.py",
+    "Length": 703
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.cairo.py",
+    "Length": 702
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.freetype2.py",
+    "Length": 706
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-gi.repository.xlib.py",
+    "Length": 701
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-heapq.py",
+    "Length": 578
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-idlelib.py",
+    "Length": 602
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-importlib_metadata.py",
+    "Length": 1350
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-importlib_resources.py",
+    "Length": 1015
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-keyring.py",
+    "Length": 888
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-kivy.py",
+    "Length": 1126
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-lib2to3.py",
+    "Length": 653
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-math.py",
+    "Length": 813
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-matplotlib.backend_bases.py",
+    "Length": 533
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-matplotlib.backends.backend_qtagg.py",
+    "Length": 894
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-matplotlib.backends.backend_qtcairo.py",
+    "Length": 896
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-matplotlib.backends.py",
+    "Length": 11877
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-matplotlib.backends.qt_compat.py",
+    "Length": 1284
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-matplotlib.figure.py",
+    "Length": 724
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-matplotlib.numerix.py",
+    "Length": 683
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-matplotlib.py",
+    "Length": 1568
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-matplotlib.pyplot.py",
+    "Length": 560
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-multiprocessing.util.py",
+    "Length": 791
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-numpy.py",
+    "Length": 6906
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-pandas.io.clipboard.py",
+    "Length": 1156
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-pandas.io.formats.style.py",
+    "Length": 751
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-pandas.plotting.py",
+    "Length": 938
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-pandas.py",
+    "Length": 1699
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-pickle.py",
+    "Length": 589
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-pkg_resources.py",
+    "Length": 3563
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-platform.py",
+    "Length": 1200
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-pygments.py",
+    "Length": 1184
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-pytz.py",
+    "Length": 968
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-pytzdata.py",
+    "Length": 603
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-qtawesome.py",
+    "Length": 792
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-qtpy.py",
+    "Length": 1179
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-scapy.layers.all.py",
+    "Length": 930
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-scipy.io.matlab.py",
+    "Length": 655
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-scipy.linalg.py",
+    "Length": 633
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-scipy.py",
+    "Length": 3413
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-scipy.sparse.csgraph.py",
+    "Length": 611
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-scipy.spatial._ckdtree.py",
+    "Length": 759
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-scipy.spatial.transform.rotation.py",
+    "Length": 793
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-scipy.special._ellip_harm_2.py",
+    "Length": 1317
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-scipy.special._ufuncs.py",
+    "Length": 1258
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-scipy.stats._stats.py",
+    "Length": 656
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-scrapy.py",
+    "Length": 819
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-setuptools._vendor.importlib_metadata.py",
+    "Length": 1127
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-setuptools._vendor.jaraco.text.py",
+    "Length": 927
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-setuptools.py",
+    "Length": 4466
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-shelve.py",
+    "Length": 603
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-shiboken6.py",
+    "Length": 766
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-sphinx.py",
+    "Length": 1998
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-sqlalchemy.py",
+    "Length": 3496
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-sqlite3.py",
+    "Length": 813
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-sysconfig.py",
+    "Length": 1558
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-wcwidth.py",
+    "Length": 602
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-webbrowser.py",
+    "Length": 1006
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-win32ctypes.core.py",
+    "Length": 1204
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-xml.dom.domreg.py",
+    "Length": 569
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-xml.etree.cElementTree.py",
+    "Length": 615
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-xml.py",
+    "Length": 569
+  },
+  {
+    "FullName": "PyInstaller/hooks/hook-zope.interface.py",
+    "Length": 539
+  },
+  {
+    "FullName": "PyInstaller/hooks/rthooks.dat",
+    "Length": 956
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_find_module_path/__init__.py",
+    "Length": 2
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_find_module_path/hook-PyQt5.uic.port_v2.py",
+    "Length": 696
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_find_module_path/hook-_pyi_rth_utils.py",
+    "Length": 905
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_find_module_path/hook-distutils.py",
+    "Length": 2347
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_find_module_path/hook-pyi_splash.py",
+    "Length": 1412
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_find_module_path/hook-tkinter.py",
+    "Length": 834
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/__init__.py",
+    "Length": 2
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-autocommand.py",
+    "Length": 924
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-backports.py",
+    "Length": 1065
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-backports.tarfile.py",
+    "Length": 924
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-distutils.py",
+    "Length": 1235
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.overrides.py",
+    "Length": 967
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.py",
+    "Length": 2123
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.Adw.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.AppIndicator3.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.Atk.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.AyatanaAppIndicator3.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.Champlain.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.Clutter.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.DBus.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.GIRepository.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.GLib.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.GLibUnix.py",
+    "Length": 778
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.GLibWin32.py",
+    "Length": 778
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.GModule.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.GObject.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.Gdk.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.GdkPixbuf.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.Gio.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.GioUnix.py",
+    "Length": 778
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.GioWin32.py",
+    "Length": 778
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.Graphene.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.Gsk.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.Gst.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.GstAllocators.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.GstApp.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.GstAudio.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.GstBadAudio.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.GstBase.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.GstCheck.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.GstCodecs.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.GstController.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.GstGL.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.GstGLEGL.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.GstGLWayland.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.GstGLX11.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.GstInsertBin.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.GstMpegts.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.GstNet.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.GstPbutils.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.GstPlay.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.GstPlayer.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.GstRtp.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.GstRtsp.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.GstRtspServer.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.GstSdp.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.GstTag.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.GstTranscoder.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.GstVideo.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.GstVulkan.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.GstVulkanWayland.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.GstVulkanXCB.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.GstWebRTC.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.Gtk.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.GtkChamplain.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.GtkClutter.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.GtkSource.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.GtkosxApplication.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.HarfBuzz.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.OsmGpsMap.py",
+    "Length": 778
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.Pango.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.PangoCairo.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.Rsvg.py",
+    "Length": 778
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.Soup.py",
+    "Length": 586
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.Spelling.py",
+    "Length": 586
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.cairo.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.freetype2.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-gi.repository.xlib.py",
+    "Length": 783
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-importlib_metadata.py",
+    "Length": 924
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-importlib_resources.py",
+    "Length": 924
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-inflect.py",
+    "Length": 924
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-jaraco.context.py",
+    "Length": 924
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-jaraco.functools.py",
+    "Length": 924
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-jaraco.py",
+    "Length": 1065
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-jaraco.text.py",
+    "Length": 924
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-more_itertools.py",
+    "Length": 924
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-ordered_set.py",
+    "Length": 924
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-packaging.py",
+    "Length": 924
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-platformdirs.py",
+    "Length": 924
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-setuptools.extern.six.moves.py",
+    "Length": 1629
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-six.moves.py",
+    "Length": 3744
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-tomli.py",
+    "Length": 924
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-typeguard.py",
+    "Length": 924
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-typing_extensions.py",
+    "Length": 924
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-urllib3.packages.six.moves.py",
+    "Length": 1380
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-wheel.py",
+    "Length": 924
+  },
+  {
+    "FullName": "PyInstaller/hooks/pre_safe_import_module/hook-zipp.py",
+    "Length": 924
+  },
+  {
+    "FullName": "PyInstaller/hooks/rthooks/__init__.py",
+    "Length": 2
+  },
+  {
+    "FullName": "PyInstaller/hooks/rthooks/pyi_rth__tkinter.py",
+    "Length": 1504
+  },
+  {
+    "FullName": "PyInstaller/hooks/rthooks/pyi_rth_django.py",
+    "Length": 1111
+  },
+  {
+    "FullName": "PyInstaller/hooks/rthooks/pyi_rth_gdkpixbuf.py",
+    "Length": 1436
+  },
+  {
+    "FullName": "PyInstaller/hooks/rthooks/pyi_rth_gi.py",
+    "Length": 632
+  },
+  {
+    "FullName": "PyInstaller/hooks/rthooks/pyi_rth_gio.py",
+    "Length": 631
+  },
+  {
+    "FullName": "PyInstaller/hooks/rthooks/pyi_rth_glib.py",
+    "Length": 1508
+  },
+  {
+    "FullName": "PyInstaller/hooks/rthooks/pyi_rth_gstreamer.py",
+    "Length": 1174
+  },
+  {
+    "FullName": "PyInstaller/hooks/rthooks/pyi_rth_gtk.py",
+    "Length": 886
+  },
+  {
+    "FullName": "PyInstaller/hooks/rthooks/pyi_rth_inspect.py",
+    "Length": 5809
+  },
+  {
+    "FullName": "PyInstaller/hooks/rthooks/pyi_rth_kivy.py",
+    "Length": 737
+  },
+  {
+    "FullName": "PyInstaller/hooks/rthooks/pyi_rth_mplconfig.py",
+    "Length": 1808
+  },
+  {
+    "FullName": "PyInstaller/hooks/rthooks/pyi_rth_multiprocessing.py",
+    "Length": 3817
+  },
+  {
+    "FullName": "PyInstaller/hooks/rthooks/pyi_rth_pkgres.py",
+    "Length": 8867
+  },
+  {
+    "FullName": "PyInstaller/hooks/rthooks/pyi_rth_pkgutil.py",
+    "Length": 3066
+  },
+  {
+    "FullName": "PyInstaller/hooks/rthooks/pyi_rth_pyqt5.py",
+    "Length": 3542
+  },
+  {
+    "FullName": "PyInstaller/hooks/rthooks/pyi_rth_pyqt6.py",
+    "Length": 3803
+  },
+  {
+    "FullName": "PyInstaller/hooks/rthooks/pyi_rth_pyside2.py",
+    "Length": 3235
+  },
+  {
+    "FullName": "PyInstaller/hooks/rthooks/pyi_rth_pyside6.py",
+    "Length": 3730
+  },
+  {
+    "FullName": "PyInstaller/hooks/rthooks/pyi_rth_setuptools.py",
+    "Length": 1430
+  },
+  {
+    "FullName": "PyInstaller/isolated/__init__.py",
+    "Length": 1526
+  },
+  {
+    "FullName": "PyInstaller/isolated/_child.py",
+    "Length": 3980
+  },
+  {
+    "FullName": "PyInstaller/isolated/_parent.py",
+    "Length": 18005
+  },
+  {
+    "FullName": "PyInstaller/lib/README.rst",
+    "Length": 1333
+  },
+  {
+    "FullName": "PyInstaller/lib/__init__.py",
+    "Length": 2
+  },
+  {
+    "FullName": "PyInstaller/lib/modulegraph/__init__.py",
+    "Length": 21
+  },
+  {
+    "FullName": "PyInstaller/lib/modulegraph/__main__.py",
+    "Length": 2653
+  },
+  {
+    "FullName": "PyInstaller/lib/modulegraph/find_modules.py",
+    "Length": 1754
+  },
+  {
+    "FullName": "PyInstaller/lib/modulegraph/modulegraph.py",
+    "Length": 134647
+  },
+  {
+    "FullName": "PyInstaller/lib/modulegraph/util.py",
+    "Length": 849
+  },
+  {
+    "FullName": "PyInstaller/loader/__init__.py",
+    "Length": 2
+  },
+  {
+    "FullName": "PyInstaller/loader/pyiboot01_bootstrap.py",
+    "Length": 4342
+  },
+  {
+    "FullName": "PyInstaller/loader/pyimod01_archive.py",
+    "Length": 5518
+  },
+  {
+    "FullName": "PyInstaller/loader/pyimod02_importers.py",
+    "Length": 36530
+  },
+  {
+    "FullName": "PyInstaller/loader/pyimod03_ctypes.py",
+    "Length": 4914
+  },
+  {
+    "FullName": "PyInstaller/loader/pyimod04_pywin32.py",
+    "Length": 2936
+  },
+  {
+    "FullName": "PyInstaller/utils/__init__.py",
+    "Length": 2
+  },
+  {
+    "FullName": "PyInstaller/utils/conftest.py",
+    "Length": 26124
+  },
+  {
+    "FullName": "PyInstaller/utils/misc.py",
+    "Length": 7030
+  },
+  {
+    "FullName": "PyInstaller/utils/osx.py",
+    "Length": 32833
+  },
+  {
+    "FullName": "PyInstaller/utils/run_tests.py",
+    "Length": 2875
+  },
+  {
+    "FullName": "PyInstaller/utils/tests.py",
+    "Length": 4402
+  },
+  {
+    "FullName": "PyInstaller/utils/cliutils/__init__.py",
+    "Length": 2
+  },
+  {
+    "FullName": "PyInstaller/utils/cliutils/archive_viewer.py",
+    "Length": 9375
+  },
+  {
+    "FullName": "PyInstaller/utils/cliutils/bindepend.py",
+    "Length": 1844
+  },
+  {
+    "FullName": "PyInstaller/utils/cliutils/grab_version.py",
+    "Length": 1857
+  },
+  {
+    "FullName": "PyInstaller/utils/cliutils/makespec.py",
+    "Length": 1640
+  },
+  {
+    "FullName": "PyInstaller/utils/cliutils/set_version.py",
+    "Length": 1503
+  },
+  {
+    "FullName": "PyInstaller/utils/hooks/__init__.py",
+    "Length": 55636
+  },
+  {
+    "FullName": "PyInstaller/utils/hooks/conda.py",
+    "Length": 15217
+  },
+  {
+    "FullName": "PyInstaller/utils/hooks/django.py",
+    "Length": 6135
+  },
+  {
+    "FullName": "PyInstaller/utils/hooks/gi.py",
+    "Length": 19112
+  },
+  {
+    "FullName": "PyInstaller/utils/hooks/setuptools.py",
+    "Length": 15734
+  },
+  {
+    "FullName": "PyInstaller/utils/hooks/tcl_tk.py",
+    "Length": 19434
+  },
+  {
+    "FullName": "PyInstaller/utils/hooks/qt/__init__.py",
+    "Length": 76214
+  },
+  {
+    "FullName": "PyInstaller/utils/hooks/qt/_modules_info.py",
+    "Length": 25225
+  },
+  {
+    "FullName": "PyInstaller/utils/win32/__init__.py",
+    "Length": 22
+  },
+  {
+    "FullName": "PyInstaller/utils/win32/icon.py",
+    "Length": 9340
+  },
+  {
+    "FullName": "PyInstaller/utils/win32/versioninfo.py",
+    "Length": 20570
+  },
+  {
+    "FullName": "PyInstaller/utils/win32/winmanifest.py",
+    "Length": 10644
+  },
+  {
+    "FullName": "PyInstaller/utils/win32/winresource.py",
+    "Length": 7625
+  },
+  {
+    "FullName": "PyInstaller/utils/win32/winutils.py",
+    "Length": 9175
+  },
+  {
+    "FullName": "pyinstaller-6.22.2.dist-info/METADATA",
+    "Length": 8517
+  },
+  {
+    "FullName": "pyinstaller-6.22.2.dist-info/WHEEL",
+    "Length": 93
+  },
+  {
+    "FullName": "pyinstaller-6.22.2.dist-info/entry_points.txt",
+    "Length": 376
+  },
+  {
+    "FullName": "pyinstaller-6.22.2.dist-info/licenses/COPYING.txt",
+    "Length": 32138
+  },
+  {
+    "FullName": "pyinstaller-6.22.2.dist-info/RECORD",
+    "Length": 58398
+  }
+]

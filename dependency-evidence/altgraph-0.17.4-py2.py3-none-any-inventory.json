@@ -1,0 +1,54 @@
+[
+  {
+    "FullName": "altgraph/Dot.py",
+    "Length": 9929
+  },
+  {
+    "FullName": "altgraph/Graph.py",
+    "Length": 20788
+  },
+  {
+    "FullName": "altgraph/GraphAlgo.py",
+    "Length": 5645
+  },
+  {
+    "FullName": "altgraph/GraphStat.py",
+    "Length": 1888
+  },
+  {
+    "FullName": "altgraph/GraphUtil.py",
+    "Length": 3990
+  },
+  {
+    "FullName": "altgraph/ObjectGraph.py",
+    "Length": 6490
+  },
+  {
+    "FullName": "altgraph/__init__.py",
+    "Length": 5015
+  },
+  {
+    "FullName": "altgraph-0.17.4.dist-info/LICENSE",
+    "Length": 1002
+  },
+  {
+    "FullName": "altgraph-0.17.4.dist-info/METADATA",
+    "Length": 7264
+  },
+  {
+    "FullName": "altgraph-0.17.4.dist-info/WHEEL",
+    "Length": 110
+  },
+  {
+    "FullName": "altgraph-0.17.4.dist-info/top_level.txt",
+    "Length": 9
+  },
+  {
+    "FullName": "altgraph-0.17.4.dist-info/zip-safe",
+    "Length": 1
+  },
+  {
+    "FullName": "altgraph-0.17.4.dist-info/RECORD",
+    "Length": 1022
+  }
+]

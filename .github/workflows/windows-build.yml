@@ -1,0 +1,76 @@
+name: Windows Development Preview
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  windows:
+    runs-on: windows-2022
+    timeout-minutes: 30
+    defaults:
+      run:
+        shell: pwsh
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Install exact official CPython
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $toolchain = Get-Content ci-toolchain.json -Raw | ConvertFrom-Json
+          $runtime = $toolchain.python
+          if ([DateTimeOffset]::UtcNow - [DateTimeOffset]::Parse($runtime.artifact_published) -lt [TimeSpan]::FromDays(31)) { throw 'CPython artifact is too young' }
+          foreach ($action in $toolchain.actions) {
+            if ([DateTimeOffset]::UtcNow - [DateTimeOffset]::Parse($action.published) -lt [TimeSpan]::FromDays(31)) { throw 'CI action is too young' }
+          }
+          $installer = Join-Path $env:RUNNER_TEMP 'python-official.exe'
+          Invoke-WebRequest $runtime.url -OutFile $installer
+          if ((Get-FileHash $installer -Algorithm SHA256).Hash.ToLower() -ne $runtime.sha256) { throw 'CPython hash mismatch' }
+          $signature = Get-AuthenticodeSignature $installer
+          if ($signature.Status -ne 'Valid' -or $signature.SignerCertificate.Subject -ne $runtime.signer) { throw 'CPython publisher verification fails' }
+          $target = Join-Path $env:RUNNER_TEMP 'dgn-python'
+          $install = Start-Process $installer -ArgumentList @('/quiet', 'InstallAllUsers=0', 'Include_launcher=0', 'Include_test=0', 'Include_doc=0', 'Shortcuts=0', 'AssociateFiles=0', 'PrependPath=0', "TargetDir=$target") -Wait -PassThru
+          if ($install.ExitCode -ne 0) { throw 'CPython installation fails' }
+          "DGN_PYTHON=$target/python.exe" | Out-File $env:GITHUB_ENV -Append -Encoding utf8
+      - name: Refresh unchanged evidence and acquire exact wheels
+        run: |
+          & $env:DGN_PYTHON prepare_dependencies.py
+          if ($LASTEXITCODE -ne 0) { throw 'Dependency/advisory review requires attention' }
+          & $env:DGN_PYTHON -m pip install --no-index --find-links wheelhouse --only-binary=:all: --require-hashes -r requirements-runtime.lock -r requirements-build.lock -r requirements-dev.lock
+          if ($LASTEXITCODE -ne 0) { throw 'Offline locked install fails' }
+          & $env:DGN_PYTHON -m dgn_explorer.policy build/ci-dependency-approvals.json wheelhouse
+          if ($LASTEXITCODE -ne 0) { throw 'Development policy validation fails' }
+      - name: Run backend and real desktop tests
+        run: |
+          $env:QT_QPA_PLATFORM = 'windows'
+          & $env:DGN_PYTHON -m coverage run --branch --source=dgn_explorer,dgn_folder -m unittest discover -s . -p 'test_*.py' -v
+          if ($LASTEXITCODE -ne 0) { throw 'Regression tests fail' }
+          & $env:DGN_PYTHON -m coverage json -o build/coverage.json
+          if ($LASTEXITCODE -ne 0) { throw 'Coverage report fails' }
+      - name: Build and verify relocated portable preview
+        run: ./build-portable.ps1 -Python $env:DGN_PYTHON -ApprovalManifest build/ci-dependency-approvals.json
+      - name: Build Python wheel offline
+        run: |
+          & $env:DGN_PYTHON -m pip wheel --no-index --no-deps --no-build-isolation --wheel-dir dist .
+          if ($LASTEXITCODE -ne 0) { throw 'Python wheel build fails' }
+      - name: Upload verified development preview
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: DGN-Explorer-windows-x64-preview
+          if-no-files-found: error
+          retention-days: 14
+          path: |
+            dist/*.zip
+            dist/*.whl
+            dist/portable-output-sha256.json
+            build/portable-*.json
+            build/portable-*.png
+            build/coverage.json
+            build/ci-dependency-approvals.json
+            build/fresh-evidence/

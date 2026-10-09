@@ -1,0 +1,67 @@
+[
+  {
+    "path": "shiboken6/Shiboken.pyd",
+    "size": 33592,
+    "sha256": "2f6f3a694f675b1dafdae26903191613c02866ab48e02591ae34ca1a3b1284f1"
+  },
+  {
+    "path": "shiboken6/concrt140.dll",
+    "size": 315704,
+    "sha256": "b724ef089cb22625e3281da4b6f7513381eef726ea73e4ee8a875d6749e61a24"
+  },
+  {
+    "path": "shiboken6/msvcp140.dll",
+    "size": 549176,
+    "sha256": "fd4a8c046fa3fea9ca6132f50cf8a56cf1e783b2d3093ba5c85fa063bc6b3845"
+  },
+  {
+    "path": "shiboken6/msvcp140_1.dll",
+    "size": 27448,
+    "sha256": "7f556f0a0b944df7b64b916b344a070b7e6f6cf342194475594447ca88c07659"
+  },
+  {
+    "path": "shiboken6/msvcp140_2.dll",
+    "size": 271672,
+    "sha256": "720091576d0e2669d16e8ad203a1f81a7c0811a6906452964d6e5fcb28a8de4d"
+  },
+  {
+    "path": "shiboken6/msvcp140_codecvt_ids.dll",
+    "size": 23352,
+    "sha256": "e5fd27e8f57810eb40196a7ce5bff7bccc01ea4663e0d3af073539c26604cfa9"
+  },
+  {
+    "path": "shiboken6/shiboken6.abi3.dll",
+    "size": 394040,
+    "sha256": "de3c6b2ed5f75c9ac0de4a6844b653b3b9d09263ce68c2b5fc25a96c5c3e8469"
+  },
+  {
+    "path": "shiboken6/vcamp140.dll",
+    "size": 449848,
+    "sha256": "ebbd56b4f03091a8bd074aa0de9f93f6884d8bb3da5d0375ec08cbe18eede619"
+  },
+  {
+    "path": "shiboken6/vccorlib140.dll",
+    "size": 343864,
+    "sha256": "de937dcaf545a60a789c261143883de681be95a70789010b47c541d68cc25ec5"
+  },
+  {
+    "path": "shiboken6/vcomp140.dll",
+    "size": 155448,
+    "sha256": "2407d7152d585a8ecc701454b2903db3b1abaca31b4288ae4fbf905f06d5a0f1"
+  },
+  {
+    "path": "shiboken6/vcruntime140.dll",
+    "size": 116024,
+    "sha256": "de617641d82eac15595d2e39394163ac33e49bb032cf2c2ea0044ed39d3675e9"
+  },
+  {
+    "path": "shiboken6/vcruntime140_1.dll",
+    "size": 41272,
+    "sha256": "fa577d54bd10a91e52472da784a619da6cf241af45f0a0c48b27e91fa0fe6104"
+  },
+  {
+    "path": "shiboken6-6.11.2.dist-info/licenses/LicenseRef-Qt-Commercial.txt",
+    "size": 470,
+    "sha256": "4f54763ac0fe2abd8f7f8d8fe370a94a08ebf84786aa0b91045bd6628deb08a3"
+  }
+]

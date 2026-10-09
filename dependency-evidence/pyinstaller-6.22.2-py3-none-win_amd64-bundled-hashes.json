@@ -1,0 +1,27 @@
+[
+  {
+    "path": "PyInstaller/bootloader/Windows-64bit-intel/run.exe",
+    "size": 287232,
+    "sha256": "9f93091d097c7bca65e18e233b68886a017da65c9681efb1fcbfcc254e4fa1fd"
+  },
+  {
+    "path": "PyInstaller/bootloader/Windows-64bit-intel/run_d.exe",
+    "size": 309248,
+    "sha256": "ffcc6326d07fd33697a2f083911459ea49a7e2aac67d1cfbed718393ed50c9f3"
+  },
+  {
+    "path": "PyInstaller/bootloader/Windows-64bit-intel/runw.exe",
+    "size": 282624,
+    "sha256": "87b0c589906a5d690c26c602bf2ee7e43b3eab55574bf72887a8ca07fbb2dba0"
+  },
+  {
+    "path": "PyInstaller/bootloader/Windows-64bit-intel/runw_d.exe",
+    "size": 303616,
+    "sha256": "c8e8a897bf8690ce6e0e98f9d3e7c30fd7e1335100a1516cc83548532b4faf06"
+  },
+  {
+    "path": "pyinstaller-6.22.2.dist-info/licenses/COPYING.txt",
+    "size": 32138,
+    "sha256": "dcf75fdb959db1e3b41c0f8505069d2ece781b5ec6b3d0a4d30975cfc6580245"
+  }
+]

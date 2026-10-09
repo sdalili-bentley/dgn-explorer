@@ -1,0 +1,1182 @@
+[
+  {
+    "path": "PySide6/Qt6Concurrent.dll",
+    "size": 35128,
+    "sha256": "06a2719d8ee9b95d04c6828874dabef3ba3a272b71ae41ea878a5e9a80528045"
+  },
+  {
+    "path": "PySide6/Qt6Core.dll",
+    "size": 10363704,
+    "sha256": "d6a3c37c5263c5d418fc0e80b722bc9fca7c0859e6f635f9624a2fde00bdc653"
+  },
+  {
+    "path": "PySide6/Qt6DBus.dll",
+    "size": 749880,
+    "sha256": "f878d4c2f4f463c337501dc288dcb2d92a7e6cb7f698327de9700199ac317e25"
+  },
+  {
+    "path": "PySide6/Qt6Designer.dll",
+    "size": 5235512,
+    "sha256": "9cb883d6c0b93a5b1e86e0debed0b9967ce89e0e9f3026bb37c8b0c18ede1272"
+  },
+  {
+    "path": "PySide6/Qt6DesignerComponents.dll",
+    "size": 2441528,
+    "sha256": "e73831469709786393981747443f9fca06eac2aaa94659b531e88a38f6437ad5"
+  },
+  {
+    "path": "PySide6/Qt6Gui.dll",
+    "size": 9546552,
+    "sha256": "ae29b005f51b6850bf57fa06fced0dc8c7039fd6fafc3bfbcfe76e38adc7abf1"
+  },
+  {
+    "path": "PySide6/Qt6Help.dll",
+    "size": 596280,
+    "sha256": "6f8ad48f4a76fda0b0d0ea6f780fd291e659cfde2cf6e9e14e800a9774fdd02c"
+  },
+  {
+    "path": "PySide6/Qt6LabsAnimation.dll",
+    "size": 55096,
+    "sha256": "1164fca149ab751708367d23e78f9f741c930b280426ce0b1838c8c93a8df8ef"
+  },
+  {
+    "path": "PySide6/Qt6LabsFolderListModel.dll",
+    "size": 122168,
+    "sha256": "759bee3b552b9916630eb51d081dd6d57e23b809293fcb89243087b21d40bf3c"
+  },
+  {
+    "path": "PySide6/Qt6LabsPlatform.dll",
+    "size": 281912,
+    "sha256": "5a3debb6b04893b920f6428fb5425516eed6eeed73997a6697bcd8bfdba738e7"
+  },
+  {
+    "path": "PySide6/Qt6LabsQmlModels.dll",
+    "size": 206648,
+    "sha256": "caed7fd2e3d4d91ebdef66d8c2f7083deda0511950ea151c507466d64c2393a2"
+  },
+  {
+    "path": "PySide6/Qt6LabsSettings.dll",
+    "size": 60216,
+    "sha256": "e81363dcd4c61182fa59ef7a6f5c1e8acc1abe084bfcdf61d761bde754ba7796"
+  },
+  {
+    "path": "PySide6/Qt6LabsSharedImage.dll",
+    "size": 56632,
+    "sha256": "cb7b16b0ca4ad00eee90c1f2f3854b477f98eb416da279557e1abcfe025c0646"
+  },
+  {
+    "path": "PySide6/Qt6LabsStyleKit.dll",
+    "size": 1461048,
+    "sha256": "82584e5d2dc025db818dfc229f5e16b6af9b95c0f44665df107b18519d310c94"
+  },
+  {
+    "path": "PySide6/Qt6LabsStyleKitImpl.dll",
+    "size": 280888,
+    "sha256": "43b7bf0514d877a0e82917889846c42a58e17891b57ced9221a40ae6871c068a"
+  },
+  {
+    "path": "PySide6/Qt6LabsSynchronizer.dll",
+    "size": 67384,
+    "sha256": "25081c8c77eff55229fd493cf48a2f379ca317a4bfbef27ff2b3a97e746bcdb7"
+  },
+  {
+    "path": "PySide6/Qt6LabsWavefrontMesh.dll",
+    "size": 60216,
+    "sha256": "e013123236c67c5895ba4b20359c8454bc2fe8e09a9282c348fd7dfc933173d4"
+  },
+  {
+    "path": "PySide6/Qt6Lottie.dll",
+    "size": 379704,
+    "sha256": "448f4f144b0c64579448870c15aa3ad205ba8774090a1a6f91ae2025838c79ae"
+  },
+  {
+    "path": "PySide6/Qt6LottieVectorImageGenerator.dll",
+    "size": 149816,
+    "sha256": "113c1a43da8a35b37d9b44ffa1d90e2b1ded77c286abd469e0686bb812749216"
+  },
+  {
+    "path": "PySide6/Qt6LottieVectorImageHelpers.dll",
+    "size": 40248,
+    "sha256": "435815e869f40718fdd56f119cbf233971cda922a6660d4e736eaa39eab734a9"
+  },
+  {
+    "path": "PySide6/Qt6Network.dll",
+    "size": 1751352,
+    "sha256": "dd3512d1c5ed062d30c98426cd0a850f13e0cf31437afb5b0b474132b9c52922"
+  },
+  {
+    "path": "PySide6/Qt6OpenGL.dll",
+    "size": 1988408,
+    "sha256": "d51088f16db8c96dba7ef3c1474e611adb3ebdb211fea35b8e755d2a7407f7ad"
+  },
+  {
+    "path": "PySide6/Qt6OpenGLWidgets.dll",
+    "size": 65336,
+    "sha256": "860cd7e95bb1c6acea2b7a15f863e322a26bcc7e100acf5aa737c891adb31f75"
+  },
+  {
+    "path": "PySide6/Qt6PrintSupport.dll",
+    "size": 405304,
+    "sha256": "fccd235e7ceabb9ff7bb8c185b238bcb5cb553b2ef3894308adbab0fb4862b2f"
+  },
+  {
+    "path": "PySide6/Qt6Qml.dll",
+    "size": 5337912,
+    "sha256": "514fc8d9ff0754d2bcb446bbe0f6cc421213d92c8c1870e4cf787e4e176d51f6"
+  },
+  {
+    "path": "PySide6/Qt6QmlCompiler.dll",
+    "size": 2529592,
+    "sha256": "6fa0e29a9934a3507748cd20ab92ee7c1fe397a374688f626dddcb0e1cb663a6"
+  },
+  {
+    "path": "PySide6/Qt6QmlCore.dll",
+    "size": 132920,
+    "sha256": "951c2be90405f67a4b1ed0b189c7dfd948b6dceea01b889ffdd96eae42531ee8"
+  },
+  {
+    "path": "PySide6/Qt6QmlLocalStorage.dll",
+    "size": 61752,
+    "sha256": "fb487f2008e239a3259dd35b5fd2da5ad16bd00332eb47f8cfe3d19c6e5df4a5"
+  },
+  {
+    "path": "PySide6/Qt6QmlMeta.dll",
+    "size": 159032,
+    "sha256": "c6e8b02ad52e01e0e865a085b629b08629fbe5c68146425d4cefdcaaef7a8462"
+  },
+  {
+    "path": "PySide6/Qt6QmlModels.dll",
+    "size": 990008,
+    "sha256": "066e72ad668ff02dcf530805d071313f9e89d9f1fb49a522aa4ed52712741bf2"
+  },
+  {
+    "path": "PySide6/Qt6QmlNetwork.dll",
+    "size": 126264,
+    "sha256": "fd106e5857407f238057637d97e90de2bdb9a2aa8e3be9d55ea42a84877559ad"
+  },
+  {
+    "path": "PySide6/Qt6QmlWorkerScript.dll",
+    "size": 79672,
+    "sha256": "c037ab72fb9c1c1ebbe47f70b8a35d440537765ef6207424aae0c16fea26eda1"
+  },
+  {
+    "path": "PySide6/Qt6QmlXmlListModel.dll",
+    "size": 132408,
+    "sha256": "406eb715e21c21d3857b1cd6eeba5f0024a7485d256cb0ba4fbfbd81f4260a36"
+  },
+  {
+    "path": "PySide6/Qt6Quick.dll",
+    "size": 6569272,
+    "sha256": "900a493625af1f7d9fe6071b9aaee15e560cc7afc122702656723539ed81975f"
+  },
+  {
+    "path": "PySide6/Qt6QuickControls2.dll",
+    "size": 103224,
+    "sha256": "724b3aa080627846ee67f09ab72b879f332c7890564ecd9ccd82bacc24d244c0"
+  },
+  {
+    "path": "PySide6/Qt6QuickControls2Basic.dll",
+    "size": 1831224,
+    "sha256": "61fc5a35e1f2a7c14319bbc6d34d33a6d97ec95f94f6bcbba32010f8399aa818"
+  },
+  {
+    "path": "PySide6/Qt6QuickControls2BasicStyleImpl.dll",
+    "size": 91448,
+    "sha256": "c76f607efbb49e4d413a3848528e0fd5b7a6c9b40c3b783040d5e1f28de1bb11"
+  },
+  {
+    "path": "PySide6/Qt6QuickControls2FluentWinUI3StyleImpl.dll",
+    "size": 221496,
+    "sha256": "eb2c2faa68146fd04c1c13f4b304e2e8101880410b88839debe89ce2921fdab9"
+  },
+  {
+    "path": "PySide6/Qt6QuickControls2Fusion.dll",
+    "size": 1500472,
+    "sha256": "16ea87b9fa42bbc88854b886fa417a89c3a294f0e7770ea18001e0b51837e35d"
+  },
+  {
+    "path": "PySide6/Qt6QuickControls2FusionStyleImpl.dll",
+    "size": 186680,
+    "sha256": "c91e1c3b0883df7f309225707bb6e8b2e8a0976064e371817e40607cdc263a47"
+  },
+  {
+    "path": "PySide6/Qt6QuickControls2Imagine.dll",
+    "size": 3102520,
+    "sha256": "aef8406f71dbb4dd176cdec21f016d683b736db587c5655dcecea62a1f86237c"
+  },
+  {
+    "path": "PySide6/Qt6QuickControls2ImagineStyleImpl.dll",
+    "size": 70456,
+    "sha256": "710332f2235c58e0e584fa490a260dde4c4be572fc1e063bddfb6e9069dd25fa"
+  },
+  {
+    "path": "PySide6/Qt6QuickControls2Impl.dll",
+    "size": 325432,
+    "sha256": "a08c628795c8e6cc3e51a0c763a8a3b3fb4288905febb15fa74c6c6ba86e2744"
+  },
+  {
+    "path": "PySide6/Qt6QuickControls2Material.dll",
+    "size": 1909560,
+    "sha256": "cbdf3e03c94d7e940ffb3b436c8d7e549abb22c587c1c36f3b86af4262b40286"
+  },
+  {
+    "path": "PySide6/Qt6QuickControls2MaterialStyleImpl.dll",
+    "size": 311096,
+    "sha256": "682f0026618a94fab4e243b3cc5c8d8c8fd6a3e5a6dc16a1220f6861e4be71f4"
+  },
+  {
+    "path": "PySide6/Qt6QuickControls2Universal.dll",
+    "size": 1580344,
+    "sha256": "c2e9ef66873cfab5880ef47f68df00e386b5f61eebf31d82ac1036ff5105243f"
+  },
+  {
+    "path": "PySide6/Qt6QuickControls2UniversalStyleImpl.dll",
+    "size": 142648,
+    "sha256": "1c18106ef6dffde936a0dbec67682323cf0cb95aa2aa34d9d8d3c1035fa7e21b"
+  },
+  {
+    "path": "PySide6/Qt6QuickControls2WindowsStyleImpl.dll",
+    "size": 66872,
+    "sha256": "f17b343a7e926d12fb14ebb1f04219df987e368b03d4a38f1a4c5922d6d3c605"
+  },
+  {
+    "path": "PySide6/Qt6QuickDialogs2.dll",
+    "size": 159032,
+    "sha256": "f240fc6008273e71ccf5d483aa87a1bad1997dba4ac7a91440af6e382b45a034"
+  },
+  {
+    "path": "PySide6/Qt6QuickDialogs2QuickImpl.dll",
+    "size": 2754872,
+    "sha256": "f5cb7e90bcc393730c7abe4b6141e19f73f47ff52aec48674a7c39b80576737b"
+  },
+  {
+    "path": "PySide6/Qt6QuickDialogs2Utils.dll",
+    "size": 47416,
+    "sha256": "b06d2a937b3b498c3ed792df88fe490c35d93be2ef16a72ac3c976a7ca76a570"
+  },
+  {
+    "path": "PySide6/Qt6QuickEffects.dll",
+    "size": 438584,
+    "sha256": "42a6a8fdb652ae997c883d624ceb5b19ddb70096706c23c7cc3b19d5d6cab8bb"
+  },
+  {
+    "path": "PySide6/Qt6QuickLayouts.dll",
+    "size": 317752,
+    "sha256": "6dea3b782fc02bddf4ba46cea60065368875854be881e4dfa7df5fd36f47ed49"
+  },
+  {
+    "path": "PySide6/Qt6QuickParticles.dll",
+    "size": 641848,
+    "sha256": "e4ab49c683e60e920aa3c48ba1102482105631df37b9722252a45e6434d3fd38"
+  },
+  {
+    "path": "PySide6/Qt6QuickShapes.dll",
+    "size": 345912,
+    "sha256": "aacaf1618cfef72950a46d35a19447eba2c6a74989687166a7c10267d0cea499"
+  },
+  {
+    "path": "PySide6/Qt6QuickShapesDesignHelpers.dll",
+    "size": 183096,
+    "sha256": "a948d412ea5a8f3c1b2ac048f988a31f927ac29a861b3af0cb8d6dcb828bd9ff"
+  },
+  {
+    "path": "PySide6/Qt6QuickTemplates2.dll",
+    "size": 2069304,
+    "sha256": "60855b9af083723f547f282d0fa93044135d6489f72aa3bcefc02403957423b7"
+  },
+  {
+    "path": "PySide6/Qt6QuickTest.dll",
+    "size": 311608,
+    "sha256": "b370bfabed2c20476359708e609c6e6cb3be229b47888deb5341a258f8c622ee"
+  },
+  {
+    "path": "PySide6/Qt6QuickTimeline.dll",
+    "size": 98104,
+    "sha256": "6fb662d537e1b4c0fb93a4ac72aba3590b4f05cf1020abebe69982ac85c1babe"
+  },
+  {
+    "path": "PySide6/Qt6QuickTimelineBlendTrees.dll",
+    "size": 82744,
+    "sha256": "1344c302744408d0d9f982c4d3d630490c951108bacc271d1615c9d87051c20c"
+  },
+  {
+    "path": "PySide6/Qt6QuickVectorImage.dll",
+    "size": 70968,
+    "sha256": "dd8bddd8ceac652ca49db48ec96f608c30a2a6385586c4dba90da110b4848a44"
+  },
+  {
+    "path": "PySide6/Qt6QuickVectorImageGenerator.dll",
+    "size": 281912,
+    "sha256": "0b3d914d858861a99de2ca7bf7820123672cbf81e2e322303a58598771d39bcf"
+  },
+  {
+    "path": "PySide6/Qt6QuickVectorImageHelpers.dll",
+    "size": 191800,
+    "sha256": "f87fe20fd085b6db0ef405285322db5d5fe41b4f76774c0d44a7a0a6a70f455e"
+  },
+  {
+    "path": "PySide6/Qt6QuickWidgets.dll",
+    "size": 134456,
+    "sha256": "796cb30b50fb6f08c99658925a907ba8b3c4d042c8b85200d28fa9ab7ead9cff"
+  },
+  {
+    "path": "PySide6/Qt6Sql.dll",
+    "size": 317240,
+    "sha256": "85417b944a317fcb1bde28595ce095e2c9c3ce8439e9d8d70f3f74f8a767b7f1"
+  },
+  {
+    "path": "PySide6/Qt6Svg.dll",
+    "size": 609080,
+    "sha256": "1eac8f7415b311a88cb3cb4e25c3098d0e059c24c831fbbb13f43a80f0df06b7"
+  },
+  {
+    "path": "PySide6/Qt6SvgWidgets.dll",
+    "size": 59192,
+    "sha256": "f924f8e2c443f5d56028b7621d295ab5667ccd742bbd9b1eb6e5de33193e5dbd"
+  },
+  {
+    "path": "PySide6/Qt6Test.dll",
+    "size": 382264,
+    "sha256": "db459676d4b4a869fea1eedb5e9e28895a3adaa079d5dd0d7ff38c400edf1ad0"
+  },
+  {
+    "path": "PySide6/Qt6UiTools.dll",
+    "size": 686904,
+    "sha256": "0a025453542c1b85d6e45dddb9baa3aa2f539889109e3bd2eb96024c37b9ffba"
+  },
+  {
+    "path": "PySide6/Qt6Widgets.dll",
+    "size": 6497080,
+    "sha256": "ff0df9e2e6827e035f0731a4cedfc6333f4602bca00775e56346f27032406b74"
+  },
+  {
+    "path": "PySide6/Qt6Xml.dll",
+    "size": 158008,
+    "sha256": "07afbceeb1880d2e287256ca5af5e3eca70243b86be3e7e11a66d6df74a9e30c"
+  },
+  {
+    "path": "PySide6/QtConcurrent.pyd",
+    "size": 109368,
+    "sha256": "b687ec13645b5c96828ab1f9ecbc219a714408ad23e65809f44dcb18127674a0"
+  },
+  {
+    "path": "PySide6/QtCore.pyd",
+    "size": 3345720,
+    "sha256": "74f96322c5e9cea73aefd2ed5870e5275336b31f552fcd32f12fc81d23f1bc6f"
+  },
+  {
+    "path": "PySide6/QtDBus.pyd",
+    "size": 292664,
+    "sha256": "10ced1c2a7673f4119eda45cb589f40222baf2ffb33986dd086f70bb3c42a459"
+  },
+  {
+    "path": "PySide6/QtDesigner.pyd",
+    "size": 497464,
+    "sha256": "fb51ea41db0c4e7a9a79f3f804cd648135237f8365680a0cf2afc9babdfa8447"
+  },
+  {
+    "path": "PySide6/QtGui.pyd",
+    "size": 3901240,
+    "sha256": "7bef20046045199c037b7cbfedaa1c5464730fa948b2c9ec8afbf718e63774d4"
+  },
+  {
+    "path": "PySide6/QtHelp.pyd",
+    "size": 296248,
+    "sha256": "773caf2c4bd4727f36328fb04359962689837164f50b11768ed6a26a5d1fb052"
+  },
+  {
+    "path": "PySide6/QtNetwork.pyd",
+    "size": 1009464,
+    "sha256": "c5038bb71fc9d57330fa2d8eeec65aab69fcf02687cc8f54dbfb5995cfec6a71"
+  },
+  {
+    "path": "PySide6/QtOpenGL.pyd",
+    "size": 8682808,
+    "sha256": "645f5ffcdf31ada7a71bf40e9290ec0ca8afb125dfa0602ca7f10b624b3f1fd3"
+  },
+  {
+    "path": "PySide6/QtOpenGLWidgets.pyd",
+    "size": 123192,
+    "sha256": "0b665e477a541900f9979d5f397a776bb9847fa68df3f7d65231365acf4e94bd"
+  },
+  {
+    "path": "PySide6/QtPrintSupport.pyd",
+    "size": 279352,
+    "sha256": "5c4671afb67b53533848ad43d2f58e128b1603309cd89cb8eb11329d234b8e70"
+  },
+  {
+    "path": "PySide6/QtQml.pyd",
+    "size": 475960,
+    "sha256": "2a6b5b8e904a2dbf1efd8bede950605bd05e27fb6f403764715bc133fe386d23"
+  },
+  {
+    "path": "PySide6/QtQuick.pyd",
+    "size": 775480,
+    "sha256": "0b7e25855eecccf0e9d9cf58367ea2d0af69654e995ff500b4af5619ecdb0136"
+  },
+  {
+    "path": "PySide6/QtQuickControls2.pyd",
+    "size": 94008,
+    "sha256": "04a3171b6b416b6145b6848da84578e9bbd8132f473b9e6ca8a8728153abead0"
+  },
+  {
+    "path": "PySide6/QtQuickTest.pyd",
+    "size": 70456,
+    "sha256": "d6ddb80604502778af4443c0824f8db30b0320023ba6b052ddcbd15d83c04cde"
+  },
+  {
+    "path": "PySide6/QtQuickWidgets.pyd",
+    "size": 134456,
+    "sha256": "260637faa22bd01d99678d58cee2c2b8de211ad71dd7cfcd1a02b8f1f8e866f1"
+  },
+  {
+    "path": "PySide6/QtSql.pyd",
+    "size": 423736,
+    "sha256": "2ef340c3d41adb6853226cc27948c769dee4055152801c175c729b6fadedf935"
+  },
+  {
+    "path": "PySide6/QtSvg.pyd",
+    "size": 116024,
+    "sha256": "2d128bbd2839aaad93f96d4d0705912065d2dcc20c92cb028f0441979bdb7280"
+  },
+  {
+    "path": "PySide6/QtSvgWidgets.pyd",
+    "size": 142136,
+    "sha256": "22256fdcb67bd5c05a3824693e822d6d645ccb3e9c063ef42fbcbca5cf55fb5f"
+  },
+  {
+    "path": "PySide6/QtTest.pyd",
+    "size": 185144,
+    "sha256": "99d71955c692c7c62f295aef42fc4bf02a800bdb350d1ee32d3373a816a63e2a"
+  },
+  {
+    "path": "PySide6/QtUiTools.pyd",
+    "size": 119608,
+    "sha256": "e9968f6258eec836ed8dd37bb58dbb3b2fdeac8e0d9e5becf0e74fef2d84e696"
+  },
+  {
+    "path": "PySide6/QtWidgets.pyd",
+    "size": 4857656,
+    "sha256": "f12f4ca641998e5706d5f7b0023147d573f0f2d2361e26dadf31bdbf05fbfd1d"
+  },
+  {
+    "path": "PySide6/QtXml.pyd",
+    "size": 209720,
+    "sha256": "17aefe091f86a6f6cf250b7c04ea3fc35939b29def124041c9fd1315144e278a"
+  },
+  {
+    "path": "PySide6/assistant.exe",
+    "size": 1739576,
+    "sha256": "98e1c837ef3fdcb411823c21c94856505e3ed4a8c22f7ec4698da9158aef3358"
+  },
+  {
+    "path": "PySide6/concrt140.dll",
+    "size": 315704,
+    "sha256": "0cc696d9a39a39862c31b0b2a12187efd6203a24960dc69726d1c231e3d14293"
+  },
+  {
+    "path": "PySide6/designer.exe",
+    "size": 663864,
+    "sha256": "1417b5c92002d838181192c741e0987f1e4d29d6e458a22841f26c430b8c55e4"
+  },
+  {
+    "path": "PySide6/linguist.exe",
+    "size": 1318712,
+    "sha256": "c3626974f9d696eb0c5eba58713f4afce4d4a3532ac476de46f0b951ea2f4544"
+  },
+  {
+    "path": "PySide6/lrelease.exe",
+    "size": 701752,
+    "sha256": "2dec609ef7ac802c84e540e7e05c04684b869c79695bb474ef4ff591def53cb3"
+  },
+  {
+    "path": "PySide6/lupdate.exe",
+    "size": 978232,
+    "sha256": "9802a200cee3eab53ad0ccf0ae61dcd4cb3d6f64008083166fd056d440214898"
+  },
+  {
+    "path": "PySide6/msvcp140.dll",
+    "size": 549176,
+    "sha256": "4c667b706893593812cd111b369ba6a77f54d1f1b1ae87cf3bf37692663cfba2"
+  },
+  {
+    "path": "PySide6/msvcp140_1.dll",
+    "size": 27448,
+    "sha256": "d419d24b0a76366f5c9d908b0e45fe70e9e9154bb8ad5f3de42070f2337f857b"
+  },
+  {
+    "path": "PySide6/msvcp140_2.dll",
+    "size": 271672,
+    "sha256": "89917964abb6ca16a260cab258e180c3abc239b5af00eed659d0edf0efdd339c"
+  },
+  {
+    "path": "PySide6/msvcp140_codecvt_ids.dll",
+    "size": 23352,
+    "sha256": "8294cb4ab550197b13994113b743f4cd40242ab4e7c0712723f973ca0324bc56"
+  },
+  {
+    "path": "PySide6/opengl32sw.dll",
+    "size": 20639544,
+    "sha256": "34b444c016289b560662ff896deceb7f4b2c0723aed3d319ae167c9186ce42b3"
+  },
+  {
+    "path": "PySide6/pyside6.abi3.dll",
+    "size": 255288,
+    "sha256": "d0b5c701fb3a8ea839e72b602058f3960935156ebeca084893c54c99e54dd707"
+  },
+  {
+    "path": "PySide6/pyside6qml.abi3.dll",
+    "size": 94520,
+    "sha256": "045b18fcee846bdd4c546daa3a20346fcf9e812f126d70382aad427bc6bb40c3"
+  },
+  {
+    "path": "PySide6/qmlcachegen.exe",
+    "size": 62776,
+    "sha256": "0fddc570953ed01ec74cd28e4409a840e356db9b6de9750b91d1ba8bc6e5af62"
+  },
+  {
+    "path": "PySide6/qmlformat.exe",
+    "size": 2347832,
+    "sha256": "38223bc50a36fab361c17392a94853e8d7c8e2dc6d913e8a9ff566355ceb39cf"
+  },
+  {
+    "path": "PySide6/qmlimportscanner.exe",
+    "size": 139576,
+    "sha256": "5d3cc5ec10f554fa45bd5b08f6f98d5a8e9948bacfc982ec388fe37f0f3e2b62"
+  },
+  {
+    "path": "PySide6/qmllint.exe",
+    "size": 104248,
+    "sha256": "3386ecb19ab96cc5bee02d6085326fda18df1e0c43341605b10aa12016100cc4"
+  },
+  {
+    "path": "PySide6/qmlls.exe",
+    "size": 3728184,
+    "sha256": "a4d51368e264aa5b26be86b7b233cbabb84da2c38b5d540aa19f5a6dfc0162b8"
+  },
+  {
+    "path": "PySide6/qmltyperegistrar.exe",
+    "size": 268600,
+    "sha256": "1d2ee6e86ac332a36923a0ad72eaba4cead8e46eb95334b22ea854be16556b18"
+  },
+  {
+    "path": "PySide6/rcc.exe",
+    "size": 138552,
+    "sha256": "925491094f3660df060389ac1a6bc86cc9ace913fdb9e3d7330df294e41c7add"
+  },
+  {
+    "path": "PySide6/svgtoqml.exe",
+    "size": 43832,
+    "sha256": "7fc9b4cdcca7563a4e26dd3687587388da4f9ad6d98b2af6e309b024872b3df1"
+  },
+  {
+    "path": "PySide6/uic.exe",
+    "size": 511800,
+    "sha256": "208f537e0a2b2b2310fad2c2d3af53a664c98cda72c1f92fc5619591c5696334"
+  },
+  {
+    "path": "PySide6/vcamp140.dll",
+    "size": 449848,
+    "sha256": "6f1fefc6fa83e632c4c99e0503e6a3e1e8cfc36c71a8fd29e36fafbc070a4e85"
+  },
+  {
+    "path": "PySide6/vccorlib140.dll",
+    "size": 343864,
+    "sha256": "121dde20d95e7dee25d6a7a42a4cce2a2ed77c67772b1e2e02ff5b487036e4f2"
+  },
+  {
+    "path": "PySide6/vcomp140.dll",
+    "size": 155448,
+    "sha256": "e20ec339b69a7a4bc9b80ad14c0a0000f01eb7683d1262fea2adff9a2dc5d9e6"
+  },
+  {
+    "path": "PySide6/vcruntime140.dll",
+    "size": 116024,
+    "sha256": "f893ae75a1a24eea174d982f94bc80ce2448201eaa919a73c0653a5657685de4"
+  },
+  {
+    "path": "PySide6/vcruntime140_1.dll",
+    "size": 41272,
+    "sha256": "48aa2783793ea18ab3c2c71d420d4fff9814e662a1ff810053c6e5250061a716"
+  },
+  {
+    "path": "PySide6/plugins/designer/PySidePlugin.dll",
+    "size": 46904,
+    "sha256": "73f08abdb34e2d329d35fbd0fa50f2148abd5bce5419250ef0bbbfdcc7465526"
+  },
+  {
+    "path": "PySide6/plugins/designer/qaxwidget.dll",
+    "size": 426808,
+    "sha256": "6ec92d395c43623cef9a3743c0eb3c0202b86d4ebd8cf690da62b9d2a2d3bc44"
+  },
+  {
+    "path": "PySide6/plugins/designer/qquickwidget.dll",
+    "size": 44344,
+    "sha256": "4c7c205bece6b25e7c0b866d7a0795529b5e96cff16c4263bd6c554368dfbb63"
+  },
+  {
+    "path": "PySide6/plugins/designer/qwebengineview.dll",
+    "size": 48440,
+    "sha256": "d857513c12b8c3e79757570ea5dec2dec9d269f7b09750048a60b4f570dd6652"
+  },
+  {
+    "path": "PySide6/plugins/generic/qtuiotouchplugin.dll",
+    "size": 101176,
+    "sha256": "aa9080fa8b1c3cf4d3790c1eecf4a1f5c796ce58f31f80910357578f20fd80ac"
+  },
+  {
+    "path": "PySide6/plugins/iconengines/qsvgicon.dll",
+    "size": 72504,
+    "sha256": "5bb97b6f114682ae0b5f42b23b6818aece6499bad88dac80a138efa8a88c12bc"
+  },
+  {
+    "path": "PySide6/plugins/imageformats/qgif.dll",
+    "size": 47928,
+    "sha256": "d301d7e9a68327692e4c76faa6b125517730b22c68f4de7f09fda9d4ac0ddee1"
+  },
+  {
+    "path": "PySide6/plugins/imageformats/qicns.dll",
+    "size": 57144,
+    "sha256": "49db148fea9f01e9953fd0a771d16cfaf364599f07aab3634d4f5c7c25abd78a"
+  },
+  {
+    "path": "PySide6/plugins/imageformats/qico.dll",
+    "size": 46904,
+    "sha256": "1684fd56f1758167f7b3ac011264ae5859b3cf6113e381626ec3dc1d3122fe52"
+  },
+  {
+    "path": "PySide6/plugins/imageformats/qjpeg.dll",
+    "size": 591672,
+    "sha256": "6517345ac19f5c489daeadc029d0018bbdc09d8e1031c60d714557972f22c6d4"
+  },
+  {
+    "path": "PySide6/plugins/imageformats/qpdf.dll",
+    "size": 42296,
+    "sha256": "541350d584d990b8dcccb6726a4cb2169b901b90b6221273f813a13256570705"
+  },
+  {
+    "path": "PySide6/plugins/imageformats/qsvg.dll",
+    "size": 39736,
+    "sha256": "4b7d65ba39be58cb469b54b5fdee2987871d67e5050cd70724016e09966e54f6"
+  },
+  {
+    "path": "PySide6/plugins/imageformats/qtga.dll",
+    "size": 38200,
+    "sha256": "6b0381150070fcd4224597fe73c68b47055b30b418aa14794c94c5007d14ca5d"
+  },
+  {
+    "path": "PySide6/plugins/imageformats/qtiff.dll",
+    "size": 445752,
+    "sha256": "3d6ea04da215ee2a9459399fb9f6d73cad8787944b9d450399025bcd39d020b5"
+  },
+  {
+    "path": "PySide6/plugins/imageformats/qwbmp.dll",
+    "size": 36664,
+    "sha256": "1a4596509987e9557edda69ed13cdd0d33f4ebda72e464ddc00a566bec05f151"
+  },
+  {
+    "path": "PySide6/plugins/imageformats/qwebp.dll",
+    "size": 564536,
+    "sha256": "6b2c53cc4423140c29a6a1eb6dd908016e09d794b5739a05a3a39c8c49a0df8a"
+  },
+  {
+    "path": "PySide6/plugins/networkinformation/qnetworklistmanager.dll",
+    "size": 79160,
+    "sha256": "e571a4b4e582738cd1bc4889cb2896635c2543baff408442701b6706a1b4a86e"
+  },
+  {
+    "path": "PySide6/plugins/platforminputcontexts/qtvirtualkeyboardplugin.dll",
+    "size": 34104,
+    "sha256": "e10c64dd2ae4f9b756ec1ebe3950a05e345ba40834b7be2900af426623d85475"
+  },
+  {
+    "path": "PySide6/plugins/platforms/qdirect2d.dll",
+    "size": 1071416,
+    "sha256": "56f41ad523d016fe2cf2c90fae158e21766d1fcd021bced1a3704c6da0f00c98"
+  },
+  {
+    "path": "PySide6/plugins/platforms/qminimal.dll",
+    "size": 61752,
+    "sha256": "768a9c6dbb1c86abbefa2ff9d7e98cdfb4fdc9292eb8d64195bb6d23939a5344"
+  },
+  {
+    "path": "PySide6/plugins/platforms/qoffscreen.dll",
+    "size": 110904,
+    "sha256": "e776251668440169ed18a2fe1b236762d514ef5244639cbb559b5a77ddd38954"
+  },
+  {
+    "path": "PySide6/plugins/platforms/qwindows.dll",
+    "size": 991032,
+    "sha256": "bf6dbc3009f386fa22f0ced560bea6bbf3e0e0b4442d2fb855db67cffce49dbf"
+  },
+  {
+    "path": "PySide6/plugins/qmllint/qdslintplugin.dll",
+    "size": 67896,
+    "sha256": "0b2887e4b541394734e45733c6c95fa0fae2af0142997c7b03168bd2db22d919"
+  },
+  {
+    "path": "PySide6/plugins/qmllint/quicklintplugin.dll",
+    "size": 169272,
+    "sha256": "306b9a9a02791eba0431d9cb63c62c011a8feada027bd4bac05e7aef4340de21"
+  },
+  {
+    "path": "PySide6/plugins/qmltooling/qmldbg_debugger.dll",
+    "size": 210744,
+    "sha256": "f18df8cd5c3434267692f311760062576d4df08e34144f91a3010660ea024310"
+  },
+  {
+    "path": "PySide6/plugins/qmltooling/qmldbg_inspector.dll",
+    "size": 101176,
+    "sha256": "170731e022cb364467e160c9e1ebbe9fc4bb5c107e125595ece90a09e8058ce9"
+  },
+  {
+    "path": "PySide6/plugins/qmltooling/qmldbg_local.dll",
+    "size": 39224,
+    "sha256": "a7659525c269d2b11e839f73f6629cd825c5ce25de890bad4ca89d7e5d3a4027"
+  },
+  {
+    "path": "PySide6/plugins/qmltooling/qmldbg_messages.dll",
+    "size": 36152,
+    "sha256": "dc077f43ce52492e723bc422439576af9d0709f6903719fd3222f9ae25198fb7"
+  },
+  {
+    "path": "PySide6/plugins/qmltooling/qmldbg_native.dll",
+    "size": 49464,
+    "sha256": "12c3665517332e96de71cb55c8d4c382379716451569d6bb5d2444d0e778b22e"
+  },
+  {
+    "path": "PySide6/plugins/qmltooling/qmldbg_nativedebugger.dll",
+    "size": 71480,
+    "sha256": "af14e2dcca1d4eb710a4c951ab73a6d77178cb6497904f3d182d0da1a35875aa"
+  },
+  {
+    "path": "PySide6/plugins/qmltooling/qmldbg_preview.dll",
+    "size": 202552,
+    "sha256": "3ca15da8aa0819e2cad0aac323ddbb81474d241be11de0064397e1cb8da64ba9"
+  },
+  {
+    "path": "PySide6/plugins/qmltooling/qmldbg_profiler.dll",
+    "size": 120120,
+    "sha256": "18e8c3f3f275209d8776ee8029903e3615e7efa15e9e5b81d9b35cb6757c6c84"
+  },
+  {
+    "path": "PySide6/plugins/qmltooling/qmldbg_quick3dprofiler.dll",
+    "size": 43832,
+    "sha256": "325ee72297e649a51bf4daefc359aca9727228dc4526d8cb0a3b496ea8fd3b66"
+  },
+  {
+    "path": "PySide6/plugins/qmltooling/qmldbg_quickeventreplay.dll",
+    "size": 44856,
+    "sha256": "16cf93eaa22173f3b184682bc7fa54bb2097b4d20eb50a167225c9cd01db8484"
+  },
+  {
+    "path": "PySide6/plugins/qmltooling/qmldbg_quickprofiler.dll",
+    "size": 44344,
+    "sha256": "6fea4def6a17fccff2a020c8c236e3eb6ef552e426924dca77cd6875a1fcef49"
+  },
+  {
+    "path": "PySide6/plugins/qmltooling/qmldbg_server.dll",
+    "size": 100152,
+    "sha256": "cc5dc1dd9dc635bbbac3abf466b56d1bb9f6ef57f3be3e2a37d928b577ac8acd"
+  },
+  {
+    "path": "PySide6/plugins/qmltooling/qmldbg_tcp.dll",
+    "size": 36664,
+    "sha256": "3c0f51cb959a9517585212a50b8d7279a13092e921d63c432c9d34a48abed05b"
+  },
+  {
+    "path": "PySide6/plugins/sqldrivers/qsqlibase.dll",
+    "size": 141112,
+    "sha256": "564feb1d4446f7ca99c8f2732fe375607f47dfb950cbac2524c13884dcfbe2a1"
+  },
+  {
+    "path": "PySide6/plugins/sqldrivers/qsqlite.dll",
+    "size": 1986872,
+    "sha256": "e804520d0e3a3c743009e60e55f319b592d6fe61d7239b7c0d2218d9fb5edf97"
+  },
+  {
+    "path": "PySide6/plugins/sqldrivers/qsqlmimer.dll",
+    "size": 88376,
+    "sha256": "cef8b283b62a1868a22887f51cc2c47ac784cbe2f4b0066cf3cd7d5609fdc487"
+  },
+  {
+    "path": "PySide6/plugins/sqldrivers/qsqloci.dll",
+    "size": 127800,
+    "sha256": "8a0eb53f2453403913307f8dd237cb4781beeb891f3953aff93957f2cb428940"
+  },
+  {
+    "path": "PySide6/plugins/sqldrivers/qsqlodbc.dll",
+    "size": 132920,
+    "sha256": "d0f6ec95dc62d74dade6b9e69d264100460e22108ad05b99efc6625290a04811"
+  },
+  {
+    "path": "PySide6/plugins/sqldrivers/qsqlpsql.dll",
+    "size": 107320,
+    "sha256": "f1cf16cc7fa46ecf69d7a5141f208c5c3d957803494f95660093ce00a891970b"
+  },
+  {
+    "path": "PySide6/plugins/styles/qmodernwindowsstyle.dll",
+    "size": 240440,
+    "sha256": "a7a6424c23bf371bd28a404a196b210971726f6f2a87b63aac185a5e6e40da71"
+  },
+  {
+    "path": "PySide6/plugins/tls/qcertonlybackend.dll",
+    "size": 104760,
+    "sha256": "67be4d333a0f489d02714169a6ec54eaa80efa649d733fcbeb81881ecb02b4f3"
+  },
+  {
+    "path": "PySide6/plugins/tls/qopensslbackend.dll",
+    "size": 314168,
+    "sha256": "7a0727417b8e21e64d9a7cf0f390bc85b3e337b4eef5ac977f49659d97e6b552"
+  },
+  {
+    "path": "PySide6/plugins/tls/qschannelbackend.dll",
+    "size": 247608,
+    "sha256": "14abc5b245c0f2e03f7bc0b474a8db2ecb441c7300a8a8b16fb865eaf2674619"
+  },
+  {
+    "path": "PySide6/plugins/vectorimageformats/qlottievectorimage.dll",
+    "size": 36152,
+    "sha256": "7af1fdd1ff544b4d2695dddc38b3f4f4227525ede6fa6d07fa7d94fdbecf007a"
+  },
+  {
+    "path": "PySide6/qml/Qt/labs/StyleKit/labsstylekitplugin.dll",
+    "size": 31032,
+    "sha256": "c11cf7756646edbb78bbf48ed81f1c40ce482bfa695addaec387e50e91629acd"
+  },
+  {
+    "path": "PySide6/qml/Qt/labs/StyleKit/impl/labsstylekitimplplugin.dll",
+    "size": 31032,
+    "sha256": "035690faacae6a8ed367414f93f96925bbf1109f6765f9c6c38fce9156b3d4c2"
+  },
+  {
+    "path": "PySide6/qml/Qt/labs/animation/labsanimationplugin.dll",
+    "size": 31032,
+    "sha256": "5e2ef74701fa0a600a58bb1bddb46d832459754fdbfc41ded2e0049b2ac72d05"
+  },
+  {
+    "path": "PySide6/qml/Qt/labs/folderlistmodel/qmlfolderlistmodelplugin.dll",
+    "size": 31032,
+    "sha256": "2a9d67e88e3a6f64c2e7b7810389d050d22ff840e3b476dbaefe901bd894fcbf"
+  },
+  {
+    "path": "PySide6/qml/Qt/labs/platform/labsplatformplugin.dll",
+    "size": 31032,
+    "sha256": "5e31865f96856b2eb9e0403df2ed222587b20d1a848ce05bec6e14be1884680e"
+  },
+  {
+    "path": "PySide6/qml/Qt/labs/qmlmodels/labsmodelsplugin.dll",
+    "size": 31032,
+    "sha256": "c8cc3f556069a580c7552a93b634a1050cfff490b54a8297417013e6c5e93334"
+  },
+  {
+    "path": "PySide6/qml/Qt/labs/settings/qmlsettingsplugin.dll",
+    "size": 31032,
+    "sha256": "1c3146d7cf490c4ec15d8d1294a8ea40db6e213fe030cd8dc10feac688ee83f6"
+  },
+  {
+    "path": "PySide6/qml/Qt/labs/sharedimage/sharedimageplugin.dll",
+    "size": 33592,
+    "sha256": "5ddc970e270c287a29a6b7f5aad6b2152c1a7f05d212a8c0c9a4c882fcb571ea"
+  },
+  {
+    "path": "PySide6/qml/Qt/labs/synchronizer/labssynchronizerplugin.dll",
+    "size": 31032,
+    "sha256": "d9d685037e384066b226d8f5e42bfe44098139101f59ed4145f3e014fce045aa"
+  },
+  {
+    "path": "PySide6/qml/Qt/labs/wavefrontmesh/qmlwavefrontmeshplugin.dll",
+    "size": 31032,
+    "sha256": "b19a09b78b3d6296daca0d21bee917ea169dbd19160d138efceb47e5343ca4b5"
+  },
+  {
+    "path": "PySide6/qml/QtCore/qtqmlcoreplugin.dll",
+    "size": 31032,
+    "sha256": "b7112809324f808593cc6602363db00949b1855555317b0cc2c244f2e2fd26ea"
+  },
+  {
+    "path": "PySide6/qml/QtNetwork/qmlnetworkplugin.dll",
+    "size": 31032,
+    "sha256": "49e6657c40a0a94e4b13afc7ecee2255195fce02eb75caf5a9111eddaa3600e2"
+  },
+  {
+    "path": "PySide6/qml/QtQml/qmlplugin.dll",
+    "size": 31032,
+    "sha256": "bff0eda5f38f4b3854100ad1ac1577e6b479060a7a717eeb6cd3e00ffcd1c9b8"
+  },
+  {
+    "path": "PySide6/qml/QtQml/Models/modelsplugin.dll",
+    "size": 31032,
+    "sha256": "4a5b0416508f75dac0c52b921c74f187cbad3ef9b9e1fe87dca5ba0547e81c32"
+  },
+  {
+    "path": "PySide6/qml/QtQml/StateMachine/qtqmlstatemachineplugin.dll",
+    "size": 31032,
+    "sha256": "0564732dbe509d1aee552c2ec3a05682c142fa77ad802fb2f585d7272a9954e8"
+  },
+  {
+    "path": "PySide6/qml/QtQml/WorkerScript/workerscriptplugin.dll",
+    "size": 31032,
+    "sha256": "59a252ec828ac1cb51ec87cb84d1f95155fb2b6811b8d32f7bc6a52b038b52d0"
+  },
+  {
+    "path": "PySide6/qml/QtQml/XmlListModel/qmlxmllistmodelplugin.dll",
+    "size": 31032,
+    "sha256": "706e75b8652a2b2897027744b51963983f168539b8597d9ceec97ca0f6eae591"
+  },
+  {
+    "path": "PySide6/qml/QtQuick/qtquick2plugin.dll",
+    "size": 31032,
+    "sha256": "c836bbb05df5aa7d434cc1f55b4fc2cc587054f024c6f7e3e0d9af83954f2976"
+  },
+  {
+    "path": "PySide6/qml/QtQuick/Controls/qtquickcontrols2plugin.dll",
+    "size": 41272,
+    "sha256": "e855789cec1c35c2328eb8610cc8c17114ce74c4983f29ecf7a3c72a2dafab6e"
+  },
+  {
+    "path": "PySide6/qml/QtQuick/Controls/Basic/qtquickcontrols2basicstyleplugin.dll",
+    "size": 31544,
+    "sha256": "35739f2ea4c95336ce581eca0757d6f8aeb87bf8e235585b02f9b28d3348367e"
+  },
+  {
+    "path": "PySide6/qml/QtQuick/Controls/Basic/impl/qtquickcontrols2basicstyleimplplugin.dll",
+    "size": 31032,
+    "sha256": "d180d812fe566ae42aaca10a9721993012c8df37a35bff7564879ce37fb26476"
+  },
+  {
+    "path": "PySide6/qml/QtQuick/Controls/FluentWinUI3/qtquickcontrols2fluentwinui3styleplugin.dll",
+    "size": 3343672,
+    "sha256": "72fbd6171f5faa39305bf5f9c1954039abb5370f7b4f6f8d72cc90b536850f53"
+  },
+  {
+    "path": "PySide6/qml/QtQuick/Controls/FluentWinUI3/impl/qtquickcontrols2fluentwinui3styleimplplugin.dll",
+    "size": 31032,
+    "sha256": "6e34e7c29d076e6ccddf7de8c5b3577c36f9f88f866990ef0b67012c54660686"
+  },
+  {
+    "path": "PySide6/qml/QtQuick/Controls/Fusion/qtquickcontrols2fusionstyleplugin.dll",
+    "size": 31544,
+    "sha256": "ad96ad30df93ea2bd01e79dde64e82b57d13bc70740ce96bd394b342046c8b9a"
+  },
+  {
+    "path": "PySide6/qml/QtQuick/Controls/Fusion/impl/qtquickcontrols2fusionstyleimplplugin.dll",
+    "size": 31032,
+    "sha256": "c8915a225c1327dcdbdec60db5438b21d4d921b465adb5af8ae51bb05e85a98a"
+  },
+  {
+    "path": "PySide6/qml/QtQuick/Controls/Imagine/qtquickcontrols2imaginestyleplugin.dll",
+    "size": 31544,
+    "sha256": "ba598979dfe945ba95defe49dd4cda2ad25d0e0447acf100a3e01b53a8d2ff11"
+  },
+  {
+    "path": "PySide6/qml/QtQuick/Controls/Imagine/impl/qtquickcontrols2imaginestyleimplplugin.dll",
+    "size": 31032,
+    "sha256": "ffb0540c3cdae576a90c5af81440cb3ae51632824010608258ef45435eb37464"
+  },
+  {
+    "path": "PySide6/qml/QtQuick/Controls/Material/qtquickcontrols2materialstyleplugin.dll",
+    "size": 31544,
+    "sha256": "98489875cac22d0e8fec425fa356cba2dab7094cf5615b90dfb75ce79e13a854"
+  },
+  {
+    "path": "PySide6/qml/QtQuick/Controls/Material/impl/qtquickcontrols2materialstyleimplplugin.dll",
+    "size": 31032,
+    "sha256": "c3d6b93a4be5a41505c055d5923fea587308ee291fd645e1dad4174503055964"
+  },
+  {
+    "path": "PySide6/qml/QtQuick/Controls/Universal/qtquickcontrols2universalstyleplugin.dll",
+    "size": 31544,
+    "sha256": "73be38942836cf03a8fbcef289f8da827b66d820741b0335517f1b8252af3a2f"
+  },
+  {
+    "path": "PySide6/qml/QtQuick/Controls/Universal/impl/qtquickcontrols2universalstyleimplplugin.dll",
+    "size": 31032,
+    "sha256": "7275f883f6c27285702ab6e9adeee1ee4e35adf83957b39929f4de8d037a9b00"
+  },
+  {
+    "path": "PySide6/qml/QtQuick/Controls/Windows/qtquickcontrols2windowsstyleplugin.dll",
+    "size": 700216,
+    "sha256": "d9061835f39e5c02517cbb916e99239ea1b768691dc672a07e41ac75d220cadb"
+  },
+  {
+    "path": "PySide6/qml/QtQuick/Controls/Windows/impl/qtquickcontrols2windowsstyleimplplugin.dll",
+    "size": 31032,
+    "sha256": "822e9ae144c5891c11e34e677e988ee52c557fe868c8f1aed26dfecee412cf64"
+  },
+  {
+    "path": "PySide6/qml/QtQuick/Controls/impl/qtquickcontrols2implplugin.dll",
+    "size": 31032,
+    "sha256": "79e340576ea558fe50ab90f38ec9fe4c5f24a331802f82b9e441f42d64439684"
+  },
+  {
+    "path": "PySide6/qml/QtQuick/Dialogs/qtquickdialogsplugin.dll",
+    "size": 31032,
+    "sha256": "aa96a6d4f4b7bd2b7590364147d8b1a793888c1f885a919c840e62d8cfceee41"
+  },
+  {
+    "path": "PySide6/qml/QtQuick/Dialogs/quickimpl/qtquickdialogs2quickimplplugin.dll",
+    "size": 31032,
+    "sha256": "4f87ccf867c94af153ec70c9c6ff56f78f7169a46b928761d69e6ad79b627385"
+  },
+  {
+    "path": "PySide6/qml/QtQuick/Effects/effectsplugin.dll",
+    "size": 31032,
+    "sha256": "0297a92d101548330fb5546280f9cc65fde8c26f453bce724e744e1189c6b2b9"
+  },
+  {
+    "path": "PySide6/qml/QtQuick/Layouts/qquicklayoutsplugin.dll",
+    "size": 31032,
+    "sha256": "beda5876e73dae1b7ba821904479afee7356b44342e0ad0cdaa1568d1b66debd"
+  },
+  {
+    "path": "PySide6/qml/QtQuick/LocalStorage/qmllocalstorageplugin.dll",
+    "size": 31032,
+    "sha256": "802e3f326103ad141c7910d58612ab1cbb061fafcb0bd94dce7e27ac73a8de9a"
+  },
+  {
+    "path": "PySide6/qml/QtQuick/NativeStyle/qtquickcontrols2nativestyleplugin.dll",
+    "size": 963896,
+    "sha256": "3aa7209129359c051ff316e7dab099939990507110be1d234d1827e466ac5be2"
+  },
+  {
+    "path": "PySide6/qml/QtQuick/Particles/particlesplugin.dll",
+    "size": 31032,
+    "sha256": "343b75ed8bfdeeb0faf37606a3b3c38a39abcd51c8d81085ab88ed4f52382263"
+  },
+  {
+    "path": "PySide6/qml/QtQuick/Pdf/pdfquickplugin.dll",
+    "size": 31032,
+    "sha256": "5dfc108bcd285652638afc5b41702a1443d3b68de7d533b5b0dd8f684fd4af12"
+  },
+  {
+    "path": "PySide6/qml/QtQuick/Scene2D/qtquickscene2dplugin.dll",
+    "size": 31032,
+    "sha256": "4b7ea03bb642ca5d86b15ab91f61bf459d21d4461f8eb4e6b34af848151e4687"
+  },
+  {
+    "path": "PySide6/qml/QtQuick/Scene3D/qtquickscene3dplugin.dll",
+    "size": 31032,
+    "sha256": "395ce01cf209403a3ccd45afc8ded522d913636d1a28c50cd4a6f3959f224206"
+  },
+  {
+    "path": "PySide6/qml/QtQuick/Shapes/qmlshapesplugin.dll",
+    "size": 31032,
+    "sha256": "2e825f20dfeb8f4f5f790ce8a2da66a9702abd50a88c5f6e47df6f17d49d0b91"
+  },
+  {
+    "path": "PySide6/qml/QtQuick/Shapes/DesignHelpers/qtquickshapesdesignhelpersplugin.dll",
+    "size": 31032,
+    "sha256": "3b42bd020c4f7098892b1047ff263e891c43a6fbbdaedb3bc5da818561cf8912"
+  },
+  {
+    "path": "PySide6/qml/QtQuick/Templates/qtquicktemplates2plugin.dll",
+    "size": 31544,
+    "sha256": "6de57692e911a791be3ab6c7c6d51b163cb2ce7dba581643900b581b0eadd99e"
+  },
+  {
+    "path": "PySide6/qml/QtQuick/Timeline/qtquicktimelineplugin.dll",
+    "size": 31032,
+    "sha256": "c4bf51ee65bb312be27847b08f22758ac738bcae3f02ca88f1cc9cad24ef3fab"
+  },
+  {
+    "path": "PySide6/qml/QtQuick/Timeline/BlendTrees/qtquicktimelineblendtreesplugin.dll",
+    "size": 31032,
+    "sha256": "664514f9ac8757e3bb48588704ada95eaa6206c2145b49485f50862b047a0a82"
+  },
+  {
+    "path": "PySide6/qml/QtQuick/VectorImage/qquickvectorimageplugin.dll",
+    "size": 31032,
+    "sha256": "68c71459a41d76964b154223b7c94689764eaeb518949c0cd3a968af4405f29c"
+  },
+  {
+    "path": "PySide6/qml/QtQuick/VectorImage/Helpers/qquickvectorimagehelpersplugin.dll",
+    "size": 31032,
+    "sha256": "0db36b143f4b84314594d754a9ed285a09bd65079637d1765b6a08d6ea7318c3"
+  },
+  {
+    "path": "PySide6/qml/QtQuick/VirtualKeyboard/qtvkbplugin.dll",
+    "size": 31032,
+    "sha256": "fb2ad7c5203033379fee57dc4fe5801e22c81ad4bd108f4e09c1bc1cd01dbaef"
+  },
+  {
+    "path": "PySide6/qml/QtQuick/VirtualKeyboard/Components/qtvkbcomponentsplugin.dll",
+    "size": 698168,
+    "sha256": "f99f4ab9c1c212bf15e00fc77885c5ee3b6c440785b211916e3471b51e0334ef"
+  },
+  {
+    "path": "PySide6/qml/QtQuick/VirtualKeyboard/Core/virtualkeyboardplugin.dll",
+    "size": 31032,
+    "sha256": "f2735177fd54ff45cbab108341ee5ede4ba3c7d37260eb86883f7ff7940c362a"
+  },
+  {
+    "path": "PySide6/qml/QtQuick/VirtualKeyboard/Layouts/qtvkblayoutsplugin.dll",
+    "size": 85304,
+    "sha256": "624fdc421f7d066071bf69181a466be808a628ee21f1cc067c8266ef6c6cb09d"
+  },
+  {
+    "path": "PySide6/qml/QtQuick/VirtualKeyboard/Plugins/qtvkbpluginsplugin.dll",
+    "size": 32056,
+    "sha256": "c83a1c28a9f24af5e624f696f103b7d14d2393a4e860677079f6807e9d9b9aeb"
+  },
+  {
+    "path": "PySide6/qml/QtQuick/VirtualKeyboard/Plugins/Hangul/qtvkbhangulplugin.dll",
+    "size": 61240,
+    "sha256": "2ac725d0eb9f85bd10c2b12bb376225e1c2ea762c426ac80f706087dc039220d"
+  },
+  {
+    "path": "PySide6/qml/QtQuick/VirtualKeyboard/Plugins/OpenWNN/qtvkbopenwnnplugin.dll",
+    "size": 1571128,
+    "sha256": "cd6541b7b4774f61e588ef90c09c40e44ec62d37081788014cddaf04ea1d7e6b"
+  },
+  {
+    "path": "PySide6/qml/QtQuick/VirtualKeyboard/Plugins/Pinyin/qtvkbpinyinplugin.dll",
+    "size": 1193272,
+    "sha256": "a051d5ea84ebd157a69ac072ab454dd81f742999ae6a735c45093a81faf5ed75"
+  },
+  {
+    "path": "PySide6/qml/QtQuick/VirtualKeyboard/Plugins/TCIme/qtvkbtcimeplugin.dll",
+    "size": 312120,
+    "sha256": "668bf267f83d0a57d071b59715fc0b58b8ab97b095540d8205a0cbceedaec3d6"
+  },
+  {
+    "path": "PySide6/qml/QtQuick/VirtualKeyboard/Plugins/Thai/qtvkbthaiplugin.dll",
+    "size": 45368,
+    "sha256": "6d11ced09393e60f54e128e76fd5162d89bcf2b7a1062a786f6e9e9f38360e64"
+  },
+  {
+    "path": "PySide6/qml/QtQuick/VirtualKeyboard/Settings/qtvkbsettingsplugin.dll",
+    "size": 31032,
+    "sha256": "8e97f7cf67f27bf2eeeb2932871150352b09b5fda6cc64d530e138f47d0a3a81"
+  },
+  {
+    "path": "PySide6/qml/QtQuick/VirtualKeyboard/Styles/qtvkbstylesplugin.dll",
+    "size": 123704,
+    "sha256": "8762e65ba7feacc38f2571284ce34538e4f34148661ec44d0cc91ec5ae91988a"
+  },
+  {
+    "path": "PySide6/qml/QtQuick/VirtualKeyboard/Styles/Builtin/qtvkbbuiltinstylesplugin.dll",
+    "size": 370488,
+    "sha256": "73a59cd5545f31b2f99b30e489ac472e9efb85d90b8ee21cf75bc6a08535cafd"
+  },
+  {
+    "path": "PySide6/qml/QtQuick/Window/quickwindowplugin.dll",
+    "size": 31544,
+    "sha256": "1e36ed3b9945a7025dffbe07e3a41b1d7363e802a7a8e90eae0906d4a420e79f"
+  },
+  {
+    "path": "PySide6/qml/QtQuick/tooling/quicktoolingplugin.dll",
+    "size": 69432,
+    "sha256": "46e05df3fe253b7c39000ee127f39928c4265e397af71685ad2eeb66d3177fc9"
+  },
+  {
+    "path": "PySide6/qml/QtTest/quicktestplugin.dll",
+    "size": 31032,
+    "sha256": "cdcfa477b338cc315695f23fb9a6602b595642ef061f6846f4bbe14a6514161a"
+  },
+  {
+    "path": "pyside6_essentials-6.11.2.dist-info/licenses/LicenseRef-Qt-Commercial.txt",
+    "size": 470,
+    "sha256": "4f54763ac0fe2abd8f7f8d8fe370a94a08ebf84786aa0b91045bd6628deb08a3"
+  }
+]

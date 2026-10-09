@@ -2,7 +2,10 @@
 
 Applies to direct/transitive Python packages, CPython, bundled native libraries,
 Qt plugins, build backends/hooks, test tools, CI actions and containers. Existing
-pins are not grandfathered. Automated enforcement and approved locks are planned.
+pins are not grandfathered. The offline evidence/artifact checker and Windows
+CPython 3.14 development locks exist; release approval and full build integration
+remain pending. See
+[candidate evidence](DEPENDENCY_CANDIDATES.md).
 
 ## Admission Rules
 
@@ -77,7 +80,20 @@ same-day urgent-exception check. Failed/unavailable metadata is not a clean resu
 
 ## Approval Records and Gate
 
-The planned JSON manifest records canonical identity/type/upstream, scope/parents/
+The [JSON manifest](dependency-approvals.json) records thirteen development-only
+admissions. Reviews are attributed to GitHub Copilot as automated technical checks
+under the user's install authorization, not human security/legal sign-off.
+`admission_scope: development-only` is rejected by the release gate. Distribution
+license/notices review and independent release-owner approval remain required;
+the official-security-fix age exception still needs an independent named approver.
+For a matching advisory, record the affected bundled code and its input/sink
+prerequisites separately from current application reachability. Presence alone
+does not establish applicability. A `not-applicable` decision retains advisory
+IDs, sources, technical justification and reviewer, plus feature-change re-review
+requirements. Tests guard the reviewed boundary; they do not prove that the
+library is patched or vulnerability-free. Vendor-supported mitigations need
+actual runtime regression evidence. See the [Qt decision](DEPENDENCY_CANDIDATES.md).
+The admission record needs canonical identity/type/upstream, scope/parents/
 purpose, exact artifact/platform/ABI/URL/hash, both publication timestamps/evidence,
 eligibility, vulnerability verdict/sources/time, provenance/license approvals,
 approver/time/policy version/decision and any exception's covered artifacts/tests/
@@ -90,4 +106,6 @@ hashes. Test age boundaries, timestamp disagreement, missing evidence, young
 platform/transitive/native files, hashes, lookalikes and narrowly scoped exceptions.
 
 Before shared release assign maintainer, security approver, license reviewer and
-release owner. Policy automation, locks and approvals remain pending in [PLAN.md](PLAN.md).
+release owner. Release approvals and full build enforcement remain pending in
+[PLAN.md](PLAN.md). `python -m dgn_explorer.policy dependency-approvals.json wheelhouse`
+checks the recorded evidence and bytes offline; it does not discover or grant approval.

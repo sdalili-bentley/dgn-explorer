@@ -1,0 +1,2394 @@
+[
+  {
+    "FullName": "PyWin32.chm",
+    "Length": 2646502
+  },
+  {
+    "FullName": "pythoncom.py",
+    "Length": 143
+  },
+  {
+    "FullName": "pywin32.pth",
+    "Length": 185
+  },
+  {
+    "FullName": "pywin32.version.txt",
+    "Length": 5
+  },
+  {
+    "FullName": "adodbapi/__init__.py",
+    "Length": 2731
+  },
+  {
+    "FullName": "adodbapi/ado_consts.py",
+    "Length": 9873
+  },
+  {
+    "FullName": "adodbapi/adodbapi.py",
+    "Length": 48942
+  },
+  {
+    "FullName": "adodbapi/apibase.py",
+    "Length": 27130
+  },
+  {
+    "FullName": "adodbapi/is64bit.py",
+    "Length": 1025
+  },
+  {
+    "FullName": "adodbapi/license.txt",
+    "Length": 26925
+  },
+  {
+    "FullName": "adodbapi/process_connect_string.py",
+    "Length": 5420
+  },
+  {
+    "FullName": "adodbapi/readme.txt",
+    "Length": 4782
+  },
+  {
+    "FullName": "adodbapi/schema_table.py",
+    "Length": 438
+  },
+  {
+    "FullName": "adodbapi/setup.py",
+    "Length": 2194
+  },
+  {
+    "FullName": "adodbapi/examples/db_print.py",
+    "Length": 2288
+  },
+  {
+    "FullName": "adodbapi/examples/db_table_names.py",
+    "Length": 526
+  },
+  {
+    "FullName": "adodbapi/examples/xls_read.py",
+    "Length": 1131
+  },
+  {
+    "FullName": "adodbapi/examples/xls_write.py",
+    "Length": 1463
+  },
+  {
+    "FullName": "adodbapi/test/adodbapitest.py",
+    "Length": 56196
+  },
+  {
+    "FullName": "adodbapi/test/adodbapitestconfig.py",
+    "Length": 6517
+  },
+  {
+    "FullName": "adodbapi/test/dbapi20.py",
+    "Length": 33349
+  },
+  {
+    "FullName": "adodbapi/test/is64bit.py",
+    "Length": 1013
+  },
+  {
+    "FullName": "adodbapi/test/setuptestframework.py",
+    "Length": 3017
+  },
+  {
+    "FullName": "adodbapi/test/test_adodbapi_dbapi20.py",
+    "Length": 5948
+  },
+  {
+    "FullName": "adodbapi/test/tryconnection.py",
+    "Length": 1027
+  },
+  {
+    "FullName": "isapi/PyISAPI_loader.dll",
+    "Length": 69632
+  },
+  {
+    "FullName": "isapi/README.txt",
+    "Length": 330
+  },
+  {
+    "FullName": "isapi/__init__.py",
+    "Length": 1267
+  },
+  {
+    "FullName": "isapi/install.py",
+    "Length": 28057
+  },
+  {
+    "FullName": "isapi/isapicon.py",
+    "Length": 4236
+  },
+  {
+    "FullName": "isapi/simple.py",
+    "Length": 2566
+  },
+  {
+    "FullName": "isapi/threaded_extension.py",
+    "Length": 7555
+  },
+  {
+    "FullName": "isapi/doc/isapi.html",
+    "Length": 4239
+  },
+  {
+    "FullName": "isapi/samples/README.txt",
+    "Length": 1023
+  },
+  {
+    "FullName": "isapi/samples/advanced.py",
+    "Length": 8124
+  },
+  {
+    "FullName": "isapi/samples/redirector.py",
+    "Length": 4587
+  },
+  {
+    "FullName": "isapi/samples/redirector_asynch.py",
+    "Length": 2812
+  },
+  {
+    "FullName": "isapi/samples/redirector_with_filter.py",
+    "Length": 6574
+  },
+  {
+    "FullName": "isapi/samples/test.py",
+    "Length": 6513
+  },
+  {
+    "FullName": "isapi/test/README.txt",
+    "Length": 115
+  },
+  {
+    "FullName": "isapi/test/extension_simple.py",
+    "Length": 4341
+  },
+  {
+    "FullName": "pythonwin/Pythonwin.exe",
+    "Length": 57856
+  },
+  {
+    "FullName": "pythonwin/dde.pyd",
+    "Length": 98816
+  },
+  {
+    "FullName": "pythonwin/license.txt",
+    "Length": 1540
+  },
+  {
+    "FullName": "pythonwin/mfc140u.dll",
+    "Length": 5664848
+  },
+  {
+    "FullName": "pythonwin/scintilla.dll",
+    "Length": 1500160
+  },
+  {
+    "FullName": "pythonwin/start_pythonwin.pyw",
+    "Length": 589
+  },
+  {
+    "FullName": "pythonwin/win32ui.pyd",
+    "Length": 1052160
+  },
+  {
+    "FullName": "pythonwin/win32uiole.pyd",
+    "Length": 74752
+  },
+  {
+    "FullName": "pythonwin/pywin/IDLE.cfg",
+    "Length": 769
+  },
+  {
+    "FullName": "pythonwin/pywin/__init__.py",
+    "Length": 147
+  },
+  {
+    "FullName": "pythonwin/pywin/default.cfg",
+    "Length": 6995
+  },
+  {
+    "FullName": "pythonwin/pywin/Demos/cmdserver.py",
+    "Length": 3119
+  },
+  {
+    "FullName": "pythonwin/pywin/Demos/createwin.py",
+    "Length": 2621
+  },
+  {
+    "FullName": "pythonwin/pywin/Demos/demoutils.py",
+    "Length": 1514
+  },
+  {
+    "FullName": "pythonwin/pywin/Demos/dibdemo.py",
+    "Length": 2364
+  },
+  {
+    "FullName": "pythonwin/pywin/Demos/dlgtest.py",
+    "Length": 4709
+  },
+  {
+    "FullName": "pythonwin/pywin/Demos/dyndlg.py",
+    "Length": 2925
+  },
+  {
+    "FullName": "pythonwin/pywin/Demos/fontdemo.py",
+    "Length": 2851
+  },
+  {
+    "FullName": "pythonwin/pywin/Demos/guidemo.py",
+    "Length": 1752
+  },
+  {
+    "FullName": "pythonwin/pywin/Demos/hiertest.py",
+    "Length": 3904
+  },
+  {
+    "FullName": "pythonwin/pywin/Demos/menutest.py",
+    "Length": 503
+  },
+  {
+    "FullName": "pythonwin/pywin/Demos/objdoc.py",
+    "Length": 1778
+  },
+  {
+    "FullName": "pythonwin/pywin/Demos/openGLDemo.py",
+    "Length": 11200
+  },
+  {
+    "FullName": "pythonwin/pywin/Demos/progressbar.py",
+    "Length": 2560
+  },
+  {
+    "FullName": "pythonwin/pywin/Demos/sliderdemo.py",
+    "Length": 2267
+  },
+  {
+    "FullName": "pythonwin/pywin/Demos/splittst.py",
+    "Length": 2924
+  },
+  {
+    "FullName": "pythonwin/pywin/Demos/threadedgui.py",
+    "Length": 6433
+  },
+  {
+    "FullName": "pythonwin/pywin/Demos/toolbar.py",
+    "Length": 3256
+  },
+  {
+    "FullName": "pythonwin/pywin/Demos/app/basictimerapp.py",
+    "Length": 7913
+  },
+  {
+    "FullName": "pythonwin/pywin/Demos/app/customprint.py",
+    "Length": 6049
+  },
+  {
+    "FullName": "pythonwin/pywin/Demos/app/demoutils.py",
+    "Length": 1480
+  },
+  {
+    "FullName": "pythonwin/pywin/Demos/app/dlgappdemo.py",
+    "Length": 1429
+  },
+  {
+    "FullName": "pythonwin/pywin/Demos/app/dojobapp.py",
+    "Length": 1555
+  },
+  {
+    "FullName": "pythonwin/pywin/Demos/app/helloapp.py",
+    "Length": 1664
+  },
+  {
+    "FullName": "pythonwin/pywin/Demos/ocx/demoutils.py",
+    "Length": 1480
+  },
+  {
+    "FullName": "pythonwin/pywin/Demos/ocx/flash.py",
+    "Length": 3085
+  },
+  {
+    "FullName": "pythonwin/pywin/Demos/ocx/msoffice.py",
+    "Length": 5488
+  },
+  {
+    "FullName": "pythonwin/pywin/Demos/ocx/ocxserialtest.py",
+    "Length": 3718
+  },
+  {
+    "FullName": "pythonwin/pywin/Demos/ocx/ocxtest.py",
+    "Length": 6938
+  },
+  {
+    "FullName": "pythonwin/pywin/Demos/ocx/webbrowser.py",
+    "Length": 2391
+  },
+  {
+    "FullName": "pythonwin/pywin/debugger/__init__.py",
+    "Length": 3173
+  },
+  {
+    "FullName": "pythonwin/pywin/debugger/configui.py",
+    "Length": 1211
+  },
+  {
+    "FullName": "pythonwin/pywin/debugger/dbgcon.py",
+    "Length": 860
+  },
+  {
+    "FullName": "pythonwin/pywin/debugger/dbgpyapp.py",
+    "Length": 1601
+  },
+  {
+    "FullName": "pythonwin/pywin/debugger/debugger.py",
+    "Length": 38766
+  },
+  {
+    "FullName": "pythonwin/pywin/debugger/fail.py",
+    "Length": 981
+  },
+  {
+    "FullName": "pythonwin/pywin/dialogs/__init__.py",
+    "Length": 0
+  },
+  {
+    "FullName": "pythonwin/pywin/dialogs/ideoptions.py",
+    "Length": 5181
+  },
+  {
+    "FullName": "pythonwin/pywin/dialogs/list.py",
+    "Length": 4761
+  },
+  {
+    "FullName": "pythonwin/pywin/dialogs/login.py",
+    "Length": 4882
+  },
+  {
+    "FullName": "pythonwin/pywin/dialogs/status.py",
+    "Length": 6863
+  },
+  {
+    "FullName": "pythonwin/pywin/docking/DockingBar.py",
+    "Length": 24001
+  },
+  {
+    "FullName": "pythonwin/pywin/docking/__init__.py",
+    "Length": 0
+  },
+  {
+    "FullName": "pythonwin/pywin/framework/__init__.py",
+    "Length": 0
+  },
+  {
+    "FullName": "pythonwin/pywin/framework/app.py",
+    "Length": 15031
+  },
+  {
+    "FullName": "pythonwin/pywin/framework/bitmap.py",
+    "Length": 5679
+  },
+  {
+    "FullName": "pythonwin/pywin/framework/cmdline.py",
+    "Length": 1508
+  },
+  {
+    "FullName": "pythonwin/pywin/framework/dbgcommands.py",
+    "Length": 7039
+  },
+  {
+    "FullName": "pythonwin/pywin/framework/dlgappcore.py",
+    "Length": 2222
+  },
+  {
+    "FullName": "pythonwin/pywin/framework/help.py",
+    "Length": 5849
+  },
+  {
+    "FullName": "pythonwin/pywin/framework/interact.py",
+    "Length": 37302
+  },
+  {
+    "FullName": "pythonwin/pywin/framework/intpyapp.py",
+    "Length": 20642
+  },
+  {
+    "FullName": "pythonwin/pywin/framework/intpydde.py",
+    "Length": 1884
+  },
+  {
+    "FullName": "pythonwin/pywin/framework/scriptutils.py",
+    "Length": 23709
+  },
+  {
+    "FullName": "pythonwin/pywin/framework/sgrepmdi.py",
+    "Length": 25431
+  },
+  {
+    "FullName": "pythonwin/pywin/framework/startup.py",
+    "Length": 2582
+  },
+  {
+    "FullName": "pythonwin/pywin/framework/stdin.py",
+    "Length": 6625
+  },
+  {
+    "FullName": "pythonwin/pywin/framework/toolmenu.py",
+    "Length": 9506
+  },
+  {
+    "FullName": "pythonwin/pywin/framework/window.py",
+    "Length": 549
+  },
+  {
+    "FullName": "pythonwin/pywin/framework/winout.py",
+    "Length": 20821
+  },
+  {
+    "FullName": "pythonwin/pywin/framework/editor/ModuleBrowser.py",
+    "Length": 7282
+  },
+  {
+    "FullName": "pythonwin/pywin/framework/editor/__init__.py",
+    "Length": 3109
+  },
+  {
+    "FullName": "pythonwin/pywin/framework/editor/configui.py",
+    "Length": 11765
+  },
+  {
+    "FullName": "pythonwin/pywin/framework/editor/document.py",
+    "Length": 15133
+  },
+  {
+    "FullName": "pythonwin/pywin/framework/editor/editor.py",
+    "Length": 18776
+  },
+  {
+    "FullName": "pythonwin/pywin/framework/editor/frame.py",
+    "Length": 3162
+  },
+  {
+    "FullName": "pythonwin/pywin/framework/editor/template.py",
+    "Length": 2127
+  },
+  {
+    "FullName": "pythonwin/pywin/framework/editor/vss.py",
+    "Length": 3480
+  },
+  {
+    "FullName": "pythonwin/pywin/framework/editor/color/__init__.py",
+    "Length": 0
+  },
+  {
+    "FullName": "pythonwin/pywin/framework/editor/color/coloreditor.py",
+    "Length": 26029
+  },
+  {
+    "FullName": "pythonwin/pywin/idle/AutoExpand.py",
+    "Length": 2806
+  },
+  {
+    "FullName": "pythonwin/pywin/idle/AutoIndent.py",
+    "Length": 20669
+  },
+  {
+    "FullName": "pythonwin/pywin/idle/CallTips.py",
+    "Length": 6493
+  },
+  {
+    "FullName": "pythonwin/pywin/idle/FormatParagraph.py",
+    "Length": 5850
+  },
+  {
+    "FullName": "pythonwin/pywin/idle/IdleHistory.py",
+    "Length": 3138
+  },
+  {
+    "FullName": "pythonwin/pywin/idle/PyParse.py",
+    "Length": 18708
+  },
+  {
+    "FullName": "pythonwin/pywin/idle/__init__.py",
+    "Length": 56
+  },
+  {
+    "FullName": "pythonwin/pywin/mfc/__init__.py",
+    "Length": 0
+  },
+  {
+    "FullName": "pythonwin/pywin/mfc/activex.py",
+    "Length": 2690
+  },
+  {
+    "FullName": "pythonwin/pywin/mfc/afxres.py",
+    "Length": 15595
+  },
+  {
+    "FullName": "pythonwin/pywin/mfc/dialog.py",
+    "Length": 9086
+  },
+  {
+    "FullName": "pythonwin/pywin/mfc/docview.py",
+    "Length": 4240
+  },
+  {
+    "FullName": "pythonwin/pywin/mfc/object.py",
+    "Length": 2244
+  },
+  {
+    "FullName": "pythonwin/pywin/mfc/thread.py",
+    "Length": 613
+  },
+  {
+    "FullName": "pythonwin/pywin/mfc/window.py",
+    "Length": 1549
+  },
+  {
+    "FullName": "pythonwin/pywin/scintilla/IDLEenvironment.py",
+    "Length": 20040
+  },
+  {
+    "FullName": "pythonwin/pywin/scintilla/__init__.py",
+    "Length": 17
+  },
+  {
+    "FullName": "pythonwin/pywin/scintilla/bindings.py",
+    "Length": 6230
+  },
+  {
+    "FullName": "pythonwin/pywin/scintilla/config.py",
+    "Length": 12708
+  },
+  {
+    "FullName": "pythonwin/pywin/scintilla/configui.py",
+    "Length": 11450
+  },
+  {
+    "FullName": "pythonwin/pywin/scintilla/control.py",
+    "Length": 20920
+  },
+  {
+    "FullName": "pythonwin/pywin/scintilla/document.py",
+    "Length": 11730
+  },
+  {
+    "FullName": "pythonwin/pywin/scintilla/find.py",
+    "Length": 17302
+  },
+  {
+    "FullName": "pythonwin/pywin/scintilla/formatter.py",
+    "Length": 27200
+  },
+  {
+    "FullName": "pythonwin/pywin/scintilla/keycodes.py",
+    "Length": 5461
+  },
+  {
+    "FullName": "pythonwin/pywin/scintilla/scintillacon.py",
+    "Length": 76371
+  },
+  {
+    "FullName": "pythonwin/pywin/scintilla/view.py",
+    "Length": 31767
+  },
+  {
+    "FullName": "pythonwin/pywin/tools/TraceCollector.py",
+    "Length": 2520
+  },
+  {
+    "FullName": "pythonwin/pywin/tools/__init__.py",
+    "Length": 0
+  },
+  {
+    "FullName": "pythonwin/pywin/tools/browseProjects.py",
+    "Length": 9819
+  },
+  {
+    "FullName": "pythonwin/pywin/tools/browser.py",
+    "Length": 13337
+  },
+  {
+    "FullName": "pythonwin/pywin/tools/hierlist.py",
+    "Length": 12316
+  },
+  {
+    "FullName": "pythonwin/pywin/tools/regedit.py",
+    "Length": 13533
+  },
+  {
+    "FullName": "pythonwin/pywin/tools/regpy.py",
+    "Length": 2307
+  },
+  {
+    "FullName": "pywin32-311.data/scripts/pywin32_postinstall.py",
+    "Length": 25736
+  },
+  {
+    "FullName": "pywin32-311.data/scripts/pywin32_testall.py",
+    "Length": 3847
+  },
+  {
+    "FullName": "pywin32_system32/pythoncom314.dll",
+    "Length": 694272
+  },
+  {
+    "FullName": "pywin32_system32/pywintypes314.dll",
+    "Length": 136704
+  },
+  {
+    "FullName": "win32/_win32sysloader.pyd",
+    "Length": 14848
+  },
+  {
+    "FullName": "win32/_winxptheme.pyd",
+    "Length": 26112
+  },
+  {
+    "FullName": "win32/license.txt",
+    "Length": 1540
+  },
+  {
+    "FullName": "win32/mmapfile.pyd",
+    "Length": 22016
+  },
+  {
+    "FullName": "win32/odbc.pyd",
+    "Length": 41984
+  },
+  {
+    "FullName": "win32/perfmon.pyd",
+    "Length": 28672
+  },
+  {
+    "FullName": "win32/perfmondata.dll",
+    "Length": 19456
+  },
+  {
+    "FullName": "win32/pythonservice.exe",
+    "Length": 20992
+  },
+  {
+    "FullName": "win32/servicemanager.pyd",
+    "Length": 41472
+  },
+  {
+    "FullName": "win32/timer.pyd",
+    "Length": 16896
+  },
+  {
+    "FullName": "win32/win32api.pyd",
+    "Length": 135680
+  },
+  {
+    "FullName": "win32/win32clipboard.pyd",
+    "Length": 28672
+  },
+  {
+    "FullName": "win32/win32console.pyd",
+    "Length": 60416
+  },
+  {
+    "FullName": "win32/win32cred.pyd",
+    "Length": 38912
+  },
+  {
+    "FullName": "win32/win32crypt.pyd",
+    "Length": 124928
+  },
+  {
+    "FullName": "win32/win32event.pyd",
+    "Length": 29184
+  },
+  {
+    "FullName": "win32/win32evtlog.pyd",
+    "Length": 74752
+  },
+  {
+    "FullName": "win32/win32file.pyd",
+    "Length": 145920
+  },
+  {
+    "FullName": "win32/win32gui.pyd",
+    "Length": 222208
+  },
+  {
+    "FullName": "win32/win32help.pyd",
+    "Length": 54784
+  },
+  {
+    "FullName": "win32/win32inet.pyd",
+    "Length": 53248
+  },
+  {
+    "FullName": "win32/win32job.pyd",
+    "Length": 28672
+  },
+  {
+    "FullName": "win32/win32lz.pyd",
+    "Length": 16896
+  },
+  {
+    "FullName": "win32/win32net.pyd",
+    "Length": 93696
+  },
+  {
+    "FullName": "win32/win32pdh.pyd",
+    "Length": 34816
+  },
+  {
+    "FullName": "win32/win32pipe.pyd",
+    "Length": 28672
+  },
+  {
+    "FullName": "win32/win32print.pyd",
+    "Length": 76288
+  },
+  {
+    "FullName": "win32/win32process.pyd",
+    "Length": 53760
+  },
+  {
+    "FullName": "win32/win32profile.pyd",
+    "Length": 27136
+  },
+  {
+    "FullName": "win32/win32ras.pyd",
+    "Length": 34304
+  },
+  {
+    "FullName": "win32/win32security.pyd",
+    "Length": 137216
+  },
+  {
+    "FullName": "win32/win32service.pyd",
+    "Length": 60928
+  },
+  {
+    "FullName": "win32/win32trace.pyd",
+    "Length": 24064
+  },
+  {
+    "FullName": "win32/win32transaction.pyd",
+    "Length": 19456
+  },
+  {
+    "FullName": "win32/win32ts.pyd",
+    "Length": 33280
+  },
+  {
+    "FullName": "win32/win32wnet.pyd",
+    "Length": 38400
+  },
+  {
+    "FullName": "win32/winxpgui.py",
+    "Length": 423
+  },
+  {
+    "FullName": "win32/Demos/BackupRead_BackupWrite.py",
+    "Length": 3829
+  },
+  {
+    "FullName": "win32/Demos/BackupSeek_streamheaders.py",
+    "Length": 4001
+  },
+  {
+    "FullName": "win32/Demos/CopyFileEx.py",
+    "Length": 1300
+  },
+  {
+    "FullName": "win32/Demos/CreateFileTransacted_MiniVersion.py",
+    "Length": 3717
+  },
+  {
+    "FullName": "win32/Demos/EvtFormatMessage.py",
+    "Length": 3401
+  },
+  {
+    "FullName": "win32/Demos/EvtSubscribe_pull.py",
+    "Length": 820
+  },
+  {
+    "FullName": "win32/Demos/EvtSubscribe_push.py",
+    "Length": 835
+  },
+  {
+    "FullName": "win32/Demos/FileSecurityTest.py",
+    "Length": 4523
+  },
+  {
+    "FullName": "win32/Demos/GetSaveFileName.py",
+    "Length": 1211
+  },
+  {
+    "FullName": "win32/Demos/NetValidatePasswordPolicy.py",
+    "Length": 3635
+  },
+  {
+    "FullName": "win32/Demos/OpenEncryptedFileRaw.py",
+    "Length": 2024
+  },
+  {
+    "FullName": "win32/Demos/RegCreateKeyTransacted.py",
+    "Length": 1972
+  },
+  {
+    "FullName": "win32/Demos/RegRestoreKey.py",
+    "Length": 2134
+  },
+  {
+    "FullName": "win32/Demos/SystemParametersInfo.py",
+    "Length": 8162
+  },
+  {
+    "FullName": "win32/Demos/desktopmanager.py",
+    "Length": 8363
+  },
+  {
+    "FullName": "win32/Demos/eventLogDemo.py",
+    "Length": 4338
+  },
+  {
+    "FullName": "win32/Demos/getfilever.py",
+    "Length": 1153
+  },
+  {
+    "FullName": "win32/Demos/mmapfile_demo.py",
+    "Length": 2870
+  },
+  {
+    "FullName": "win32/Demos/print_desktop.py",
+    "Length": 2972
+  },
+  {
+    "FullName": "win32/Demos/rastest.py",
+    "Length": 5237
+  },
+  {
+    "FullName": "win32/Demos/timer_demo.py",
+    "Length": 2257
+  },
+  {
+    "FullName": "win32/Demos/win32clipboardDemo.py",
+    "Length": 4980
+  },
+  {
+    "FullName": "win32/Demos/win32clipboard_bitmapdemo.py",
+    "Length": 4022
+  },
+  {
+    "FullName": "win32/Demos/win32comport_demo.py",
+    "Length": 6202
+  },
+  {
+    "FullName": "win32/Demos/win32console_demo.py",
+    "Length": 5205
+  },
+  {
+    "FullName": "win32/Demos/win32cred_demo.py",
+    "Length": 2834
+  },
+  {
+    "FullName": "win32/Demos/win32fileDemo.py",
+    "Length": 1407
+  },
+  {
+    "FullName": "win32/Demos/win32gui_demo.py",
+    "Length": 5205
+  },
+  {
+    "FullName": "win32/Demos/win32gui_devicenotify.py",
+    "Length": 3919
+  },
+  {
+    "FullName": "win32/Demos/win32gui_dialog.py",
+    "Length": 15763
+  },
+  {
+    "FullName": "win32/Demos/win32gui_menu.py",
+    "Length": 17210
+  },
+  {
+    "FullName": "win32/Demos/win32gui_taskbar.py",
+    "Length": 5088
+  },
+  {
+    "FullName": "win32/Demos/win32netdemo.py",
+    "Length": 9192
+  },
+  {
+    "FullName": "win32/Demos/win32rcparser_demo.py",
+    "Length": 2889
+  },
+  {
+    "FullName": "win32/Demos/win32servicedemo.py",
+    "Length": 602
+  },
+  {
+    "FullName": "win32/Demos/win32ts_logoff_disconnected.py",
+    "Length": 1007
+  },
+  {
+    "FullName": "win32/Demos/winprocess.py",
+    "Length": 7588
+  },
+  {
+    "FullName": "win32/Demos/c_extension/setup.py",
+    "Length": 783
+  },
+  {
+    "FullName": "win32/Demos/dde/ddeclient.py",
+    "Length": 493
+  },
+  {
+    "FullName": "win32/Demos/dde/ddeserver.py",
+    "Length": 1182
+  },
+  {
+    "FullName": "win32/Demos/images/frowny.bmp",
+    "Length": 3126
+  },
+  {
+    "FullName": "win32/Demos/images/smiley.bmp",
+    "Length": 3126
+  },
+  {
+    "FullName": "win32/Demos/pipes/cat.py",
+    "Length": 352
+  },
+  {
+    "FullName": "win32/Demos/pipes/runproc.py",
+    "Length": 4137
+  },
+  {
+    "FullName": "win32/Demos/security/GetTokenInformation.py",
+    "Length": 3823
+  },
+  {
+    "FullName": "win32/Demos/security/account_rights.py",
+    "Length": 1555
+  },
+  {
+    "FullName": "win32/Demos/security/explicit_entries.py",
+    "Length": 5135
+  },
+  {
+    "FullName": "win32/Demos/security/get_policy_info.py",
+    "Length": 1227
+  },
+  {
+    "FullName": "win32/Demos/security/list_rights.py",
+    "Length": 1082
+  },
+  {
+    "FullName": "win32/Demos/security/localized_names.py",
+    "Length": 2215
+  },
+  {
+    "FullName": "win32/Demos/security/lsaregevent.py",
+    "Length": 546
+  },
+  {
+    "FullName": "win32/Demos/security/lsastore.py",
+    "Length": 484
+  },
+  {
+    "FullName": "win32/Demos/security/query_information.py",
+    "Length": 837
+  },
+  {
+    "FullName": "win32/Demos/security/regsave_sa.py",
+    "Length": 1751
+  },
+  {
+    "FullName": "win32/Demos/security/regsecurity.py",
+    "Length": 1157
+  },
+  {
+    "FullName": "win32/Demos/security/sa_inherit.py",
+    "Length": 289
+  },
+  {
+    "FullName": "win32/Demos/security/security_enums.py",
+    "Length": 9776
+  },
+  {
+    "FullName": "win32/Demos/security/set_file_audit.py",
+    "Length": 3460
+  },
+  {
+    "FullName": "win32/Demos/security/set_file_owner.py",
+    "Length": 2314
+  },
+  {
+    "FullName": "win32/Demos/security/set_policy_info.py",
+    "Length": 936
+  },
+  {
+    "FullName": "win32/Demos/security/setkernelobjectsecurity.py",
+    "Length": 5027
+  },
+  {
+    "FullName": "win32/Demos/security/setnamedsecurityinfo.py",
+    "Length": 4519
+  },
+  {
+    "FullName": "win32/Demos/security/setsecurityinfo.py",
+    "Length": 4648
+  },
+  {
+    "FullName": "win32/Demos/security/setuserobjectsecurity.py",
+    "Length": 3468
+  },
+  {
+    "FullName": "win32/Demos/security/sspi/fetch_url.py",
+    "Length": 5555
+  },
+  {
+    "FullName": "win32/Demos/security/sspi/simple_auth.py",
+    "Length": 2917
+  },
+  {
+    "FullName": "win32/Demos/security/sspi/socket_server.py",
+    "Length": 6535
+  },
+  {
+    "FullName": "win32/Demos/security/sspi/validate_password.py",
+    "Length": 1164
+  },
+  {
+    "FullName": "win32/Demos/service/nativePipeTestService.py",
+    "Length": 2198
+  },
+  {
+    "FullName": "win32/Demos/service/pipeTestService.py",
+    "Length": 7136
+  },
+  {
+    "FullName": "win32/Demos/service/pipeTestServiceClient.py",
+    "Length": 4785
+  },
+  {
+    "FullName": "win32/Demos/service/serviceEvents.py",
+    "Length": 4157
+  },
+  {
+    "FullName": "win32/Demos/win32wnet/testwnet.py",
+    "Length": 4405
+  },
+  {
+    "FullName": "win32/Demos/win32wnet/winnetwk.py",
+    "Length": 3293
+  },
+  {
+    "FullName": "win32/include/PyWinTypes.h",
+    "Length": 31269
+  },
+  {
+    "FullName": "win32/lib/_win32verstamp_pywin32ctypes.py",
+    "Length": 4668
+  },
+  {
+    "FullName": "win32/lib/afxres.py",
+    "Length": 225
+  },
+  {
+    "FullName": "win32/lib/commctrl.py",
+    "Length": 47709
+  },
+  {
+    "FullName": "win32/lib/mmsystem.py",
+    "Length": 31230
+  },
+  {
+    "FullName": "win32/lib/netbios.py",
+    "Length": 6895
+  },
+  {
+    "FullName": "win32/lib/ntsecuritycon.py",
+    "Length": 23075
+  },
+  {
+    "FullName": "win32/lib/pywin32_bootstrap.py",
+    "Length": 772
+  },
+  {
+    "FullName": "win32/lib/pywin32_testutil.py",
+    "Length": 10876
+  },
+  {
+    "FullName": "win32/lib/pywintypes.py",
+    "Length": 6034
+  },
+  {
+    "FullName": "win32/lib/rasutil.py",
+    "Length": 1764
+  },
+  {
+    "FullName": "win32/lib/regcheck.py",
+    "Length": 4625
+  },
+  {
+    "FullName": "win32/lib/regutil.py",
+    "Length": 12695
+  },
+  {
+    "FullName": "win32/lib/sspi.py",
+    "Length": 16036
+  },
+  {
+    "FullName": "win32/lib/sspicon.py",
+    "Length": 16174
+  },
+  {
+    "FullName": "win32/lib/win2kras.py",
+    "Length": 460
+  },
+  {
+    "FullName": "win32/lib/win32con.py",
+    "Length": 121669
+  },
+  {
+    "FullName": "win32/lib/win32cryptcon.py",
+    "Length": 74342
+  },
+  {
+    "FullName": "win32/lib/win32evtlogutil.py",
+    "Length": 7827
+  },
+  {
+    "FullName": "win32/lib/win32gui_struct.py",
+    "Length": 29986
+  },
+  {
+    "FullName": "win32/lib/win32inetcon.py",
+    "Length": 44303
+  },
+  {
+    "FullName": "win32/lib/win32netcon.py",
+    "Length": 19159
+  },
+  {
+    "FullName": "win32/lib/win32pdhquery.py",
+    "Length": 24089
+  },
+  {
+    "FullName": "win32/lib/win32pdhutil.py",
+    "Length": 7828
+  },
+  {
+    "FullName": "win32/lib/win32rcparser.py",
+    "Length": 22333
+  },
+  {
+    "FullName": "win32/lib/win32serviceutil.py",
+    "Length": 39200
+  },
+  {
+    "FullName": "win32/lib/win32timezone.py",
+    "Length": 42439
+  },
+  {
+    "FullName": "win32/lib/win32traceutil.py",
+    "Length": 1661
+  },
+  {
+    "FullName": "win32/lib/win32verstamp.py",
+    "Length": 7210
+  },
+  {
+    "FullName": "win32/lib/winerror.py",
+    "Length": 290139
+  },
+  {
+    "FullName": "win32/lib/winioctlcon.py",
+    "Length": 36454
+  },
+  {
+    "FullName": "win32/lib/winnt.py",
+    "Length": 38459
+  },
+  {
+    "FullName": "win32/lib/winperf.py",
+    "Length": 6147
+  },
+  {
+    "FullName": "win32/lib/winxptheme.py",
+    "Length": 282
+  },
+  {
+    "FullName": "win32/libs/pywintypes.lib",
+    "Length": 108206
+  },
+  {
+    "FullName": "win32/scripts/ControlService.py",
+    "Length": 18634
+  },
+  {
+    "FullName": "win32/scripts/backupEventLog.py",
+    "Length": 1288
+  },
+  {
+    "FullName": "win32/scripts/h2py.py",
+    "Length": 6620
+  },
+  {
+    "FullName": "win32/scripts/killProcName.py",
+    "Length": 2050
+  },
+  {
+    "FullName": "win32/scripts/pywin32_postinstall.py",
+    "Length": 25736
+  },
+  {
+    "FullName": "win32/scripts/pywin32_testall.py",
+    "Length": 3847
+  },
+  {
+    "FullName": "win32/scripts/rasutil.py",
+    "Length": 2821
+  },
+  {
+    "FullName": "win32/scripts/regsetup.py",
+    "Length": 21038
+  },
+  {
+    "FullName": "win32/scripts/setup_d.py",
+    "Length": 3639
+  },
+  {
+    "FullName": "win32/scripts/VersionStamp/BrandProject.py",
+    "Length": 2873
+  },
+  {
+    "FullName": "win32/scripts/VersionStamp/bulkstamp.py",
+    "Length": 4823
+  },
+  {
+    "FullName": "win32/scripts/VersionStamp/vssutil.py",
+    "Length": 5818
+  },
+  {
+    "FullName": "win32/test/handles.py",
+    "Length": 5630
+  },
+  {
+    "FullName": "win32/test/test_clipboard.py",
+    "Length": 4409
+  },
+  {
+    "FullName": "win32/test/test_exceptions.py",
+    "Length": 8227
+  },
+  {
+    "FullName": "win32/test/test_odbc.py",
+    "Length": 8613
+  },
+  {
+    "FullName": "win32/test/test_pywintypes.py",
+    "Length": 4139
+  },
+  {
+    "FullName": "win32/test/test_security.py",
+    "Length": 6222
+  },
+  {
+    "FullName": "win32/test/test_sspi.py",
+    "Length": 8379
+  },
+  {
+    "FullName": "win32/test/test_win32api.py",
+    "Length": 10013
+  },
+  {
+    "FullName": "win32/test/test_win32clipboard.py",
+    "Length": 2013
+  },
+  {
+    "FullName": "win32/test/test_win32cred.py",
+    "Length": 3239
+  },
+  {
+    "FullName": "win32/test/test_win32crypt.py",
+    "Length": 4907
+  },
+  {
+    "FullName": "win32/test/test_win32event.py",
+    "Length": 4487
+  },
+  {
+    "FullName": "win32/test/test_win32file.py",
+    "Length": 42798
+  },
+  {
+    "FullName": "win32/test/test_win32gui.py",
+    "Length": 6761
+  },
+  {
+    "FullName": "win32/test/test_win32guistruct.py",
+    "Length": 9610
+  },
+  {
+    "FullName": "win32/test/test_win32inet.py",
+    "Length": 3517
+  },
+  {
+    "FullName": "win32/test/test_win32net.py",
+    "Length": 658
+  },
+  {
+    "FullName": "win32/test/test_win32pipe.py",
+    "Length": 4949
+  },
+  {
+    "FullName": "win32/test/test_win32print.py",
+    "Length": 705
+  },
+  {
+    "FullName": "win32/test/test_win32profile.py",
+    "Length": 433
+  },
+  {
+    "FullName": "win32/test/test_win32rcparser.py",
+    "Length": 2533
+  },
+  {
+    "FullName": "win32/test/test_win32timezone.py",
+    "Length": 327
+  },
+  {
+    "FullName": "win32/test/test_win32trace.py",
+    "Length": 11665
+  },
+  {
+    "FullName": "win32/test/test_win32ts.py",
+    "Length": 439
+  },
+  {
+    "FullName": "win32/test/test_win32wnet.py",
+    "Length": 5827
+  },
+  {
+    "FullName": "win32/test/testall.py",
+    "Length": 7257
+  },
+  {
+    "FullName": "win32/test/win32rcparser/python.bmp",
+    "Length": 778
+  },
+  {
+    "FullName": "win32/test/win32rcparser/python.ico",
+    "Length": 766
+  },
+  {
+    "FullName": "win32/test/win32rcparser/test.h",
+    "Length": 1215
+  },
+  {
+    "FullName": "win32/test/win32rcparser/test.rc",
+    "Length": 6474
+  },
+  {
+    "FullName": "win32com/License.txt",
+    "Length": 1569
+  },
+  {
+    "FullName": "win32com/__init__.py",
+    "Length": 5017
+  },
+  {
+    "FullName": "win32com/olectl.py",
+    "Length": 2692
+  },
+  {
+    "FullName": "win32com/readme.html",
+    "Length": 3766
+  },
+  {
+    "FullName": "win32com/storagecon.py",
+    "Length": 3174
+  },
+  {
+    "FullName": "win32com/universal.py",
+    "Length": 8761
+  },
+  {
+    "FullName": "win32com/util.py",
+    "Length": 1064
+  },
+  {
+    "FullName": "win32com/HTML/COM_Records.html",
+    "Length": 30907
+  },
+  {
+    "FullName": "win32com/HTML/GeneratedSupport.html",
+    "Length": 6122
+  },
+  {
+    "FullName": "win32com/HTML/PythonCOM.html",
+    "Length": 9027
+  },
+  {
+    "FullName": "win32com/HTML/QuickStartClientCom.html",
+    "Length": 7354
+  },
+  {
+    "FullName": "win32com/HTML/QuickStartServerCom.html",
+    "Length": 13241
+  },
+  {
+    "FullName": "win32com/HTML/docindex.html",
+    "Length": 1369
+  },
+  {
+    "FullName": "win32com/HTML/index.html",
+    "Length": 1654
+  },
+  {
+    "FullName": "win32com/HTML/misc.html",
+    "Length": 1176
+  },
+  {
+    "FullName": "win32com/HTML/package.html",
+    "Length": 3288
+  },
+  {
+    "FullName": "win32com/HTML/variant.html",
+    "Length": 6016
+  },
+  {
+    "FullName": "win32com/HTML/image/BTN_HomePage.gif",
+    "Length": 211
+  },
+  {
+    "FullName": "win32com/HTML/image/BTN_ManualTop.gif",
+    "Length": 215
+  },
+  {
+    "FullName": "win32com/HTML/image/BTN_NextPage.gif",
+    "Length": 218
+  },
+  {
+    "FullName": "win32com/HTML/image/BTN_PrevPage.gif",
+    "Length": 216
+  },
+  {
+    "FullName": "win32com/HTML/image/blank.gif",
+    "Length": 864
+  },
+  {
+    "FullName": "win32com/HTML/image/pycom_blowing.gif",
+    "Length": 20926
+  },
+  {
+    "FullName": "win32com/HTML/image/pythoncom.gif",
+    "Length": 5767
+  },
+  {
+    "FullName": "win32com/HTML/image/www_icon.gif",
+    "Length": 275
+  },
+  {
+    "FullName": "win32com/client/CLSIDToClass.py",
+    "Length": 1871
+  },
+  {
+    "FullName": "win32com/client/__init__.py",
+    "Length": 26626
+  },
+  {
+    "FullName": "win32com/client/build.py",
+    "Length": 29290
+  },
+  {
+    "FullName": "win32com/client/combrowse.py",
+    "Length": 20536
+  },
+  {
+    "FullName": "win32com/client/connect.py",
+    "Length": 1585
+  },
+  {
+    "FullName": "win32com/client/dynamic.py",
+    "Length": 28284
+  },
+  {
+    "FullName": "win32com/client/gencache.py",
+    "Length": 29645
+  },
+  {
+    "FullName": "win32com/client/genpy.py",
+    "Length": 54976
+  },
+  {
+    "FullName": "win32com/client/makepy.py",
+    "Length": 14962
+  },
+  {
+    "FullName": "win32com/client/selecttlb.py",
+    "Length": 6451
+  },
+  {
+    "FullName": "win32com/client/tlbrowse.py",
+    "Length": 9787
+  },
+  {
+    "FullName": "win32com/client/util.py",
+    "Length": 3445
+  },
+  {
+    "FullName": "win32com/demos/__init__.py",
+    "Length": 0
+  },
+  {
+    "FullName": "win32com/demos/connect.py",
+    "Length": 3870
+  },
+  {
+    "FullName": "win32com/demos/dump_clipboard.py",
+    "Length": 3015
+  },
+  {
+    "FullName": "win32com/demos/eventsApartmentThreaded.py",
+    "Length": 3764
+  },
+  {
+    "FullName": "win32com/demos/eventsFreeThreaded.py",
+    "Length": 3556
+  },
+  {
+    "FullName": "win32com/demos/excelAddin.py",
+    "Length": 6216
+  },
+  {
+    "FullName": "win32com/demos/excelRTDServer.py",
+    "Length": 16613
+  },
+  {
+    "FullName": "win32com/demos/iebutton.py",
+    "Length": 7157
+  },
+  {
+    "FullName": "win32com/demos/ietoolbar.py",
+    "Length": 11148
+  },
+  {
+    "FullName": "win32com/demos/outlookAddin.py",
+    "Length": 4746
+  },
+  {
+    "FullName": "win32com/demos/trybag.py",
+    "Length": 2185
+  },
+  {
+    "FullName": "win32com/include/PythonCOM.h",
+    "Length": 30499
+  },
+  {
+    "FullName": "win32com/include/PythonCOMRegister.h",
+    "Length": 3092
+  },
+  {
+    "FullName": "win32com/include/PythonCOMServer.h",
+    "Length": 8936
+  },
+  {
+    "FullName": "win32com/libs/axscript.lib",
+    "Length": 72478
+  },
+  {
+    "FullName": "win32com/libs/pythoncom.lib",
+    "Length": 160662
+  },
+  {
+    "FullName": "win32com/makegw/__init__.py",
+    "Length": 31
+  },
+  {
+    "FullName": "win32com/makegw/makegw.py",
+    "Length": 22299
+  },
+  {
+    "FullName": "win32com/makegw/makegwenum.py",
+    "Length": 10803
+  },
+  {
+    "FullName": "win32com/makegw/makegwparse.py",
+    "Length": 36305
+  },
+  {
+    "FullName": "win32com/server/__init__.py",
+    "Length": 51
+  },
+  {
+    "FullName": "win32com/server/connect.py",
+    "Length": 2859
+  },
+  {
+    "FullName": "win32com/server/dispatcher.py",
+    "Length": 8278
+  },
+  {
+    "FullName": "win32com/server/exception.py",
+    "Length": 3513
+  },
+  {
+    "FullName": "win32com/server/factory.py",
+    "Length": 876
+  },
+  {
+    "FullName": "win32com/server/localserver.py",
+    "Length": 1247
+  },
+  {
+    "FullName": "win32com/server/policy.py",
+    "Length": 33220
+  },
+  {
+    "FullName": "win32com/server/register.py",
+    "Length": 25863
+  },
+  {
+    "FullName": "win32com/server/util.py",
+    "Length": 6930
+  },
+  {
+    "FullName": "win32com/servers/PythonTools.py",
+    "Length": 1224
+  },
+  {
+    "FullName": "win32com/servers/__init__.py",
+    "Length": 0
+  },
+  {
+    "FullName": "win32com/servers/dictionary.py",
+    "Length": 4500
+  },
+  {
+    "FullName": "win32com/servers/interp.py",
+    "Length": 1794
+  },
+  {
+    "FullName": "win32com/servers/perfmon.py",
+    "Length": 1233
+  },
+  {
+    "FullName": "win32com/servers/test_pycomtest.py",
+    "Length": 5255
+  },
+  {
+    "FullName": "win32com/test/GenTestScripts.py",
+    "Length": 2715
+  },
+  {
+    "FullName": "win32com/test/Testpys.sct",
+    "Length": 1098
+  },
+  {
+    "FullName": "win32com/test/__init__.py",
+    "Length": 44
+  },
+  {
+    "FullName": "win32com/test/daodump.py",
+    "Length": 2333
+  },
+  {
+    "FullName": "win32com/test/errorSemantics.py",
+    "Length": 8767
+  },
+  {
+    "FullName": "win32com/test/pippo.idl",
+    "Length": 1916
+  },
+  {
+    "FullName": "win32com/test/pippo_server.py",
+    "Length": 2726
+  },
+  {
+    "FullName": "win32com/test/policySemantics.py",
+    "Length": 3226
+  },
+  {
+    "FullName": "win32com/test/readme.txt",
+    "Length": 815
+  },
+  {
+    "FullName": "win32com/test/testADOEvents.py",
+    "Length": 2878
+  },
+  {
+    "FullName": "win32com/test/testAXScript.py",
+    "Length": 1388
+  },
+  {
+    "FullName": "win32com/test/testAccess.py",
+    "Length": 5874
+  },
+  {
+    "FullName": "win32com/test/testArrays.py",
+    "Length": 2183
+  },
+  {
+    "FullName": "win32com/test/testClipboard.py",
+    "Length": 5952
+  },
+  {
+    "FullName": "win32com/test/testCollections.py",
+    "Length": 4400
+  },
+  {
+    "FullName": "win32com/test/testConversionErrors.py",
+    "Length": 713
+  },
+  {
+    "FullName": "win32com/test/testDCOM.py",
+    "Length": 1766
+  },
+  {
+    "FullName": "win32com/test/testDates.py",
+    "Length": 1908
+  },
+  {
+    "FullName": "win32com/test/testDictionary.py",
+    "Length": 2862
+  },
+  {
+    "FullName": "win32com/test/testDictionary.vbs",
+    "Length": 584
+  },
+  {
+    "FullName": "win32com/test/testDynamic.py",
+    "Length": 2774
+  },
+  {
+    "FullName": "win32com/test/testExchange.py",
+    "Length": 3361
+  },
+  {
+    "FullName": "win32com/test/testExplorer.py",
+    "Length": 4599
+  },
+  {
+    "FullName": "win32com/test/testGIT.py",
+    "Length": 4766
+  },
+  {
+    "FullName": "win32com/test/testGatewayAddresses.py",
+    "Length": 5342
+  },
+  {
+    "FullName": "win32com/test/testInterp.vbs",
+    "Length": 268
+  },
+  {
+    "FullName": "win32com/test/testIterators.py",
+    "Length": 4769
+  },
+  {
+    "FullName": "win32com/test/testMSOffice.py",
+    "Length": 5663
+  },
+  {
+    "FullName": "win32com/test/testMSOfficeEvents.py",
+    "Length": 4161
+  },
+  {
+    "FullName": "win32com/test/testMarshal.py",
+    "Length": 6285
+  },
+  {
+    "FullName": "win32com/test/testPersist.py",
+    "Length": 6465
+  },
+  {
+    "FullName": "win32com/test/testPippo.py",
+    "Length": 2652
+  },
+  {
+    "FullName": "win32com/test/testPyComTest.py",
+    "Length": 34430
+  },
+  {
+    "FullName": "win32com/test/testPyScriptlet.js",
+    "Length": 1120
+  },
+  {
+    "FullName": "win32com/test/testROT.py",
+    "Length": 793
+  },
+  {
+    "FullName": "win32com/test/testServers.py",
+    "Length": 1401
+  },
+  {
+    "FullName": "win32com/test/testShell.py",
+    "Length": 9691
+  },
+  {
+    "FullName": "win32com/test/testStorage.py",
+    "Length": 3707
+  },
+  {
+    "FullName": "win32com/test/testStreams.py",
+    "Length": 4336
+  },
+  {
+    "FullName": "win32com/test/testWMI.py",
+    "Length": 486
+  },
+  {
+    "FullName": "win32com/test/testall.py",
+    "Length": 10235
+  },
+  {
+    "FullName": "win32com/test/testmakepy.py",
+    "Length": 1929
+  },
+  {
+    "FullName": "win32com/test/testvb.py",
+    "Length": 20718
+  },
+  {
+    "FullName": "win32com/test/testvbscript_regexp.py",
+    "Length": 1138
+  },
+  {
+    "FullName": "win32com/test/testxslt.js",
+    "Length": 581
+  },
+  {
+    "FullName": "win32com/test/testxslt.py",
+    "Length": 948
+  },
+  {
+    "FullName": "win32com/test/testxslt.xsl",
+    "Length": 2111
+  },
+  {
+    "FullName": "win32com/test/util.py",
+    "Length": 8340
+  },
+  {
+    "FullName": "win32comext/adsi/__init__.py",
+    "Length": 3708
+  },
+  {
+    "FullName": "win32comext/adsi/adsi.pyd",
+    "Length": 101376
+  },
+  {
+    "FullName": "win32comext/adsi/adsicon.py",
+    "Length": 12607
+  },
+  {
+    "FullName": "win32comext/adsi/demos/objectPicker.py",
+    "Length": 2009
+  },
+  {
+    "FullName": "win32comext/adsi/demos/scp.py",
+    "Length": 19693
+  },
+  {
+    "FullName": "win32comext/adsi/demos/search.py",
+    "Length": 4290
+  },
+  {
+    "FullName": "win32comext/adsi/demos/test.py",
+    "Length": 8649
+  },
+  {
+    "FullName": "win32comext/authorization/__init__.py",
+    "Length": 198
+  },
+  {
+    "FullName": "win32comext/authorization/authorization.pyd",
+    "Length": 29184
+  },
+  {
+    "FullName": "win32comext/authorization/demos/EditSecurity.py",
+    "Length": 8599
+  },
+  {
+    "FullName": "win32comext/authorization/demos/EditServiceSecurity.py",
+    "Length": 8241
+  },
+  {
+    "FullName": "win32comext/axcontrol/__init__.py",
+    "Length": 139
+  },
+  {
+    "FullName": "win32comext/axcontrol/axcontrol.pyd",
+    "Length": 147456
+  },
+  {
+    "FullName": "win32comext/axdebug/__init__.py",
+    "Length": 139
+  },
+  {
+    "FullName": "win32comext/axdebug/adb.py",
+    "Length": 18086
+  },
+  {
+    "FullName": "win32comext/axdebug/codecontainer.py",
+    "Length": 9314
+  },
+  {
+    "FullName": "win32comext/axdebug/contexts.py",
+    "Length": 2125
+  },
+  {
+    "FullName": "win32comext/axdebug/debugger.py",
+    "Length": 7244
+  },
+  {
+    "FullName": "win32comext/axdebug/documents.py",
+    "Length": 4297
+  },
+  {
+    "FullName": "win32comext/axdebug/dump.py",
+    "Length": 1809
+  },
+  {
+    "FullName": "win32comext/axdebug/expressions.py",
+    "Length": 6744
+  },
+  {
+    "FullName": "win32comext/axdebug/gateways.py",
+    "Length": 17951
+  },
+  {
+    "FullName": "win32comext/axdebug/stackframe.py",
+    "Length": 6032
+  },
+  {
+    "FullName": "win32comext/axdebug/util.py",
+    "Length": 3218
+  },
+  {
+    "FullName": "win32comext/axscript/__init__.py",
+    "Length": 139
+  },
+  {
+    "FullName": "win32comext/axscript/asputil.py",
+    "Length": 262
+  },
+  {
+    "FullName": "win32comext/axscript/axscript.pyd",
+    "Length": 94720
+  },
+  {
+    "FullName": "win32comext/axscript/Demos/client/asp/CreateObject.asp",
+    "Length": 511
+  },
+  {
+    "FullName": "win32comext/axscript/Demos/client/asp/caps.asp",
+    "Length": 1356
+  },
+  {
+    "FullName": "win32comext/axscript/Demos/client/asp/tut1.asp",
+    "Length": 156
+  },
+  {
+    "FullName": "win32comext/axscript/Demos/client/asp/interrupt/test.asp",
+    "Length": 77
+  },
+  {
+    "FullName": "win32comext/axscript/Demos/client/asp/interrupt/test.html",
+    "Length": 166
+  },
+  {
+    "FullName": "win32comext/axscript/Demos/client/asp/interrupt/test1.asp",
+    "Length": 94
+  },
+  {
+    "FullName": "win32comext/axscript/Demos/client/asp/interrupt/test1.html",
+    "Length": 166
+  },
+  {
+    "FullName": "win32comext/axscript/Demos/client/ie/CHARTPY.HTM",
+    "Length": 6687
+  },
+  {
+    "FullName": "win32comext/axscript/Demos/client/ie/FOO.HTM",
+    "Length": 990
+  },
+  {
+    "FullName": "win32comext/axscript/Demos/client/ie/MarqueeText1.htm",
+    "Length": 728
+  },
+  {
+    "FullName": "win32comext/axscript/Demos/client/ie/calc.htm",
+    "Length": 4145
+  },
+  {
+    "FullName": "win32comext/axscript/Demos/client/ie/dbgtest.htm",
+    "Length": 207
+  },
+  {
+    "FullName": "win32comext/axscript/Demos/client/ie/demo.htm",
+    "Length": 472
+  },
+  {
+    "FullName": "win32comext/axscript/Demos/client/ie/demo_check.htm",
+    "Length": 1631
+  },
+  {
+    "FullName": "win32comext/axscript/Demos/client/ie/demo_intro.htm",
+    "Length": 1654
+  },
+  {
+    "FullName": "win32comext/axscript/Demos/client/ie/demo_menu.htm",
+    "Length": 507
+  },
+  {
+    "FullName": "win32comext/axscript/Demos/client/ie/docwrite.htm",
+    "Length": 492
+  },
+  {
+    "FullName": "win32comext/axscript/Demos/client/ie/foo2.htm",
+    "Length": 3610
+  },
+  {
+    "FullName": "win32comext/axscript/Demos/client/ie/form.htm",
+    "Length": 506
+  },
+  {
+    "FullName": "win32comext/axscript/Demos/client/ie/marqueeDemo.htm",
+    "Length": 1221
+  },
+  {
+    "FullName": "win32comext/axscript/Demos/client/ie/mousetrack.htm",
+    "Length": 2311
+  },
+  {
+    "FullName": "win32comext/axscript/Demos/client/ie/pycom_blowing.gif",
+    "Length": 20926
+  },
+  {
+    "FullName": "win32comext/axscript/Demos/client/wsh/blank.pys",
+    "Length": 0
+  },
+  {
+    "FullName": "win32comext/axscript/Demos/client/wsh/excel.pys",
+    "Length": 1029
+  },
+  {
+    "FullName": "win32comext/axscript/Demos/client/wsh/registry.pys",
+    "Length": 1667
+  },
+  {
+    "FullName": "win32comext/axscript/Demos/client/wsh/test.pys",
+    "Length": 384
+  },
+  {
+    "FullName": "win32comext/axscript/client/__init__.py",
+    "Length": 28
+  },
+  {
+    "FullName": "win32comext/axscript/client/debug.py",
+    "Length": 8317
+  },
+  {
+    "FullName": "win32comext/axscript/client/error.py",
+    "Length": 9188
+  },
+  {
+    "FullName": "win32comext/axscript/client/framework.py",
+    "Length": 47513
+  },
+  {
+    "FullName": "win32comext/axscript/client/pydumper.py",
+    "Length": 2231
+  },
+  {
+    "FullName": "win32comext/axscript/client/pyscript.py",
+    "Length": 15664
+  },
+  {
+    "FullName": "win32comext/axscript/client/pyscript_rexec.py",
+    "Length": 2203
+  },
+  {
+    "FullName": "win32comext/axscript/client/scriptdispatch.py",
+    "Length": 3856
+  },
+  {
+    "FullName": "win32comext/axscript/server/__init__.py",
+    "Length": 0
+  },
+  {
+    "FullName": "win32comext/axscript/server/axsite.py",
+    "Length": 4275
+  },
+  {
+    "FullName": "win32comext/axscript/test/debugTest.pys",
+    "Length": 217
+  },
+  {
+    "FullName": "win32comext/axscript/test/debugTest.vbs",
+    "Length": 89
+  },
+  {
+    "FullName": "win32comext/axscript/test/leakTest.py",
+    "Length": 4851
+  },
+  {
+    "FullName": "win32comext/axscript/test/testHost.py",
+    "Length": 7939
+  },
+  {
+    "FullName": "win32comext/axscript/test/testHost4Dbg.py",
+    "Length": 2735
+  },
+  {
+    "FullName": "win32comext/bits/__init__.py",
+    "Length": 198
+  },
+  {
+    "FullName": "win32comext/bits/bits.pyd",
+    "Length": 65024
+  },
+  {
+    "FullName": "win32comext/bits/test/show_all_jobs.py",
+    "Length": 1567
+  },
+  {
+    "FullName": "win32comext/bits/test/test_bits.py",
+    "Length": 3999
+  },
+  {
+    "FullName": "win32comext/directsound/__init__.py",
+    "Length": 139
+  },
+  {
+    "FullName": "win32comext/directsound/directsound.pyd",
+    "Length": 78336
+  },
+  {
+    "FullName": "win32comext/directsound/test/__init__.py",
+    "Length": 66
+  },
+  {
+    "FullName": "win32comext/directsound/test/ds_record.py",
+    "Length": 1463
+  },
+  {
+    "FullName": "win32comext/directsound/test/ds_test.py",
+    "Length": 13364
+  },
+  {
+    "FullName": "win32comext/ifilter/__init__.py",
+    "Length": 41
+  },
+  {
+    "FullName": "win32comext/ifilter/ifilter.pyd",
+    "Length": 30720
+  },
+  {
+    "FullName": "win32comext/ifilter/ifiltercon.py",
+    "Length": 3269
+  },
+  {
+    "FullName": "win32comext/ifilter/demo/filterDemo.py",
+    "Length": 11775
+  },
+  {
+    "FullName": "win32comext/internet/__init__.py",
+    "Length": 139
+  },
+  {
+    "FullName": "win32comext/internet/inetcon.py",
+    "Length": 11879
+  },
+  {
+    "FullName": "win32comext/internet/internet.pyd",
+    "Length": 95232
+  },
+  {
+    "FullName": "win32comext/mapi/__init__.py",
+    "Length": 490
+  },
+  {
+    "FullName": "win32comext/mapi/emsabtags.py",
+    "Length": 50241
+  },
+  {
+    "FullName": "win32comext/mapi/exchange.pyd",
+    "Length": 138752
+  },
+  {
+    "FullName": "win32comext/mapi/mapi.pyd",
+    "Length": 249344
+  },
+  {
+    "FullName": "win32comext/mapi/mapitags.py",
+    "Length": 52360
+  },
+  {
+    "FullName": "win32comext/mapi/mapiutil.py",
+    "Length": 7180
+  },
+  {
+    "FullName": "win32comext/mapi/demos/mapisend.py",
+    "Length": 3668
+  },
+  {
+    "FullName": "win32comext/propsys/__init__.py",
+    "Length": 28
+  },
+  {
+    "FullName": "win32comext/propsys/propsys.pyd",
+    "Length": 142336
+  },
+  {
+    "FullName": "win32comext/propsys/pscon.py",
+    "Length": 49543
+  },
+  {
+    "FullName": "win32comext/propsys/test/testpropsys.py",
+    "Length": 230
+  },
+  {
+    "FullName": "win32comext/shell/__init__.py",
+    "Length": 139
+  },
+  {
+    "FullName": "win32comext/shell/shell.pyd",
+    "Length": 545792
+  },
+  {
+    "FullName": "win32comext/shell/shellcon.py",
+    "Length": 51330
+  },
+  {
+    "FullName": "win32comext/shell/demos/IActiveDesktop.py",
+    "Length": 2205
+  },
+  {
+    "FullName": "win32comext/shell/demos/IFileOperationProgressSink.py",
+    "Length": 5309
+  },
+  {
+    "FullName": "win32comext/shell/demos/IShellLinkDataList.py",
+    "Length": 1984
+  },
+  {
+    "FullName": "win32comext/shell/demos/ITransferAdviseSink.py",
+    "Length": 2629
+  },
+  {
+    "FullName": "win32comext/shell/demos/IUniformResourceLocator.py",
+    "Length": 1708
+  },
+  {
+    "FullName": "win32comext/shell/demos/browse_for_folder.py",
+    "Length": 1547
+  },
+  {
+    "FullName": "win32comext/shell/demos/create_link.py",
+    "Length": 2409
+  },
+  {
+    "FullName": "win32comext/shell/demos/dump_link.py",
+    "Length": 1746
+  },
+  {
+    "FullName": "win32comext/shell/demos/explorer_browser.py",
+    "Length": 5099
+  },
+  {
+    "FullName": "win32comext/shell/demos/shellexecuteex.py",
+    "Length": 489
+  },
+  {
+    "FullName": "win32comext/shell/demos/viewstate.py",
+    "Length": 2386
+  },
+  {
+    "FullName": "win32comext/shell/demos/walk_shell_folders.py",
+    "Length": 693
+  },
+  {
+    "FullName": "win32comext/shell/demos/servers/column_provider.py",
+    "Length": 3826
+  },
+  {
+    "FullName": "win32comext/shell/demos/servers/context_menu.py",
+    "Length": 4540
+  },
+  {
+    "FullName": "win32comext/shell/demos/servers/copy_hook.py",
+    "Length": 2756
+  },
+  {
+    "FullName": "win32comext/shell/demos/servers/empty_volume_cache.py",
+    "Length": 7830
+  },
+  {
+    "FullName": "win32comext/shell/demos/servers/folder_view.py",
+    "Length": 30173
+  },
+  {
+    "FullName": "win32comext/shell/demos/servers/icon_handler.py",
+    "Length": 2601
+  },
+  {
+    "FullName": "win32comext/shell/demos/servers/shell_view.py",
+    "Length": 38141
+  },
+  {
+    "FullName": "win32comext/shell/test/testSHFileOperation.py",
+    "Length": 2167
+  },
+  {
+    "FullName": "win32comext/shell/test/testShellFolder.py",
+    "Length": 603
+  },
+  {
+    "FullName": "win32comext/shell/test/testShellItem.py",
+    "Length": 2960
+  },
+  {
+    "FullName": "win32comext/taskscheduler/__init__.py",
+    "Length": 198
+  },
+  {
+    "FullName": "win32comext/taskscheduler/taskscheduler.pyd",
+    "Length": 53760
+  },
+  {
+    "FullName": "win32comext/taskscheduler/test/test_addtask.py",
+    "Length": 2278
+  },
+  {
+    "FullName": "win32comext/taskscheduler/test/test_addtask_1.py",
+    "Length": 2160
+  },
+  {
+    "FullName": "win32comext/taskscheduler/test/test_addtask_2.py",
+    "Length": 1659
+  },
+  {
+    "FullName": "win32comext/taskscheduler/test/test_localsystem.py",
+    "Length": 75
+  },
+  {
+    "FullName": "pywin32-311.dist-info/METADATA",
+    "Length": 10011
+  },
+  {
+    "FullName": "pywin32-311.dist-info/WHEEL",
+    "Length": 101
+  },
+  {
+    "FullName": "pywin32-311.dist-info/entry_points.txt",
+    "Length": 132
+  },
+  {
+    "FullName": "pywin32-311.dist-info/top_level.txt",
+    "Length": 1335
+  },
+  {
+    "FullName": "pywin32-311.dist-info/RECORD",
+    "Length": 53025
+  }
+]

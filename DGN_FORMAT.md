@@ -28,6 +28,9 @@ Each schema's `editing` section lists `access`, `editable_fields` and
 `.rw` requires a supported editable input, but IDs, original snapshots and
 structural values inside it can remain read-only. Empty/immutable views use `.ro`.
 These markers do not set filesystem permissions or provide trusted authorization.
+The shared editor derives capabilities from a fresh extraction of `original.dgn`,
+compares records/snapshots/structure and ignores mutable `editing` labels. Its
+replacement-only patches reject unsupported paths/types/shapes/encodings.
 Read-only stream/framing schemas are retained for reconstruction and encoded
 changes reject. Codec-owned sizes/counts/offsets are derived, not manually edited.
 
@@ -67,3 +70,15 @@ links, commands, applications, databases or embedded documents.
 Geometry edits use stored units. They do not repair spatial indexes, cell ranges,
 dependencies or text metrics. Container fidelity does not prove application-level
 correctness. Use approved isolated application checks for edited outputs.
+
+## Application Sidecar
+
+`.dgn-explorer/` contains writer ownership, `transaction.json` during publication,
+and optional `pending.json` for UI edit recovery. It is not a new workspace
+version or editable DGN data. The old packer ignores it. Reopening recovers an
+interrupted batch before validation; user-created notes/workspaces remain intact.
+The shared editor supports JSON-view v1/v2, including unmarked/hex folders.
+Binary-only legacy inputs remain a codec feature and need re-extraction for the
+editor. Save As uses a staged disposable snapshot; it never implicitly saves the
+workspace. New output is published only after verification, without clobbering an
+existing destination. OS writer locks coordinate cooperating tool operations.

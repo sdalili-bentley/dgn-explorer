@@ -1,0 +1,94 @@
+[
+  {
+    "FullName": "packaging/__init__.py",
+    "Length": 494
+  },
+  {
+    "FullName": "packaging/_elffile.py",
+    "Length": 3286
+  },
+  {
+    "FullName": "packaging/_manylinux.py",
+    "Length": 9596
+  },
+  {
+    "FullName": "packaging/_musllinux.py",
+    "Length": 2694
+  },
+  {
+    "FullName": "packaging/_parser.py",
+    "Length": 10221
+  },
+  {
+    "FullName": "packaging/_structures.py",
+    "Length": 1431
+  },
+  {
+    "FullName": "packaging/_tokenizer.py",
+    "Length": 5310
+  },
+  {
+    "FullName": "packaging/markers.py",
+    "Length": 12049
+  },
+  {
+    "FullName": "packaging/metadata.py",
+    "Length": 34739
+  },
+  {
+    "FullName": "packaging/py.typed",
+    "Length": 0
+  },
+  {
+    "FullName": "packaging/requirements.py",
+    "Length": 2947
+  },
+  {
+    "FullName": "packaging/specifiers.py",
+    "Length": 40055
+  },
+  {
+    "FullName": "packaging/tags.py",
+    "Length": 22745
+  },
+  {
+    "FullName": "packaging/utils.py",
+    "Length": 5050
+  },
+  {
+    "FullName": "packaging/version.py",
+    "Length": 16676
+  },
+  {
+    "FullName": "packaging/licenses/__init__.py",
+    "Length": 5715
+  },
+  {
+    "FullName": "packaging/licenses/_spdx.py",
+    "Length": 48398
+  },
+  {
+    "FullName": "packaging-25.0.dist-info/licenses/LICENSE",
+    "Length": 197
+  },
+  {
+    "FullName": "packaging-25.0.dist-info/licenses/LICENSE.APACHE",
+    "Length": 10174
+  },
+  {
+    "FullName": "packaging-25.0.dist-info/licenses/LICENSE.BSD",
+    "Length": 1344
+  },
+  {
+    "FullName": "packaging-25.0.dist-info/WHEEL",
+    "Length": 82
+  },
+  {
+    "FullName": "packaging-25.0.dist-info/METADATA",
+    "Length": 3281
+  },
+  {
+    "FullName": "packaging-25.0.dist-info/RECORD",
+    "Length": 1860
+  }
+]

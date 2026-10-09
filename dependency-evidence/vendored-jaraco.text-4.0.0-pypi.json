@@ -1,0 +1,129 @@
+{
+  "info": {
+    "author": null,
+    "author_email": "\"Jason R. Coombs\" <jaraco@jaraco.com>",
+    "bugtrack_url": null,
+    "classifiers": [
+      "Development Status :: 5 - Production/Stable",
+      "Intended Audience :: Developers",
+      "License :: OSI Approved :: MIT License",
+      "Programming Language :: Python :: 3",
+      "Programming Language :: Python :: 3 :: Only"
+    ],
+    "description": ".. image:: https://img.shields.io/pypi/v/jaraco.text.svg\n   :target: https://pypi.org/project/jaraco.text\n\n.. image:: https://img.shields.io/pypi/pyversions/jaraco.text.svg\n\n.. image:: https://github.com/jaraco/jaraco.text/actions/workflows/main.yml/badge.svg\n   :target: https://github.com/jaraco/jaraco.text/actions?query=workflow%3A%22tests%22\n   :alt: tests\n\n.. image:: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/charliermarsh/ruff/main/assets/badge/v2.json\n    :target: https://github.com/astral-sh/ruff\n    :alt: Ruff\n\n.. image:: https://readthedocs.org/projects/jaracotext/badge/?version=latest\n   :target: https://jaracotext.readthedocs.io/en/latest/?badge=latest\n\n.. image:: https://img.shields.io/badge/skeleton-2024-informational\n   :target: https://blog.jaraco.com/skeleton\n\n.. image:: https://tidelift.com/badges/package/pypi/jaraco.text\n   :target: https://tidelift.com/subscription/pkg/pypi-jaraco.text?utm_source=pypi-jaraco.text&utm_medium=readme\n\n\nThis package provides handy routines for dealing with text, such as\nwrapping, substitution, trimming, stripping, prefix and suffix removal,\nline continuation, indentation, comment processing, identifier processing,\nvalues parsing, case insensitive comparison, and more. See the docs\n(linked in the badge above) for the detailed documentation and examples.\n\nLayouts\n=======\n\nOne of the features of this package is the layouts module, which\nprovides a simple example of translating keystrokes from one keyboard\nlayout to another::\n\n    echo qwerty | python -m jaraco.text.to-dvorak\n    ',.pyf\n    echo  \"',.pyf\" | python -m jaraco.text.to-qwerty\n    qwerty\n\nNewline Reporting\n=================\n\nNeed to know what newlines appear in a file?\n\n::\n\n    $ python -m jaraco.text.show-newlines README.rst\n    newline is '\\n'\n\nFor Enterprise\n==============\n\nAvailable as part of the Tidelift Subscription.\n\nThis project and the maintainers of thousands of other packages are working with Tidelift to deliver one enterprise subscription that covers all of the open source you use.\n\n`Learn more <https://tidelift.com/subscription/pkg/pypi-jaraco.text?utm_source=pypi-jaraco.text&utm_medium=referral&utm_campaign=github>`_.\n",
+    "description_content_type": "text/x-rst",
+    "docs_url": null,
+    "download_url": null,
+    "downloads": {
+      "last_day": -1,
+      "last_month": -1,
+      "last_week": -1
+    },
+    "dynamic": null,
+    "home_page": null,
+    "keywords": null,
+    "license": null,
+    "license_expression": null,
+    "license_files": null,
+    "maintainer": null,
+    "maintainer_email": null,
+    "name": "jaraco.text",
+    "package_url": "https://pypi.org/project/jaraco.text/",
+    "platform": null,
+    "project_url": "https://pypi.org/project/jaraco.text/",
+    "project_urls": {
+      "Source": "https://github.com/jaraco/jaraco.text"
+    },
+    "provides_extra": [
+      "doc",
+      "inflect",
+      "test"
+    ],
+    "release_url": "https://pypi.org/project/jaraco.text/4.0.0/",
+    "requires_dist": [
+      "jaraco.functools",
+      "jaraco.context>=4.1",
+      "autocommand",
+      "more-itertools",
+      "importlib-resources; python_version < \"3.9\"",
+      "sphinx>=3.5; extra == \"doc\"",
+      "jaraco.packaging>=9.3; extra == \"doc\"",
+      "rst.linker>=1.9; extra == \"doc\"",
+      "furo; extra == \"doc\"",
+      "sphinx-lint; extra == \"doc\"",
+      "jaraco.tidelift>=1.4; extra == \"doc\"",
+      "inflect; extra == \"inflect\"",
+      "pytest!=8.1.*,>=6; extra == \"test\"",
+      "pytest-checkdocs>=2.4; extra == \"test\"",
+      "pytest-cov; extra == \"test\"",
+      "pytest-mypy; extra == \"test\"",
+      "pytest-enabler>=2.2; extra == \"test\"",
+      "pathlib2; python_version < \"3.10\" and extra == \"test\"",
+      "pytest-ruff>=0.2.1; sys_platform != \"cygwin\" and extra == \"test\""
+    ],
+    "requires_python": ">=3.8",
+    "summary": "Module for text manipulation",
+    "version": "4.0.0",
+    "yanked": false,
+    "yanked_reason": null
+  },
+  "last_serial": 38927325,
+  "ownership": {
+    "organization": null,
+    "roles": [
+      {
+        "role": "Owner",
+        "user": "jaraco"
+      }
+    ]
+  },
+  "urls": [
+    {
+      "comment_text": "",
+      "core-metadata": {
+        "sha256": "5c2fd09012c954f139b10624978d5335a654c34014cd06f6f466ca683dbc9c56"
+      },
+      "digests": {
+        "blake2b_256": "2f29350039bde32fbd7000e2fb81e1c4e42a857b5e77bcbaf6267c806c70ab9a",
+        "md5": "3f44addfb2feae692dabdaf293425f12",
+        "sha256": "08de508939b5e681b14cdac2f1f73036cd97f6f8d7b25e96b8911a9a428ca0d1"
+      },
+      "downloads": -1,
+      "filename": "jaraco.text-4.0.0-py3-none-any.whl",
+      "has_sig": false,
+      "md5_digest": "3f44addfb2feae692dabdaf293425f12",
+      "packagetype": "bdist_wheel",
+      "python_version": "py3",
+      "requires_python": ">=3.8",
+      "size": 11542,
+      "upload_time": "2024-07-26T18:08:39",
+      "upload_time_iso_8601": "2024-07-26T18:08:39.667759Z",
+      "url": "https://files.pythonhosted.org/packages/2f/29/350039bde32fbd7000e2fb81e1c4e42a857b5e77bcbaf6267c806c70ab9a/jaraco.text-4.0.0-py3-none-any.whl",
+      "yanked": false,
+      "yanked_reason": null
+    },
+    {
+      "comment_text": "",
+      "core-metadata": false,
+      "digests": {
+        "blake2b_256": "4f001b4dbbc5c6dcb87a4278cc229b2b560484bf231bba7922686c5139e5f934",
+        "md5": "3c519c7a49d6448e6dc2073d466afd39",
+        "sha256": "5b71fecea69ab6f939d4c906c04fee1eda76500d1641117df6ec45b865f10db0"
+      },
+      "downloads": -1,
+      "filename": "jaraco_text-4.0.0.tar.gz",
+      "has_sig": false,
+      "md5_digest": "3c519c7a49d6448e6dc2073d466afd39",
+      "packagetype": "sdist",
+      "python_version": "source",
+      "requires_python": ">=3.8",
+      "size": 17009,
+      "upload_time": "2024-07-26T18:08:41",
+      "upload_time_iso_8601": "2024-07-26T18:08:41.262759Z",
+      "url": "https://files.pythonhosted.org/packages/4f/00/1b4dbbc5c6dcb87a4278cc229b2b560484bf231bba7922686c5139e5f934/jaraco_text-4.0.0.tar.gz",
+      "yanked": false,
+      "yanked_reason": null
+    }
+  ],
+  "vulnerabilities": []
+}

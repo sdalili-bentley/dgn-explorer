@@ -1,0 +1,22 @@
+[
+  {
+    "path": "olefile/LICENSE.txt",
+    "size": 2915,
+    "sha256": "0c349bed31cd2af10983a8d95e7455e2d15744b98585b55941ca35bd70f5bcd7"
+  },
+  {
+    "path": "olefile/doc/License.html",
+    "size": 3833,
+    "sha256": "0dbceed92e36dbdc11d21154b2b4c40b7e0d766c0c12d6e704df3edca8974ff9"
+  },
+  {
+    "path": "olefile/doc/License.md",
+    "size": 3191,
+    "sha256": "17cc0185ea7dac964e318ad80b7000bd65c09485c3fdec8617c7422ea54a9105"
+  },
+  {
+    "path": "olefile-0.47.dist-info/LICENSE.txt",
+    "size": 2846,
+    "sha256": "cf1498d5b834b3758a89d06d224a1502c54a28b3a852f46130b761deaa4890d1"
+  }
+]
