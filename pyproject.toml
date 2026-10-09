@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dgn-explorer"
+version = "0.2.0"
+description = "Reversible DGN V8 metadata workspaces with verified compound-file rebuilding"
+readme = "README.md"
+requires-python = ">=3.11"
+dynamic = ["dependencies"]
+
+[project.scripts]
+dgn-explorer = "dgn_folder:main"
+dgn-workspace = "dgn_folder:main"
+
+[tool.setuptools]
+py-modules = ["dgn_folder"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
