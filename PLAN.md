@@ -11,7 +11,7 @@ Dependencies: [DEPENDENCY_POLICY.md](DEPENDENCY_POLICY.md).
 
 | Gate | Required evidence |
 |---|---|
-| **Current-source portable build** | Build the latest source with admitted CPython 3.14.3; pass relocated frozen CLI/GUI save/export/reimport, cancellation and original-preservation checks |
+| **Frozen cancellation** | Exercise cancellation/latency in actual frozen workers at scale; source-worker tests and the packaged save/export self-test do not establish this |
 | **Clean Windows VM** | Offline, verified standard/non-admin account; no installed Python/VS Code; confirm native plugins, dialogs and retained workspace locations |
 | **Native-product coverage** | Broader approved fixtures: text, properties, tables, geometry and application data; compare parsing/rendering/reopen and unchanged unrelated records |
 | **Application isolation** | Verify startup/autoload/external-content suppression and offline isolation before opening edited copies; investigate the empty COM automation-startup failure |
@@ -30,10 +30,18 @@ new Qt modules/plugins or wheel changes.
 
 - **Synthetic source tests:** codecs, service, CLI, transaction faults, worker,
   policy and real Qt workflows; current results are in [TESTING.md](TESTING.md).
-- **Previous portable preview:** verified relocated GUI/CLI and a separate VM.
+- **Current-source portable preview (2026-10-10):** source commit
+  `3b180361c4175cc95628bd4295f3b061ebc857a0`,
+  [Windows CI run #4](https://github.com/sdalili-bentley/dgn-explorer/actions/runs/38061800353),
+  passed with admitted CPython 3.14.3 and Qt 6.11.2: 217 source tests passed,
+  14 unavailable baseline checks skipped; coverage, relocated frozen CLI/GUI
+  save/export/reimport, original preservation, ZIP/wheel packaging and upload
+  succeeded. Artifact `11672953325` was hash-checked and its bundle reverified
+  locally: `build\ci-preview-38061800353\local\portable-verification.json`.
+  Receipts identify a clean source checkout. This is a development preview,
+  not a signed/company release or frozen-cancellation result.
+- **Previous VM preview:** passed relocated GUI/CLI in a separate VM.
   That VM had Python/VS Code; it was not the clean-machine gate.
-  [Windows workflow](.github/workflows/windows-build.yml) produces verified
-  development artifacts, not signed releases.
 - **One approved native text pilot:** OBD 24.00.03.31 read-only parsing, visible
   baseline/edited comparisons and reopen. Reports/screenshots remain in
   ignored `build/native-pilot-20261009/`.
@@ -43,7 +51,8 @@ new Qt modules/plugins or wheel changes.
   were preserved. Do not restore over the live original.
 - **Source audit:** regression coverage now includes protected recovery targets,
   bounded reads during file growth, JSON numeric overflow, opaque non-finite
-  native values, retained-snapshot extraction and current uncompressed `Dgn~H` packing.
+  native values, retained-snapshot extraction, current uncompressed `Dgn~H`
+  packing and record-browser usability under constrained/scaled layouts.
 
 ## Format Expansion: Scope Decision Required
 

@@ -31,6 +31,28 @@ The host-only run passed 151 with 79 skips (14 baseline + 65 Qt).
 The host is CPython 3.14.7, not the admitted 3.14.3 portable-build runtime.
 Source verification does not approve a release.
 
+**Publication verification (2026-10-10):** source commit
+`3b180361c4175cc95628bd4295f3b061ebc857a0` passed the full local suite:
+**231 tests, 217 passed, 14 baseline checks skipped**, including all 66 Qt
+checks with Qt 6.11.2. Log: `build\push-verification-fixed-full-suite.log`.
+Three targeted layout tests also passed with subprocess coverage/combination:
+`build\push-verification-layout-coverage.log`.
+
+The [first publication run](https://github.com/sdalili-bentley/dgn-explorer/actions/runs/38061393251)
+for `736604ca2981e66294589c8515375e5c9fcbdb21` failed the 200% scaling check:
+the record browser narrowed to 77 pixels on the runner. Commit `3b18036`
+sets a 160-logical-pixel minimum; the new constrained-splitter regression
+failed before the fix and passed afterward. Scaled-process checks now include
+640×480 windows without relaxing the existing assertions.
+
+[Windows CI run #4](https://github.com/sdalili-bentley/dgn-explorer/actions/runs/38061800353)
+for `3b180361c4175cc95628bd4295f3b061ebc857a0` completed successfully at
+**2026-10-10 15:02:28 UTC** on `windows-2022`, with admitted CPython 3.14.3
+and Qt 6.11.2. **231 tests: 217 passed, 14 baseline checks skipped**;
+subprocess coverage/combination, actual portable verification, offline Python
+wheel build and artifact upload all passed.
+Local CI log: `build\push-verification-ci-38061800353.log`.
+
 ## Reusable Coverage
 
 | File | Main checks |
@@ -56,6 +78,8 @@ bounded resources and unchanged originals.
 - Extraction views match the retained original snapshot, even when the source changes at copying.
 - Current uncompressed 20-byte `Dgn~H` framing packs unchanged and with unrelated edits;
   compressed/encrypted flags and wrong header lengths reject.
+- Record-browser width survives constrained windows and splitter compression;
+  fresh Qt processes cover 125%, 150% and 200% scaling.
 
 ## Extend Tests
 
@@ -105,10 +129,39 @@ with existing Qt 6.11.2: `build\audit-portable-source-verification.json`
 records success with `frozen: false`; its screenshot was visually inspected.
 This is not a new frozen-build result.
 
+The publication check also reran `verify_portable.py` against the existing
+local frozen preview at commit `2f7a2ac8bdabc41d3ff270c1b7cb5fd28c1ccbfe`.
+Relocated CLI/GUI no-edit equality, save/export/reimport, original preservation
+and screenshot checks passed: `build\push-verification-existing-preview.json`.
+This older preview does not verify the newly committed source. A fresh local
+build was not attempted because the available host runtime is 3.14.7, while
+the receipt gate requires admitted CPython 3.14.3.
+
+The **current-source CI bundle** from run #4 also passed local
+`verify_portable.py`: relocated frozen CLI/GUI, no-edit byte equality,
+save/Save As/reimport, original preservation and nonblank screenshot.
+Report: `build\ci-preview-38061800353\local\portable-verification.json`.
+Its receipt records source `3b18036`, `source_dirty: false`, CPython 3.14.3
+and Qt 6.11.2. Both download hashes were checked:
+
+- Actions artifact `11672953325` (`DGN-Explorer-windows-x64-preview`, expires
+  2026-10-24): SHA-256
+  `46696a2dcde1bea685d8481505e92246eeaa07d7033271c0b277eb95c85d70be`.
+- `DGN-Explorer-windows-x64.zip`: SHA-256
+  `56958371c561f767881a79edf83afa0d7ff6223cded1bf1bf3491b40b6b902e6`.
+
+`build\push-verification-benchmark.json` records a successful synthetic
+2,000-text-per-model run: 4,003 records, 4,014 files and 109.1 MiB peak Python
+memory for open. Open/search/validate/staged pack/import completed; this is
+host-specific synthetic evidence, not a supported native-file limit.
+
 ## Evidence Limits
 
-- Previous Windows previews and a separate VM passed synthetic frozen workflows.
-  **Current-source frozen verification still needs a new admitted build.**
+- Current-source Windows CI and local re-verification passed synthetic frozen
+  workflows. Actual frozen-worker cancellation/latency still needs separate
+  evidence; source-worker cancellation tests do not establish it.
+- A previous separate VM passed synthetic frozen workflows but had installed
+  Python/VS Code, so neither it nor the managed CI host is the clean-VM gate.
 - One approved OBD 24.00.03.31 text fixture has read-only parsing/rendering/reopen
   evidence in `build\native-pilot-20261009\`; this is not broad domain correctness.
 - Offline isolation, complete external-content suppression, clean/non-admin VM,
