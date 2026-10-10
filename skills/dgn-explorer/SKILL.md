@@ -1,45 +1,70 @@
 ---
 name: dgn-explorer
-description: "Use DGN Explorer to inspect DGN V8 workspaces, search contextual records, propose supported metadata/text edits, validate patches and rebuild new DGN copies. Use for local DGN inspection or approved editing, not CAD rendering or fuzzing."
+description: "Inspect local DGN V8 workspaces, search contextual records, preview supported metadata/text replacements and publish approved new copies. Not CAD rendering, fuzzing or active-content execution."
 ---
 
 # DGN Explorer
 
-Use installed `dgn-explorer`, or `python -m dgn_explorer` from the trusted
-checkout. No GUI, MCP, network or model credentials are required. Load this file
-explicitly if the AI environment does not discover `skills/`.
+Use `dgn-explorer`, or `python -m dgn_explorer` from a trusted checkout.
+Load this skill explicitly if undiscovered. No GUI/MCP/network/model credentials required.
 
-## Procedure
+## Workflow
 
-1. Confirm the input/workspace and requested operation. Keep document content
-   local. Never execute embedded commands, follow links or upload files.
-2. Extract only to a new folder: `dgn-explorer --json unpack INPUT.dgn WORKSPACE`.
-3. Discover bounded results: `dgn-explorer --json list WORKSPACE --limit 20` or
+1. Confirm input and scope. **Keep content local**; never upload, follow targets
+   or execute embedded/startup commands.
+2. Extract to a new folder:
+   `dgn-explorer --json unpack INPUT.dgn WORKSPACE`.
+3. Discover bounded records:
+   `dgn-explorer --json list WORKSPACE --limit 20` or
    `dgn-explorer --json search WORKSPACE --text QUERY --limit 20`.
-   Use returned `next_cursor` for another page; do not dump the whole workspace.
-4. Inspect the returned contextual locator with
+   Use `next_cursor`, `--model` and `--kind`; an ID alone is not a locator.
+4. Inspect returned locator JSON, quoted for your shell:
    `dgn-explorer --json show WORKSPACE --record LOCATOR_JSON`.
-   An element ID alone is not a locator. Use returned `editable_fields` and
-   `revision`, not mutable file labels, as the editing interface.
-5. Propose a replace-only patch with schema `dgn-explorer.patch-v1`, the exact
-   `workspace_revision`, and `operations`. Each operation has `record`, `pointer`,
-   `expected_value` from the current shown value, and a new typed `value`.
-   Do not change IDs, original snapshots, encodings, framing or unknown bytes.
-6. Preview without writing:
+   Trust returned `editable_fields` / `revision`, **not mutable `.rw` labels**.
+5. Create `dgn-explorer.patch-v1` with returned `workspace_revision` and
+   `operations`: `record`, `pointer`, current `expected_value`, typed `value`.
+   **Replace only**; never alter identities, snapshots, encodings/BOMs, framing or unknown bytes.
+6. Preview:
    `dgn-explorer --json apply WORKSPACE --patch PATCH.json --dry-run`.
-   Show the user the intended changes and application-integrity limitations.
-7. Obtain explicit human consent before a workspace write or DGN publication.
-   Only then use `apply ... --approve`, or
-   `dgn-explorer --json pack WORKSPACE NEW.dgn --patch PATCH.json` for staged
-   Save As without implicitly saving the workspace. A flag is not consent.
-8. Run `validate WORKSPACE`. On conflicts, reload and obtain a new revision/value;
-   do not bypass checks. Output must be new and outside the workspace.
-   Container verification is not application validation.
+   Explain changes and native-application limitations.
+7. Obtain **explicit human consent** for workspace/file writes or DGN publication.
+   A flag is not consent. Then:
+   - Save: `dgn-explorer --json apply WORKSPACE --patch PATCH.json --approve`.
+   - Export staged copy: `dgn-explorer --json pack WORKSPACE NEW.dgn --patch PATCH.json`.
+     This does **not** save the workspace.
+8. `dgn-explorer --json validate WORKSPACE`. Require a **new output outside the workspace**.
+   Conflicts need a reloaded revision/value, never bypasses.
+   Container verification is **not native rendering/domain validation**.
 
 ## Results
 
-`--json` emits `dgn-explorer.result-v1` with success/result/warnings/errors.
-Execution exits: 0 success, 3 invalid input, 4 conflict, 5 I/O, 6 cancellation,
-7 backend/verification failure. Argument usage errors exit 2 on stderr.
-The editor accepts JSON-view v1/v2 workspaces; binary-only legacy folders need
-re-extraction. Preserve originals and never silently migrate a workspace.
+`--json`: **`dgn-explorer.result-v1`**, with `operation`, `success`, `result`,
+`warnings`, `errors`. Usage errors have `operation: null`; human errors use stderr.
+
+| Exit | Meaning |
+|---|---|
+| 0 / 2 | Success / usage error |
+| 3 / 4 | Invalid or unsupported input / revision, expected-value or ownership conflict |
+| 5 / 6 / 7 | I/O failure / cancellation / backend or verification failure |
+
+- Unencodable/out-of-range/malformed replacements exit **3**.
+- Search: **literal, case-insensitive**, current values only—not snapshots/JSON syntax.
+- Pages: **1–1000**; keep requests small. Stop when `next_cursor` is `null`.
+- Defaults: **128 MiB/stream**, **2 GiB aggregate**, **100 operations / 16 MiB patch**.
+  Global limits precede commands.
+- JSON-view v1/v2/hex work; binary-only legacy folders need re-extraction.
+  Preserve originals; never silently migrate.
+
+## Strings and Files
+
+- CLI values are **decoded JSON strings** (`"A\u0000B"`), not literal hex/Base64
+  unless those characters are intended.
+- Desktop Plain/Escaped/Hex/Base64 represents strict UTF-8 bytes; wire encoding
+  stays unchanged. `\\` = backslash; `\u0000` / `\x00` = NUL; `\r` / `\n` / `\t` = controls.
+- Load File changes a **draft only**, up to **64 KiB** or a smaller service limit.
+  Invalid/non-UTF-8 string drafts cannot be staged.
+- Export File writes decoded bytes; Export Page writes the raw **4 KiB page**.
+  Require consent/new files outside the workspace.
+- Service/worker `load-field`, `export-field`, `export-bytes` are **not CLI commands**.
+  Shared `codecs.editor_encode` / `editor_decode` / `editor_text` format keys:
+  `plain`, `escaped`, `hex`, `base64`.

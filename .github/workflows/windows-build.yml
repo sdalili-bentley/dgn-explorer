@@ -49,8 +49,10 @@ jobs:
       - name: Run backend and real desktop tests
         run: |
           $env:QT_QPA_PLATFORM = 'windows'
-          & $env:DGN_PYTHON -m coverage run --branch --source=dgn_explorer,dgn_folder -m unittest discover -s . -p 'test_*.py' -v
+          & $env:DGN_PYTHON -m coverage run -m unittest discover -s . -p 'test_*.py' -v
           if ($LASTEXITCODE -ne 0) { throw 'Regression tests fail' }
+          & $env:DGN_PYTHON -m coverage combine
+          if ($LASTEXITCODE -ne 0) { throw 'Coverage combine fails' }
           & $env:DGN_PYTHON -m coverage json -o build/coverage.json
           if ($LASTEXITCODE -ne 0) { throw 'Coverage report fails' }
       - name: Build and verify relocated portable preview

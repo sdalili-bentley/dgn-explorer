@@ -9,17 +9,96 @@ import tomllib
 from typing import Any, cast
 import unittest
 from unittest.mock import patch
+from copy import deepcopy
 import zlib
 
 import dgn_folder as tool
 import dgn_fixture_catalog as fixtures
 import xml.etree.ElementTree as ET
+from test_support import becxml_document, editor_test_root, element_chunk, feature_streams, property_stream, tagged_count, user_linkage, xml_fragment
 
 
 SAMPLE = Path(os.environ.get("DGN_EXPLORER_SAMPLE") or Path(__file__).with_name("sample.dgn"))
 
 
 class RepresentationTests(unittest.TestCase):
+    def test_nonfinite_native_numbers_remain_opaque_and_roundtrip(self):
+        for variant, format in ((4, "f"), (5, "d")):
+            for number in (float("nan"), float("inf"), float("-inf")):
+                with self.subTest(surface="property", variant=variant, number=number):
+                    payload = struct.pack("<I" + format, variant, number)
+                    self.assertIsNone(tool.property_value(payload, 1252))
+                    raw = property_stream()[:48] + struct.pack("<4I", 16 + len(payload), 1, 2, 16) + payload
+                    view = tool.properties_view(raw)
+                    self.assertEqual(view["sections"][0]["properties"][0]["payload"]["kind"], "opaque-bytes")
+                    self.assertEqual(tool.view_bytes(view), raw)
+                    json.dumps(view, allow_nan=False)
+        for element_type, raw in ((3, struct.pack("<4d", float("nan"), 0, 1, 1)),
+                                  (4, struct.pack("<2I4d", 2, 0, 0, 0, float("inf"), 1)),
+                                  (15, struct.pack("<5d", 1, 2, 0, float("-inf"), 0))):
+            with self.subTest(surface="geometry", element_type=element_type):
+                self.assertIsNone(tool.geometry_view(raw, element_type, False))
+                chunk = element_chunk(element_type, raw, graphics=True)
+                view = tool.element_chunks_view(chunk)
+                json.dumps(view, allow_nan=False)
+                self.assertEqual(tool.view_bytes(view), chunk)
+        for offset in (16, 104, 112, 120, 128, 136, 144, 152):
+            with self.subTest(surface="text", offset=offset):
+                raw = bytearray(element_chunk(17, bytes(70), graphics=True))
+                struct.pack_into("<d", raw, 12 + offset, float("nan"))
+                view = tool.element_chunks_view(bytes(raw))
+                json.dumps(view, allow_nan=False)
+                self.assertEqual(tool.view_bytes(view), raw)
+        raw = bytearray(element_chunk(3, struct.pack("<4d", 0, 0, 1, 1), graphics=True))
+        struct.pack_into("<d", raw, 28, float("inf"))
+        view = tool.element_chunks_view(bytes(raw))
+        self.assertEqual(view["chunks"][0]["body"]["kind"], "opaque-bytes")
+        json.dumps(view, allow_nan=False)
+        self.assertEqual(tool.view_bytes(view), raw)
+        core = bytearray(144)
+        struct.pack_into("<d", core, 16, float("inf"))
+        view = tool.record_core_view(bytes(core), 94, 0, True)
+        self.assertIsNone(view)
+
+    def test_uncompressed_design_header_encoding_preserves_framing_and_rejects_flags(self):
+        store = tool.MemoryStore()
+        store.view("payload.json", tool.binary_view(bytes(1576)))
+        store.view("suffix.json", tool.binary_view(b""))
+        entry = {
+            "ole_path": ["Dgn~H"], "codec": "framed-raw", "file": "payload.json",
+            "representation": "json-view", "prefix": "prefix.json", "prefix_representation": "json-view",
+            "suffix": "suffix.json", "suffix_representation": "json-view",
+        }
+        for flags in (0, 4):
+            prefix = struct.pack("<2H4I", flags, 4, 0, 0, 0, 0)
+            store.view("prefix.json", tool.binary_view(prefix))
+            with self.subTest(flags=flags):
+                self.assertEqual(tool.encode_stream(store, entry, None, 16 * 1024), prefix + bytes(1576))
+        for prefix in (b"", bytes(16), bytes(19), bytes(21),
+                       *(struct.pack("<2H4I", flags, 4, 0, 0, 0, 0) for flags in (1, 2, 3, 7))):
+            store.view("prefix.json", tool.binary_view(prefix))
+            with self.subTest(prefix=prefix), self.assertRaisesRegex(ValueError, "Dgn~H framing"):
+                tool.encode_stream(store, entry, None, 16 * 1024)
+
+    def test_limited_reads_reject_files_growing_after_the_size_check(self):
+        root = editor_test_root(self)
+        source = root / "bounded-file"
+        source.write_bytes(b"abcd")
+        initial = source.stat()
+        self.assertEqual(tool.read_limited(source, 4), b"abcd")
+        with source.open("rb") as handle:
+            with patch.object(Path, "open", return_value=handle), patch.object(handle, "read", wraps=handle.read) as reads:
+                self.assertEqual(tool.read_limited(source, 128 * 1024 * 1024), b"abcd")
+                self.assertEqual(reads.call_args_list[0].args, (5,))
+                self.assertTrue(all(call.args[0] <= 65536 for call in reads.call_args_list))
+        with self.assertRaises(ValueError):
+            tool.read_limited(source, 3)
+        source.write_bytes(b"abcdefgh")
+        with patch.object(Path, "stat", return_value=initial), self.assertRaises(ValueError):
+            tool.read_limited(source, 4)
+        source.write_bytes(b"")
+        self.assertEqual(tool.read_limited(source, 0), b"")
+
     def test_package_entry_points(self):
         metadata = tomllib.loads(Path(__file__).with_name("pyproject.toml").read_text(encoding="utf-8"))
         self.assertEqual(metadata["project"]["name"], "dgn-explorer")
@@ -283,6 +362,310 @@ class RepresentationTests(unittest.TestCase):
                 tool.encode_stream(folder, entry, raw, 1024)
 
 
+class SpecificationFeatureTests(unittest.TestCase):
+    def test_declared_catalogue_and_unknown_numbers(self):
+        for number in (1, 2, 3, 33, 34, 35, 37, 38, 39, 87, 88, 94, 95, 96, 105, 110, 113, 182):
+            self.assertIn(number, tool.ELEMENT_TYPES)
+        for number in (20, 29, 40, 89, 104, 109, 114, 128):
+            self.assertNotIn(number, tool.ELEMENT_TYPES)
+        self.assertEqual(tool.ELEMENT_TYPES[26], "B-spline knots")
+        self.assertEqual(tool.ELEMENT_TYPES[28], "B-spline weights")
+
+    def test_framing_headers_and_index_are_passive_and_lossless(self):
+        streams = feature_streams()
+        cases = [(tool.design_header_view, bytes(1576) + b"tail"),
+                 (tool.model_header_view, streams[("Dgn-Md", "#000001", "Dgn~Mh")] + b"model"),
+                 (tool.model_index_view, streams[("Dgn^Ix", "Dgn~Mix")])]
+        for decoder, raw in cases:
+            with self.subTest(decoder=decoder.__name__):
+                view = decoder(raw)
+                self.assertIsNotNone(view)
+                self.assertEqual(tool.view_bytes(view), raw)
+                self.assertEqual(tool.view_bytes(tool.readable_bytes(view)), raw)
+                self.assertEqual(tool.editing_contract(view)["editable_fields"], [])
+        index = tool.model_index_view(cases[-1][1])
+        self.assertEqual([item["name"] for item in index["items"]], ["Model 1", "Model 2"])
+        index["items"][0]["name"] = "Changed"
+        with self.assertRaises(ValueError):
+            tool.view_bytes(index)
+        self.assertIsNone(tool.design_header_view(bytes(1575)))
+        self.assertIsNone(tool.model_header_view(bytes(4095)))
+        self.assertIsNone(tool.model_index_view(bytes(16)))
+
+    def test_model_index_bounds_versions_and_extensions(self):
+        raw = feature_streams()[("Dgn^Ix", "Dgn~Mix")]
+        extra = raw[:12] + struct.pack("<I", 4) + b"keep" + raw[16:]
+        view = tool.model_index_view(extra)
+        self.assertTrue(view["complete"])
+        self.assertEqual(tool.view_bytes(view), extra)
+        for malformed in (raw[:-1], raw[:8] + struct.pack("<I", 1000) + raw[12:],
+                          raw[:32] + struct.pack("<H", 1) + raw[34:]):
+            with self.subTest(malformed=malformed[:20]):
+                view = tool.model_index_view(malformed)
+                self.assertFalse(view["complete"])
+                self.assertEqual(tool.view_bytes(view), malformed)
+        unsupported = raw[:4] + struct.pack("<I", 3) + raw[8:]
+        self.assertIn("Unsupported", tool.model_index_view(unsupported)["diagnostic"])
+
+    def test_file_header_uncompressed_and_encrypted_dispatch(self):
+        prefix = struct.pack("<2H4I", 0, 4, 1, 2, 3, 4)
+        raw = prefix + bytes(1576)
+        self.assertEqual(tool.decode_stream(["Dgn~H"], raw, 2000), ("framed-raw", bytes(1576), prefix, b""))
+        for flags in (1, 2, 3):
+            with self.subTest(flags=flags), self.assertRaises(ValueError):
+                tool.decode_stream(["Dgn~H"], struct.pack("<H", flags) + raw[2:], 2000)
+        encrypted = struct.pack("<4I", 1, 4, 0, 0) + b"encrypted"
+        self.assertEqual(tool.decode_stream(["Dgn-Md", "#1", "Dgn^G", "$1"], encrypted, 2000), ("raw", encrypted, b"", b""))
+
+    def test_every_feature_fixture_element_roundtrips_without_edits(self):
+        raw = feature_streams()[("Dgn-Md", "#000001", "Dgn^G", "$2")][16:]
+        view = tool.element_chunks_view(raw)
+        self.assertEqual(tool.view_bytes(view), raw)
+        self.assertEqual(tool.view_bytes(tool.readable_bytes(view)), raw)
+        kinds = {chunk["body"].get("core", {}).get("kind") for chunk in view["chunks"]}
+        self.assertTrue({"dgn-tag", "dgn-table-entry", "dgn-matrix", "dgn-store", "dgn-gcs"} <= kinds)
+        for chunk in view["chunks"]:
+            body = chunk["body"]
+            if body.get("core", {}).get("kind") in tool.PASSIVE_KINDS:
+                self.assertFalse(any(pointer.startswith("/core/") for pointer in tool.editing_contract(body)["editable_fields"]))
+
+    def test_unknown_chunk_signature_is_not_a_live_element(self):
+        raw = element_chunk(3, struct.pack("<4d", 0, 0, 1, 1), graphics=True)
+        raw = struct.pack("<I", 0xABCD) + raw[4:]
+        view = tool.element_chunks_view(raw)
+        self.assertEqual(view["chunks"][0]["body"]["kind"], "opaque-bytes")
+        self.assertEqual(tool.view_bytes(view), raw)
+
+    def test_metadata_table_routing_and_font_replacements(self):
+        for level, name in tool.TABLE_LEVELS.items():
+            with self.subTest(level=level):
+                raw = struct.pack("<2I", 1, 0)
+                view = tool.table_record_view(raw, 95, level)
+                self.assertEqual(view["table_name"], name)
+                self.assertEqual(tool.view_bytes(view), raw)
+                header = tool.table_record_view(raw, 96, level)
+                self.assertEqual(tool.editing_contract(header)["editable_fields"], [])
+        raw_name = "Font Ω".encode("utf-16-le")
+        raw = struct.pack("<3IH", 7, 0, 3, len(raw_name)) + raw_name
+        view = tool.table_record_view(raw, 95, 2)
+        view["name"] = "Different 😀"
+        encoded = tool.view_bytes(tool.readable_bytes(view))
+        self.assertEqual(tool.table_record_view(encoded, 95, 2)["name"], "Different 😀")
+        view["entry_id"] = 8
+        with self.assertRaises(ValueError):
+            tool.view_bytes(view)
+        self.assertNotIn("parent_id", tool.table_record_view(bytes(8), 95, 9))
+        self.assertNotIn("entry_id", tool.table_record_view(bytes(68), 95, 10))
+        name = "Font\0\0".encode("utf-16-le")
+        view = tool.table_record_view(struct.pack("<3IH", 1, 0, 2, len(name)) + name, 95, 2)
+        self.assertEqual(view["terminator_count"], 2)
+        view["name"] = "Changed"
+        self.assertEqual(tool.view_bytes(view)[-4:], bytes(4))
+
+    def test_tag_scalar_replacements_and_unknown_options(self):
+        for data_type, format, before, after in ((2, "h", 42, -12), (3, "i", 123, 456), (4, "d", 1.5, 2.25)):
+            core = bytearray(192)
+            struct.pack_into("<H", core, 24, 3)
+            struct.pack_into("<2H", core, 80, 5, data_type)
+            value = struct.pack("<" + format, before)
+            struct.pack_into("<2Hi", core, 184, len(value), 0, 1252)
+            raw = bytes(core) + value + b"tail"
+            view = tool.tag_view(raw)
+            self.assertEqual(tool.view_bytes(view), raw)
+            view["value"] = after
+            encoded = tool.view_bytes(view)
+            self.assertEqual(tool.tag_view(encoded)["value"], after)
+            self.assertTrue(encoded.endswith(b"tail"))
+            view["definition_id"] = 99
+            with self.assertRaises(ValueError):
+                tool.view_bytes(view)
+        raw = bytearray(core)
+        raw[179] = 1
+        raw += value
+        self.assertEqual(tool.editing_contract(tool.tag_view(bytes(raw)))["editable_fields"], [])
+
+    def test_linkage_masks_symbology_dependency_and_building_labels(self):
+        payloads = [(22227, struct.pack("<2H2I2H", 7, 1, 17, 2, 0xA55A, 0xFF01), "dgn-bitmask"),
+                    (22288, struct.pack("<4H2IH", 7, 2, 1, 0, 3, 1, 0x39), "dgn-multistate-mask"),
+                    (22241, struct.pack("<2Hi3I", 7, 3, -1, 2, 3, 4), "dgn-symbology")]
+        for primary, payload, kind in payloads:
+            raw = user_linkage(primary, payload)
+            view = tool.linkages_view(raw)
+            self.assertEqual(view["records"][0]["payload"]["kind"], kind)
+            self.assertEqual(tool.view_bytes(tool.readable_bytes(view)), raw)
+            expected = ["/records/0/primary_id", "/records/0/header_flags"]
+            if primary == 22241:
+                expected.append("/records/0/payload/weight")
+            self.assertEqual(tool.editing_contract(view)["editable_fields"], expected)
+        for root_type, size in ((0, 8), (1, 16), (2, 40), (3, 48), (4, 16), (5, 24), (6, 12), (7, 24), (8, 16)):
+            with self.subTest(root_type=root_type):
+                raw = user_linkage(22224, struct.pack("<4H", 5, 6, root_type << 10, 1) + bytes(size))
+                view = tool.linkages_view(raw)
+                self.assertEqual(view["records"][0]["payload"]["root_type"], root_type)
+                self.assertEqual(tool.view_bytes(view), raw)
+        for primary in (48640, 48750, 48800, 48903, 48979):
+            raw = user_linkage(primary, b"opaque")
+            self.assertNotEqual(tool.linkages_view(raw)["records"][0]["primary_name"], "Unknown")
+            self.assertEqual(tool.view_bytes(tool.linkages_view(raw)), raw)
+
+    def test_symbology_weight_and_nonfinite_dependency_fidelity(self):
+        raw = user_linkage(22241, struct.pack("<2Hi3I", 1, 2, -1, 3, 4, 5))
+        view = tool.linkages_view(raw)
+        payload = view["records"][0]["payload"]
+        payload["weight"] = 31
+        edited = tool.view_bytes(view)
+        self.assertEqual(tool.linkages_view(edited)["records"][0]["payload"]["weight"], 31)
+        for invalid in (-1, 32, True, 1.5):
+            payload["weight"] = invalid
+            with self.subTest(weight=invalid), self.assertRaises(ValueError):
+                tool.view_bytes(view)
+        payload["weight"], payload["color"] = 3, 99
+        with self.assertRaises(ValueError):
+            tool.view_bytes(view)
+        dependency = user_linkage(22224, struct.pack("<4HQd", 1, 2, 1 << 10, 1, 123, float("nan")))
+        self.assertEqual(tool.view_bytes(tool.linkages_view(dependency)), dependency)
+        self.assertEqual(tool.linkages_view(dependency)["records"][0]["payload"]["application_value"], 2)
+        json.dumps(tool.linkages_view(dependency), allow_nan=False)
+
+    def test_xml_fragment_cross_platform_counts_compression_and_edits(self):
+        for compression in (1, 2):
+            for inaccurate in (False, True):
+                with self.subTest(compression=compression, inaccurate=inaccurate):
+                    raw = xml_fragment("<DataGroup><Value>Ω 😀</Value></DataGroup>", compression=compression,
+                                       inaccurate_counts=inaccurate, tail=b"\0\0")
+                    view = tool.xml_fragment_view(raw, 4096)
+                    self.assertEqual(view["schema_urn"], "urn:synthetic:schema")
+                    self.assertEqual(tool.view_bytes(view), raw)
+                    self.assertEqual(tool.view_bytes(tool.readable_bytes(view)), raw)
+                    view["payload"]["text"] = "<DataGroup><Value>Changed Ω</Value></DataGroup>"
+                    encoded = tool.view_bytes(tool.readable_bytes(view))
+                    self.assertEqual(tool.xml_fragment_view(encoded)["payload"]["text"], view["payload"]["text"])
+                    self.assertEqual(tool.view_bytes(tool.xml_fragment_view(encoded)), encoded)
+                    view["schema_urn"] = "urn:changed"
+                    with self.assertRaises(ValueError):
+                        tool.view_bytes(view)
+
+    def test_xml_fragment_invalid_extents_and_identity_replacements(self):
+        raw = xml_fragment('<DataGroup catalogItem="Identity"><Value>Text</Value></DataGroup>')
+        for invalid in (raw[:-3], struct.pack("<2i", 1, -1) + raw[8:], raw[:12] + struct.pack("<i", -1) + raw[16:]):
+            self.assertIsNone(tool.xml_fragment_view(invalid))
+        with self.assertRaises(ValueError):
+            compressed = xml_fragment("<root>" + "x" * 10000 + "</root>", compression=2)
+            tool.xml_fragment_view(compressed[:4] + struct.pack("<i", 100) + compressed[8:], 1000)
+        view = tool.xml_fragment_view(raw)
+        for changed in ('<DataGroup catalogItem="Changed"><Value>Text</Value></DataGroup>',
+                        '<DataGroup catalogItem="Identity"><Other>Text</Other></DataGroup>'):
+            view["payload"]["text"] = changed
+            with self.assertRaises(ValueError):
+                tool.view_bytes(view)
+        view = tool.xml_fragment_view(xml_fragment("<root>Old</root>", tail=b"reserved"))
+        view["payload"]["text"] = "<root>New</root>"
+        self.assertTrue(tool.view_bytes(view).endswith(b"reserved"))
+        view["payload"]["text"] = "<root>A longer value</root>"
+        with self.assertRaises(ValueError):
+            tool.view_bytes(view)
+
+    def test_tagged_count_widths_and_rejection(self):
+        for value in (0, 239, 240, 255, 256, 32767, 32768, 1_000_000):
+            cursor = tool.BinaryCursor(tagged_count(value))
+            self.assertEqual(cursor.count(), value)
+            self.assertEqual(cursor.offset, len(cursor.data))
+        for raw in (b"\xf0", b"\xf1", b"\xf2\xff\xff", b"\xf3\xff\xff\xff\xff", b"\xf4" + bytes(8)):
+            with self.subTest(raw=raw), self.assertRaises(ValueError):
+                tool.BinaryCursor(raw).count()
+        with self.assertRaises(ValueError):
+            tool.BinaryCursor(b"\x40", 10).count()
+
+    def test_becxml_string8_is_low_byte_unicode_and_string16_counts_units(self):
+        for text, wide in (("café", False), ("Ω 😀", True), ("x" * 300, False)):
+            raw = becxml_document(text, wide=wide)
+            view = tool.becxml_view(raw)
+            self.assertTrue(view["complete"], view.get("diagnostic"))
+            self.assertEqual(view["strings"][1]["value"], text)
+            self.assertEqual(tool.becxml_bytes(view), raw)
+            self.assertEqual(tool.becxml_bytes(tool.readable_bytes(view)), raw)
+            view["strings"][1]["value"] = "Changed"
+            with self.assertRaises(ValueError):
+                tool.becxml_bytes(view)
+
+    def test_becxml_typed_values_arrays_attributes_and_unsupported_tokens(self):
+        prefix = tool.BECXML_MAGIC + b"\1\0\0\3\0\0" + b"\x30\2\xfa\4Root\xfa\4attr"
+        values = [b"\xf0\1", b"\xf1\xff", b"\xf2" + struct.pack("<h", -1),
+                  b"\xf3" + struct.pack("<i", -2), b"\xf4" + struct.pack("<q", -3),
+                  b"\xf5" + struct.pack("<2d", 1, 2), b"\xf6\2\x00\xff",
+                  b"\xf7" + struct.pack("<d", 1.5), b"\xf8" + struct.pack("<q", 123),
+                  b"\xf9" + struct.pack("<3d", 1, 2, 3), b"\xfa\4caf\xe9",
+                  b"\xfb\1\xa9\x03", b"\xfc\1", b"\xfd\xf7\2" + struct.pack("<2d", 1, 2),
+                  b"\xfe\xf2\2" + struct.pack("<2h", 0, -1)]
+        raw = prefix + b"\3\0\5\1\x11\1\6" + b"".join(b"\x10" + value for value in values) + b"\4"
+        view = tool.becxml_view(raw)
+        self.assertTrue(view["complete"], view.get("diagnostic"))
+        self.assertEqual(len([token for token in view["tokens"] if token["code"] == 0x10]), 15)
+        self.assertEqual(tool.view_bytes(view), raw)
+        for ending in (b"\x20", b"\x32", b"\x04", b"\x10\xf0\2", b"\x10\xfb\1\x00\xd8"):
+            malformed = prefix + ending
+            view = tool.becxml_view(malformed)
+            self.assertFalse(view["complete"])
+            self.assertEqual(tool.view_bytes(view), malformed)
+
+    def test_ecxd_headers_and_external_ec_schema_prefix(self):
+        for flags in (0, 1, 2, 31):
+            raw = struct.pack("<3H2B", 1, 2, 3, flags, 0xAA)
+            if flags & 1:
+                raw += struct.pack("<2I", 5, 6)
+            raw += b"opaque"
+            view = tool.ecxd_view(raw)
+            self.assertEqual(view["provider_id"], 3)
+            self.assertEqual(tool.view_bytes(view), raw)
+            view["schema_index"] = 4
+            with self.assertRaises(ValueError):
+                tool.view_bytes(view)
+        self.assertIsNone(tool.ecxd_view(struct.pack("<3H2B", 1, 2, 3, 1, 0)))
+        handler = 22271 << 16 | 1
+        raw = struct.pack("<I", 0x01010000) + "Schema\0".encode("utf-16-le") + struct.pack("<2I", 1, 2) + becxml_document()
+        view = tool.attribute_payload_view(raw, 4096, handler)
+        self.assertEqual(view["schema_name"], "Schema")
+        self.assertTrue(view["payload"]["complete"])
+        self.assertEqual(tool.view_bytes(view), raw)
+
+    def test_dgnstore_assembly_sequences_sizes_and_checksum(self):
+        raw = feature_streams()[("Dgn-Md", "#000001", "Dgn^G", "$2")][16:]
+        view = tool.element_chunks_view(raw)
+        header = next(chunk for chunk in view["chunks"] if chunk["element_type"] == 39)
+        assembly = header["body"]["store_assembly"]
+        self.assertTrue(assembly["complete"])
+        self.assertTrue(assembly["checksum_verified"])
+        self.assertEqual(assembly["payload"]["payload"]["text"], "<DataGroup><Value>Original</Value></DataGroup>")
+        for key in ("checksum", "total_size", "component_count"):
+            modified = deepcopy(view["chunks"])
+            target = next(chunk for chunk in modified if chunk["element_type"] == 39)
+            target["body"]["core"][key] += 1
+            self.assertFalse(tool.assembled_stores(modified)[0]["complete"])
+        self.assertEqual(tool.dgn_store_checksum(b"\1\2\3\4"), 0x04030201)
+
+    def test_matrices_preserve_unused_capacity_and_reject_bad_counts(self):
+        for element_type, format in ((102, "i"), (103, "d")):
+            raw = bytes(72) + struct.pack("<4I", 4, 3, 0x20, 0xAA) + struct.pack("<" + format * 4, 1, 2, 3, 999)
+            view = tool.matrix_view(raw, element_type)
+            self.assertEqual(view["values"], [1, 2, 3])
+            self.assertEqual(tool.view_bytes(view), raw)
+            view["values"][0] = 10
+            with self.assertRaises(ValueError):
+                tool.view_bytes(view)
+            self.assertIsNone(tool.matrix_view(raw[:76] + struct.pack("<I", 5) + raw[80:], element_type))
+
+    def test_gcs_signature_and_metadata_are_passive(self):
+        raw = feature_streams()[("Dgn-Md", "#000001", "Dgn^G", "$2")][16:]
+        view = tool.element_chunks_view(raw)
+        record = next(chunk["body"] for chunk in view["chunks"] if chunk["body"].get("core", {}).get("kind") == "dgn-gcs")
+        self.assertEqual(record["core"]["coordinate_system"], "WGS84")
+        self.assertEqual(record["type_name"], "Geographic coordinate system")
+        self.assertEqual(record["core"]["minor_version"], 4000)
+        record["core"]["coordinate_system"] = "Changed"
+        with self.assertRaises(ValueError):
+            tool.view_bytes(record)
+
+
 @unittest.skipUnless(SAMPLE.exists(), "User-provided sample DGN is unavailable")
 class SampleTests(unittest.TestCase):
     def setUp(self):
@@ -332,8 +715,7 @@ class SampleTests(unittest.TestCase):
 
     def test_legacy_unlabelled_workspace_rebuild(self):
         folder = self.root / "legacy"
-        with patch.object(tool, "label_workspace_files"):
-            tool.extract(SAMPLE, folder, tool.DEFAULT_LIMIT, bytes_mode="hex")
+        tool.extract(SAMPLE, folder, tool.DEFAULT_LIMIT, bytes_mode="hex", labels=False)
         legacy_manifest = json.loads((folder / "manifest.json").read_text(encoding="utf-8"))
         legacy_manifest["format"] = "dgn-folder-v1"
         tool.write_view(folder / "manifest.json", legacy_manifest)

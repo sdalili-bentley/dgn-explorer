@@ -88,17 +88,23 @@ def recover(folder: Path, limits):
     manifest = parse_json(codecs.read_limited(confined(folder, manifest_name), limits.stream))
     reachable = set()
 
+    def reference(value, key, depth):
+        allowed = {"content"} if key == "text_file" else {"data", "objects", "attributes", "fields"}
+        if not isinstance(value, str) or not Path(value).parts or Path(value).parts[0] not in allowed:
+            raise ValueError("Recovery reference is outside record files")
+        if value not in reachable:
+            reachable.add(value)
+            data = codecs.read_limited(confined(folder, value), limits.stream)
+            if key == "file":
+                references(parse_json(data), depth + 1)
+
     def references(node, depth=0):
         if depth > limits.depth:
             raise ValueError("Recovery reference depth exceeded")
         if isinstance(node, dict):
             for key, value in node.items():
                 if key in ("file", "text_file") and isinstance(value, str):
-                    if value not in reachable:
-                        reachable.add(value)
-                        data = codecs.read_limited(confined(folder, value), limits.stream)
-                        if key == "file":
-                            references(parse_json(data), depth + 1)
+                    reference(value, key, depth)
                 else:
                     references(value, depth + 1)
         elif isinstance(node, list):
@@ -106,7 +112,7 @@ def recover(folder: Path, limits):
                 references(value, depth + 1)
 
     for entry in manifest["streams"]:
-        references({"file": entry["file"]})
+        reference(entry["file"], "file", 0)
     replacements = []
     seen = set()
     for item in transaction["files"]:
@@ -157,6 +163,9 @@ def publish(session, fault=None):
         count = len(session.pending)
         journal.unlink()
         return count
-    except Exception:
-        recover(session.folder, session.limits)
+    except Exception as error:
+        try:
+            recover(session.folder, session.limits)
+        except Exception:
+            error.add_note("Rollback is incomplete; the retained journal is recovered when the workspace reopens.")
         raise

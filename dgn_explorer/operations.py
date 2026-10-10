@@ -1,12 +1,60 @@
 """Shared command dispatcher for CLI and backend workers."""
 
 from pathlib import Path
+import errno
 import os
 import shutil
+from stat import S_ISREG
 import tempfile
 
 from . import codecs
-from .workspace import CancelledError, Limits, Workspace, get_pointer, json_bytes, locator_key, parse_json
+from .workspace import CancelledError, Limits, Workspace, get_pointer, json_bytes, locator_key, parse_json, record_description
+
+
+def load_payload(source: Path, limits: Limits | None = None) -> bytes:
+    """Bounded passive file import; never interpret or activate file content."""
+    limit = min((limits or Limits()).stream, codecs.EDITOR_LIMIT)
+    source = Path(source)
+    if not S_ISREG(source.stat().st_mode):
+        raise ValueError("Load File requires a regular file")
+    with source.open("rb") as stream:
+        if not S_ISREG(os.fstat(stream.fileno()).st_mode):
+            raise ValueError("Load File requires a regular file")
+        data = stream.read(limit + 1)
+    if len(data) > limit:
+        raise ValueError(f"File exceeds editor limit ({limit:,} bytes)")
+    return data
+
+
+def export_payload(output: Path, data: bytes, limits: Limits | None = None, workspace: Path | None = None) -> dict:
+    """Publish a new payload file exclusively, outside a protected workspace."""
+    output = Path(output).absolute()
+    if workspace is not None and output.resolve().is_relative_to(Path(workspace).resolve()):
+        raise ValueError("Export destination must be outside the workspace")
+    if len(data) > min((limits or Limits()).stream, codecs.EDITOR_LIMIT):
+        raise ValueError("Export payload exceeds editor limit")
+    if output.exists() or output.is_symlink():
+        raise ValueError("Export destination already exists; choose a new file")
+    with output.open("xb") as destination:
+        identity = os.fstat(destination.fileno())
+        try:
+            destination.write(data)
+            destination.flush()
+            os.fsync(destination.fileno())
+            destination.close()
+        except BaseException:
+            try:
+                destination.close()
+            finally:
+                try:
+                    current = output.stat()
+                except FileNotFoundError:
+                    pass
+                else:
+                    if (current.st_dev, current.st_ino) == (identity.st_dev, identity.st_ino):
+                        output.unlink()
+            raise
+    return {"output": str(output), "bytes": len(data)}
 
 
 def import_dgn(source: Path, folder: Path, limits: Limits, cancel=lambda: False, bytes_mode="escaped") -> dict:
@@ -15,7 +63,7 @@ def import_dgn(source: Path, folder: Path, limits: Limits, cancel=lambda: False,
         raise ValueError("Import destination already exists")
     folder.parent.mkdir(parents=True, exist_ok=True)
     total = 0
-    with codecs.ole_reader().OleFileIO(str(source)) as ole:
+    with codecs.open_dgn(source) as ole:
         for names in ole.listdir():
             if cancel():
                 raise CancelledError("Import cancelled")
@@ -25,7 +73,7 @@ def import_dgn(source: Path, folder: Path, limits: Limits, cancel=lambda: False,
             if total > limits.aggregate:
                 raise ValueError("Aggregate decoded limit exceeded")
     if shutil.disk_usage(folder.parent).free < source.stat().st_size * 2 + total * 8:
-        raise OSError("Insufficient temporary disk space")
+        raise OSError(errno.ENOSPC, "Insufficient temporary disk space")
     with tempfile.TemporaryDirectory(prefix=".dgn-import-", dir=folder.parent) as temporary:
         staging = Path(temporary) / "workspace"
         manifest = codecs.extract(source, staging, limits.stream, bytes_mode, cancel=cancel)
@@ -62,13 +110,16 @@ def record_summary(session: Workspace, locator: dict, offset=0) -> dict:
             for index, child in enumerate(node):
                 visit(child, pointer + f"/{index}")
         else:
-            bounded = len(json_bytes(node)) <= 64 * 1024
+            bounded = len(node.encode("utf-8")) <= codecs.EDITOR_LIMIT if isinstance(node, str) else len(json_bytes(node)) <= codecs.EDITOR_LIMIT
             fields.append({"pointer": pointer, "value": node if bounded else "<value exceeds editor limit>", "saved_value": get_pointer(record.value, pointer) if bounded else None, "editable": bounded and pointer in record.editable})
 
     visit(value)
+    for index, application in enumerate(result["registered_applications"]):
+        fields.append({"pointer": f"/registered_applications/{index}", "value": application,
+                       "saved_value": application, "editable": False})
     raw = codecs.view_bytes(value)
     page = raw[offset:offset + 4096]
-    return {"record": locator, "kind": value["kind"], "fields": fields, "revision": session.revision,
+    return {"record": locator, "kind": value["kind"], "feature": record_description(value)[0], "fields": fields, "revision": session.revision,
             "bytes": {"offset": offset, "size": len(raw), "hex": page.hex(" "), "escaped": json.dumps(page.decode("latin-1"), ensure_ascii=True), "next_offset": offset + 4096 if offset + 4096 < len(raw) else None}}
 
 
@@ -95,6 +146,13 @@ def execute(operation: str, arguments: dict, limits: Limits | None = None, cance
             if arguments.get("summary") is True:
                 return record_summary(session, arguments["record"], arguments.get("offset", 0))
             return {**session.get_record(arguments["record"]), "revision": session.revision}
+        if operation == "load-field":
+            return session.load_field(arguments["record"], arguments["pointer"], Path(arguments["source"]))
+        if operation == "export-field":
+            return session.export_field(arguments["record"], arguments["pointer"], Path(arguments["output"]))
+        if operation == "export-bytes":
+            page = record_summary(session, arguments["record"], arguments.get("offset", 0))["bytes"]
+            return export_payload(Path(arguments["output"]), bytes.fromhex(page["hex"]), limits, session.folder)
         if operation == "journal":
             from .transactions import atomic_write, ownership, sidecar
 

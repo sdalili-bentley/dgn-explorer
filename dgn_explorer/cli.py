@@ -26,13 +26,38 @@ def envelope(operation: str, result=None, error=None) -> dict:
     return {"protocol": "dgn-explorer.result-v1", "operation": operation, "success": error is None, "result": result, "warnings": [], "errors": [] if error is None else [error]}
 
 
+class UsageError(Exception):
+    def __init__(self, message: str, usage: str, prog: str):
+        super().__init__(message)
+        self.usage, self.prog = usage, prog
+
+
+class Parser(argparse.ArgumentParser):
+    """Raises usage errors so JSON callers receive a versioned envelope."""
+
+    def error(self, message):
+        raise UsageError(message, self.format_usage(), self.prog)
+
+
+def bounded_int(minimum: int, maximum: int | None = None):
+    def parse(text: str) -> int:
+        try:
+            value = int(text, 10)
+        except ValueError:
+            raise argparse.ArgumentTypeError("must be a decimal integer") from None
+        if value < minimum or maximum is not None and value > maximum:
+            raise argparse.ArgumentTypeError(f"must be between {minimum} and {maximum}" if maximum is not None else f"must be at least {minimum}")
+        return value
+    return parse
+
+
 def build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(description="DGN Explorer: local structure and metadata editor")
+    parser = Parser(description="DGN Explorer: local structure and metadata editor")
     parser.add_argument("--version", action="version", version=__version__)
     parser.add_argument("--json", action="store_true", help="Versioned JSON result envelope")
-    parser.add_argument("--max-mib", type=int, default=128)
-    parser.add_argument("--aggregate-mib", type=int, default=2048)
-    commands = parser.add_subparsers(dest="command", required=True)
+    parser.add_argument("--max-mib", type=bounded_int(1, 1024 * 1024), default=128)
+    parser.add_argument("--aggregate-mib", type=bounded_int(1, 1024 * 1024 * 1024), default=2048)
+    commands = parser.add_subparsers(dest="command", required=True, parser_class=Parser)
     for name, aliases in (("unpack", ["extract"]), ("pack", ["rebuild"]), ("inspect", []), ("list", []), ("show", []), ("search", []), ("validate", []), ("diff", []), ("apply", [])):
         command = commands.add_parser(name, aliases=aliases)
         command.add_argument("--json", action="store_true", default=argparse.SUPPRESS, help="Versioned JSON result envelope")
@@ -48,10 +73,10 @@ def build_parser() -> argparse.ArgumentParser:
         if name == "inspect":
             command.add_argument("--output", type=Path)
         if name in ("list", "search"):
-            command.add_argument("--limit", type=int, default=100 if name == "search" else 200)
-            command.add_argument("--cursor", type=int, default=0)
+            command.add_argument("--limit", type=bounded_int(1, 1000), default=100 if name == "search" else 200)
+            command.add_argument("--cursor", type=bounded_int(0), default=0)
             command.add_argument("--model", default="")
-            command.add_argument("--kind", default="")
+            command.add_argument("--kind", default="", help="Exact record or nested payload kind, e.g. dgn-tag, dgn-table-entry, dgn-xml-fragment")
         if name == "search":
             command.add_argument("--text", required=True)
         if name == "show":
@@ -76,7 +101,15 @@ def main(argv: list[str] | None = None) -> int:
         return desktop_main()
     machine = "--json" in argv
     parser = build_parser()
-    arguments = parser.parse_args(argv)
+    try:
+        arguments = parser.parse_args(argv)
+    except UsageError as error:
+        if machine:
+            print(json.dumps(envelope(None, error={"code": 2, "message": "Usage error: " + str(error)}), ensure_ascii=True))
+            return 2
+        sys.stderr.write(error.usage)
+        sys.stderr.write(f"{error.prog}: error: {error}\n")
+        raise SystemExit(2) from None
     operation = arguments.command
     try:
         limits = Limits(stream=arguments.max_mib * 1024 * 1024, aggregate=arguments.aggregate_mib * 1024 * 1024)
@@ -84,10 +117,11 @@ def main(argv: list[str] | None = None) -> int:
         for key in ("command", "max_mib", "aggregate_mib", "dry_run", "json"):
             parameters.pop(key, None)
         if parameters.get("patch") is not None:
-            path = parameters["patch"]
-            if path.stat().st_size > limits.patch:
+            with parameters["patch"].open("rb") as handle:
+                data = handle.read(limits.patch + 1)
+            if len(data) > limits.patch:
                 raise ValueError("Patch input exceeds size limit")
-            parameters["patch"] = parse_json(path.read_bytes())
+            parameters["patch"] = parse_json(data)
         if "record" in parameters:
             parameters["record"] = parse_json(parameters["record"].encode("utf-8"))
         output = parameters.pop("output", None) if operation == "inspect" else None

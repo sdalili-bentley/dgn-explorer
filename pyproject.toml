@@ -26,3 +26,9 @@ packages = ["dgn_explorer"]
 
 [tool.setuptools.dynamic]
 dependencies = {file = ["requirements.txt"]}
+
+[tool.coverage.run]
+branch = true
+source = ["dgn_explorer", "dgn_folder"]
+patch = ["subprocess"]
+data_file = "build/coverage/.coverage"
