@@ -561,6 +561,20 @@ class UITests(unittest.TestCase):
                 self.assertGreaterEqual(self.window.table.columnWidth(2), self.window.table.fontMetrics().horizontalAdvance("Read-only") + 28)
                 self.assertFalse(self.window.grab().isNull())
 
+    def test_record_browser_remains_usable_when_splitter_is_compressed(self):
+        splitter = self.window.findChild(QSplitter, "recordSplitter")
+        for width, height in ((520, 400), (640, 480), (1100, 720)):
+            with self.subTest(size=(width, height)):
+                self.window.resize(width, height)
+                splitter.setSizes([0, 10000])
+                QApplication.processEvents()
+                self.assertGreaterEqual(self.window.tree.width(), 160)
+                self.assertGreater(self.window.table.width(), 200)
+                self.assertLessEqual(self.window.minimumSizeHint().width(), self.window.width())
+                splitter.setSizes([350, 700])
+                QApplication.processEvents()
+                self.assertGreaterEqual(self.window.tree.width(), 160)
+
     def test_explicit_failures_alert_and_background_failures_do_not(self):
         cases = (
             ("validate", self.window.validate, True),
@@ -1266,7 +1280,7 @@ class ScalingTests(unittest.TestCase):
         "window = ExplorerWindow(data_root=Path(sys.argv[1]))\n"
         "window.show()\n"
         "result = {'ratio': window.devicePixelRatioF(), 'sizes': []}\n"
-        "for width, height in ((800, 600), (1100, 720)):\n"
+        "for width, height in ((640, 480), (800, 600), (1100, 720)):\n"
         "    window.resize(width, height)\n"
         "    app.processEvents()\n"
         "    image = window.grab()\n"

@@ -580,6 +580,7 @@ class ExplorerWindow(QMainWindow):
         splitter.setChildrenCollapsible(False)
         splitter.setHandleWidth(7)
         self.tree = QTreeView()
+        self.tree.setMinimumWidth(160)
         self.tree.setAccessibleName("DGN records")
         self.tree.setAccessibleDescription("Select a contextual record to inspect it. Access indicates supported edits, not OS file permissions.")
         self.tree.setRootIsDecorated(False)
